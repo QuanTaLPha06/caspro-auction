@@ -1,0 +1,386 @@
+[
+  {
+    "id": "C01",
+    "sport": "Football",
+    "title": "All-Time Top Men's International Goalscorers",
+    "subtitle": "Rank the top 8 all-time highest goal scorers in men's international football history.",
+    "answers": [
+      { "rank": 1, "name": "Cristiano Ronaldo", "detail": "Portugal • 135+ Goals", "points": 8 },
+      { "rank": 2, "name": "Lionel Messi", "detail": "Argentina • 112+ Goals", "points": 7 },
+      { "rank": 3, "name": "Ali Daei", "detail": "Iran • 108 Goals", "points": 6 },
+      { "rank": 4, "name": "Sunil Chhetri", "detail": "India • 94 Goals", "points": 5 },
+      { "rank": 5, "name": "Mokhtar Dahari", "detail": "Malaysia • 89 Goals", "points": 4 },
+      { "rank": 6, "name": "Ferenc Puskás", "detail": "Hungary/Spain • 84 Goals", "points": 3 },
+      { "rank": 7, "name": "Romelu Lukaku", "detail": "Belgium • 85+ Goals", "points": 2 },
+      { "rank": 8, "name": "Robert Lewandowski", "detail": "Poland • 84+ Goals", "points": 1 }
+    ]
+  },
+  {
+    "id": "C02",
+    "sport": "Olympics",
+    "title": "Countries with Most All-Time Summer Olympic Gold Medals",
+    "subtitle": "Rank the top 8 nations with the highest total Summer Olympic Gold Medals in history.",
+    "answers": [
+      { "rank": 1, "name": "United States", "detail": "USA • 1,105 Gold Medals", "points": 8 },
+      { "rank": 2, "name": "Soviet Union", "detail": "USSR • 395 Gold Medals", "points": 7 },
+      { "rank": 3, "name": "Great Britain", "detail": "GBR • 298 Gold Medals", "points": 6 },
+      { "rank": 4, "name": "China", "detail": "CHN • 303 Gold Medals", "points": 5 },
+      { "rank": 5, "name": "Germany", "detail": "GER • 213 Gold Medals", "points": 4 },
+      { "rank": 6, "name": "France", "detail": "FRA • 239 Gold Medals", "points": 3 },
+      { "rank": 7, "name": "Italy", "detail": "ITA • 229 Gold Medals", "points": 2 },
+      { "rank": 8, "name": "Hungary", "detail": "HUN • 187 Gold Medals", "points": 1 }
+    ]
+  },
+  {
+    "id": "C03",
+    "sport": "Cricket",
+    "title": "All-Time Highest Run Scorers in Test Cricket",
+    "subtitle": "Rank the top 8 batsmen with the most career runs scored in Test Match Cricket history.",
+    "answers": [
+      { "rank": 1, "name": "Sachin Tendulkar", "detail": "India • 15,921 Runs", "points": 8 },
+      { "rank": 2, "name": "Ricky Ponting", "detail": "Australia • 13,378 Runs", "points": 7 },
+      { "rank": 3, "name": "Jacques Kallis", "detail": "South Africa • 13,289 Runs", "points": 6 },
+      { "rank": 4, "name": "Rahul Dravid", "detail": "India • 13,288 Runs", "points": 5 },
+      { "rank": 5, "name": "Joe Root", "detail": "England • 12,700+ Runs", "points": 4 },
+      { "rank": 6, "name": "Alastair Cook", "detail": "England • 12,472 Runs", "points": 3 },
+      { "rank": 7, "name": "Kumar Sangakkara", "detail": "Sri Lanka • 12,400 Runs", "points": 2 },
+      { "rank": 8, "name": "Brian Lara", "detail": "West Indies • 11,953 Runs", "points": 1 }
+    ]
+  },
+  {
+    "id": "C04",
+    "sport": "Formula 1",
+    "title": "F1 Drivers with Most All-Time Grand Prix Victories",
+    "subtitle": "Rank the top 8 Formula 1 drivers with the highest number of race wins in F1 history.",
+    "answers": [
+      { "rank": 1, "name": "Lewis Hamilton", "detail": "105 Grand Prix Wins", "points": 8 },
+      { "rank": 2, "name": "Michael Schumacher", "detail": "91 Grand Prix Wins", "points": 7 },
+      { "rank": 3, "name": "Max Verstappen", "detail": "62+ Grand Prix Wins", "points": 6 },
+      { "rank": 4, "name": "Sebastian Vettel", "detail": "53 Grand Prix Wins", "points": 5 },
+      { "rank": 5, "name": "Alain Prost", "detail": "51 Grand Prix Wins", "points": 4 },
+      { "rank": 6, "name": "Ayrton Senna", "detail": "41 Grand Prix Wins", "points": 3 },
+      { "rank": 7, "name": "Fernando Alonso", "detail": "32 Grand Prix Wins", "points": 2 },
+      { "rank": 8, "name": "Nigel Mansell", "detail": "31 Grand Prix Wins", "points": 1 }
+    ]
+  },
+  {
+    "id": "C05",
+    "sport": "Basketball",
+    "title": "All-Time Top NBA Regular Season Scoring Leaders",
+    "subtitle": "Rank the top 8 players with the most total points scored in NBA regular season history.",
+    "answers": [
+      { "rank": 1, "name": "LeBron James", "detail": "40,400+ Points", "points": 8 },
+      { "rank": 2, "name": "Kareem Abdul-Jabbar", "detail": "38,387 Points", "points": 7 },
+      { "rank": 3, "name": "Karl Malone", "detail": "36,928 Points", "points": 6 },
+      { "rank": 4, "name": "Kobe Bryant", "detail": "33,643 Points", "points": 5 },
+      { "rank": 5, "name": "Michael Jordan", "detail": "32,292 Points", "points": 4 },
+      { "rank": 6, "name": "Dirk Nowitzki", "detail": "31,560 Points", "points": 3 },
+      { "rank": 7, "name": "Wilt Chamberlain", "detail": "31,419 Points", "points": 2 },
+      { "rank": 8, "name": "Kevin Durant", "detail": "29,000+ Points", "points": 1 }
+    ]
+  },
+  {
+    "id": "C06",
+    "sport": "Tennis",
+    "title": "Men's Singles Grand Slam Title All-Time Leaders",
+    "subtitle": "Rank the top 8 male tennis players with the most Grand Slam Singles Championships.",
+    "answers": [
+      { "rank": 1, "name": "Novak Djokovic", "detail": "24 Grand Slam Titles", "points": 8 },
+      { "rank": 2, "name": "Rafael Nadal", "detail": "22 Grand Slam Titles", "points": 7 },
+      { "rank": 3, "name": "Roger Federer", "detail": "20 Grand Slam Titles", "points": 6 },
+      { "rank": 4, "name": "Pete Sampras", "detail": "14 Grand Slam Titles", "points": 5 },
+      { "rank": 5, "name": "Roy Emerson", "detail": "12 Grand Slam Titles", "points": 4 },
+      { "rank": 6, "name": "Rod Laver", "detail": "11 Grand Slam Titles", "points": 3 },
+      { "rank": 7, "name": "Björn Borg", "detail": "11 Grand Slam Titles", "points": 2 },
+      { "rank": 8, "name": "Andre Agassi / Ivan Lendl", "detail": "8 Grand Slam Titles", "points": 1 }
+    ]
+  },
+  {
+    "id": "C07",
+    "sport": "Football",
+    "title": "All-Time UEFA Champions League Top Goalscorers",
+    "subtitle": "Rank the top 8 all-time highest goalscorers in UEFA Champions League history.",
+    "answers": [
+      { "rank": 1, "name": "Cristiano Ronaldo", "detail": "140 UCL Goals", "points": 8 },
+      { "rank": 2, "name": "Lionel Messi", "detail": "129 UCL Goals", "points": 7 },
+      { "rank": 3, "name": "Robert Lewandowski", "detail": "99+ UCL Goals", "points": 6 },
+      { "rank": 4, "name": "Karim Benzema", "detail": "90 UCL Goals", "points": 5 },
+      { "rank": 5, "name": "Raúl González", "detail": "71 UCL Goals", "points": 4 },
+      { "rank": 6, "name": "Ruud van Nistelrooy", "detail": "56 UCL Goals", "points": 3 },
+      { "rank": 7, "name": "Thomas Müller", "detail": "54+ UCL Goals", "points": 2 },
+      { "rank": 8, "name": "Thierry Henry", "detail": "50 UCL Goals", "points": 1 }
+    ]
+  },
+  {
+    "id": "C08",
+    "sport": "Cricket",
+    "title": "Bowlers with Most All-Time Test Match Wickets",
+    "subtitle": "Rank the top 8 bowlers with the most total Test wickets taken in cricket history.",
+    "answers": [
+      { "rank": 1, "name": "Muttiah Muralitharan", "detail": "Sri Lanka • 800 Wickets", "points": 8 },
+      { "rank": 2, "name": "Shane Warne", "detail": "Australia • 708 Wickets", "points": 7 },
+      { "rank": 3, "name": "James Anderson", "detail": "England • 704 Wickets", "points": 6 },
+      { "rank": 4, "name": "Anil Kumble", "detail": "India • 619 Wickets", "points": 5 },
+      { "rank": 5, "name": "Stuart Broad", "detail": "England • 604 Wickets", "points": 4 },
+      { "rank": 6, "name": "Glenn McGrath", "detail": "Australia • 563 Wickets", "points": 3 },
+      { "rank": 7, "name": "Courtney Walsh", "detail": "West Indies • 519 Wickets", "points": 2 },
+      { "rank": 8, "name": "Nathan Lyon", "detail": "Australia • 530+ Wickets", "points": 1 }
+    ]
+  },
+  {
+    "id": "C09",
+    "sport": "Tennis",
+    "title": "Women's Singles Open Era Grand Slam Title Leaders",
+    "subtitle": "Rank the top 8 female tennis champions with the most Open Era Grand Slam singles titles.",
+    "answers": [
+      { "rank": 1, "name": "Serena Williams", "detail": "23 Grand Slam Titles", "points": 8 },
+      { "rank": 2, "name": "Steffi Graf", "detail": "22 Grand Slam Titles", "points": 7 },
+      { "rank": 3, "name": "Martina Navratilova", "detail": "18 Grand Slam Titles", "points": 6 },
+      { "rank": 4, "name": "Chris Evert", "detail": "18 Grand Slam Titles", "points": 5 },
+      { "rank": 5, "name": "Margaret Court", "detail": "11 Open Era (24 total)", "points": 4 },
+      { "rank": 6, "name": "Monica Seles", "detail": "9 Grand Slam Titles", "points": 3 },
+      { "rank": 7, "name": "Justine Henin", "detail": "7 Grand Slam Titles", "points": 2 },
+      { "rank": 8, "name": "Venus Williams", "detail": "7 Grand Slam Titles", "points": 1 }
+    ]
+  },
+  {
+    "id": "C10",
+    "sport": "Olympics",
+    "title": "Athletes with Most All-Time Summer Olympic Gold Medals",
+    "subtitle": "Rank the top 8 individual athletes with the highest career Olympic Gold Medal tally.",
+    "answers": [
+      { "rank": 1, "name": "Michael Phelps", "detail": "USA Swimming • 23 Gold Medals", "points": 8 },
+      { "rank": 2, "name": "Larisa Latynina", "detail": "USSR Gymnastics • 9 Gold Medals", "points": 7 },
+      { "rank": 3, "name": "Paavo Nurmi", "detail": "Finland Athletics • 9 Gold Medals", "points": 6 },
+      { "rank": 4, "name": "Mark Spitz", "detail": "USA Swimming • 9 Gold Medals", "points": 5 },
+      { "rank": 5, "name": "Carl Lewis", "detail": "USA Athletics • 9 Gold Medals", "points": 4 },
+      { "rank": 6, "name": "Katie Ledecky", "detail": "USA Swimming • 9 Gold Medals", "points": 3 },
+      { "rank": 7, "name": "Usain Bolt", "detail": "Jamaica Athletics • 8 Gold Medals", "points": 2 },
+      { "rank": 8, "name": "Birgit Fischer", "detail": "Germany Canoeing • 8 Gold Medals", "points": 1 }
+    ]
+  },
+  {
+    "id": "C11",
+    "sport": "Formula 1",
+    "title": "F1 Drivers with Most World Drivers' Championships",
+    "subtitle": "Rank the top 8 drivers with the most World Drivers' Championship titles in F1 history.",
+    "answers": [
+      { "rank": 1, "name": "Michael Schumacher", "detail": "7 World Titles", "points": 8 },
+      { "rank": 2, "name": "Lewis Hamilton", "detail": "7 World Titles", "points": 7 },
+      { "rank": 3, "name": "Juan Manuel Fangio", "detail": "5 World Titles", "points": 6 },
+      { "rank": 4, "name": "Alain Prost", "detail": "4 World Titles", "points": 5 },
+      { "rank": 5, "name": "Sebastian Vettel", "detail": "4 World Titles", "points": 4 },
+      { "rank": 6, "name": "Max Verstappen", "detail": "4 World Titles", "points": 3 },
+      { "rank": 7, "name": "Ayrton Senna", "detail": "3 World Titles", "points": 2 },
+      { "rank": 8, "name": "Jackie Stewart / Niki Lauda", "detail": "3 World Titles", "points": 1 }
+    ]
+  },
+  {
+    "id": "C12",
+    "sport": "Basketball",
+    "title": "Most All-Time NBA Championship Rings won by Players",
+    "subtitle": "Rank the top 8 NBA players with the highest number of Championship rings won as a player.",
+    "answers": [
+      { "rank": 1, "name": "Bill Russell", "detail": "Boston Celtics • 11 Rings", "points": 8 },
+      { "rank": 2, "name": "Sam Jones", "detail": "Boston Celtics • 10 Rings", "points": 7 },
+      { "rank": 3, "name": "Tom Heinsohn", "detail": "Boston Celtics • 8 Rings", "points": 6 },
+      { "rank": 4, "name": "K.C. Jones", "detail": "Boston Celtics • 8 Rings", "points": 5 },
+      { "rank": 5, "name": "John Havlicek", "detail": "Boston Celtics • 8 Rings", "points": 4 },
+      { "rank": 6, "name": "Robert Horry", "detail": "HOU/LAL/SAS • 7 Rings", "points": 3 },
+      { "rank": 7, "name": "Michael Jordan", "detail": "Chicago Bulls • 6 Rings", "points": 2 },
+      { "rank": 8, "name": "Kareem Abdul-Jabbar", "detail": "MIL/LAL • 6 Rings", "points": 1 }
+    ]
+  },
+  {
+    "id": "C13",
+    "sport": "Football",
+    "title": "Ballon d'Or Multiple Winners All-Time",
+    "subtitle": "Rank the top 8 footballers with the most Ballon d'Or awards won in history.",
+    "answers": [
+      { "rank": 1, "name": "Lionel Messi", "detail": "8 Ballon d'Ors (2009–2023)", "points": 8 },
+      { "rank": 2, "name": "Cristiano Ronaldo", "detail": "5 Ballon d'Ors (2008–2017)", "points": 7 },
+      { "rank": 3, "name": "Michel Platini", "detail": "3 Ballon d'Ors (1983–1985)", "points": 6 },
+      { "rank": 4, "name": "Johan Cruyff", "detail": "3 Ballon d'Ors (1971–1974)", "points": 5 },
+      { "rank": 5, "name": "Marco van Basten", "detail": "3 Ballon d'Ors (1988–1992)", "points": 4 },
+      { "rank": 6, "name": "Franz Beckenbauer", "detail": "2 Ballon d'Ors (1972, 1976)", "points": 3 },
+      { "rank": 7, "name": "Ronaldo Nazário", "detail": "2 Ballon d'Ors (1997, 2002)", "points": 2 },
+      { "rank": 8, "name": "Karl-Heinz Rummenigge", "detail": "2 Ballon d'Ors (1980, 1981)", "points": 1 }
+    ]
+  },
+  {
+    "id": "C14",
+    "sport": "Cricket",
+    "title": "Highest Individual Scores in Men's One-Day International (ODI) Cricket",
+    "subtitle": "Rank the top 8 highest individual scores made by a batsman in a single ODI innings.",
+    "answers": [
+      { "rank": 1, "name": "Rohit Sharma", "detail": "India • 264 vs Sri Lanka (2014)", "points": 8 },
+      { "rank": 2, "name": "Martin Guptill", "detail": "NZ • 237* vs West Indies (2015)", "points": 7 },
+      { "rank": 3, "name": "Virender Sehwag", "detail": "India • 219 vs West Indies (2011)", "points": 6 },
+      { "rank": 4, "name": "Chris Gayle", "detail": "WI • 215 vs Zimbabwe (2015)", "points": 5 },
+      { "rank": 5, "name": "Fakhar Zaman", "detail": "Pakistan • 210* vs Zimbabwe (2018)", "points": 4 },
+      { "rank": 6, "name": "Pathum Nissanka", "detail": "SL • 210* vs Afghanistan (2024)", "points": 3 },
+      { "rank": 7, "name": "Ishan Kishan", "detail": "India • 210 vs Bangladesh (2022)", "points": 2 },
+      { "rank": 8, "name": "Rohit Sharma (209)", "detail": "India • 209 vs Australia (2013)", "points": 1 }
+    ]
+  },
+  {
+    "id": "C15",
+    "sport": "Tennis",
+    "title": "Fastest Recorded Serves in Men's Tennis History",
+    "subtitle": "Rank the top 8 fastest officially recognized serves recorded in professional tennis.",
+    "answers": [
+      { "rank": 1, "name": "Sam Groth", "detail": "263.4 km/h (163.7 mph)", "points": 8 },
+      { "rank": 2, "name": "Albano Olivetti", "detail": "257.5 km/h (160.0 mph)", "points": 7 },
+      { "rank": 3, "name": "John Isner", "detail": "253.0 km/h (157.2 mph)", "points": 6 },
+      { "rank": 4, "name": "Ivo Karlović", "detail": "251.0 km/h (156.0 mph)", "points": 5 },
+      { "rank": 5, "name": "Jerzy Janowicz", "detail": "251.0 km/h (156.0 mph)", "points": 4 },
+      { "rank": 6, "name": "Milos Raonic", "detail": "250.0 km/h (155.3 mph)", "points": 3 },
+      { "rank": 7, "name": "Andy Roddick", "detail": "249.4 km/h (155.0 mph)", "points": 2 },
+      { "rank": 8, "name": "Hubert Hurkacz", "detail": "247.0 km/h (153.5 mph)", "points": 1 }
+    ]
+  },
+  {
+    "id": "C16",
+    "sport": "Basketball",
+    "title": "Highest Single-Game Scoring Performances in NBA History",
+    "subtitle": "Rank the top 8 highest individual scoring games by a player in a single NBA match.",
+    "answers": [
+      { "rank": 1, "name": "Wilt Chamberlain", "detail": "100 Points (March 2, 1962)", "points": 8 },
+      { "rank": 2, "name": "Kobe Bryant", "detail": "81 Points (Jan 22, 2006)", "points": 7 },
+      { "rank": 3, "name": "Wilt Chamberlain (78)", "detail": "78 Points (Dec 8, 1961)", "points": 6 },
+      { "rank": 4, "name": "David Thompson", "detail": "73 Points (April 9, 1978)", "points": 5 },
+      { "rank": 5, "name": "Luka Dončić", "detail": "73 Points (Jan 26, 2024)", "points": 4 },
+      { "rank": 6, "name": "Damian Lillard", "detail": "71 Points (Feb 26, 2023)", "points": 3 },
+      { "rank": 7, "name": "Donovan Mitchell", "detail": "71 Points (Jan 2, 2023)", "points": 2 },
+      { "rank": 8, "name": "Joel Embiid", "detail": "70 Points (Jan 22, 2024)", "points": 1 }
+    ]
+  },
+  {
+    "id": "C17",
+    "sport": "Formula 1",
+    "title": "F1 Constructors with Most World Constructors' Championships",
+    "subtitle": "Rank the top 8 Formula 1 constructors with the most World Constructors' Titles.",
+    "answers": [
+      { "rank": 1, "name": "Scuderia Ferrari", "detail": "16 Constructors' Titles", "points": 8 },
+      { "rank": 2, "name": "Williams Racing", "detail": "9 Constructors' Titles", "points": 7 },
+      { "rank": 3, "name": "McLaren", "detail": "8 Constructors' Titles", "points": 6 },
+      { "rank": 4, "name": "Mercedes", "detail": "8 Constructors' Titles", "points": 5 },
+      { "rank": 5, "name": "Red Bull Racing", "detail": "6 Constructors' Titles", "points": 4 },
+      { "rank": 6, "name": "Team Lotus", "detail": "7 Constructors' Titles", "points": 3 },
+      { "rank": 7, "name": "Brabham", "detail": "2 Constructors' Titles", "points": 2 },
+      { "rank": 8, "name": "Renault / Benetton", "detail": "2 Constructors' Titles", "points": 1 }
+    ]
+  },
+  {
+    "id": "C18",
+    "sport": "Olympics",
+    "title": "All-Time Fastest Men's 100m Sprinters in History",
+    "subtitle": "Rank the top 8 fastest men in history based on personal best 100m sprint times.",
+    "answers": [
+      { "rank": 1, "name": "Usain Bolt", "detail": "Jamaica • 9.58s (World Record)", "points": 8 },
+      { "rank": 2, "name": "Tyson Gay", "detail": "USA • 9.69s", "points": 7 },
+      { "rank": 3, "name": "Yohan Blake", "detail": "Jamaica • 9.69s", "points": 6 },
+      { "rank": 4, "name": "Asafa Powell", "detail": "Jamaica • 9.72s", "points": 5 },
+      { "rank": 5, "name": "Justin Gatlin", "detail": "USA • 9.74s", "points": 4 },
+      { "rank": 6, "name": "Christian Coleman", "detail": "USA • 9.76s", "points": 3 },
+      { "rank": 7, "name": "Trayvon Bromell", "detail": "USA • 9.76s", "points": 2 },
+      { "rank": 8, "name": "Fred Kerley", "detail": "USA • 9.76s", "points": 1 }
+    ]
+  },
+  {
+    "id": "C19",
+    "sport": "Football",
+    "title": "FIFA World Cup All-Time Top Goalscorers",
+    "subtitle": "Rank the top 8 players with the most total goals scored in FIFA Men's World Cup finals history.",
+    "answers": [
+      { "rank": 1, "name": "Miroslav Klose", "detail": "Germany • 16 World Cup Goals", "points": 8 },
+      { "rank": 2, "name": "Ronaldo Nazário", "detail": "Brazil • 15 World Cup Goals", "points": 7 },
+      { "rank": 3, "name": "Gerd Müller", "detail": "West Germany • 14 World Cup Goals", "points": 6 },
+      { "rank": 4, "name": "Just Fontaine", "detail": "France • 13 World Cup Goals", "points": 5 },
+      { "rank": 5, "name": "Lionel Messi", "detail": "Argentina • 13 World Cup Goals", "points": 4 },
+      { "rank": 6, "name": "Kylian Mbappé", "detail": "France • 12 World Cup Goals", "points": 3 },
+      { "rank": 7, "name": "Pelé", "detail": "Brazil • 12 World Cup Goals", "points": 2 },
+      { "rank": 8, "name": "Sándor Kocsis / Jürgen Klinsmann", "detail": "11 World Cup Goals", "points": 1 }
+    ]
+  },
+  {
+    "id": "C20",
+    "sport": "Cricket",
+    "title": "Most Sixes Hit in International Cricket Across All Formats",
+    "subtitle": "Rank the top 8 batsmen with the most total sixes hit in international cricket (Tests, ODIs, T20Is).",
+    "answers": [
+      { "rank": 1, "name": "Rohit Sharma", "detail": "India • 620+ International Sixes", "points": 8 },
+      { "rank": 2, "name": "Chris Gayle", "detail": "West Indies • 553 Sixes", "points": 7 },
+      { "rank": 3, "name": "Shahid Afridi", "detail": "Pakistan • 476 Sixes", "points": 6 },
+      { "rank": 4, "name": "Brendon McCullum", "detail": "New Zealand • 398 Sixes", "points": 5 },
+      { "rank": 5, "name": "Martin Guptill", "detail": "New Zealand • 383 Sixes", "points": 4 },
+      { "rank": 6, "name": "MS Dhoni", "detail": "India • 359 Sixes", "points": 3 },
+      { "rank": 7, "name": "Jos Buttler", "detail": "England • 330+ Sixes", "points": 2 },
+      { "rank": 8, "name": "Paul Stirling", "detail": "Ireland • 300+ Sixes", "points": 1 }
+    ]
+  },
+  {
+    "id": "C21",
+    "sport": "Tennis",
+    "title": "Most Weeks Spent at ATP World No. 1",
+    "subtitle": "Rank the top 8 male tennis players who have spent the most total weeks ranked No. 1 in the world.",
+    "answers": [
+      { "rank": 1, "name": "Novak Djokovic", "detail": "428 Total Weeks", "points": 8 },
+      { "rank": 2, "name": "Roger Federer", "detail": "310 Total Weeks", "points": 7 },
+      { "rank": 3, "name": "Pete Sampras", "detail": "286 Total Weeks", "points": 6 },
+      { "rank": 4, "name": "Ivan Lendl", "detail": "270 Total Weeks", "points": 5 },
+      { "rank": 5, "name": "Jimmy Connors", "detail": "268 Total Weeks", "points": 4 },
+      { "rank": 6, "name": "Rafael Nadal", "detail": "209 Total Weeks", "points": 3 },
+      { "rank": 7, "name": "John McEnroe", "detail": "170 Total Weeks", "points": 2 },
+      { "rank": 8, "name": "Björn Borg", "detail": "109 Total Weeks", "points": 1 }
+    ]
+  },
+  {
+    "id": "C22",
+    "sport": "Basketball",
+    "title": "All-Time NBA Career Assists Leaders",
+    "subtitle": "Rank the top 8 NBA players with the highest total career assist numbers.",
+    "answers": [
+      { "rank": 1, "name": "John Stockton", "detail": "15,806 Assists", "points": 8 },
+      { "rank": 2, "name": "Jason Kidd", "detail": "12,091 Assists", "points": 7 },
+      { "rank": 3, "name": "Chris Paul", "detail": "11,890+ Assists", "points": 6 },
+      { "rank": 4, "name": "LeBron James", "detail": "11,000+ Assists", "points": 5 },
+      { "rank": 5, "name": "Steve Nash", "detail": "10,335 Assists", "points": 4 },
+      { "rank": 6, "name": "Mark Jackson", "detail": "10,334 Assists", "points": 3 },
+      { "rank": 7, "name": "Magic Johnson", "detail": "10,141 Assists", "points": 2 },
+      { "rank": 8, "name": "Oscar Robertson", "detail": "9,887 Assists", "points": 1 }
+    ]
+  },
+  {
+    "id": "C23",
+    "sport": "Formula 1",
+    "title": "F1 Drivers with Most Career Pole Positions",
+    "subtitle": "Rank the top 8 drivers with the highest number of qualifying Pole Positions in F1 history.",
+    "answers": [
+      { "rank": 1, "name": "Lewis Hamilton", "detail": "104 Pole Positions", "points": 8 },
+      { "rank": 2, "name": "Michael Schumacher", "detail": "68 Pole Positions", "points": 7 },
+      { "rank": 3, "name": "Ayrton Senna", "detail": "65 Pole Positions", "points": 6 },
+      { "rank": 4, "name": "Sebastian Vettel", "detail": "57 Pole Positions", "points": 5 },
+      { "rank": 5, "name": "Max Verstappen", "detail": "40+ Pole Positions", "points": 4 },
+      { "rank": 6, "name": "Jim Clark", "detail": "33 Pole Positions", "points": 3 },
+      { "rank": 7, "name": "Alain Prost", "detail": "33 Pole Positions", "points": 2 },
+      { "rank": 8, "name": "Nigel Mansell", "detail": "32 Pole Positions", "points": 1 }
+    ]
+  },
+  {
+    "id": "C24",
+    "sport": "Olympics",
+    "title": "All-Time Fastest Women's 100m Sprinters in History",
+    "subtitle": "Rank the top 8 fastest female sprinters in history based on personal best 100m sprint times.",
+    "answers": [
+      { "rank": 1, "name": "Florence Griffith-Joyner", "detail": "USA • 10.49s (World Record)", "points": 8 },
+      { "rank": 2, "name": "Elaine Thompson-Herah", "detail": "Jamaica • 10.54s", "points": 7 },
+      { "rank": 3, "name": "Shelly-Ann Fraser-Pryce", "detail": "Jamaica • 10.60s", "points": 6 },
+      { "rank": 4, "name": "Carmelita Jeter", "detail": "USA • 10.64s", "points": 5 },
+      { "rank": 5, "name": "Marion Jones", "detail": "USA • 10.65s", "points": 4 },
+      { "rank": 6, "name": "Shericka Jackson", "detail": "Jamaica • 10.65s", "points": 3 },
+      { "rank": 7, "name": "Sha'Carri Richardson", "detail": "USA • 10.65s", "points": 2 },
+      { "rank": 8, "name": "Marie-Josée Ta Lou", "detail": "Ivory Coast • 10.72s", "points": 1 }
+    ]
+  }
+]
