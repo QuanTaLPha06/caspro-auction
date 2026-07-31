@@ -1,0 +1,240 @@
+Q061: Who holds the NBA record for most career triple-doubles?
+     Options: ['Magic Johnson', 'Oscar Robertson', 'Russell Westbrook', 'LeBron James']
+     Correct: Russell Westbrook
+
+Q062: Which club has won the most UEFA Champions League (European Cup) titles?
+     Options: ['AC Milan', 'Bayern Munich', 'Liverpool', 'Real Madrid']
+     Correct: Real Madrid
+
+Q063: Who scored 100 points in a single NBA game in 1962?
+     Options: ['Kobe Bryant', 'Wilt Chamberlain', 'Michael Jordan', 'Kareem Abdul-Jabbar']
+     Correct: Wilt Chamberlain
+
+Q064: Who scored the highest individual score in Test history (400 not out)?
+     Options: ['Don Bradman', 'Brian Lara', 'Virender Sehwag', 'Matthew Hayden']
+     Correct: Brian Lara
+
+Q065: Which NBA team has won the most championship titles overall?
+     Options: ['Los Angeles Lakers', 'Boston Celtics', 'Golden State Warriors', 'Chicago Bulls']
+     Correct: Boston Celtics
+
+Q066: Who is the all-time top goalscorer in men's international football history?
+     Options: ['Lionel Messi', 'Peléé', 'Ali Daei', 'Cristiano Ronaldo']
+     Correct: Cristiano Ronaldo
+
+Q067: Who holds the record for the most Grand Slam Men's singles titles?
+     Options: ['Roger Federer', 'Rafael Nadal', 'Novak Djokovic', 'Pete Sampras']
+     Correct: Novak Djokovic
+
+Q068: Who has scored the most total centuries (100) in international cricket?
+     Options: ['Virat Kohli', 'Ricky Ponting', 'Sachin Tendulkar', 'Jacques Kallis']
+     Correct: Sachin Tendulkar
+
+Q069: Who is the NBA's all-time leading scorer in total regular season points?
+     Options: ['Kareem Abdul-Jabbar', 'LeBron James', 'Karl Malone', 'Kobe Bryant']
+     Correct: LeBron James
+
+Q070: Which country has won the most FIFA Men's World Cup titles (5 titles)?
+     Options: ['Germany', 'Italy', 'Argentina', 'Brazil']
+     Correct: Brazil
+
+Q071: Which female tennis player has won 23 Grand Slam singles titles in the Open Era?
+     Options: ['Steffi Graf', 'Serena Williams', 'Martina Navratilova', 'Chris Evert']
+     Correct: Serena Williams
+
+Q072: Which bowler has taken the most overall wickets in Test cricket history (800 wickets)?
+     Options: ['Shane Warne', 'Anil Kumble', 'Muttiah Muralitharan', 'James Anderson']
+     Correct: Muttiah Muralitharan
+
+Q073: Which English club has won the most Premier League titles since its rebranding in 1992?
+     Options: ['Manchester City', 'Arsenal', 'Chelsea', 'Manchester United']
+     Correct: Manchester United
+
+Q074: Which player led the Chicago Bulls to six NBA championships in the 1990s?
+     Options: ['Scottie Pippen', 'Michael Jordan', 'Dennis Rodman', 'Hakeem Olajuwon']
+     Correct: Michael Jordan
+
+Q075: Who is known as the 'King of Clay' for winning 14 French Open singles titles?
+     Options: ['Novak Djokovic', 'Roger Federer', 'Rafael Nadal', 'Björn Borg']
+     Correct: Rafael Nadal
+
+Q076: Which team won the inaugural edition of the Indian Premier League (IPL) in 2008?
+     Options: ['Chennai Super Kings', 'Mumbai Indians', 'Rajasthan Royals', 'Kolkata Knight Riders']
+     Correct: Rajasthan Royals
+
+Q077: Who won the FIFA Men's World Cup Golden Boot in 2022 by scoring 8 goals?
+     Options: ['Lionel Messi', 'Kylian Mbappéé', 'Julian Alvarez', 'Olivier Giroud']
+     Correct: Kylian Mbappéé
+
+Q078: Which team tournament is regarded as the premier international team competition in men's tennis?
+     Options: ['Laver Cup', 'ATP Cup', 'Davis Cup', 'Hopman Cup']
+     Correct: Davis Cup
+
+Q079: Which team drafted Stephen Curry 7th overall in the 2009 NBA Draft?
+     Options: ['Minnesota Timberwolves', 'Golden State Warriors', 'New York Knicks', 'Sacramento Kings']
+     Correct: Golden State Warriors
+
+Q080: Who holds the record for the fastest century in Men's ODI cricket (off 31 balls)?
+     Options: ['Shahid Afridi', 'Corey Anderson', 'AB de Villiers', 'Chris Gayle']
+     Correct: AB de Villiers
+
+Q081: Against which nation did Anil Kumble take all 10 wickets in a single Test innings (1999)?
+     Options: ['Australia', 'England', 'Pakistan', 'South Africa']
+     Correct: Pakistan
+
+Q082: Which manager won the 'Treble' with Manchester United in 1999 and Manchester City in 2023?
+     Options: ['Alex Ferguson', 'Pep Guardiola', 'Joséé Mourinho', 'Carlo Ancelotti']
+     Correct: Pep Guardiola
+
+Q083: Who was the first male player to complete the career 'Golden Slam' (all 4 Grand Slams + Olympic Gold)?
+     Options: ['Andre Agassi', 'Rafael Nadal', 'Novak Djokovic', 'Roger Federer']
+     Correct: Andre Agassi
+
+Q084: Which NBA star is nicknamed 'The Greek Freak'?
+     Options: ['Luka Dončić', 'Giannis Antetokounmpo', 'Nikola Jokić', 'Joel Embiid']
+     Correct: Giannis Antetokounmpo
+
+Q085: Who was named Player of the Tournament in India's victorious 2011 ODI World Cup campaign?
+     Options: ['MS Dhoni', 'Sachin Tendulkar', 'Yuvraj Singh', 'Zaheer Khan']
+     Correct: Yuvraj Singh
+
+Q086: Which Italian club is famously nicknamed 'The Old Lady' (La Vecchia Signora)?
+     Options: ['AC Milan', 'Inter Milan', 'Roma', 'Juventus']
+     Correct: Juventus
+
+Q087: Which female tennis player holds the all-time record with 24 Grand Slam singles titles?
+     Options: ['Serena Williams', 'Steffi Graf', 'Margaret Court', 'Martina Navratilova']
+     Correct: Margaret Court
+
+Q088: Which NBA player has won the most NBA championship rings in history (11 rings)?
+     Options: ['Michael Jordan', 'Kareem Abdul-Jabbar', 'Bill Russell', 'Robert Horry']
+     Correct: Bill Russell
+
+Q089: Which bowler holds the record for most wickets taken in ODI World Cup history (71 wickets)?
+     Options: ['Wasim Akram', 'Glenn McGrath', 'Muttiah Muralitharan', 'Lasith Malinga']
+     Correct: Glenn McGrath
+
+Q090: Which German stadium is famously known as the home of Borussia Dortmund?
+     Options: ['Allianz Arena', 'Signal Iduna Park', 'Veltins-Arena', 'Olympiastadion Berlin']
+     Correct: Signal Iduna Park
+
+Q091: Who won the Men's Singles title at Wimbledon in 2023 by defeating Novak Djokovic?
+     Options: ['Carlos Alcaraz', 'Jannik Sinner', 'Daniil Medvedev', 'Alexander Zverev']
+     Correct: Carlos Alcaraz
+
+Q092: Who won the NBA Most Valuable Player (MVP) award in back-to-back seasons (2021 and 2022)?
+     Options: ['Giannis Antetokounmpo', 'Nikola Jokić', 'Joel Embiid', 'LeBron James']
+     Correct: Nikola Jokić
+
+Q093: Who holds the record for the highest individual score in Men's ODI cricket history (264 runs)?
+     Options: ['Virender Sehwag', 'Martin Guptill', 'Rohit Sharma', 'Chris Gayle']
+     Correct: Rohit Sharma
+
+Q094: Which player was named NBA Finals MVP in 2023 after leading Denver to their first title?
+     Options: ['Jamal Murray', 'Nikola Jokić', 'Jimmy Butler', 'LeBron James']
+     Correct: Nikola Jokić
+
+Q095: Who was the first male cricketer to score a double century (200*) in ODI history?
+     Options: ['Virender Sehwag', 'Sachin Tendulkar', 'Rohit Sharma', 'Belinda Clark']
+     Correct: Sachin Tendulkar
+
+Q096: Which NBA legend's silhouette is featured on the official NBA logo ('The Logo')?
+     Options: ['Michael Jordan', 'Jerry West', 'Wilt Chamberlain', 'Oscar Robertson']
+     Correct: Jerry West
+
+Q097: Which player holds the all-time record for most Test centuries (51 centuries)?
+     Options: ['Ricky Ponting', 'Jacques Kallis', 'Sachin Tendulkar', 'Rahul Dravid']
+     Correct: Sachin Tendulkar
+
+Q098: Which club has won the most French Ligue 1 titles in history?
+     Options: ['Marseille', 'Lyon', 'Paris Saint-Germain', 'Saint-Étienne']
+     Correct: Paris Saint-Germain
+
+Q099: Who was awarded Player of the Match in the 2011 ICC ODI World Cup final?
+     Options: ['MS Dhoni', 'Gautam Gambhir', 'Yuvraj Singh', 'Zaheer Khan']
+     Correct: MS Dhoni
+
+Q100: What is the technical term for a serve that clips the net cord but still lands in the service box?
+     Options: ['Fault', 'Let', 'Ace', 'Net ball']
+     Correct: Let
+
+Q101: Which fast bowler holds the record for most wickets in Test match history (604+ wickets)?
+     Options: ['Glenn McGrath', 'James Anderson', 'Stuart Broad', 'Wasim Akram']
+     Correct: James Anderson
+
+Q102: Which NBA hall-of-famer center is world-famous for inventing the 'Dream Shake' footwork?
+     Options: ["Shaquille O'Neal", 'Patrick Ewing', 'Hakeem Olajuwon', 'David Robinson']
+     Correct: Hakeem Olajuwon
+
+Q103: In what year was the first official French Championships (French Open) held?
+     Options: ['1877', '1891', '1905', '1925']
+     Correct: 1891
+
+Q104: Which batter holds the record for most ODI centuries in international cricket history (50 centuries)?
+     Options: ['Sachin Tendulkar', 'Virat Kohli', 'Rohit Sharma', 'Ricky Ponting']
+     Correct: Virat Kohli
+
+Q105: Which wicketkeeper has recorded the most total dismissals in international cricket history?
+     Options: ['Adam Gilchrist', 'MS Dhoni', 'Mark Boucher', 'Kumar Sangakkara']
+     Correct: Mark Boucher
+
+Q106: Who holds the record for the highest individual score in Men's Test cricket history (400 not out)?
+     Options: ['Don Bradman', 'Brian Lara', 'Virender Sehwag', 'Matthew Hayden']
+     Correct: Brian Lara
+
+Q107: Which NBA team features a iconic shamrock clover in their primary logo?
+     Options: ['Boston Celtics', 'Ireland Pacers', 'Chicago Bulls', 'New York Knicks']
+     Correct: Boston Celtics
+
+Q108: What is the standard FIBA three-point line distance from the center of the basket?
+     Options: ['6.75 meters', '7.24 meters', '6.00 meters', '7.00 meters']
+     Correct: 6.75 meters
+
+Q109: Which country hosted the memorable 2014 FIFA World Cup?
+     Options: ['South Africa', 'Germany', 'Brazil', 'Russia']
+     Correct: Brazil
+
+Q110: What does the abbreviation VAR stand for in modern football refereeing?
+     Options: ['Video Assistant Referee', 'Visual Automated Review', 'Virtual Action Replay', 'Video Analysis Review']
+     Correct: Video Assistant Referee
+
+Q111: Which NBA franchise did hall-of-famer Tim Duncan play his entire 19-year career for?
+     Options: ['Dallas Mavericks', 'Houston Rockets', 'San Antonio Spurs', 'Los Angeles Lakers']
+     Correct: San Antonio Spurs
+
+Q112: Against which country did Sachin Tendulkar score his iconic first-ever male 200* in ODIs (2010)?
+     Options: ['Australia', 'South Africa', 'Sri Lanka', 'Pakistan']
+     Correct: South Africa
+
+Q113: Who scored the fastest century in ODI cricket history off just 31 balls?
+     Options: ['Shahid Afridi', 'Corey Anderson', 'AB de Villiers', 'José Buttler']
+     Correct: AB de Villiers
+
+Q114: Which franchise won the inaugural BAA (NBA) championship in 1947?
+     Options: ['Philadelphia Warriors', 'Chicago Stags', 'Boston Celtics', 'Minneapolis Lakers']
+     Correct: Philadelphia Warriors
+
+Q115: Who is the NBA's all-time career assists leader (15,806 assists)?
+     Options: ['Jason Kidd', 'Steve Nash', 'John Stockton', 'Chris Paul']
+     Correct: John Stockton
+
+Q116: Which spinner holds the record for most wickets in ODI cricket history (534 wickets)?
+     Options: ['Shane Warne', 'Anil Kumble', 'Muttiah Muralitharan', 'Saqlain Mushtaq']
+     Correct: Muttiah Muralitharan
+
+Q117: Which NBA team won the 2024 NBA Championship by defeating the Dallas Mavericks?
+     Options: ['Denver Nuggets', 'Boston Celtics', 'Golden State Warriors', 'Milwaukee Bucks']
+     Correct: Boston Celtics
+
+Q118: Which bowler has taken the most total wickets in Test cricket history (800 wickets)?
+     Options: ['Shane Warne', 'Muttiah Muralitharan', 'James Anderson', 'Anil Kumble']
+     Correct: Muttiah Muralitharan
+
+Q119: Which Indian skipper hit the iconic winning six and scored 91* in the 2011 World Cup final?
+     Options: ['Gautam Gambhir', 'Yuvraj Singh', 'MS Dhoni', 'Virender Sehwag']
+     Correct: MS Dhoni
+
+Q120: What is the standard length of a regulation tennis court from baseline to baseline?
+     Options: ['78 feet (23.77 m)', '82 feet (25.00 m)', '72 feet (21.95 m)', '80 feet (24.38 m)']
+     Correct: 78 feet (23.77 m)
+

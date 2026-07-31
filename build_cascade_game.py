@@ -836,22 +836,22 @@ def generate_cascade_html():
     <div id="setup-screen">
       <div class="setup-card">
         <h1 class="setup-title">CASCADE</h1>
-        <p class="setup-subtitle">Objective Sports Family Feud • Rank 1 to 8 • 3 Trump Cards Per Team</p>
+        <p class="setup-subtitle">Objective Sports Family Feud • Rank 1 to 8 • 3 Trump Cards Per CC</p>
         
         <div class="form-group">
-          <label>Number of Teams</label>
+          <label>Number of CCs</label>
           <select id="team-count-select" class="input-field" onchange="updateTeamInputs()">
-            <option value="2" selected>2 Teams</option>
-            <option value="3">3 Teams</option>
-            <option value="4">4 Teams</option>
+            <option value="2" selected>2 CCs</option>
+            <option value="3">3 CCs</option>
+            <option value="4">4 CCs</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label>Team Names</label>
+          <label>CC Numbers</label>
           <div id="team-inputs-container" class="team-inputs">
-            <input type="text" id="team-name-0" class="input-field" value="Team Alpha">
-            <input type="text" id="team-name-1" class="input-field" value="Team Beta">
+            <input type="text" id="team-name-0" class="input-field" placeholder="Enter CC number...">
+            <input type="text" id="team-name-1" class="input-field" placeholder="Enter CC number...">
           </div>
         </div>
 
@@ -887,7 +887,7 @@ def generate_cascade_html():
       <div class="turn-banner">
         <div class="current-turn-indicator">
           <div class="turn-dot"></div>
-          <span>CURRENT TURN: <strong id="active-team-display" style="color: var(--accent-green);">TEAM ALPHA</strong></span>
+          <span>CURRENT TURN: <strong id="active-team-display" style="color: var(--accent-green);">CC 1</strong></span>
         </div>
         <div class="strikes-bar" id="strikes-display"></div>
         <div id="trump-eligibility-badge" class="guess-tracker-badge eligible">
@@ -934,7 +934,7 @@ def generate_cascade_html():
     <div id="victory-screen">
       <div class="winner-card">
         <div class="winner-crown">🏆</div>
-        <h1 class="winner-name" id="winner-team-name">TEAM ALPHA</h1>
+        <h1 class="winner-name" id="winner-team-name">CC 1</h1>
         <p class="winner-score" id="winner-score-display">CHAMPIONS • 48 POINTS</p>
         
         <div class="standings-list" id="final-standings-list">
@@ -951,7 +951,7 @@ def generate_cascade_html():
   <div id="modal-overlay" class="modal-overlay">
     <div class="modal-box">
       <h2 id="modal-title" class="modal-title">TRUMP CARD!</h2>
-      <p id="modal-msg" class="modal-msg">Team Beta has hijacked the turn!</p>
+      <p id="modal-msg" class="modal-msg">CC 2 has hijacked the turn!</p>
       <button class="btn-action btn-next" style="margin: 0 auto;" onclick="closeModal()">CONTINUE</button>
     </div>
   </div>
@@ -1037,13 +1037,12 @@ def generate_cascade_html():
       const count = parseInt(document.getElementById('team-count-select').value);
       const container = document.getElementById('team-inputs-container');
       container.innerHTML = '';
-      const defaultNames = ["Team Alpha", "Team Beta", "Team Gamma", "Team Delta"];
       for (let i = 0; i < count; i++) {{
         const input = document.createElement('input');
         input.type = 'text';
         input.id = `team-name-${{i}}`;
         input.className = 'input-field';
-        input.value = defaultNames[i] || `Team ${{i+1}}`;
+        input.placeholder = 'Enter CC number...';
         container.appendChild(input);
       }}
     }}
@@ -1054,7 +1053,7 @@ def generate_cascade_html():
 
       gameState.teams = [];
       for (let i = 0; i < teamCount; i++) {{
-        const name = document.getElementById(`team-name-${{i}}`).value.trim() || `Team ${{i+1}}`;
+        const name = document.getElementById(`team-name-${{i}}`).value.trim() || `CC ${{i+1}}`;  // fallback if blank
         gameState.teams.push({{
           id: i,
           name: name,
@@ -1253,7 +1252,7 @@ def generate_cascade_html():
     function playTrumpCard(teamIdx) {{
       // Verification Rules:
       if (gameState.currentQGuesses >= 2) {{
-        showModal("TRUMP CARD BLOCKED", `Cannot play Trump Card! The active team has already made ${{gameState.currentQGuesses}} guesses on this question (Limit is < 2).`);
+        showModal("TRUMP CARD BLOCKED", `Cannot play Trump Card! The active CC has already made ${{gameState.currentQGuesses}} guesses on this question (Limit is < 2).`);
         return;
       }}
 

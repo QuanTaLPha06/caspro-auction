@@ -1,0 +1,240 @@
+Q001: Which national team won the 2023 ICC Men's Cricket World Cup?
+     Options: ['India', 'Australia', 'South Africa', 'New Zealand']
+     Correct: Australia
+
+Q002: Which Grand Slam tournament is held annually in Melbourne?
+     Options: ['Australian Open', 'French Open', 'Wimbledon', 'US Open']
+     Correct: Australian Open
+
+Q003: How many runs is a hit that bounces before crossing the boundary worth?
+     Options: ['2', '4', '6', '3']
+     Correct: 4
+
+Q004: Which Grand Slam tournament is played on grass courts?
+     Options: ['Australian Open', 'French Open', 'Wimbledon', 'US Open']
+     Correct: Wimbledon
+
+Q005: Which trophy is awarded to the FIFA World Cup winners?
+     Options: ['UEFA Champions League Trophy', 'The FIFA World Cup Trophy', "Ballon d'Or", 'Copa América']
+     Correct: The FIFA World Cup Trophy
+
+Q006: What is the traditional court surface used at Wimbledon?
+     Options: ['Clay', 'Hard Court', 'Carpet', 'Grass']
+     Correct: Grass
+
+Q007: What is the term for the stroke played on the side opposite to the dominant hand?
+     Options: ['Forehand', 'Backhand', 'Volley', 'Slice']
+     Correct: Backhand
+
+Q008: What is the term for a 40-40 tie in a tennis game?
+     Options: ['Deuce', 'Advantage', 'Break Point', 'Tiebreak']
+     Correct: Deuce
+
+Q009: What is the term for a high, arching shot designed to go over an opponent's head?
+     Options: ['Smash', 'Lob', 'Drop shot', 'Passing shot']
+     Correct: Lob
+
+Q010: Which Indian batter is world-famous for inventing the 'helicopter shot'?
+     Options: ['Sachin Tendulkar', 'MS Dhoni', 'Virender Sehwag', 'AB de Villiers']
+     Correct: MS Dhoni
+
+Q011: In a standard tennis game, what score comes immediately after 30?
+     Options: ['35', '40', '45', 'Game']
+     Correct: 40
+
+Q012: How many wooden stumps make up the wicket at one end of the pitch?
+     Options: ['2', '3', '4', '5']
+     Correct: 3
+
+Q013: On which court surface is the French Open played?
+     Options: ['Hard Court', 'Grass', 'Clay', 'Carpet']
+     Correct: Clay
+
+Q014: What is taking three wickets in three consecutive deliveries called?
+     Options: ['Super Over', 'Triple Strike', 'Hat-trick', 'Clean Sweep']
+     Correct: Hat-trick
+
+Q015: What is a powerful, overhead shot used to finish a point called?
+     Options: ['Drop shot', 'Slice', 'Smash', 'Volley']
+     Correct: Smash
+
+Q016: What is the name of the central mesh barrier that divides the tennis court?
+     Options: ['Baseline', 'Service Line', 'Alley', 'Net']
+     Correct: Net
+
+Q017: How many runs is a hit over the boundary without bouncing worth?
+     Options: ['4', '6', '8', '5']
+     Correct: 6
+
+Q018: Which governing body oversees world football?
+     Options: ['UEFA', 'CONMEBOL', 'FIFA', 'IOC']
+     Correct: FIFA
+
+Q019: What is it called when a server commits two consecutive serving errors?
+     Options: ['Foot fault', 'Let', 'Fault', 'Double fault']
+     Correct: Double fault
+
+Q020: What color ball is traditionally used in daytime Test cricket?
+     Options: ['White', 'Red', 'Pink', 'Yellow']
+     Correct: Red
+
+Q021: Which country won the 2024 ICC Men's T20 World Cup?
+     Options: ['South Africa', 'England', 'India', 'Australia']
+     Correct: India
+
+Q022: Which player has won the most Ballon d'Or awards in history?
+     Options: ['Cristiano Ronaldo', 'Johan Cruyff', 'Lionel Messi', 'Michel Platini']
+     Correct: Lionel Messi
+
+Q023: How many players are on the field for one team at the start of a football match?
+     Options: ['10', '9', '12', '11']
+     Correct: 11
+
+Q024: What is the term for winning a point directly from a serve that the opponent cannot touch?
+     Options: ['Ace', 'Winner', 'Smash', 'Passing shot']
+     Correct: Ace
+
+Q025: What term is used in tennis scoring to represent zero points?
+     Options: ['Nil', 'Zero', 'Love', 'Blank']
+     Correct: Love
+
+Q026: What is the term for a shot hit softly over the net, landing just on the other side?
+     Options: ['Drop shot', 'Lob', 'Slice', 'Volley']
+     Correct: Drop shot
+
+Q027: Which country hosted the 2023 ICC Men's Cricket World Cup?
+     Options: ['Australia', 'England', 'India', 'South Africa']
+     Correct: India
+
+Q028: What color are tennis balls universally used in professional tournaments today?
+     Options: ['White', 'Yellow / Optic Yellow', 'Bright Green', 'Orange']
+     Correct: Yellow / Optic Yellow
+
+Q029: Who is globally celebrated as 'The King of Football' (O Rei)?
+     Options: ['Peléé', 'Diego Maradona', 'Johan Cruyff', 'Zinedine Zidane']
+     Correct: Peléé
+
+Q030: What score must a player reach first to win a standard set tie-break?
+     Options: ['5 points', '6 points', '7 points', '10 points']
+     Correct: 7 points
+
+Q031: What color ball is commonly used in day-night ODI matches?
+     Options: ['Red', 'White', 'Pink', 'Orange']
+     Correct: White
+
+Q032: What is a legal serve that goes untouched by the receiver called?
+     Options: ['Fault', 'Ace', 'Let', 'Winner']
+     Correct: Ace
+
+Q033: What color card is shown by the referee to send a player off the field?
+     Options: ['Yellow', 'Red', 'Blue', 'Black']
+     Correct: Red
+
+Q034: What is the maximum number of regular substitutions allowed per team in top competitions today?
+     Options: ['3', '4', '6', '5']
+     Correct: 5
+
+Q035: Which Indian cricketer is famously nicknamed 'Hitman'?
+     Options: ['Virat Kohli', 'MS Dhoni', 'Rohit Sharma', 'KL Rahul']
+     Correct: Rohit Sharma
+
+Q036: Which world superstar footballer is famously nicknamed 'La Pulga'?
+     Options: ['Cristiano Ronaldo', 'Neymar Jr.', 'Kylian Mbappéé', 'Lionel Messi']
+     Correct: Lionel Messi
+
+Q037: Which country is historically recognized as the birthplace of cricket?
+     Options: ['Australia', 'India', 'England', 'South Africa']
+     Correct: England
+
+Q038: What is the maximum number of overs per innings in a T20 match?
+     Options: ['15', '20', '50', '10']
+     Correct: 20
+
+Q039: How long is a standard football match (excluding extra time and stoppage time)?
+     Options: ['80 minutes', '90 minutes', '100 minutes', '60 minutes']
+     Correct: 90 minutes
+
+Q040: In cricket, what is a batter dismissed without scoring any runs called?
+     Options: ['A golden duck', 'A duck', 'A maiden', 'A clean bowl']
+     Correct: A duck
+
+Q041: Which legendary Indian captain is fondly known as 'Captain Cool'?
+     Options: ['Kapil Dev', 'Sourav Ganguly', 'MS Dhoni', 'Rahul Dravid']
+     Correct: MS Dhoni
+
+Q042: What term describes a tennis match played with one player on each side?
+     Options: ['Doubles', 'Mixed Doubles', 'Singles', 'Solo']
+     Correct: Singles
+
+Q043: How many players are on the field for one fielding team in cricket?
+     Options: ['10', '11', '12', '9']
+     Correct: 11
+
+Q044: What is the term for a shot hit before the ball bounces on the court?
+     Options: ['Groundstroke', 'Volley', 'Half-volley', 'Drop shot']
+     Correct: Volley
+
+Q045: What is awarded when a defending player commits a foul inside their own penalty box?
+     Options: ['Direct free kick', 'Corner kick', 'Penalty kick', 'Indirect free kick']
+     Correct: Penalty kick
+
+Q046: Which Grand Slam tournament is played in New York City?
+     Options: ['Australian Open', 'French Open', 'Wimbledon', 'US Open']
+     Correct: US Open
+
+Q047: Which nation won the first-ever Cricket World Cup in 1975?
+     Options: ['Australia', 'West Indies', 'England', 'India']
+     Correct: West Indies
+
+Q048: Which Indian cricketer is famously nicknamed 'King Kohli'?
+     Options: ['Rohit Sharma', 'Virat Kohli', 'Shubman Gill', 'Yuvraj Singh']
+     Correct: Virat Kohli
+
+Q049: Which South American country is home to the famous football club Boca Juniors?
+     Options: ['Brazil', 'Argentina', 'Uruguay', 'Colombia']
+     Correct: Argentina
+
+Q050: What rule violation occurs when a server touches the baseline before hitting the serve?
+     Options: ['Line violation', 'Double fault', 'Foot fault', 'Service fault']
+     Correct: Foot fault
+
+Q051: Which country won the FIFA World Cup in 2022 held in Qatar?
+     Options: ['Argentina', 'France', 'Croatia', 'Brazil']
+     Correct: Argentina
+
+Q052: What score value does the word 'Love' represent in tennis?
+     Options: ['0', '15', '30', '40']
+     Correct: 0
+
+Q053: Which Liverpool star footballer is affectionately known as 'The Egyptian King'?
+     Options: ['Sadio Manéé', 'Mohamed Salah', 'Roberto Firmino', 'Riyad Mahrez']
+     Correct: Mohamed Salah
+
+Q054: What surface are the matches at Wimbledon played on?
+     Options: ['Red Clay', 'Hard Court', 'Synthetic', 'Grass']
+     Correct: Grass
+
+Q055: Which city hosted the 2020 Summer Olympic Games (held in 2021)?
+     Options: ['Beijing', 'Rio de Janeiro', 'Tokyo', 'Paris']
+     Correct: Tokyo
+
+Q056: On which court surface is the French Open (Roland Garros) played?
+     Options: ['Grass', 'Hard Court', 'Red Clay', 'Carpet']
+     Correct: Red Clay
+
+Q057: Which city hosted the iconic 2008 Summer Olympic Games?
+     Options: ['London', 'Athens', 'Beijing', 'Tokyo']
+     Correct: Beijing
+
+Q058: Which legendary football superstar is widely known as 'CR7'?
+     Options: ['Lionel Messi', 'Cristiano Ronaldo', 'Neymar Jr.', 'Ronaldo Nazário']
+     Correct: Cristiano Ronaldo
+
+Q059: What is the maximum number of overs per team in a standard Men's ODI match?
+     Options: ['20', '40', '50', '60']
+     Correct: 50
+
+Q060: Which nation has won the most ICC Men's ODI World Cup titles?
+     Options: ['India', 'West Indies', 'Australia', 'England']
+     Correct: Australia
+
