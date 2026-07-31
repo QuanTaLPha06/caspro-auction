@@ -578,6 +578,9 @@ html_template = f'''<!DOCTYPE html>
     <!-- MINIMAL PPT HEADER -->
     <header class="ppt-header">
       <div class="brand-group">
+        <a href="index.html" class="tool-btn" style="text-decoration:none; background:rgba(255,255,255,0.08); color:#cbd5e1;">
+          <i class="fa-solid fa-house"></i> Hub
+        </a>
         <div class="brand-logo">PPT DECK</div>
         <div class="brand-title">Sports Connection Quiz</div>
       </div>
@@ -1109,8 +1112,4 @@ html_template = f'''<!DOCTYPE html>
 with open(r'd:\Case\Sports_Connection_Quiz.html', 'w', encoding='utf-8') as f:
     f.write(html_template)
 
-# Also write to index.html for root deployment
-with open(r'd:\Case\index.html', 'w', encoding='utf-8') as f:
-    f.write(html_template)
-
-print("Successfully regenerated minimal PPT slideshow HTML files!")
+print("Successfully regenerated clean PPT presentation slideshow for Sports_Connection_Quiz.html!")
