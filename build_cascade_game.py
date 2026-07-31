@@ -823,9 +823,10 @@ def generate_cascade_html():
       ⚡ <span>CASCADE</span> SPORTS FEUD
     </div>
     <div class="nav-links">
-      <a href="/cascade" class="nav-btn active">CASCADE GAME</a>
+      <a href="/" class="nav-btn">🏠 ALL GAMES HUB</a>
+      <a href="/cascade" class="nav-btn active">CASCADE FEUD</a>
       <a href="/heads-up" class="nav-btn">HEADS UP!</a>
-      <a href="/quiz" class="nav-btn">POWERPOINT QUIZ</a>
+      <a href="/quiz" class="nav-btn">SPORTS QUIZ</a>
     </div>
   </nav>
 

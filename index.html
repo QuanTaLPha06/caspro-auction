@@ -3,12 +3,457 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CASCADE - Sports Feud</title>
-<meta http-equiv="refresh" content="0; url=/Cascade_Sports_Game.html" />
+<title>SPORTS GAME ARENA - Live Multiplayer Sports Trivia & Feud Games</title>
+<meta name="description" content="Play live multiplayer sports games including Cascade Sports Feud, Heads Up Sports Charades, and the 180-Question Sports Connection Quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=Teko:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #060911;
+    --bg-card: rgba(15, 23, 42, 0.75);
+    --bg-card-hover: rgba(30, 41, 59, 0.85);
+    --border-color: rgba(255, 255, 255, 0.1);
+    
+    --cyan-neon: #00f2fe;
+    --blue-glow: #0072ff;
+    --green-neon: #00e676;
+    --gold-neon: #ffc83b;
+    --purple-neon: #a855f7;
+    --crimson-neon: #ff1744;
+    
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    
+    --font-heading: 'Teko', sans-serif;
+    --font-sub: 'Oswald', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(circle at 50% -10%, rgba(0, 242, 254, 0.15) 0%, transparent 60%),
+      radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 0% 50%, rgba(0, 230, 118, 0.1) 0%, transparent 50%);
+  }
+
+  /* Header Bar */
+  .arena-header {
+    background: rgba(10, 15, 26, 0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .brand-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-transform: uppercase;
+  }
+
+  .brand-title span {
+    color: var(--cyan-neon);
+    text-shadow: 0 0 16px rgba(0, 242, 254, 0.6);
+  }
+
+  .header-badge {
+    background: rgba(0, 242, 254, 0.12);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    color: var(--cyan-neon);
+    font-family: var(--font-sub);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* Hero Banner */
+  .hero-section {
+    text-align: center;
+    padding: 3.5rem 1.5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 200, 59, 0.15), rgba(255, 0, 127, 0.15));
+    border: 1px solid rgba(255, 200, 59, 0.3);
+    color: var(--gold-neon);
+    font-family: var(--font-sub);
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    padding: 0.35rem 1.2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, var(--cyan-neon) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 10px 30px rgba(0, 242, 254, 0.2);
+  }
+
+  .hero-desc {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Main Games Grid */
+  .games-container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 2rem auto 4rem;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+  }
+
+  .game-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  }
+
+  .game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--card-color, var(--cyan-neon)), transparent);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+
+  .game-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--card-color, var(--cyan-neon));
+    box-shadow: 0 20px 45px var(--card-shadow, rgba(0, 242, 254, 0.25));
+  }
+
+  .game-card.cascade-theme {
+    --card-color: var(--cyan-neon);
+    --card-shadow: rgba(0, 242, 254, 0.25);
+  }
+
+  .game-card.headsup-theme {
+    --card-color: var(--green-neon);
+    --card-shadow: rgba(0, 230, 118, 0.25);
+  }
+
+  .game-card.quiz-theme {
+    --card-color: var(--gold-neon);
+    --card-shadow: rgba(255, 200, 59, 0.25);
+  }
+
+  .card-top {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-badges {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .badge-tag {
+    font-family: var(--font-sub);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .badge-tag.primary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .badge-tag.accent {
+    background: rgba(0, 242, 254, 0.15);
+    color: var(--cyan-neon);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+  }
+
+  .badge-tag.green {
+    background: rgba(0, 230, 118, 0.15);
+    color: var(--green-neon);
+    border: 1px solid rgba(0, 230, 118, 0.3);
+  }
+
+  .badge-tag.gold {
+    background: rgba(255, 200, 59, 0.15);
+    color: var(--gold-neon);
+    border: 1px solid rgba(255, 200, 59, 0.3);
+  }
+
+  .card-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-icon {
+    font-size: 2.8rem;
+    line-height: 1;
+  }
+
+  .card-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .card-mode {
+    font-family: var(--font-sub);
+    font-size: 1rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+
+  .card-desc {
+    color: #cbd5e1;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .feature-bullet {
+    color: var(--card-color, var(--cyan-neon));
+    font-weight: bold;
+  }
+
+  .btn-play {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(135deg, var(--card-color, var(--cyan-neon)) 0%, #ffffff 100%);
+    box-shadow: 0 0 20px var(--card-shadow, rgba(0, 242, 254, 0.4));
+    transition: all 0.25s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-play:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px var(--card-shadow, rgba(0, 242, 254, 0.7));
+  }
+
+  /* Footer */
+  .arena-footer {
+    margin-top: auto;
+    border-top: 1px solid var(--border-color);
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero-title { font-size: 3.2rem; }
+    .games-container { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
-  <script>
-    window.location.href = "/Cascade_Sports_Game.html";
-  </script>
+
+  <!-- Arena Top Nav -->
+  <header class="arena-header">
+    <div class="brand-title">
+      ⚡ <span>Sports Game Arena</span>
+    </div>
+    <div class="header-badge">
+      3 DISTINCT GAME MODES
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section">
+    <div class="hero-tag">🏆 MULTIPLAYER SPORTS TRIVIA ARENA</div>
+    <h1 class="hero-title">SELECT YOUR GAME MODE</h1>
+    <p class="hero-desc">
+      Welcome to the ultimate sports competition hub! Select from three custom-built interactive games designed for live team competitions, party games, and trivia nights.
+    </p>
+  </section>
+
+  <!-- Games Container -->
+  <main class="games-container">
+
+    <!-- GAME 1: CASCADE SPORTS FEUD -->
+    <article class="game-card cascade-theme">
+      <div class="card-top">
+        <div class="card-badges">
+          <span class="badge-tag accent">TYPE-TO-GUESS</span>
+          <span class="badge-tag primary">FAMILY FEUD STYLE</span>
+          <span class="badge-tag accent">TRUMP CARDS</span>
+        </div>
+        <div class="card-header-flex">
+          <span class="card-icon">🌊</span>
+          <div>
+            <h2 class="card-title">CASCADE FEUD</h2>
+            <div class="card-mode">Top-8 Objective Feud Trivia</div>
+          </div>
+        </div>
+        <p class="card-desc">
+          Guess top-ranked sports objective answers by typing! Features instant rank position popups, point multipliers, and high-stakes Trump Card hijacks.
+        </p>
+        <ul class="feature-list">
+          <li class="feature-item"><span class="feature-bullet">✔</span> Prominent typing input with fuzzy answer matching</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> Real-time position feedback toast (#1–#8 ranks + points)</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> 3 Trump Cards per team to steal turn control out of order</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> 2–4 Team scoreboard & live strike tracker</li>
+        </ul>
+      </div>
+      <a href="/cascade" class="btn-play">
+        PLAY CASCADE FEUD ➔
+      </a>
+    </article>
+
+    <!-- GAME 2: HEADS UP SPORTS EDITION -->
+    <article class="game-card headsup-theme">
+      <div class="card-top">
+        <div class="card-badges">
+          <span class="badge-tag green">CHARADES</span>
+          <span class="badge-tag primary">90s TIMER</span>
+          <span class="badge-tag green">PASS / NEXT</span>
+        </div>
+        <div class="card-header-flex">
+          <span class="card-icon">⏱️</span>
+          <div>
+            <h2 class="card-title">HEADS UP!</h2>
+            <div class="card-mode">Fast-Paced 90s Charades</div>
+          </div>
+        </div>
+        <p class="card-desc">
+          Classic charades guessing game! Players guess mimicked sports terms and legends with an active 90-second countdown and pass options.
+        </p>
+        <ul class="feature-list">
+          <li class="feature-item"><span class="feature-bullet">✔</span> Live 90-second round countdown timer</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> Pass & Next button flow with instant word cycling</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> Strictly curated sports pool (Football, F1, Tennis, etc.)</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> Non-repeating question pool until cycle completes</li>
+        </ul>
+      </div>
+      <a href="/heads-up" class="btn-play">
+        PLAY HEADS UP ➔
+      </a>
+    </article>
+
+    <!-- GAME 3: SPORTS CONNECTION QUIZ -->
+    <article class="game-card quiz-theme">
+      <div class="card-top">
+        <div class="card-badges">
+          <span class="badge-tag gold">180 QUESTIONS</span>
+          <span class="badge-tag primary">PPT SLIDESHOW</span>
+          <span class="badge-tag gold">GRID SORTER</span>
+        </div>
+        <div class="card-header-flex">
+          <span class="card-icon">📊</span>
+          <div>
+            <h2 class="card-title">SPORTS QUIZ</h2>
+            <div class="card-mode">180-Question Slide Presentation</div>
+          </div>
+        </div>
+        <p class="card-desc">
+          PowerPoint-style slideshow quiz for projectors & display screens. Includes 180 sports connection questions, countdown timer, and slide grid.
+        </p>
+        <ul class="feature-list">
+          <li class="feature-item"><span class="feature-bullet">✔</span> 180 Sports connection trivia questions</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> 30-Second question timer with Web Audio sound FX</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> Interactive Slide Sorter grid for quick question jumps</li>
+          <li class="feature-item"><span class="feature-bullet">✔</span> Fullscreen presentation mode with keyboard hotkeys</li>
+        </ul>
+      </div>
+      <a href="/quiz" class="btn-play">
+        LAUNCH SPORTS QUIZ ➔
+      </a>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="arena-footer">
+    Multiplayer Sports Games Arena &bull; All 3 Games Available Online
+  </footer>
+
 </body>
 </html>

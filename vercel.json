@@ -1,10 +1,11 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/Cascade_Sports_Game.html" },
+    { "source": "/", "destination": "/index.html" },
     { "source": "/cascade", "destination": "/Cascade_Sports_Game.html" },
-    { "source": "/Heads_Up_Sports", "destination": "/Heads_Up_Sports.html" },
     { "source": "/heads-up", "destination": "/Heads_Up_Sports.html" },
-    { "source": "/quiz", "destination": "/Sports_Connection_Quiz.html" }
+    { "source": "/Heads_Up_Sports", "destination": "/Heads_Up_Sports.html" },
+    { "source": "/quiz", "destination": "/Sports_Connection_Quiz.html" },
+    { "source": "/Sports_Connection_Quiz", "destination": "/Sports_Connection_Quiz.html" }
   ]
 }

@@ -214,7 +214,7 @@
   #game-screen {
     display: none;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   /* Question Header Header */
@@ -333,6 +333,89 @@
     color: var(--accent-red);
   }
 
+  /* PROMINENT TYPING ANSWER BAR */
+  .typing-answer-section {
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.1) 0%, rgba(15, 23, 42, 0.9) 100%);
+    border: 2px solid var(--accent-blue);
+    border-radius: 14px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.2);
+  }
+
+  .typing-label {
+    font-family: var(--font-sub);
+    font-size: 1.1rem;
+    color: var(--accent-blue);
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .typing-input-row {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .big-type-input {
+    flex: 1;
+    background: #090e17;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.9rem 1.25rem;
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+
+  .big-type-input:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+  }
+
+  .btn-submit-guess {
+    background: linear-gradient(135deg, #00d2ff 0%, #0072ff 100%);
+    color: #000;
+    border: none;
+    padding: 0 2rem;
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-submit-guess:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+  }
+
+  /* FEEDBACK POSITION TOAST/BANNER */
+  .position-feedback-toast {
+    display: none;
+    background: var(--gold-gradient);
+    color: #000;
+    border-radius: 10px;
+    padding: 0.85rem 1.25rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(251, 191, 36, 0.6);
+    animation: toastPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  @keyframes toastPop {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
   /* Family Feud Board Grid */
   .board-grid {
     display: grid;
@@ -370,6 +453,16 @@
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     border-color: var(--accent-gold);
     box-shadow: 0 0 15px rgba(251, 191, 36, 0.2);
+  }
+
+  .answer-card.just-revealed {
+    animation: flashCard 0.6s ease;
+  }
+
+  @keyframes flashCard {
+    0% { transform: scale(1); border-color: #fff; box-shadow: 0 0 30px #fff; }
+    50% { transform: scale(1.04); border-color: var(--accent-gold); box-shadow: 0 0 40px var(--accent-gold); }
+    100% { transform: scale(1); }
   }
 
   .card-rank {
@@ -445,29 +538,8 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-  }
-
-  .search-input-wrapper {
-    flex: 1;
-    position: relative;
-    min-width: 250px;
-  }
-
-  .search-input {
-    width: 100%;
-    background: #090e17;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.75rem 1rem;
-    color: #fff;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    outline: none;
-  }
-
-  .search-input:focus {
-    border-color: var(--accent-blue);
   }
 
   .btn-action {
@@ -743,9 +815,10 @@
       ⚡ <span>CASCADE</span> SPORTS FEUD
     </div>
     <div class="nav-links">
-      <a href="/cascade" class="nav-btn active">CASCADE GAME</a>
+      <a href="/" class="nav-btn">🏠 ALL GAMES HUB</a>
+      <a href="/cascade" class="nav-btn active">CASCADE FEUD</a>
       <a href="/heads-up" class="nav-btn">HEADS UP!</a>
-      <a href="/quiz" class="nav-btn">POWERPOINT QUIZ</a>
+      <a href="/quiz" class="nav-btn">SPORTS QUIZ</a>
     </div>
   </nav>
 
@@ -814,6 +887,22 @@
         </div>
       </div>
 
+      <!-- PROMINENT TYPING ANSWER INPUT AREA -->
+      <div class="typing-answer-section">
+        <div class="typing-label">
+          <span>✍️ TYPE YOUR ANSWER BELOW:</span>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">Press Enter or click SUBMIT</span>
+        </div>
+        <div class="typing-input-row">
+          <input type="text" id="guess-input" class="big-type-input" placeholder="Type player/country/team name..." onkeyup="handleKeySearch(event)">
+          <button class="btn-submit-guess" onclick="submitTypedAnswer()">SUBMIT ANSWER [ENTER]</button>
+        </div>
+        <!-- POSITION FEEDBACK TOAST -->
+        <div id="position-toast" class="position-feedback-toast">
+          🎯 POSITION #1 REVEALED! Lionel Messi (+8 PTS)
+        </div>
+      </div>
+
       <!-- 8 Answer Cards Grid -->
       <div class="board-grid" id="board-grid">
         <!-- Rendered dynamically -->
@@ -821,10 +910,7 @@
 
       <!-- Guesser / Host Controls -->
       <div class="controls-bar">
-        <div class="search-input-wrapper">
-          <input type="text" id="guess-input" class="search-input" placeholder="Type answer or keyword to match..." onkeyup="handleKeySearch(event)">
-        </div>
-        <button class="btn-action btn-strike" onclick="addStrike()">❌ WRONG GUESS</button>
+        <button class="btn-action btn-strike" onclick="addStrike()">❌ WRONG GUESS (STRIKE)</button>
         <button class="btn-action btn-reveal" onclick="revealAll()">👁️ REVEAL ALL</button>
         <button class="btn-action btn-next" onclick="nextQuestion()">NEXT QUESTION ➔</button>
       </div>
@@ -2280,7 +2366,8 @@
       currentQGuesses: 0,
       currentQTrumped: false,
       revealedAnswers: [],
-      strikes: 0
+      strikes: 0,
+      lastRevealedIdx: null
     };
 
     function updateTeamInputs() {
@@ -2337,6 +2424,7 @@
       gameState.currentQTrumped = false;
       gameState.revealedAnswers = new Array(8).fill(false);
       gameState.strikes = 0;
+      gameState.lastRevealedIdx = null;
 
       const q = gameState.questions[index];
       document.getElementById('sport-tag').innerText = q.sport.toUpperCase();
@@ -2344,6 +2432,7 @@
       document.getElementById('q-title').innerText = q.title;
       document.getElementById('q-subtitle').innerText = q.subtitle;
       document.getElementById('guess-input').value = '';
+      document.getElementById('position-toast').style.display = 'none';
 
       renderBoard();
       updateTurnDisplay();
@@ -2358,7 +2447,8 @@
       q.answers.forEach((ans, idx) => {
         const card = document.createElement('div');
         const isRevealed = gameState.revealedAnswers[idx];
-        card.className = `answer-card ${isRevealed ? 'revealed' : ''}`;
+        const isJustRevealed = (gameState.lastRevealedIdx === idx);
+        card.className = `answer-card ${isRevealed ? 'revealed' : ''} ${isJustRevealed ? 'just-revealed' : ''}`;
         card.onclick = () => toggleReveal(idx);
 
         if (isRevealed) {
@@ -2383,14 +2473,33 @@
       });
     }
 
+    function showPositionToast(ans, rank) {
+      const toast = document.getElementById('position-toast');
+      toast.style.display = 'block';
+      toast.style.background = 'var(--gold-gradient)';
+      toast.style.color = '#000';
+      toast.innerText = `🎯 MATCH FOUND! POSITION #${rank} REVEALED: ${ans.name} (+${ans.points} PTS)`;
+    }
+
+    function showWrongToast(typedText) {
+      const toast = document.getElementById('position-toast');
+      toast.style.display = 'block';
+      toast.style.background = 'linear-gradient(135deg, #ef4444 0%, #b91c1c 100%)';
+      toast.style.color = '#fff';
+      toast.innerText = `❌ INCORRECT GUESS: "${typedText}" NOT FOUND IN TOP 8!`;
+    }
+
     function toggleReveal(idx) {
       if (!gameState.revealedAnswers[idx]) {
         gameState.revealedAnswers[idx] = true;
+        gameState.lastRevealedIdx = idx;
         sound.playCorrect();
         
+        const ans = gameState.questions[gameState.currentQIndex].answers[idx];
+        showPositionToast(ans, ans.rank);
+
         // Award points to current active team
-        const points = gameState.questions[gameState.currentQIndex].answers[idx].points;
-        gameState.teams[gameState.activeTeamIndex].score += points;
+        gameState.teams[gameState.activeTeamIndex].score += ans.points;
 
         // Register guess made
         registerGuessMade();
@@ -2399,26 +2508,43 @@
       }
     }
 
-    function handleKeySearch(event) {
-      if (event.key === 'Enter') {
-        const val = event.target.value.toLowerCase().trim();
-        if (!val) return;
+    function submitTypedAnswer() {
+      const input = document.getElementById('guess-input');
+      const val = input.value.toLowerCase().trim();
+      if (!val) return;
 
-        const answers = gameState.questions[gameState.currentQIndex].answers;
-        let matchedIdx = -1;
+      const answers = gameState.questions[gameState.currentQIndex].answers;
+      let matchedIdx = -1;
 
-        answers.forEach((ans, idx) => {
-          if (!gameState.revealedAnswers[idx] && ans.name.toLowerCase().includes(val)) {
+      // Clean string helper for fuzzy matching
+      const clean = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "");
+      const cleanVal = clean(val);
+
+      answers.forEach((ans, idx) => {
+        if (!gameState.revealedAnswers[idx]) {
+          const cleanName = clean(ans.name);
+          const cleanDetail = clean(ans.detail);
+
+          // Check if typed string matches or is contained in answer name/detail
+          if (cleanName.includes(cleanVal) || cleanVal.includes(cleanName) || cleanDetail.includes(cleanVal)) {
             matchedIdx = idx;
           }
-        });
-
-        if (matchedIdx !== -1) {
-          toggleReveal(matchedIdx);
-          event.target.value = '';
-        } else {
-          addStrike();
         }
+      });
+
+      if (matchedIdx !== -1) {
+        toggleReveal(matchedIdx);
+        input.value = '';
+      } else {
+        showWrongToast(val);
+        addStrike();
+        input.value = '';
+      }
+    }
+
+    function handleKeySearch(event) {
+      if (event.key === 'Enter') {
+        submitTypedAnswer();
       }
     }
 
@@ -2463,19 +2589,16 @@
 
     function playTrumpCard(teamIdx) {
       // Verification Rules:
-      // 1. Current question guesses must be < 2
       if (gameState.currentQGuesses >= 2) {
         showModal("TRUMP CARD BLOCKED", `Cannot play Trump Card! The active team has already made ${gameState.currentQGuesses} guesses on this question (Limit is < 2).`);
         return;
       }
 
-      // 2. Cannot counter-trump if question was already trumped
       if (gameState.currentQTrumped) {
         showModal("TRUMP CARD BLOCKED", "A Trump Card has already been played on this question! Counter-trumping is not permitted.");
         return;
       }
 
-      // 3. Must have trump cards remaining
       if (gameState.teams[teamIdx].trumpsRemaining <= 0) {
         return;
       }
