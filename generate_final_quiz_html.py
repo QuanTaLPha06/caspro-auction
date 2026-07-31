@@ -1435,8 +1435,5 @@ html_content = f"""<!DOCTYPE html>
 with open("d:\\Case\\Sports_Connection_Quiz.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-# Copy to index.html
-with open("d:\\Case\\index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
+print("Sports_Connection_Quiz.html generated successfully!")
 
-print("Sports_Connection_Quiz.html and index.html generated successfully!")

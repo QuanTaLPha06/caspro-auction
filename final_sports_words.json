@@ -4,11 +4,7 @@
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "VAR",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Ballon d'Or",
+    "word": "Yellow Card",
     "cat": "⚽ FOOTBALL"
   },
   {
@@ -20,15 +16,11 @@
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Golden Boot",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
     "word": "Header",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Panenka",
+    "word": "Panenka Penalty",
     "cat": "⚽ FOOTBALL"
   },
   {
@@ -40,227 +32,71 @@
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Crossbar",
+    "word": "Crossbar Challenge",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Free Kick",
+    "word": "Free Kick Wall",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Backhand",
-    "cat": "🎾 TENNIS"
+    "word": "Bicycle Kick",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Forehand",
-    "cat": "🎾 TENNIS"
+    "word": "Penalty Kick",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Volley",
-    "cat": "🎾 TENNIS"
+    "word": "Diving / Flop",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Second Serve",
-    "cat": "🎾 TENNIS"
+    "word": "Goalkeeper Save",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Rally",
-    "cat": "🎾 TENNIS"
+    "word": "Throw-In",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Ace",
-    "cat": "🎾 TENNIS"
+    "word": "Sliding Tackle",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Racquet",
-    "cat": "🎾 TENNIS"
+    "word": "Hand of God",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Slice",
-    "cat": "🎾 TENNIS"
+    "word": "VAR Check",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Top Spin",
-    "cat": "🎾 TENNIS"
+    "word": "Ballon d'Or",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Roland Garros",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Wimbledon",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Match Point",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "100m Sprint",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Pole Vault",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Freestyle 100m",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Gold Medal",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Olympic Rings",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Relay Race",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "High Jump",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Marathon",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Discus Throw",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "3 Point Shot",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "2 Point Shot",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Technical Foul",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Pick & Roll",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Slam Dunk",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Fast Break",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Stepback",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Time Out",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Alley Oop",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Rebound",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Buzzer Beater",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Pit Stop",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Yellow Flag",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Safety Car",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Team Radio",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Overtake",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "DRS Zone",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Podium",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Pole Position",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Sprint Race",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Checkered Flag",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Reverse Sweep",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Powerplay",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Strategic Timeout",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Sixer",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "LBW",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Hat Trick",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Yorker",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Free Hit",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Super Over",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Bouncer",
-    "cat": "🏏 CRICKET"
+    "word": "World Cup Trophy",
+    "cat": "⚽ FOOTBALL"
   },
   {
     "word": "Lionel Messi",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Cristiano Ronaldo",
+    "word": "Cristiano Ronaldo (SIUUU)",
+    "cat": "⚽ FOOTBALL"
+  },
+  {
+    "word": "Neymar (Rolling on Floor)",
+    "cat": "⚽ FOOTBALL"
+  },
+  {
+    "word": "Kylian Mbappé",
+    "cat": "⚽ FOOTBALL"
+  },
+  {
+    "word": "Erling Haaland (Yoga Pose)",
     "cat": "⚽ FOOTBALL"
   },
   {
@@ -272,615 +108,103 @@
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "US Open",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Australian Open",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Australia",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "India",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "West Indies",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "England",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Opening Rush at center line",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Foam or Rubber balls",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Catching a ball revives a teammate",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Getting hit means you are OUT",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "1 Active Chaser pursuing defenders",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Two wooden poles at court ends",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Point Guard",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Shooting Guard",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Small Forward",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Power Forward & Center",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Blue and Yellow",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Black and Green",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Red",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "White background",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Lewis Hamilton",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Michael Schumacher",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Max Verstappen",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Ayrton Senna",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "100 meters",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "200 meters",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "400 meters",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "4x100m Relay",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Goose feather or nylon projectile",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Light racket with tight strings",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "5ft high net",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Played to 21 points per game",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Green Jacket at Augusta",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "US Open Trophy",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Claret Jug at The Open",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Freestyle",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Backstroke",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Breaststroke",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Butterfly",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Muhammad Ali",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Mike Tyson",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Manny Pacquiao",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Floyd Mayweather Jr.",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Home Plate",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "First Base",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Second Base",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Third Base",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Bump",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Set",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Spike",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Maximum 3 hits per side",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Center Line",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Attack Line",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Back Line",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Out-of-Bounds Queue",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "3 Defenders enter in batches",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Chaser must give KHO from behind",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Innings last 9 minutes",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Bowled",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Caught by fielder",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Run Out",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Love",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "15",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "30",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "40",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Main Referee on pitch",
+    "word": "Ronaldinho (Joga Bonito)",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Two Assistant Referees",
+    "word": "Zinedine Zidane (Headbutt)",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Fourth Official",
+    "word": "Golden Boot",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Lakers",
-    "cat": "🏀 BASKETBALL"
+    "word": "Own Goal",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Celtics",
-    "cat": "🏀 BASKETBALL"
+    "word": "Hat-Trick",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Bulls",
-    "cat": "🏀 BASKETBALL"
+    "word": "Captain's Armband",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Warriors",
-    "cat": "🏀 BASKETBALL"
+    "word": "Whistle / Referee",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Lords",
-    "cat": "🏏 CRICKET"
+    "word": "Substitute Board",
+    "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Eden Gardens",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "MCG",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Wankhede",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Grass",
+    "word": "Forehand Drive",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Clay",
+    "word": "Two-Handed Backhand",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Hard Court",
+    "word": "Smash / Overhead",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Carpet",
+    "word": "Underarm Serve",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Manchester United",
-    "cat": "⚽ FOOTBALL"
+    "word": "Ace Serve",
+    "cat": "🎾 TENNIS"
   },
   {
-    "word": "Liverpool",
-    "cat": "⚽ FOOTBALL"
+    "word": "Tweener (Between the Legs)",
+    "cat": "🎾 TENNIS"
   },
   {
-    "word": "Arsenal",
-    "cat": "⚽ FOOTBALL"
+    "word": "Slice Shot",
+    "cat": "🎾 TENNIS"
   },
   {
-    "word": "Chelsea",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Athletics",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Gymnastics",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Swimming",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Weightlifting",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Long Jump",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Shot Put",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Javelin Throw",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Ferrari",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "McLaren",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Red Bull Racing",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Mercedes-AMG",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Power Throw",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Curve Throw",
-    "cat": "🤾 DODGEBALL"
+    "word": "Topspin Lob",
+    "cat": "🎾 TENNIS"
   },
   {
     "word": "Drop Shot",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Synchronized Team Volley",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Single Chain",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Double Chain",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Ring Game",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Dodging & Zig-Zag",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Celluloid / Plastic Ball",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Rubber Paddle",
+    "word": "Tennis Racquet",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Net 15.25cm high",
+    "word": "Bouncing Tennis Ball",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Game played to 11 points",
+    "word": "Jumping Over the Net",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Smash",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Clear / Lob",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Net Lift",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Driver",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Iron",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Wedge",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Putter",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Jab",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Cross",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Hook",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Uppercut",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Pitcher",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Catcher",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Shortstop",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Outfielder",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Service Line",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Sideline",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Gold / Yellow",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Blue",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Black & White",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Raid",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Tackle",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Super Raid",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Bonus Line",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Curved Stick",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Hard Ball",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Shin Guards",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Goalkeeper Helmet & Pads",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Try",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Conversion",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Penalty Kick",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Drop Goal",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Made of 18-karat gold",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Depicts two figures holding Earth",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Designed by Silvio Gazzaniga",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Awarded every 4 years",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Test Match",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "One Day International",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "T20",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "T10 / 100-ball",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Free Throw Line",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Inside the Arc",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Beyond the Arc",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Half-court Shot",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Novak Djokovic",
+    "word": "Deuce / Advantage",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Rafael Nadal",
+    "word": "Match Point",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Loud Grunting",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Smashed Racquet",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Hawk-Eye Challenge",
     "cat": "🎾 TENNIS"
   },
   {
@@ -888,11 +212,11 @@
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Pete Sampras",
+    "word": "Rafael Nadal (Fist Pump)",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Margaret Court",
+    "word": "Novak Djokovic (Roar)",
     "cat": "🎾 TENNIS"
   },
   {
@@ -900,1479 +224,411 @@
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Steffi Graf",
+    "word": "Carlos Alcaraz",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Martina Navratilova",
+    "word": "Wimbledon White Outfit",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Chequered Flag",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Red Flag",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Green Flag",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Catchers",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Throwers / Snipers",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Corner Guards",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Retrieve Assistants",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Referees",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Umpire",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Timekeeper",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Scorer",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Olympia, Greece",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "776 BC origin",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Olive Wreath Crown",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Dedicated to Zeus",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "100m & Long Jump",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Shot Put & High Jump",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Discus & Pole Vault",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Javelin & 1500m",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Mumbai Indians",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Chennai Super Kings",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Kolkata Knight Riders",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Royal Challengers Bengaluru",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Real Madrid",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "AC Milan",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Bayern Munich",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Michael Jordan",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Magic Johnson",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Larry Bird",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Charles Barkley",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Direct ball impact on body",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Stepping out of bounds",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Opponent catches thrown ball",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Throwing a dead ball",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Length 27 meters",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Width 16 meters",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Central Lane width 30cm",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Pole distance 24 meters",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Birdie",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Eagle",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Albatross",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Bogey",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Square shape",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "4 padded ropes",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Canvas mat over padding",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Corners: Red, Blue, Neutral",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Special colored jersey",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Defensive specialist only",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Cannot serve or block",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Unlimited substitutions",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "42.195 kilometers",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "26 miles 385 yards",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Historical Windsor Castle route",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Olympic grand finale event",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Indianapolis 500",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "24 Hours of Le Mans",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Monaco Grand Prix",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Triple Crown of Motorsport",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Santiago Bernabéu",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Johan Cruyff Arena",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Ferenc Puskás Arena",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Maracanã / Estádio Mário Filho",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Bo Jackson",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Deion Sanders",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Jim Thorpe",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Muttiah Muralitharan",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Shane Warne",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "James Anderson",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Anil Kumble",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Juventus",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Bayer Leverkusen",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Celtic",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Sky Dive",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Pole Dive",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Burden of Throw",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Sudden Death 1v1",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Headshot Warning",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Neutral Zone",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Ester Ledecká",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Carl Lewis",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Johnny Weissmuller",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Eddie Eagan",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Eau Rouge & Raidillon",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Grand Hotel Hairpin",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Parabolica / Curva Alboreto",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Maggotts & Becketts",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Russell Westbrook",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Oscar Robertson",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Nikola Jokić",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "7-inch Foam Ball",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Cloth Ball",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Rubber Dodgeball",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Mesh Air-Core Ball",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Field Length: 27 meters",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Field Width: 16 meters",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Central Lane Width: 30 centimeters",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Chetan Sharma",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Saqlain Mushtaq",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Chaminda Vaas",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Brett Lee",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Ajax",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Barcelona",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Usain Bolt",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Tyson Gay",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Yohan Blake",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Asafa Powell",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Björn Borg",
+    "word": "Roland Garros Red Clay",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Iga Świątek",
+    "word": "Ball Kid Catch",
     "cat": "🎾 TENNIS"
   },
   {
-    "word": "Juan Manuel Fangio",
+    "word": "Chair Umpire",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Wiping Sweat with Towel",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Reverse Sweep",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Switch Hit",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Helicopter Shot",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Toe-Crushing Yorker",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Head-High Bouncer",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Sixer (Arms Up)",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Four (Wave Arm)",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Out / Finger Raised",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "LBW Appeal (HOWZAT?!)",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "High Catch",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Run Out Dive",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Wicketkeeper Stumping",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Fast Bowling Run-Up",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Spin Bowling Wrist Twist",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Duck / Zero Score",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Century 100 Helmet Lift",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Virat Kohli",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "MS Dhoni",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Sachin Tendulkar",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Rohit Sharma Pull Shot",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Jasprit Bumrah Bowling Action",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Lasith Malinga Sling Action",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "AB de Villiers 360",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Chris Gayle Sixer",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Shane Warne Leg Spin",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Third Umpire TV Box",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Free Hit No-Ball",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Super Over",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Bowled Clean",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Mankad Run Out",
+    "cat": "🏏 CRICKET"
+  },
+  {
+    "word": "Turning F1 Steering Wheel",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Niki Lauda",
+    "word": "Rapid Pit Stop Tire Change",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Graham Hill",
+    "word": "Waving Checkered Flag",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Emerson Fittipaldi",
+    "word": "Yellow Flag Slowdown",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Rudy Hartono",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Lin Dan",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Lee Chong Wei",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Viktor Axelsen",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Gene Sarazen",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Ben Hogan",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Gary Player",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Jack Nicklaus & Tiger Woods",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Joe Frazier",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "George Foreman",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Active chaser touching central line",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Fielder catches thrown ball cleanly",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Thrower eliminated immediately",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Wilt Chamberlain",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Kobe Bryant",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "David Thompson",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Damian Lillard & Luka Dončić",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Don Bradman",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Virender Sehwag",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Brian Lara",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Chris Gayle",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Michel Platini",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Johan Cruyff & Marco van Basten",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Michael Phelps",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Larisa Latynina",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Paavo Nurmi",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Mark Spitz & Carl Lewis",
-    "cat": "🏊 SWIMMING"
-  },
-  {
-    "word": "Rotation in clockwise direction",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Jan-Ove Waldner",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Liu Guoliang",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Kong Linghui",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Ma Long",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Kim Woo-jin",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "An San",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Park Sung-hyun",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Viktor Ruban",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Pardeep Narwal",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Rahul Chaudhari",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Maninder Singh",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Pawan Sehrawat",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Germany",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Netherlands",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "South Africa",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "New Zealand",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Porsche",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Audi",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Jaguar",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "New York Yankees",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "St. Louis Cardinals",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Oakland Athletics",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Boston Red Sox",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Ronaldo Nazário",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "James Rodríguez",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Harry Kane",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Kylian Mbappé",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "AB de Villiers",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Corey Anderson",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Shahid Afridi",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Glenn Maxwell",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "LeBron James",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Shaquille O'Neal & Tim Duncan",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Match consists of 2 turns/innings",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "5 minutes interval between turns",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Soft foam core to prevent injury",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Non-marking rubber court shoes",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Alain Prost & Sebastian Vettel",
+    "word": "Champagne Spraying",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Eliud Kipchoge",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Nike Breaking2 Project",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Kenyan Long-Distance Legend",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Rotterdam & Berlin Marathon Winner",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Jim Laker",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Ajaz Patel",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "London",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Paris",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Los Angeles",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Exclusive 3-Time Host Cities",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Maureen Connolly",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Doris Hart",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Shirley Fry Irvin",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Indonesia",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "China",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Malaysia",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Branden Grace",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Xander Schauffele",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Rickie Fowler",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Shane Lowry",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Rocky Marciano",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Joe Calzaghe",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Sheng-Sheng / Ricardo López",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Area beyond the wooden pole line",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "6 balls placed along center line",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Players start behind baseline",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Chicago Bulls",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Golden State Warriors",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Led by Michael Jordan & Steph Curry",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Nepal",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Sunrisers Hyderabad",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "T20 Highest Team Total Records",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Mazarópi",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Dynamo Kyiv's Viktor Tanev",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Atlético Madrid's Jan Oblak",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Edwin van der Sar",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Winter Olympics at Lake Placid",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "USA Men's Ice Hockey Team",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Coached by Herb Brooks",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Brazil",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Italy",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Poland",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Soviet Union / Russia",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Pakistan",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Garry Kasparov",
-    "cat": "♟️ CHESS"
-  },
-  {
-    "word": "Bobby Fischer",
-    "cat": "♟️ CHESS"
-  },
-  {
-    "word": "Magnus Carlsen",
-    "cat": "♟️ CHESS"
-  },
-  {
-    "word": "Viswanathan Anand",
-    "cat": "♟️ CHESS"
-  },
-  {
-    "word": "Yellow Jersey",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Green Jersey",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Polka Dot Jersey",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "White Jersey",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "White to Brown Belt",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Black Belt",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Ippon",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Waza-ari",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Mario Mandžukić",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Velibor Vasović",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Beijing, China",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Historic Olympic Hosting Landmark",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Kabaddi: Super Tackle",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Volleyball: Direct Block Point",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Mike Powell",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Javier Sotomayor",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Jürgen Schult",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Galina Chistyakova",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "7 minutes maximum defense run",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Sanath Jayasuriya",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Jacques Kallis",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Shakib Al Hasan",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Carlo Ancelotti",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Ernst Happel",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Ottmar Hitzfeld",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "José Mourinho & Pep Guardiola",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Nelson Piquet",
+    "word": "Podium Top Step",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Keke Rosberg",
+    "word": "DRS Wing Open",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Mike Hawthorn",
+    "word": "Donut Burnouts",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Consistency Over Race Victories",
+    "word": "Pulling Down Helmet Visor",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Mats Wilander",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Surface Slam Champions",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Sir Garfield Sobers",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Graham Gooch & Bob Cowper",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Elgin Baylor",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Rick Barry",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Manchester City",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Brendon McCullum",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Vivian Richards",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Misbah-ul-Haq",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Adam Gilchrist",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Sebastian Vettel",
+    "word": "Safety Car Leading",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Mike Bryan & Bob Bryan",
-    "cat": "🎾 TENNIS"
+    "word": "Lewis Hamilton",
+    "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Todd Woodbridge & Mark Woodforde",
-    "cat": "🎾 TENNIS"
+    "word": "Max Verstappen",
+    "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Serena Williams & Venus Williams",
-    "cat": "🎾 TENNIS"
+    "word": "Michael Schumacher Podium Jump",
+    "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Pam Shriver & Gigi Fernández",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Al Oerter",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Mijaín López",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Malcolm Marshall",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Joel Garner",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Curtly Ambrose",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Glenn McGrath",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Gerd Müller",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Nate Thurmond",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Alvin Robertson",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Hakeem Olajuwon",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "David Robinson",
-    "cat": "🏀 BASKETBALL"
+    "word": "Ayrton Senna",
+    "cat": "🏎️ FORMULA 1"
   },
   {
     "word": "Fernando Alonso",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Juan Pablo Montoya",
+    "word": "Charles Leclerc",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Motorsport Triple Crown Achievers",
+    "word": "Ferrari Prancing Horse",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "John Isner vs Nicolas Mahut",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Final score 70-68 in 5th set",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Unprecedented 5-Gold Sweep",
-    "cat": "🏸 BADMINTON"
-  },
-  {
-    "word": "Bobby Jones",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Pre-modern Major Era Grand Slam",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Golf Historic Landmark",
-    "cat": "⛳ GOLF"
-  },
-  {
-    "word": "Broke Jersey Joe Walcott's record",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Defensive Endurance Bonus",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Kapil Dev",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Ian Botham & Ravichandran Ashwin",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Angel Di María",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Neymar & Ryan Giggs",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Robert Horry",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "John Salley",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Danny Green",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Florence Griffith-Joyner",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Elaine Thompson-Herah",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Shelly-Ann Fraser-Pryce",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Carmelita Jeter",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Marjorie Gestring",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Nishiya Momiji",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Fu Mingxia",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Teenage Olympic Champions",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Australia & India",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Bobby Charlton",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Franz Beckenbauer",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Rod Laver",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Steffi Graf & Monica Seles",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "46-44",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "54-52",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Played past standard 25 points",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Olympic Men's Singles Gold",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "World Singles Champion",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "World Cup Champion",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "The 'Dragon' of Table Tennis",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "New Zealand All Blacks",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "South Africa Springboks",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "Back-to-Back World Champions",
-    "cat": "🏆 SPORTS"
-  },
-  {
-    "word": "High-End Defensive Strategy",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Spirit of Dodgeball Play",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Rashid Khan",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Lasith Malinga",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Curtis Campher",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Jason Holder",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Hakan Şükür",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Vaclav Masek",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Ernst Lehner",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Bryan Robson",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Bill Russell",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Sam Jones",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Boston Celtics 1950s-60s Dynasty",
-    "cat": "🏀 BASKETBALL"
-  },
-  {
-    "word": "Phil Williams vs Louis Lagermasino",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Mike Collins vs Pat Brownson",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Hector Camacho vs Enrique Cruz",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Blink and You Miss It KO",
-    "cat": "🥊 BOXING & COMBAT"
-  },
-  {
-    "word": "Jacques Villeneuve",
+    "word": "Spinning Out / Crash",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Instant F1 Prodigies",
+    "word": "Team Radio Complaints",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "9 Olympic Gold Medals won on track",
+    "word": "Grid Start Lights Go Out",
+    "cat": "🏎️ FORMULA 1"
+  },
+  {
+    "word": "Slam Dunk",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "3-Point Shot (3 Fingers)",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Crossover Dribble",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Stepback Jumper",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Alley-Oop Catch & Dunk",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Free Throw Ritual",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Finger-Wag Blocked Shot",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "High Rebound Grab",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Traveling Violation",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Technical Foul T-Sign",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Airball Miss",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Buzzer Beater Shot",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "LeBron James (Chalk Toss)",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Stephen Curry (Night Night)",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Michael Jordan (Tongue Out Dunk)",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Kobe Bryant (Fadeaway)",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Shaquille O'Neal Rim Shake",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Giannis Flex",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "James Harden (Stir the Pot)",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Low Ankle Dribbling",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Fast Break Sprint",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Hook Shot",
+    "cat": "🏀 BASKETBALL"
+  },
+  {
+    "word": "Usain Bolt (Lightning Pose)",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Lightening Bolt Legacy",
+    "word": "Michael Phelps (Butterfly Stroke)",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Technical Penalty Enforcement",
-    "cat": "🏃 KHO KHO"
-  },
-  {
-    "word": "Player A remains SAFE in match",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Thrower is eliminated",
-    "cat": "🤾 DODGEBALL"
-  },
-  {
-    "word": "Lance Gibbs",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Dennis Lillee",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Imran Khan",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Fred Trueman & Kapil Dev",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Rogério Ceni",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "José Luis Chilavert",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "René Higuita",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Jorge Campos",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "David Nalbandian",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Elite Giant Killers",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Sir Roger Bannister",
+    "word": "Simone Biles (Backflip Land)",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Milestone in Human Endurance",
+    "word": "Mando Duplantis (Pole Vault)",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Phil Mickelson",
-    "cat": "⛳ GOLF"
+    "word": "Bob Beamon (Giant Long Jump)",
+    "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Julius Boros",
-    "cat": "⛳ GOLF"
+    "word": "Carl Lewis (Sprint & Jump)",
+    "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Old Tom Morris",
-    "cat": "⛳ GOLF"
+    "word": "Jesse Owens",
+    "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Jack Nicklaus",
-    "cat": "⛳ GOLF"
+    "word": "Katie Ledecky (Freestyle Stroke)",
+    "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Christa Luding-Rothenburger",
-    "cat": "🏆 SPORTS"
+    "word": "Yulimar Rojas (Triple Jump)",
+    "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "East German Legend",
-    "cat": "🏆 SPORTS"
+    "word": "Eliud Kipchoge (Marathon 1:59)",
+    "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Unique Olympic Record",
-    "cat": "🏆 SPORTS"
+    "word": "Nadia Comăneci (Perfect 10)",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "100m Sprint Block Start",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Pole Vault Over Bar",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "High Jump Fosbury Flop",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Shot Put Neck Throw",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Discus Spin Throw",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Javelin Spear Throw",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Relay Baton Pass",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Heavy Weightlifting Overhead",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Archery Bow & Arrow Pull",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Marathon Tape Finish",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Biting the Gold Medal",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Olympic Flame Torch Relay",
+    "cat": "🥇 OLYMPICS"
+  },
+  {
+    "word": "Podium Gold Medal Cry",
+    "cat": "🥇 OLYMPICS"
   }
 ]
