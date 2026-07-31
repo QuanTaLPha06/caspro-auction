@@ -1,0 +1,3438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Connection Quiz - Minimal PPT Slideshow</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #070a14;
+      --slide-bg: #0d1322;
+      --border-color: rgba(255, 255, 255, 0.08);
+      
+      --accent-easy: #00e676;
+      --accent-medium: #ffb300;
+      --accent-hard: #ff2d55;
+      
+      --sport-cricket: #ffb300;
+      --sport-football: #00b0ff;
+      --sport-tennis: #76ff03;
+      --sport-basketball: #ff6d00;
+      
+      --text-main: #ffffff;
+      --text-muted: #8e9baf;
+      
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      overflow: hidden;
+    }
+
+    /* MAIN APP CONTAINER FOR FULLSCREEN SUPPORT */
+    .app-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: radial-gradient(circle at 50% 30%, #111a30 0%, #070a14 100%);
+      position: relative;
+    }
+
+    .app-container.is-fullscreen {
+      position: fixed !important;
+      inset: 0 !important;
+      z-index: 99999 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+    }
+
+    /* MINIMAL PPT HEADER */
+    .ppt-header {
+      height: 52px;
+      padding: 0 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      background: rgba(7, 10, 20, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      flex-shrink: 0;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-logo {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    .brand-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .header-center-info {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .stat-badge {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .tool-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .tool-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+
+    /* SLIDE STAGE / CANVAS */
+    .slide-stage {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide-card-deck {
+      width: 100%;
+      max-width: 1000px;
+      aspect-ratio: 16 / 9;
+      max-height: calc(100vh - 130px);
+      background: var(--slide-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-container.is-fullscreen .slide-card-deck {
+      max-width: 1280px;
+      max-height: calc(100vh - 120px);
+    }
+
+    .slide-content-area {
+      width: 100%;
+      height: 100%;
+      padding: 2.2rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    /* INTRO SLIDE (SLIDE 1 OF PAIR) */
+    .intro-slide {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1.6rem;
+    }
+
+    .slide-label-top {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .intro-sport-display {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .intro-diff-badge {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 800;
+      padding: 0.5rem 2.5rem;
+      border-radius: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .reveal-prompt-btn {
+      margin-top: 0.8rem;
+      background: linear-gradient(135deg, #00b0ff, #0055ff);
+      color: #fff;
+      border: none;
+      padding: 0.85rem 2.4rem;
+      border-radius: 30px;
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0, 176, 255, 0.35);
+      transition: all 0.25s ease;
+    }
+
+    .reveal-prompt-btn:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(0, 176, 255, 0.5);
+    }
+
+    /* QUESTION SLIDE (SLIDE 2 OF PAIR) */
+    .question-slide {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .q-meta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .q-badge-group {
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .q-pill {
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* CIRCULAR TIMER */
+    .timer-widget {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timer-svg {
+      transform: rotate(-90deg);
+      width: 48px;
+      height: 48px;
+    }
+
+    .timer-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.1);
+      stroke-width: 4;
+    }
+
+    .timer-progress {
+      fill: none;
+      stroke: var(--accent-easy);
+      stroke-width: 4;
+      stroke-dasharray: 138;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+    }
+
+    .timer-text {
+      position: absolute;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+
+    .timer-widget.alert .timer-progress {
+      stroke: var(--accent-hard);
+    }
+
+    .q-main-text {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: #ffffff;
+      margin: 0.8rem 0;
+    }
+
+    .mcq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
+    }
+
+    .mcq-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 0.85rem 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .mcq-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .mcq-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .mcq-label {
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: #e2e8f0;
+    }
+
+    .mcq-card.correct {
+      background: rgba(0, 230, 118, 0.15) !important;
+      border-color: var(--accent-easy) !important;
+    }
+    .mcq-card.correct .mcq-badge {
+      background: var(--accent-easy) !important;
+      color: #000 !important;
+    }
+
+    .mcq-card.incorrect {
+      background: rgba(255, 45, 85, 0.15) !important;
+      border-color: var(--accent-hard) !important;
+    }
+    .mcq-card.incorrect .mcq-badge {
+      background: var(--accent-hard) !important;
+      color: #fff !important;
+    }
+
+    .mcq-card.disabled {
+      pointer-events: none;
+      opacity: 0.65;
+    }
+    .mcq-card.correct.disabled, .mcq-card.incorrect.disabled {
+      opacity: 1;
+    }
+
+    /* MINIMAL PPT FOOTER BAR */
+    .ppt-footer {
+      height: 54px;
+      padding: 0 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border-color);
+      background: rgba(7, 10, 20, 0.9);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .progress-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: #00b0ff;
+      transition: width 0.3s ease;
+    }
+
+    .footer-hints {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .kbd-tag {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.75rem;
+      color: #cbd5e1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-actions {
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    /* GRID MODAL */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 6, 12, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .modal-card {
+      background: #0d1322;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      width: 100%;
+      max-width: 900px;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-content {
+      padding: 1.2rem 1.5rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .filter-btn.active {
+      background: #00b0ff;
+      color: #000;
+      border-color: #00b0ff;
+      font-weight: 700;
+    }
+
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+      gap: 0.6rem;
+    }
+
+    .grid-cell {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 0.4rem 0.2rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .grid-cell:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .grid-cell.active {
+      border-color: #00b0ff;
+      background: rgba(0, 176, 255, 0.2);
+    }
+
+    /* TOAST */
+    .toast-box {
+      position: fixed;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%) translateY(15px);
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.6rem 1.4rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      z-index: 2000;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s ease;
+    }
+
+    .toast-box.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container" id="appContainer">
+    <!-- PROGRESS BAR -->
+    <div class="progress-line" id="progressLine" style="width: 0.27%;"></div>
+
+    <!-- MINIMAL PPT HEADER -->
+    <header class="ppt-header">
+      <div class="brand-group">
+        <div class="brand-logo">PPT DECK</div>
+        <div class="brand-title">Sports Connection Quiz</div>
+      </div>
+
+      <div class="header-center-info" id="slideInfo">
+        Slide 1 of 360 (Question 1 Intro)
+      </div>
+
+      <div class="header-right-tools">
+        <div class="stat-badge">Score: <strong id="scoreVal">0</strong></div>
+        <div class="stat-badge">Streak: <strong id="streakVal">0</strong></div>
+        
+        <button class="tool-btn" id="soundBtn" onclick="toggleSound()">
+          <i class="fa-solid fa-volume-high" id="soundIcon"></i>
+        </button>
+        <button class="tool-btn" onclick="openGridModal()">
+          <i class="fa-solid fa-grid-2"></i> Grid
+        </button>
+        <button class="tool-btn" onclick="toggleFullscreen()">
+          <i class="fa-solid fa-expand" id="fsIcon"></i> Fullscreen
+        </button>
+        <button class="tool-btn" onclick="shuffleDeck()" style="background:rgba(0, 176, 255, 0.15); border-color:#00b0ff; color:#fff;">
+          <i class="fa-solid fa-shuffle"></i> Shuffle
+        </button>
+      </div>
+    </header>
+
+    <!-- SLIDE CANVAS STAGE -->
+    <main class="slide-stage">
+      <div class="slide-card-deck" id="slideCardDeck">
+        <div class="slide-content-area" id="slideContentArea">
+          <!-- Slide rendered via JavaScript -->
+        </div>
+      </div>
+    </main>
+
+    <!-- MINIMAL FOOTER -->
+    <footer class="ppt-footer">
+      <div class="footer-hints">
+        <span class="kbd-tag">Space</span> / <span class="kbd-tag">→</span> Next Slide &nbsp;•&nbsp; 
+        <span class="kbd-tag">←</span> Prev Slide &nbsp;•&nbsp; 
+        <span class="kbd-tag">F</span> Fullscreen Mode
+      </div>
+
+      <div class="footer-actions">
+        <button class="tool-btn" onclick="prevSlide()">
+          <i class="fa-solid fa-chevron-left"></i> Previous
+        </button>
+        <button class="tool-btn" id="revealBtn" onclick="revealAnswerCurrent()" style="display:none; background:rgba(255,45,85,0.15); border-color:var(--accent-hard); color:#fff;">
+          <i class="fa-solid fa-key"></i> Reveal Answer
+        </button>
+        <button class="tool-btn" onclick="nextSlide()" style="background:#00b0ff; color:#000; font-weight:700; border-color:#00b0ff;">
+          Next Slide <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- GRID MODAL -->
+  <div class="modal-backdrop" id="gridModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div style="font-family:var(--font-heading); font-weight:700; font-size:1.1rem;">
+          <i class="fa-solid fa-border-all"></i> Slide Deck Question Sorter
+        </div>
+        <button class="tool-btn" onclick="closeGridModal()"><i class="fa-solid fa-xmark"></i> Close</button>
+      </div>
+      <div class="modal-content">
+        <div class="filter-group">
+          <button class="filter-btn active" onclick="filterGrid('ALL', this)">All (180)</button>
+          <button class="filter-btn" onclick="filterGrid('Easy', this)">Easy (60)</button>
+          <button class="filter-btn" onclick="filterGrid('Medium', this)">Medium (60)</button>
+          <button class="filter-btn" onclick="filterGrid('Hard', this)">Hard (60)</button>
+          <button class="filter-btn" onclick="filterGrid('Cricket', this)">Cricket</button>
+          <button class="filter-btn" onclick="filterGrid('Football', this)">Football</button>
+          <button class="filter-btn" onclick="filterGrid('Tennis', this)">Tennis</button>
+          <button class="filter-btn" onclick="filterGrid('Basketball', this)">Basketball</button>
+        </div>
+        <div class="grid-layout" id="gridContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast-box" id="toast">Notification</div>
+
+  <script>
+    const RAW_QUESTIONS = [
+  {
+    "id": "Q001",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which national team won the 2023 ICC Men's Cricket World Cup?",
+    "options": [
+      "India",
+      "Australia",
+      "South Africa",
+      "New Zealand"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q002",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which Grand Slam tournament is held annually in Melbourne? (Australian Open)",
+    "options": [
+      "Australian Open",
+      "The Davis Cup",
+      "Natural gut",
+      "The Grand Slams (Australian Open, French Open, Wimbledon, US Open)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q003",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "How many runs is a hit that bounces before crossing the boundary worth?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "3"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q004",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which Grand Slam tournament is held annually in Melbourne?",
+    "options": [
+      "78 feet",
+      "Optic Yellow",
+      "Love",
+      "Australian Open"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q005",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which trophy is awarded to the FIFA World Cup winners?",
+    "options": [
+      "USA",
+      "The FIFA World Cup Trophy",
+      "Camp Nou",
+      "England"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q006",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the traditional court surface used at Wimbledon?",
+    "options": [
+      "Drop shot",
+      "27 feet",
+      "40",
+      "Grass"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q007",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the term for the stroke played on the side opposite to the dominant hand?",
+    "options": [
+      "Wimbledon",
+      "Backhand",
+      "Foot fault",
+      "John Isner and Nicolas Mahut"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q008",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the term for a 40-40 tie in a game?",
+    "options": [
+      "Deuce",
+      "An ace",
+      "40",
+      "216"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q009",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the term for a high, arching shot designed to go over an opponent's head?",
+    "options": [
+      "Smash",
+      "Lob",
+      "Singles",
+      "Neymar"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q010",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which Indian batter is world-famous for inventing the 'helicopter shot'?",
+    "options": [
+      "Sachin Tendulkar",
+      "MS Dhoni",
+      "Virender Sehwag",
+      "AB de Villiers"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q011",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "In a standard tennis game, what score comes immediately after 30?",
+    "options": [
+      "38",
+      "39",
+      "42",
+      "40"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q012",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "How many wooden stumps make up the wicket at one end of the pitch?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q013",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "On which court surface is the French Open played?",
+    "options": [
+      "US Open",
+      "John Isner and Nicolas Mahut",
+      "Clay",
+      "1988"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q014",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "What is taking three wickets in three consecutive deliveries called?",
+    "options": [
+      "Super Over",
+      "Triple Strike",
+      "Hat-trick",
+      "Clean Sweep"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q015",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is a powerful, overhead shot used to finish a point called?",
+    "options": [
+      "Egypt",
+      "Singles",
+      "Smash",
+      "Neymar"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q016",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the name of the central mesh barrier that divides the court?",
+    "options": [
+      "The Grand Slams (Australian Open, French Open, Wimbledon, US Open)",
+      "Love",
+      "40",
+      "Net"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q017",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "How many runs is a hit over the boundary without bouncing worth?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q018",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which body governs world football?",
+    "options": [
+      "Mohamed Salah",
+      "Liverpool",
+      "FIFA",
+      "Sporting"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q019",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is it called when a server commits two consecutive serving errors?",
+    "options": [
+      "1877",
+      "An ace",
+      "Baseline",
+      "Double fault"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q020",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "What color ball is traditionally used in daytime Test cricket?",
+    "options": [
+      "White",
+      "Red",
+      "Pink",
+      "Yellow"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q021",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which country won the 2024 ICC Men’s T20 World Cup?",
+    "options": [
+      "South Africa",
+      "England",
+      "India",
+      "Australia"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q022",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which player has won the most Ballon d'Or awards?",
+    "options": [
+      "90 minutes",
+      "Solskjær",
+      "Lionel Messi",
+      "Red"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q023",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "How many players are on the field for one team at the start of a football match?",
+    "options": [
+      "Rodríguez",
+      "Cannavaro",
+      "Sporting",
+      "Eleven"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q024",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the term for winning a point directly from a serve that the opponent cannot touch?",
+    "options": [
+      "An ace",
+      "Indian Wells",
+      "Eastern grip",
+      "36 feet"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q025",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What term is used in tennis to represent a score of zero?",
+    "options": [
+      "Service box",
+      "Natural gut",
+      "Love",
+      "Novak Djokovic (7)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q026",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the term for a shot hit softly over the net, landing just on the other side?",
+    "options": [
+      "Drop shot",
+      "Venus Williams",
+      "36 feet",
+      "40"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q027",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which country hosted the 2023 ICC Men's Cricket World Cup?",
+    "options": [
+      "Australia",
+      "England",
+      "India",
+      "South Africa"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q028",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What color are the tennis balls universally used in professional tournaments today?",
+    "options": [
+      "Rafael Nadal (81, clay)",
+      "Indian Wells",
+      "Optic Yellow",
+      "Rod Laver"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q029",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Who is known as \"The King of Football\"?",
+    "options": [
+      "Pelé",
+      "Germany (West Germany)",
+      "Manchester City",
+      "Manchester United"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q030",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What score must a player reach to win a standard set tie-break?",
+    "options": [
+      "Backhand",
+      "1884",
+      "John Isner and Nicolas Mahut",
+      "Seven"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q031",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "What color ball is commonly used in ODI day-night matches?",
+    "options": [
+      "Red",
+      "White",
+      "Pink",
+      "Orange"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q032",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is a legal serve that goes untouched by the receiver called?",
+    "options": [
+      "The Davis Cup",
+      "Seven",
+      "Rafael Nadal (81, clay)",
+      "Ace"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q033",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "What color card is shown for a sending-off?",
+    "options": [
+      "Paris Saint-Germain",
+      "Red",
+      "Germany (West Germany)",
+      "Solskjær"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q034",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "What is the maximum number of regular substitutions allowed in most competitions today?",
+    "options": [
+      "Eleven",
+      "Milan",
+      "Cristiano Ronaldo",
+      "Five"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q035",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which Indian cricketer is famously nicknamed 'Hitman'?",
+    "options": [
+      "Virat Kohli",
+      "MS Dhoni",
+      "Rohit Sharma",
+      "KL Rahul"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q036",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which footballer is nicknamed \"La Pulga\"?",
+    "options": [
+      "Munich",
+      "Sporting",
+      "Liverpool",
+      "Lionel Messi"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q037",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which country is historically known as the birthplace of cricket?",
+    "options": [
+      "Australia",
+      "India",
+      "England",
+      "South Africa"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q038",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "What is the maximum number of overs per innings in a T20 match?",
+    "options": [
+      "15",
+      "20",
+      "50",
+      "10"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q039",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "How long is a standard football match (excluding extra time)?",
+    "options": [
+      "92 minutes",
+      "89 minutes",
+      "90 minutes",
+      "88 minutes"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q040",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "In cricket, what is a batter dismissed for zero runs called?",
+    "options": [
+      "A score of 50",
+      "A duck",
+      "A wide ball",
+      "A catch drop"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q041",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which legendary captain is fondly known as 'Captain Cool' in India?",
+    "options": [
+      "Kapil Dev",
+      "Sourav Ganguly",
+      "MS Dhoni",
+      "Rahul Dravid"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q042",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What term describes a match format involving one player on each side?",
+    "options": [
+      "Neymar",
+      "David Robinson",
+      "Dirk Nowitzki",
+      "Singles"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q043",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "How many players are on a cricket team on the field?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "9"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q044",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the term for a shot hit before the ball bounces on the court?",
+    "options": [
+      "Alleys",
+      "A volley",
+      "Wimbledon",
+      "Michael Chang"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q045",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "What is awarded when a foul is committed inside the penalty box?",
+    "options": [
+      "A penalty kick",
+      "(varies by tournament, e.g. the Adidas match ball)",
+      "Dortmund",
+      "Maradona"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q046",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which Grand Slam tournament is held in New York City?",
+    "options": [
+      "Clay",
+      "US Open",
+      "Rod Laver",
+      "Jimmy Connors"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q047",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which country won the first Cricket World Cup in 1975?",
+    "options": [
+      "Australia",
+      "West Indies",
+      "England",
+      "India"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q048",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which Indian cricketer is famously nicknamed 'King Kohli'?",
+    "options": [
+      "Rohit Sharma",
+      "Virat Kohli",
+      "Shubman Gill",
+      "Yuvraj Singh"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q049",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which country is home to the club Boca Juniors?",
+    "options": [
+      "Argentina",
+      "90 minutes",
+      "Allianz Arena",
+      "Signal Iduna Park"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q050",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What is the penalty called when a server steps on the baseline during a serve?",
+    "options": [
+      "A volley",
+      "Net",
+      "Steffi Graf",
+      "Foot fault"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q051",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which country won the FIFA World Cup in 2022?",
+    "options": [
+      "Argentina",
+      "France",
+      "Bader Al-Mutawa (or Cristiano Ronaldo, depending on source)",
+      "Signal Iduna Park"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q052",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What does the term \\\"love\\\" mean in tennis scoring?",
+    "options": [
+      "1968",
+      "Zero",
+      "Clay",
+      "Foot fault"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q053",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which player is nicknamed \"The Egyptian King\"?",
+    "options": [
+      "Mohamed Salah",
+      "Cannavaro",
+      "Spain",
+      "England"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q054",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What surface is Wimbledon played on?",
+    "options": [
+      "Love",
+      "27 feet",
+      "Service box",
+      "Grass"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q055",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which city hosted the 2020 Summer Olympic Games?",
+    "options": [
+      "Beijing, China",
+      "Paris, France",
+      "USA",
+      "Tokyo, Japan"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q056",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "What surface is the French Open played on?",
+    "options": [
+      "Venus Williams",
+      "Zero",
+      "Clay",
+      "1884"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q057",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which city hosted the 2008 Summer Olympics?",
+    "options": [
+      "Tokyo, Japan",
+      "USA",
+      "Beijing, China",
+      "Paris, France"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q058",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which footballer is nicknamed \"CR7\"?",
+    "options": [
+      "The FIFA World Cup Trophy",
+      "Lionel Messi",
+      "Cristiano Ronaldo",
+      "Ivory Coast"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q059",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "What is the maximum number of overs per innings in a standard ODI match?",
+    "options": [
+      "20",
+      "40",
+      "50",
+      "60"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q060",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which country has won the most Men’s ODI World Cup titles?",
+    "options": [
+      "India",
+      "West Indies",
+      "Australia",
+      "England"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q061",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who has the most career triple-doubles?",
+    "options": [
+      "George Gervin",
+      "Germany",
+      "Russell Westbrook",
+      "Nikola Jokić"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q062",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Who is the youngest male player to win a Grand Slam singles title?",
+    "options": [
+      "Service box",
+      "Optic Yellow",
+      "Rod Laver",
+      "Michael Chang"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q063",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which player is Portugal's all-time leading scorer?",
+    "options": [
+      "Cristiano Ronaldo",
+      "France",
+      "(varies by tournament, e.g. the Adidas match ball)",
+      "Bader Al-Mutawa (or Cristiano Ronaldo, depending on source)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q064",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which Indian stadium has the highest seating capacity in the world?",
+    "options": [
+      "Eden Gardens",
+      "Wankhede Stadium",
+      "Narendra Modi Stadium",
+      "M. Chinnaswamy Stadium"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q065",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Which team did Shaquille O'Neal win three straight titles with?",
+    "options": [
+      "Player Efficiency Rating",
+      "Don Nelson",
+      "Lakers",
+      "Nikola Jokić"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q066",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What is the premier international team competition in men's tennis called?",
+    "options": [
+      "Service box",
+      "The Four Musketeers",
+      "1968",
+      "The Davis Cup"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q067",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who is Mr. Triple Double?",
+    "options": [
+      "Petr Čech",
+      "Kareem Abdul-Jabbar",
+      "Russell Westbrook",
+      "Satnam Singh"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q068",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Which franchise relocated from Seattle to OKC?",
+    "options": [
+      "SuperSonics",
+      "Hakeem Olajuwon",
+      "Philadelphia Warriors",
+      "Satnam Singh Bhullar"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q069",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Against which country did Sachin Tendulkar make his international debut in 1989?",
+    "options": [
+      "England",
+      "Australia",
+      "Pakistan",
+      "West Indies"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q070",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which country won the 2013 ICC Champions Trophy under MS Dhoni?",
+    "options": [
+      "England",
+      "Sri Lanka",
+      "India",
+      "South Africa"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q071",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What is the maximum number of sets played in a men's singles match at a Grand Slam?",
+    "options": [
+      "3 feet",
+      "1877",
+      "Five",
+      "Continental grip"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q072",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who has the most career 3-pointers?",
+    "options": [
+      "Satnam Singh Bhullar",
+      "George Gervin",
+      "Stephen Curry",
+      "Hakeem Olajuwon"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q073",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What surface is notoriously the slowest, producing higher bounces and longer rallies?",
+    "options": [
+      "Martina Navratilova",
+      "Margaret Court (24)",
+      "Clay",
+      "1891"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q074",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Which Masters 1000 event is often called the unofficial 'Fifth Grand Slam'?",
+    "options": [
+      "40",
+      "Drop shot",
+      "Net",
+      "Indian Wells"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q075",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who won NBA MVP in 2016 unanimously?",
+    "options": [
+      "Umpire",
+      "Stephen Curry",
+      "Philadelphia Warriors",
+      "Allen Iverson"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q076",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What spin causes the ball to dive sharply and bounce high?",
+    "options": [
+      "Topspin",
+      "David Robinson",
+      "Doubles",
+      "Lob"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q077",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who is known as The Greek Freak?",
+    "options": [
+      "Giannis Antetokounmpo",
+      "Satnam Singh",
+      "Boston Celtics",
+      "Kobe Bryant"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q078",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who is the NBA all-time steals leader?",
+    "options": [
+      "Wilt Chamberlain",
+      "John Stockton",
+      "Kobe Bryant",
+      "Yashin"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q079",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which cricketer played an extraordinary 200 Test matches during his career?",
+    "options": [
+      "James Anderson",
+      "Ricky Ponting",
+      "Sachin Tendulkar",
+      "Steve Waugh"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q080",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which bowler took the first-ever hat-trick in Cricket World Cup history?",
+    "options": [
+      "Wasim Akram",
+      "Chetan Sharma",
+      "Saqlain Mushtaq",
+      "Kapil Dev"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q081",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which legendary player captained Argentina to the 2022 World Cup title?",
+    "options": [
+      "Lionel Messi",
+      "Baggio",
+      "Mohamed Salah",
+      "Solskjær"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q082",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Against which team did Anil Kumble take all 10 wickets in a Test innings (1999)?",
+    "options": [
+      "Australia",
+      "England",
+      "Pakistan",
+      "Sri Lanka"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q083",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What is the term for the two thin parallel strips only 'in' during doubles?",
+    "options": [
+      "Racket",
+      "Optic Yellow",
+      "Alleys",
+      "Let"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q084",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which football club is nicknamed \"The Red Devils\"?",
+    "options": [
+      "Real Madrid",
+      "Signal Iduna Park",
+      "Cannavaro",
+      "Manchester United"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q085",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Who captained Australia to back-to-back undefeated ODI World Cup wins in 2003 and 2007?",
+    "options": [
+      "Allan Border",
+      "Steve Waugh",
+      "Ricky Ponting",
+      "Michael Clarke"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q086",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "In what year did the US Open begin?",
+    "options": [
+      "1879",
+      "1882",
+      "1881",
+      "1880"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q087",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What material was traditionally used for high-end tennis strings?",
+    "options": [
+      "Serena Williams",
+      "The Davis Cup",
+      "Natural gut",
+      "Hawk-Eye"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q088",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Which female player holds the all-time record (amateur + Open era) for Grand Slam singles titles?",
+    "options": [
+      "Margaret Court (22)",
+      "Margaret Court (23)",
+      "Margaret Court (26)",
+      "Margaret Court (24)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q089",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Who was the first male cricketer to score a century in T20 Internationals?",
+    "options": [
+      "Brendon McCullum",
+      "Chris Gayle",
+      "Suresh Raina",
+      "Rohit Sharma"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q090",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Who won the 1992 Olympic Dream Team gold?",
+    "options": [
+      "Paris, France",
+      "Tokyo, Japan",
+      "USA",
+      "Beijing, China"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q091",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who was the No.1 pick in 2003?",
+    "options": [
+      "Robert Parish",
+      "LeBron James",
+      "Charlotte Hornets",
+      "Michael Jordan"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q092",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What is the technical name for the grip with the index knuckle on bevel 3, popular for forehands?",
+    "options": [
+      "Novak Djokovic (7)",
+      "Eastern grip",
+      "Ace",
+      "Volley"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q093",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Which franchise has the most NBA championships?",
+    "options": [
+      "Boston Celtics",
+      "China",
+      "Player Efficiency Rating",
+      "Shai Gilgeous-Alexander"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q094",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Which player was Finals MVP in 2023?",
+    "options": [
+      "Pete Maravich",
+      "Nikola Jokić",
+      "Petr Čech",
+      "Victor Wembanyama"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q095",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Who was the first male cricketer to score a double century in ODI cricket?",
+    "options": [
+      "Virender Sehwag",
+      "Rohit Sharma",
+      "Sachin Tendulkar",
+      "Chris Gayle"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q096",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who is nicknamed \"The Logo\"?",
+    "options": [
+      "Yashin",
+      "Jerry West",
+      "Bill Russell",
+      "Alvin Robertson"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q097",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which player holds the record for the most total centuries in Test cricket (51 centuries)?",
+    "options": [
+      "Jacques Kallis",
+      "Ricky Ponting",
+      "Sachin Tendulkar",
+      "Steve Smith"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q098",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which club has won the most Ligue 1 titles?",
+    "options": [
+      "Argentina",
+      "Mbappé",
+      "The FIFA World Cup Trophy",
+      "Paris Saint-Germain"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q099",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Who was named Player of the Match in the 2011 ODI World Cup final?",
+    "options": [
+      "Gautam Gambhir",
+      "MS Dhoni",
+      "Yuvraj Singh",
+      "Zaheer Khan"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q100",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What is the technical term for a serve that hits the net cord but still lands in the correct service box?",
+    "options": [
+      "Let",
+      "Alleys",
+      "216",
+      "US Open"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q101",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which fast bowler holds the record for most wickets in Test match history?",
+    "options": [
+      "Glenn McGrath",
+      "Stuart Broad",
+      "James Anderson",
+      "Wasim Akram"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q102",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Which player is famous for the Dream Shake?",
+    "options": [
+      "Hakeem Olajuwon",
+      "China",
+      "Wilt Chamberlain (100)",
+      "Karl Malone"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q103",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "In what year was the French Open first held?",
+    "options": [
+      "1890",
+      "1891",
+      "1893",
+      "1892"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q104",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which batter holds the record for most centuries in ODI cricket history?",
+    "options": [
+      "Sachin Tendulkar",
+      "Virat Kohli",
+      "Rohit Sharma",
+      "Ricky Ponting"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q105",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which wicketkeeper has the most total dismissals across all international formats?",
+    "options": [
+      "MS Dhoni",
+      "Adam Gilchrist",
+      "Mark Boucher",
+      "Kumar Sangakkara"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q106",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Who holds the record for the highest individual score in Men’s Test cricket (400*)?",
+    "options": [
+      "Matthew Hayden",
+      "Brian Lara",
+      "Sir Donald Bradman",
+      "Virender Sehwag"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q107",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Which NBA team has a shamrock logo?",
+    "options": [
+      "Boston Celtics",
+      "Petr Čech",
+      "Sam Perkins",
+      "Giannis Antetokounmpo"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q108",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "What is the FIBA three-point distance?",
+    "options": [
+      "7.75 m",
+      "7.25 m",
+      "6.75 m",
+      "6.90 m"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q109",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which country hosted the 2014 FIFA World Cup?",
+    "options": [
+      "Iniesta",
+      "Brazil",
+      "Greece",
+      "Uruguay"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q110",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "What does VAR stand for?",
+    "options": [
+      "Anfield",
+      "Sporting",
+      "Video Assistant Referee",
+      "Portugal"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q111",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "What team did Tim Duncan spend his entire career with?",
+    "options": [
+      "Bill Russell (11)",
+      "USA",
+      "San Antonio Spurs",
+      "Michael Jordan"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q112",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Against which team did Sachin Tendulkar score his iconic 200* in ODIs?",
+    "options": [
+      "Australia",
+      "South Africa",
+      "Sri Lanka",
+      "Bangladesh"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q113",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Who scored the fastest century in ODI cricket history (off just 31 balls)?",
+    "options": [
+      "Shahid Afridi",
+      "AB de Villiers",
+      "Corey Anderson",
+      "Chris Gayle"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q114",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who won the first NBA championship?",
+    "options": [
+      "Philadelphia Warriors",
+      "John Stockton",
+      "Devin Booker",
+      "Larry Bird"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q115",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who has the most career assists?",
+    "options": [
+      "John Stockton",
+      "Giannis Antetokounmpo",
+      "Devin Booker",
+      "Wilt Chamberlain"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q116",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which spinner holds the record for most wickets in ODI cricket history?",
+    "options": [
+      "Wasim Akram",
+      "Muttiah Muralitharan",
+      "Waqar Younis",
+      "Chaminda Vaas"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q117",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who won the 2025 NBA championship?",
+    "options": [
+      "Wilt Chamberlain (100)",
+      "Victor Wembanyama",
+      "Michael Jordan",
+      "Oklahoma City Thunder"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q118",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which bowler has taken the most wickets in Test cricket history (800 wickets)?",
+    "options": [
+      "Shane Warne",
+      "James Anderson",
+      "Muttiah Muralitharan",
+      "Anil Kumble"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q119",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Which player hit the winning six and scored 91* in the 2011 World Cup final?",
+    "options": [
+      "Gautam Gambhir",
+      "MS Dhoni",
+      "Sachin Tendulkar",
+      "Virat Kohli"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q120",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What is the length of a standard tennis court from baseline to baseline?",
+    "options": [
+      "78 feet",
+      "80 feet",
+      "79 feet",
+      "76 feet"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q121",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first player given out by a third umpire (TV replay) in international cricket?",
+    "options": [
+      "Rahul Dravid",
+      "Sachin Tendulkar",
+      "Brian Lara",
+      "Hansie Cronje"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q122",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which goalkeeper captained Italy to the 2006 World Cup?",
+    "options": [
+      "Satnam Singh Bhullar",
+      "Buffon",
+      "Hakeem Olajuwon",
+      "Robert Parish"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q123",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which player has scored the most total centuries in ODI World Cup history (7 centuries)?",
+    "options": [
+      "Sachin Tendulkar",
+      "Ricky Ponting",
+      "Rohit Sharma",
+      "David Warner"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q124",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which coach has won the most NBA championships?",
+    "options": [
+      "Red Auerbach",
+      "George Gervin",
+      "Wes Unseld",
+      "Bobby Jones"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q125",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which batter has hit the most total sixes in ODI World Cup history?",
+    "options": [
+      "Chris Gayle",
+      "AB de Villiers",
+      "Rohit Sharma",
+      "Ricky Ponting"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q126",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Who is the all-time top scorer for Brazil?",
+    "options": [
+      "Dirk Nowitzki",
+      "Neymar",
+      "Oscar Robertson",
+      "Topspin"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q127",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which country has reached the most World Cup finals?",
+    "options": [
+      "Sporting",
+      "Mbappé",
+      "Germany",
+      "Klose"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q128",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which coach has the most regular-season wins in NBA history?",
+    "options": [
+      "Don Nelson",
+      "USA",
+      "Charlotte Hornets",
+      "Tex Winter"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q129",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first Indian cricketer to score centuries in all three international formats?",
+    "options": [
+      "Rohit Sharma",
+      "Virat Kohli",
+      "Suresh Raina",
+      "KL Rahul"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q130",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player won the 2006 Ballon d'Or?",
+    "options": [
+      "Juventus",
+      "Italy",
+      "Cannavaro",
+      "Munich"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q131",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which player scored 81 points against the Toronto Raptors in 2006?",
+    "options": [
+      "Lakers",
+      "Kobe Bryant",
+      "Russell Westbrook",
+      "Michael Jordan"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q132",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which country won the inaugural FIBA Basketball World Cup in 1950?",
+    "options": [
+      "Argentina",
+      "Diana Taurasi",
+      "LeBron James",
+      "Kobe Bryant"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q133",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Which male player holds the record for most ATP Finals titles?",
+    "options": [
+      "Novak Djokovic (5)",
+      "Novak Djokovic (9)",
+      "Novak Djokovic (6)",
+      "Novak Djokovic (7)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q134",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Whose jersey number was retired across the entire NBA in 2022?",
+    "options": [
+      "Nikola Jokić",
+      "Dikembe Mutombo",
+      "Bill Russell",
+      "Milwaukee Bucks"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q135",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which player scored the fastest double century in Test history (off 153 balls)?",
+    "options": [
+      "Virender Sehwag",
+      "Nathan Astle",
+      "Brendon McCullum",
+      "Adam Gilchrist"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q136",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which goalkeeper won the Ballon d'Or?",
+    "options": [
+      "Yashin",
+      "Lakers",
+      "Robert Parish",
+      "Larry Bird"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q137",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who won the first NBA Finals MVP Award?",
+    "options": [
+      "China",
+      "Pete Maravich",
+      "Larry Bird",
+      "Jerry West"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q138",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Who is the only male player to win the Calendar Grand Slam twice in the Open Era?",
+    "options": [
+      "Michael Chang",
+      "Rod Laver",
+      "Double fault",
+      "Let"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q139",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Which Grand Slam tournament continues to be played on its original surface (grass)?",
+    "options": [
+      "40",
+      "Roger Federer (237 weeks)",
+      "Wimbledon",
+      "The Grand Slams (Australian Open, French Open, Wimbledon, US Open)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q140",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Who scored the \\\"Hand of God\\\" goal?",
+    "options": [
+      "Porto",
+      "Maradona",
+      "Cannavaro",
+      "Miroslav Klose"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q141",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which nation won the 1938 World Cup?",
+    "options": [
+      "Italy",
+      "Germany",
+      "Bader Al-Mutawa (or Cristiano Ronaldo, depending on source)",
+      "Arsenal"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q142",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which club won the inaugural UEFA Champions League (European Cup)?",
+    "options": [
+      "Solskjær",
+      "(varies by tournament, e.g. the Adidas match ball)",
+      "England",
+      "Real Madrid"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q143",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first player in Test cricket history to score a triple century (325 runs)?",
+    "options": [
+      "Don Bradman",
+      "Andy Sandham",
+      "Wally Hammond",
+      "Hanif Mohammad"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q144",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which player scored 70 points in a game before turning 21?",
+    "options": [
+      "John Stockton",
+      "Hakeem Olajuwon",
+      "Devin Booker",
+      "6.75 m"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q145",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which country won Euro 1992?",
+    "options": [
+      "Baggio",
+      "Denmark",
+      "Casillas",
+      "Sporting"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q146",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player won the 2007 Ballon d'Or?",
+    "options": [
+      "Kaká",
+      "Miroslav Klose",
+      "Allianz Arena",
+      "(check latest records --- winner varies by source)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q147",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which coach developed the Triangle Offense?",
+    "options": [
+      "Sam Bowie",
+      "Devin Booker",
+      "Larry Bird",
+      "Tex Winter"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q148",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "What is Sir Donald Bradman's famous career Test batting average?",
+    "options": [
+      "95.14",
+      "99.94",
+      "101.20",
+      "88.60"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q149",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which player hit an extraordinary 175* off 66 balls in an IPL match for RCB in 2013?",
+    "options": [
+      "Brendon McCullum",
+      "Chris Gayle",
+      "AB de Villiers",
+      "KL Rahul"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q150",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which city hosted the 2012 Champions League final?",
+    "options": [
+      "Mbappé",
+      "USA",
+      "Lionel Messi",
+      "Munich"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q151",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player has the nickname \\\"Il Divin Codino\\\"?",
+    "options": [
+      "Maracanã",
+      "(check latest records --- winner varies by source)",
+      "90 minutes",
+      "Baggio"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q152",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which club is nicknamed \"The Citizens\"?",
+    "options": [
+      "Manchester City",
+      "Sporting",
+      "Paris Saint-Germain",
+      "Real Madrid"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q153",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which club did Neymar leave to join PSG?",
+    "options": [
+      "Klose",
+      "Kaká",
+      "Barcelona",
+      "Allianz Arena"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q154",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which two teams played the first official Men’s T20 International in 2005?",
+    "options": [
+      "England and Australia",
+      "Australia and New Zealand",
+      "South Africa and New Zealand",
+      "India and Pakistan"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q155",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which player has won the NBA Defensive Player of the Year award four times?",
+    "options": [
+      "New York Knicks",
+      "Dikembe Mutombo",
+      "Kobe Bryant",
+      "Victor Wembanyama"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q156",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which player holds the record for most stumpings in international cricket history?",
+    "options": [
+      "Kumar Sangakkara",
+      "Romesh Kaluwitharana",
+      "MS Dhoni",
+      "Moin Khan"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q157",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who scored the most runs in a single edition of an ODI World Cup (765 runs in 2023)?",
+    "options": [
+      "Sachin Tendulkar",
+      "Matthew Hayden",
+      "Virat Kohli",
+      "Rohit Sharma"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q158",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player missed the decisive penalty in the 1994 World Cup final?",
+    "options": [
+      "Argentina",
+      "Baggio",
+      "Solskjær",
+      "(check latest records --- winner varies by source)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q159",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Which player won Finals MVP after leading Dallas to the 2011 title?",
+    "options": [
+      "Singles",
+      "Lob",
+      "Dirk Nowitzki",
+      "Oscar Robertson"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q160",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player has the most international appearances in men's football?",
+    "options": [
+      "Camp Nou",
+      "Bader Al-Mutawa (or Cristiano Ronaldo, depending on source)",
+      "Italy",
+      "Mourinho"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q161",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Which Grand Slam has been played on three different surfaces throughout its history?",
+    "options": [
+      "The Four Musketeers",
+      "Service box",
+      "US Open",
+      "Serena Williams"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q162",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who became the first Indian-born player to appear in an NBA game?",
+    "options": [
+      "Robert Parish",
+      "Satnam Singh Bhullar",
+      "Phil Jackson",
+      "New York Knicks"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q163",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player won the 1995 Ballon d'Or?",
+    "options": [
+      "England",
+      "Weah",
+      "Cannavaro",
+      "Manchester United"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q164",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which club did Pirlo join after Milan?",
+    "options": [
+      "Juventus",
+      "Kaká",
+      "Solskjær",
+      "FIFA"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q165",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first cricketer in history to reach 10,000 runs in ODI cricket?",
+    "options": [
+      "Desmond Haynes",
+      "Sunil Gavaskar",
+      "Sachin Tendulkar",
+      "Inzamam-ul-Haq"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q166",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player scored the winning goal in the 1999 Champions League final?",
+    "options": [
+      "Solskjær",
+      "Red",
+      "USA",
+      "Kaká"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q167",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which country hosted the first UEFA Euro?",
+    "options": [
+      "Dortmund",
+      "France",
+      "Miroslav Klose",
+      "Brazil"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q168",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who won the first NBA Slam Dunk Contest?",
+    "options": [
+      "Bill Russell",
+      "Robert Parish",
+      "Derrick Rose",
+      "Larry Nance Jr."
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q169",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first bowler in cricket history to reach 500 Test wickets?",
+    "options": [
+      "Shane Warne",
+      "Muttiah Muralitharan",
+      "Courtney Walsh",
+      "Kapil Dev"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q170",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which club did Xabi Alonso leave before Bayern?",
+    "options": [
+      "England",
+      "Manchester United",
+      "Real Madrid",
+      "Gullit"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q171",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which player scored the fastest ODI fifty in men's cricket history (16 balls)?",
+    "options": [
+      "Sanath Jayasuriya",
+      "AB de Villiers",
+      "Shahid Afridi",
+      "Kusal Perera"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q172",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "What is the name of Bayern Munich's home stadium?",
+    "options": [
+      "Juventus",
+      "Real Madrid",
+      "Allianz Arena",
+      "(check latest records --- winner varies by source)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q173",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "What is the French Open men's trophy named in honor of?",
+    "options": [
+      "Jimmy Connors",
+      "Drop shot",
+      "Baseline",
+      "The Four Musketeers"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q174",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which bowler holds the best bowling figures in a Men's ODI innings (8/19)?",
+    "options": [
+      "Muttiah Muralitharan",
+      "Chaminda Vaas",
+      "Shahid Afridi",
+      "Glenn McGrath"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q175",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which non-wicketkeeper holds the record for most catches in Test history (210 catches)?",
+    "options": [
+      "Mahela Jayawardene",
+      "Ricky Ponting",
+      "Rahul Dravid",
+      "Jacques Kallis"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q176",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which bowler has taken the most overall wickets in ODI World Cup history (71 wickets)?",
+    "options": [
+      "Wasim Akram",
+      "Lasith Malinga",
+      "Glenn McGrath",
+      "Mitchell Starc"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q177",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first cricketer in history to reach 10,000 Test runs?",
+    "options": [
+      "Allan Border",
+      "Sachin Tendulkar",
+      "Sunil Gavaskar",
+      "Brian Lara"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q178",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was awarded Player of the Tournament at the 2003 ODI World Cup?",
+    "options": [
+      "Ricky Ponting",
+      "Sachin Tendulkar",
+      "Chaminda Vaas",
+      "Adam Gilchrist"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q179",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first spin bowler to reach 600 Test wickets?",
+    "options": [
+      "Muttiah Muralitharan",
+      "Shane Warne",
+      "Anil Kumble",
+      "James Anderson"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q180",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who won the first NBA MVP Award?",
+    "options": [
+      "Wilt Chamberlain",
+      "Russell Westbrook",
+      "Bob Pettit",
+      "Derrick Rose"
+    ],
+    "correct": 2
+  }
+];
+
+    let deck = [...RAW_QUESTIONS];
+    let questionIndex = 0;
+    let isQuestionSlide = false; // false = Slide 1 (Intro), true = Slide 2 (Question)
+    
+    let timerSeconds = 30;
+    let timerInterval = null;
+    let isTimerRunning = false;
+    
+    let selectedOption = null;
+    let answerRevealed = false;
+    let score = 0;
+    let streak = 0;
+    let soundEnabled = true;
+    let currentFilter = 'ALL';
+
+    // Sound Synthesizer
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    let audioCtx = null;
+
+    function playSound(type) {
+      if (!soundEnabled) return;
+      try {
+        if (!audioCtx) audioCtx = new AudioCtx();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        const now = audioCtx.currentTime;
+        if (type === 'tick') {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(600, now);
+          gain.gain.setValueAtTime(0.03, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+          osc.start(now);
+          osc.stop(now + 0.04);
+        } else if (type === 'warning') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(800, now);
+          gain.gain.setValueAtTime(0.06, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+          osc.start(now);
+          osc.stop(now + 0.1);
+        } else if (type === 'correct') {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(523.25, now);
+          osc.frequency.setValueAtTime(659.25, now + 0.08);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+          osc.start(now);
+          osc.stop(now + 0.3);
+        } else if (type === 'wrong') {
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(200, now);
+          osc.frequency.setValueAtTime(140, now + 0.08);
+          gain.gain.setValueAtTime(0.1, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+          osc.start(now);
+          osc.stop(now + 0.25);
+        }
+      } catch (e) {}
+    }
+
+    function toggleSound() {
+      soundEnabled = !soundEnabled;
+      document.getElementById('soundIcon').className = soundEnabled ? 'fa-solid fa-volume-high' : 'fa-solid fa-volume-xmark';
+      showToast(soundEnabled ? 'Sound Enabled' : 'Sound Muted');
+    }
+
+    /* FULLSCREEN TOGGLE IMPLEMENTATION (CROSS BROWSER + CSS FALLBACK) */
+    function toggleFullscreen() {
+      const appContainer = document.getElementById('appContainer');
+      const isFs = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || appContainer.classList.contains('is-fullscreen');
+
+      if (!isFs) {
+        // Enter Fullscreen
+        appContainer.classList.add('is-fullscreen');
+        const elem = document.documentElement;
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen().catch(() => {});
+        } else if (elem.webkitRequestFullscreen) {
+          elem.webkitRequestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+          elem.mozRequestFullScreen();
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        }
+        showToast('Entered Presentation Fullscreen Mode');
+      } else {
+        // Exit Fullscreen
+        appContainer.classList.remove('is-fullscreen');
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+        showToast('Exited Fullscreen Mode');
+      }
+    }
+
+    // Sync fullscreen button state if user exits via ESC key
+    document.addEventListener('fullscreenchange', () => {
+      const appContainer = document.getElementById('appContainer');
+      if (!document.fullscreenElement) {
+        appContainer.classList.remove('is-fullscreen');
+      }
+    });
+
+    function getSportIcon(sport) {
+      switch(sport) {
+        case 'Cricket': return '<i class="fa-solid fa-baseball-bat-ball" style="color:var(--sport-cricket)"></i>';
+        case 'Football': return '<i class="fa-solid fa-futbol" style="color:var(--sport-football)"></i>';
+        case 'Tennis': return '<i class="fa-solid fa-table-tennis-paddle-ball" style="color:var(--sport-tennis)"></i>';
+        case 'Basketball': return '<i class="fa-solid fa-basketball" style="color:var(--sport-basketball)"></i>';
+        default: return '<i class="fa-solid fa-trophy"></i>';
+      }
+    }
+
+    function getDiffColor(diff) {
+      switch(diff) {
+        case 'Easy': return 'var(--accent-easy)';
+        case 'Medium': return 'var(--accent-medium)';
+        case 'Hard': return 'var(--accent-hard)';
+        default: return '#fff';
+      }
+    }
+
+    function shuffleDeck() {
+      for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+      }
+      questionIndex = 0;
+      isQuestionSlide = false;
+      showToast('Deck Shuffled!');
+      renderSlide();
+    }
+
+    function renderSlide() {
+      stopTimer();
+      const area = document.getElementById('slideContentArea');
+      const q = deck[questionIndex];
+
+      const currentSlideNum = questionIndex * 2 + (isQuestionSlide ? 2 : 1);
+      const totalSlides = deck.length * 2;
+      
+      document.getElementById('slideInfo').innerText = `Slide ${currentSlideNum} of ${totalSlides} (${isQuestionSlide ? 'Question' : 'Intro'})`;
+      document.getElementById('progressLine').style.width = `${(currentSlideNum / totalSlides) * 100}%`;
+      document.getElementById('scoreVal').innerText = score;
+      document.getElementById('streakVal').innerText = streak;
+
+      if (!isQuestionSlide) {
+        // SLIDE 1 OF PAIR: MINIMAL INTRO SLIDE
+        area.innerHTML = `
+          <div class="intro-slide">
+            <div class="slide-label-top">QUESTION ${questionIndex + 1} OF ${deck.length} • INTRO</div>
+            
+            <div class="intro-sport-display" style="color: ${getDiffColor(q.difficulty)};">
+              ${getSportIcon(q.sport)} ${q.sport}
+            </div>
+            
+            <div class="intro-diff-badge" style="background: ${getDiffColor(q.difficulty)}18; color: ${getDiffColor(q.difficulty)}; border: 1.5px solid ${getDiffColor(q.difficulty)};">
+              ⚡ ${q.difficulty}
+            </div>
+
+            <button class="reveal-prompt-btn" onclick="nextSlide()">
+              REVEAL QUESTION SLIDE <i class="fa-solid fa-play" style="font-size:0.9rem; margin-left:0.4rem;"></i>
+            </button>
+          </div>
+        `;
+        document.getElementById('revealBtn').style.display = 'none';
+      } else {
+        // SLIDE 2 OF PAIR: MINIMAL QUESTION SLIDE (MCQ + 30S TIMER)
+        selectedOption = null;
+        answerRevealed = false;
+
+        area.innerHTML = `
+          <div class="question-slide">
+            <div class="q-meta-header">
+              <div class="q-badge-group">
+                <span class="q-pill" style="background:${getDiffColor(q.difficulty)}18; color:${getDiffColor(q.difficulty)}; border:1px solid ${getDiffColor(q.difficulty)};">
+                  ${q.difficulty}
+                </span>
+                <span class="q-pill" style="background:rgba(255,255,255,0.06); color:#cbd5e1;">
+                  ${getSportIcon(q.sport)} ${q.sport}
+                </span>
+              </div>
+
+              <div class="timer-widget" id="timerWidget">
+                <svg class="timer-svg">
+                  <circle class="timer-bg" cx="24" cy="24" r="22"></circle>
+                  <circle class="timer-progress" id="timerProgress" cx="24" cy="24" r="22"></circle>
+                </svg>
+                <div class="timer-text" id="timerText">30</div>
+              </div>
+            </div>
+
+            <div class="q-main-text">${q.question}</div>
+
+            <div class="mcq-grid">
+              ${q.options.map((opt, idx) => `
+                <div class="mcq-card" id="opt-${idx}" onclick="selectOption(${idx})">
+                  <div class="mcq-badge">${String.fromCharCode(65 + idx)}</div>
+                  <div class="mcq-label">${opt}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+        document.getElementById('revealBtn').style.display = 'inline-flex';
+        startTimer();
+      }
+    }
+
+    function nextSlide() {
+      if (!isQuestionSlide) {
+        isQuestionSlide = true;
+        renderSlide();
+      } else {
+        if (questionIndex < deck.length - 1) {
+          questionIndex++;
+          isQuestionSlide = false;
+          renderSlide();
+        } else {
+          showToast('Deck Completed! Reshuffling...');
+          shuffleDeck();
+        }
+      }
+    }
+
+    function prevSlide() {
+      if (isQuestionSlide) {
+        isQuestionSlide = false;
+        renderSlide();
+      } else {
+        if (questionIndex > 0) {
+          questionIndex--;
+          isQuestionSlide = true;
+          renderSlide();
+        }
+      }
+    }
+
+    /* TIMER CONTROLS */
+    function startTimer() {
+      stopTimer();
+      timerSeconds = 30;
+      isTimerRunning = true;
+      updateTimerUI();
+
+      timerInterval = setInterval(() => {
+        if (!isTimerRunning) return;
+        timerSeconds--;
+        updateTimerUI();
+
+        if (timerSeconds <= 5 && timerSeconds > 0) {
+          playSound('warning');
+        } else {
+          playSound('tick');
+        }
+
+        if (timerSeconds <= 0) {
+          stopTimer();
+          playSound('wrong');
+          revealAnswerCurrent();
+          showToast('Time Up!');
+          setTimeout(() => {
+            nextSlide();
+          }, 2000);
+        }
+      }, 1000);
+    }
+
+    function stopTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      isTimerRunning = false;
+    }
+
+    function updateTimerUI() {
+      const text = document.getElementById('timerText');
+      const progress = document.getElementById('timerProgress');
+      const widget = document.getElementById('timerWidget');
+
+      if (text) text.innerText = timerSeconds;
+      if (progress) {
+        const offset = 138 - (138 * timerSeconds) / 30;
+        progress.style.strokeDashoffset = offset;
+      }
+
+      if (widget) {
+        if (timerSeconds <= 5) widget.classList.add('alert');
+        else widget.classList.remove('alert');
+      }
+    }
+
+    /* OPTION SELECTION */
+    function selectOption(idx) {
+      if (answerRevealed || !isQuestionSlide) return;
+      selectedOption = idx;
+      revealAnswerCurrent();
+    }
+
+    function revealAnswerCurrent() {
+      if (answerRevealed || !isQuestionSlide) return;
+      answerRevealed = true;
+      stopTimer();
+
+      const q = deck[questionIndex];
+      const correctIdx = q.correct;
+
+      for (let i = 0; i < 4; i++) {
+        const optEl = document.getElementById(`opt-${i}`);
+        if (!optEl) continue;
+        optEl.classList.add('disabled');
+
+        if (i === correctIdx) {
+          optEl.classList.add('correct');
+        } else if (i === selectedOption) {
+          optEl.classList.add('incorrect');
+        }
+      }
+
+      if (selectedOption === correctIdx) {
+        score += 10;
+        streak++;
+        playSound('correct');
+        showToast('Correct! +10 Points');
+      } else if (selectedOption !== null) {
+        streak = 0;
+        playSound('wrong');
+        showToast('Incorrect Answer!');
+      }
+
+      document.getElementById('scoreVal').innerText = score;
+      document.getElementById('streakVal').innerText = streak;
+    }
+
+    /* GRID MODAL */
+    function openGridModal() {
+      renderGridItems();
+      document.getElementById('gridModal').style.display = 'flex';
+    }
+
+    function closeGridModal() {
+      document.getElementById('gridModal').style.display = 'none';
+    }
+
+    function filterGrid(filter, btn) {
+      currentFilter = filter;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderGridItems();
+    }
+
+    function renderGridItems() {
+      const container = document.getElementById('gridContainer');
+      container.innerHTML = '';
+
+      deck.forEach((q, idx) => {
+        if (currentFilter !== 'ALL') {
+          if (currentFilter === 'Easy' || currentFilter === 'Medium' || currentFilter === 'Hard') {
+            if (q.difficulty !== currentFilter) return;
+          } else {
+            if (q.sport !== currentFilter) return;
+          }
+        }
+
+        const cell = document.createElement('div');
+        cell.className = `grid-cell ${idx === questionIndex ? 'active' : ''}`;
+        cell.onclick = () => {
+          questionIndex = idx;
+          isQuestionSlide = false;
+          closeGridModal();
+          renderSlide();
+        };
+
+        cell.innerHTML = `
+          <div style="font-family:var(--font-heading); font-weight:800; font-size:0.9rem;">Q${idx + 1}</div>
+          <div style="font-size:0.6rem; font-weight:700; color:${getDiffColor(q.difficulty)};">
+            ${q.difficulty[0]} • ${q.sport.slice(0, 3)}
+          </div>
+        `;
+        container.appendChild(cell);
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    /* KEYBOARD SHORTCUTS */
+    document.addEventListener('keydown', (e) => {
+      if (document.getElementById('gridModal').style.display === 'flex') {
+        if (e.key === 'Escape') closeGridModal();
+        return;
+      }
+
+      if (e.code === 'Space' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevSlide();
+      } else if (e.key === '1' || e.key === 'a' || e.key === 'A') {
+        selectOption(0);
+      } else if (e.key === '2' || e.key === 'b' || e.key === 'B') {
+        selectOption(1);
+      } else if (e.key === '3' || e.key === 'c' || e.key === 'C') {
+        selectOption(2);
+      } else if (e.key === '4' || e.key === 'd' || e.key === 'D') {
+        selectOption(3);
+      } else if (e.key === 'r' || e.key === 'R') {
+        revealAnswerCurrent();
+      } else if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      } else if (e.key === 'g' || e.key === 'G') {
+        openGridModal();
+      }
+    });
+
+    // Initialize Deck on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      shuffleDeck();
+    });
+  </script>
+</body>
+</html>

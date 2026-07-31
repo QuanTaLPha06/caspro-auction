@@ -1,0 +1,790 @@
+import json
+
+# Load final_sports_words.json
+with open('final_sports_words.json', 'r', encoding='utf-8') as f:
+    sports_words = json.load(f)
+
+print(f"Total sports words to embed: {len(sports_words)}")
+
+# Convert sports_words to formatted JS array string
+js_sports_data = json.dumps(sports_words, indent=2, ensure_ascii=False)
+
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heads Up! Sports Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Teko:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-dark: #070d14;
+    --panel-bg: #0e1924;
+    --panel-border: #1c2d3d;
+    --stadium-green: #00e676;
+    --stadium-green-dark: #00a852;
+    --sports-gold: #ffc83b;
+    --sports-gold-dark: #cc9b1e;
+    --electric-blue: #00b0ff;
+    --card-bg: #f8fafc;
+    --ink: #060b10;
+    --pass-gray: #475569;
+    --pass-amber: #f59e0b;
+    --text-light: #f1f5f9;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(0,230,118,0.18), transparent 50%),
+      radial-gradient(circle at 85% 90%, rgba(0,176,255,0.15), transparent 45%),
+      var(--bg-dark);
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-light);
+    position:relative;
+    overflow-x:hidden;
+  }
+  .web-bg{
+    position:fixed; inset:0; z-index:0; pointer-events:none; opacity:0.07;
+    background-image:
+      repeating-linear-gradient(0deg, transparent 0 40px, rgba(255,255,255,0.4) 40px 42px),
+      repeating-linear-gradient(90deg, transparent 0 80px, rgba(255,255,255,0.2) 80px 81px);
+  }
+  .halftone{
+    position:fixed; inset:0; z-index:0; pointer-events:none; opacity:0.04;
+    background-image: radial-gradient(circle, #00e676 1.4px, transparent 1.5px);
+    background-size: 12px 12px;
+  }
+  .app{
+    position:relative; z-index:1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px 16px 50px;
+    min-height:100vh;
+    display:flex; flex-direction:column;
+  }
+  .screen{ display:none; flex:1; flex-direction:column; }
+  .screen.active{ display:flex; }
+
+  .logo-wrap{ text-align:center; margin-bottom: 16px; position:relative; }
+  .logo-wrap .eyebrow{
+    font-family:'Oswald', sans-serif;
+    color: var(--stadium-green);
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    font-size:13px;
+    display:inline-block;
+    background: rgba(0,230,118,0.12);
+    border: 1px solid rgba(0,230,118,0.3);
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin-bottom:6px;
+    font-weight: 700;
+  }
+  h1.title{
+    font-family:'Teko', sans-serif;
+    font-size: 54px;
+    letter-spacing: 2px;
+    margin:0;
+    line-height:0.95;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 4px 18px rgba(0,230,118,0.35);
+  }
+  h1.title span{ color: var(--stadium-green); text-shadow: 0 4px 18px rgba(0,230,118,0.5); }
+
+  .panel{
+    background: linear-gradient(180deg, var(--panel-bg), #09121b);
+    border: 2px solid var(--panel-border);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
+    padding: 20px;
+    position:relative;
+  }
+  .panel + .panel{ margin-top:14px; }
+
+  label.field-label{
+    font-family:'Oswald', sans-serif;
+    font-size:16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--sports-gold);
+    display:block;
+    margin-bottom:8px;
+  }
+  input[type="text"], input[type="tel"]{
+    width:100%;
+    padding:14px 16px;
+    border-radius:10px;
+    border:2px solid #1a2f42;
+    background:#071018;
+    color:var(--text-light);
+    font-family:'Space Grotesk', sans-serif;
+    font-size:18px;
+    letter-spacing:1px;
+    outline:none;
+    transition: border-color 0.2s ease;
+  }
+  input[type="text"]:focus, input[type="tel"]:focus{ border-color: var(--stadium-green); box-shadow: 0 0 12px rgba(0,230,118,0.25); }
+
+  .btn{
+    font-family:'Teko', sans-serif;
+    letter-spacing:1.5px;
+    font-size:26px;
+    line-height: 1;
+    text-transform: uppercase;
+    border:none;
+    border-radius:12px;
+    padding:14px 20px;
+    cursor:pointer;
+    color:#050a0e;
+    font-weight: 700;
+    background: linear-gradient(180deg, #00ff84, #00c860);
+    box-shadow: 0 6px 0 var(--stadium-green-dark), 0 8px 15px rgba(0,230,118,0.3);
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+  }
+  .btn:active{ transform: translateY(4px); box-shadow: 0 2px 0 var(--stadium-green-dark); }
+  .btn.block{ width:100%; }
+  .btn.secondary{
+    background: linear-gradient(180deg, var(--sports-gold), #e6a100);
+    color: #060b10;
+    box-shadow: 0 6px 0 var(--sports-gold-dark), 0 8px 15px rgba(255,200,59,0.3);
+  }
+  .btn.secondary:active{ box-shadow: 0 2px 0 var(--sports-gold-dark); }
+  .btn.ghost{
+    background:transparent; color: var(--text-light); box-shadow:none;
+    border:2px solid #1e3245;
+  }
+  .btn.ghost:active{ transform: translateY(2px); }
+  .btn:disabled{ opacity:0.5; cursor:not-allowed; }
+
+  /* Pool Info Badge */
+  .pool-status-bar{
+    display:flex; justify-content:space-between; align-items:center;
+    background: #071018; border: 1px solid #1a2f42; border-radius: 10px;
+    padding: 10px 14px; margin-bottom: 14px; font-size: 13px; color: #94a3b8;
+  }
+  .pool-status-bar b{ color: var(--stadium-green); }
+
+  /* ---------- Leaderboard ---------- */
+  .leaderboard-header{
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;
+  }
+  .leaderboard-title{ font-family:'Teko', sans-serif; font-size:28px; color: var(--sports-gold); letter-spacing:1px; margin:0; text-transform:uppercase; }
+  .lb-controls{ display:flex; align-items:center; gap:8px; }
+  .lb-tabs{ display:flex; background:#071018; border-radius:8px; padding:3px; border:1px solid #1a2f42; }
+  .lb-tab{
+    font-family:'Oswald', sans-serif; font-size:13px; letter-spacing:1px; background:transparent;
+    color:#708499; border:none; padding:4px 12px; border-radius:6px; cursor:pointer; transition: all 0.15s ease;
+  }
+  .lb-tab.active{ background:var(--stadium-green); color:#050a0e; font-weight:700; }
+  .lb-clear-btn{
+    font-family:'Space Grotesk', sans-serif; font-size:12px; background:rgba(239, 68, 68, 0.15);
+    color: #ef4444; border:1px solid #b91c1c; padding:4px 10px; border-radius:6px;
+    cursor:pointer; font-weight:600; transition: background 0.15s ease;
+  }
+  .lb-clear-btn:hover{ background:rgba(239, 68, 68, 0.35); }
+  .lb-list{ max-height: 280px; overflow-y: auto; padding-right: 4px; }
+  .lb-list::-webkit-scrollbar { width: 6px; }
+  .lb-list::-webkit-scrollbar-thumb { background: #1c2d3d; border-radius: 4px; }
+  .lb-row{
+    display:flex; justify-content:space-between; align-items:center; padding:10px 14px; border-radius:10px;
+    background:#071018; margin-bottom:8px; border-left:4px solid var(--electric-blue); font-weight:600;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .lb-row.winner-1{ border-left-color: var(--sports-gold); background: linear-gradient(90deg, rgba(255,200,59,0.12), #071018 60%); }
+  .lb-row.winner-2{ border-left-color: #cbd5e1; background: linear-gradient(90deg, rgba(203,213,225,0.08), #071018 60%); }
+  .lb-row.winner-3{ border-left-color: #d97706; background: linear-gradient(90deg, rgba(217,119,6,0.08), #071018 60%); }
+  .lb-row.latest{ animation: highlightGlow 1.8s ease; }
+  @keyframes highlightGlow { 0% { outline: 2px solid var(--stadium-green); background: #0c2619; } 100% { outline: 2px solid transparent; } }
+  .lb-left{ display:flex; align-items:center; gap:10px; }
+  .lb-rank{ font-family:'Teko', sans-serif; font-size:22px; width: 24px; text-align:center; color:#708499; }
+  .winner-1 .lb-rank{ color:var(--sports-gold); font-size:26px; }
+  .lb-info{ display:flex; flex-direction:column; gap:2px; }
+  .lb-name{ font-size:15px; color:var(--text-light); word-break:break-word; }
+  .lb-meta{ display:flex; align-items:center; gap:8px; font-size:11px; color:#708499; font-weight:normal; }
+  .lb-dur-tag{ background:#0e2030; padding:1px 6px; border-radius:4px; font-weight:600; color:var(--stadium-green); }
+  .lb-right{ display:flex; align-items:center; gap:4px; }
+  .lb-score-val{ font-family:'Teko', sans-serif; font-size:30px; letter-spacing:1px; color:var(--sports-gold); line-height:1; }
+  .lb-score-lbl{ font-size:11px; color:#708499; text-transform:uppercase; font-weight:normal; }
+  .lb-empty{ color:#708499; font-family:'Oswald', sans-serif; font-size:15px; text-align:center; display:block; padding:16px 0; letter-spacing:1px; }
+
+  /* ---------- Game screen ---------- */
+  .game-top{ display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; gap:8px; }
+  .stat{
+    background: var(--panel-bg); border:2px solid var(--panel-border); border-radius:12px; padding:8px 12px; text-align:center; flex:1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  .stat .num{ font-family:'Teko',sans-serif; font-weight:700; font-size:30px; line-height:1; color: var(--stadium-green); }
+  .stat .lbl{ font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#708499; font-family:'Oswald', sans-serif; }
+  #timerStat.low .num{ color: #ef4444; animation: pulse 0.6s infinite; }
+  @keyframes pulse{ 0%,100%{ transform:scale(1);} 50%{ transform:scale(1.12);} }
+
+  .card-stage{
+    flex:1; display:flex; align-items:center; justify-content:center; min-height: 240px; perspective: 1000px; margin: 8px 0 16px;
+  }
+  .word-card{
+    width:100%; max-width: 480px; min-height: 210px;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    border-radius: 20px; border: 4px solid var(--panel-border); box-shadow: 0 15px 30px rgba(0,0,0,0.5), 0 0 20px rgba(0,230,118,0.15);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding: 26px 20px; position:relative; color: var(--ink);
+  }
+  .word-card::before, .word-card::after{
+    content:""; position:absolute; width:20px; height:20px; border-radius:50%; background: var(--stadium-green); border:3px solid var(--ink);
+    box-shadow: 0 0 10px var(--stadium-green);
+  }
+  .word-card::before{ top:-10px; left:-10px; }
+  .word-card::after{ bottom:-10px; right:-10px; background:var(--sports-gold); box-shadow: 0 0 10px var(--sports-gold); }
+  
+  .card-category{
+    font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: #475569; margin-bottom: 12px;
+    background: rgba(0,0,0,0.06); padding: 4px 14px; border-radius: 12px;
+    font-weight: 600;
+  }
+
+  .word-card.swing-in{ animation: swingIn 0.3s cubic-bezier(.2,1.4,.4,1); }
+  @keyframes swingIn{
+    0%{ transform: translateY(-25px) scale(0.92); opacity:0; }
+    100%{ transform: translateY(0) scale(1); opacity:1; }
+  }
+  .word-card.fly-yes{ animation: flyYes 0.28s ease forwards; }
+  @keyframes flyYes{ to{ transform: translateX(130%) rotate(12deg); opacity:0; } }
+
+  .word-card.fly-pass{ animation: flyPass 0.28s ease forwards; }
+  @keyframes flyPass{ to{ transform: translateX(-130%) rotate(-12deg); opacity:0; } }
+
+  .word-text{ font-family:'Oswald', sans-serif; font-weight: 700; font-size: 36px; line-height:1.15; letter-spacing:1px; text-transform: uppercase; color: #0f172a; word-break:break-word; }
+
+  /* Dual Gameplay Action Buttons: GOT IT & PASS */
+  .controls-row{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+  .ctrl-btn{
+    font-family:'Teko', sans-serif; font-size:28px; letter-spacing:1.5px; padding:14px 8px; border-radius:14px;
+    border:none; cursor:pointer; color:#050a0e; font-weight: 700; text-transform: uppercase;
+    display:flex; align-items:center; justify-content:center; gap:6px;
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+  }
+  .ctrl-btn.yes{
+    background: linear-gradient(180deg,#00ff84,#00c860);
+    box-shadow: 0 6px 0 var(--stadium-green-dark), 0 8px 20px rgba(0,230,118,0.4);
+    color: #050a0e;
+  }
+  .ctrl-btn.pass{
+    background: linear-gradient(180deg, #f59e0b, #d97706);
+    box-shadow: 0 6px 0 #b45309, 0 8px 20px rgba(245,158,11,0.3);
+    color: #000000;
+  }
+  .ctrl-btn:active{ transform: translateY(4px); box-shadow:none !important; }
+  .ctrl-btn:disabled{ opacity:0.5; cursor:not-allowed; }
+  .hint{ text-align:center; font-family:'Space Grotesk', sans-serif; color:#708499; font-size:13px; margin-top:10px; }
+  .hint kbd{ background: #1a2f42; padding: 2px 6px; border-radius: 4px; color: #f1f5f9; font-family: monospace; font-size: 11px; }
+
+  /* ---------- Confirm / hold screen ---------- */
+  .confirm-wrap{
+    flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:18px; padding: 10px 0;
+  }
+  .confirm-icon{ font-size:56px; }
+  .confirm-msg{ font-family:'Teko', sans-serif; font-size:38px; letter-spacing:1px; color:var(--sports-gold); line-height:1; text-transform:uppercase; margin:0; }
+  .confirm-sub{ font-family:'Space Grotesk', sans-serif; font-size:15px; color:#94a3b8; max-width:440px; margin:0; }
+
+  .round-breakdown{
+    width: 100%; max-width: 480px; background: #071018; border: 1px solid #1a2f42; border-radius: 14px;
+    padding: 14px; text-align: left; max-height: 180px; overflow-y: auto; margin-top: 4px;
+  }
+  .breakdown-title{ font-family: 'Oswald', sans-serif; font-size: 13px; color: #708499; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 1px; }
+  .chip-container{ display:flex; flex-wrap:wrap; gap:6px; }
+  .chip{ font-size: 12px; padding: 4px 10px; border-radius: 14px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; display:inline-flex; align-items:center; gap:4px; }
+  .chip.correct{ background: rgba(0,230,118,0.15); color: var(--stadium-green); border: 1px solid rgba(0,230,118,0.3); }
+  .chip.passed{ background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+
+  /* Background floating static sports art */
+  .bg-sports-decor{
+    position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden;
+  }
+  .decor-item{
+    position:absolute; font-size: 50px; opacity: 0.10; filter: drop-shadow(0 0 8px rgba(0,230,118,0.2));
+    user-select:none;
+  }
+  .decor-1{ top: 5%; left: 3%; transform: rotate(-15deg); }
+  .decor-2{ top: 18%; right: 4%; transform: rotate(20deg); }
+  .decor-3{ top: 48%; left: 2%; transform: rotate(-10deg); }
+  .decor-4{ top: 65%; right: 3%; transform: rotate(15deg); }
+  .decor-5{ bottom: 10%; left: 4%; transform: rotate(25deg); }
+  .decor-6{ bottom: 5%; right: 5%; transform: rotate(-20deg); }
+
+  @media (max-width:480px){
+    h1.title{ font-size:44px; }
+    .word-text{ font-size:28px; }
+    .ctrl-btn{ font-size:22px; padding:12px 4px; }
+    .confirm-msg{ font-size:32px; }
+    .decor-item{ font-size:36px; opacity:0.06; }
+  }
+</style>
+</head>
+<body>
+<div class="web-bg"></div>
+<div class="halftone"></div>
+
+<!-- Floating Static Sports Elements -->
+<div class="bg-sports-decor">
+  <div class="decor-item decor-1" title="Cricket">🏏</div>
+  <div class="decor-item decor-2" title="Football">⚽</div>
+  <div class="decor-item decor-3" title="Olympics Record Holders">🥇</div>
+  <div class="decor-item decor-4" title="Formula 1">🏎️</div>
+  <div class="decor-item decor-5" title="Basketball">🏀</div>
+  <div class="decor-item decor-6" title="Tennis">🎾</div>
+</div>
+
+<div class="app">
+
+  <div class="logo-wrap">
+    <span class="eyebrow">MATCH DAY 🏆 — 90s SPEED ROUND</span>
+    <h1 class="title">HEADS UP <span>SPORTS</span></h1>
+  </div>
+
+  <!-- ============ CC ENTRY SCREEN ============ -->
+  <div class="screen active" id="ccScreen">
+    <div class="panel">
+      <label class="field-label">Enter your CC Number / Player Name</label>
+      <input type="text" id="ccNumber" placeholder="e.g. CC 10" maxlength="25">
+    </div>
+
+    <div class="panel">
+      <div class="pool-status-bar">
+        <span>Question Pool Status:</span>
+        <span><b id="poolRemainingCount">594</b> words remaining (no repeats!)</span>
+      </div>
+      <button class="btn block" id="startBtn">START 90s ROUND ⏱️</button>
+      <p class="hint" style="margin-top:10px;">Each CC gets <b>90 seconds</b>. Guess as many words as you can!<br>Tap <b>✓ GOT IT!</b> for points or <b>⏩ PASS</b> to skip.</p>
+    </div>
+
+    <div class="panel">
+      <div class="leaderboard-header">
+        <div class="leaderboard-title">📋 CC Leaderboard</div>
+        <div class="lb-controls">
+          <div class="lb-tabs">
+            <button class="lb-tab active" id="lbTabTop">TOP</button>
+            <button class="lb-tab" id="lbTabRecent">RECENT</button>
+          </div>
+          <button class="lb-clear-btn" id="clearLbBtn" title="Clear stored scores">Clear</button>
+        </div>
+      </div>
+      <div id="leaderboard"><span class="lb-empty">No rounds played yet — enter a CC number to start!</span></div>
+    </div>
+  </div>
+
+  <!-- ============ GAME SCREEN ============ -->
+  <div class="screen" id="gameScreen">
+    <div class="game-top">
+      <div class="stat"><div class="num" id="ccStat">—</div><div class="lbl">CC / Player</div></div>
+      <div class="stat" id="timerStat"><div class="num" id="timeLeft">90</div><div class="lbl">Seconds</div></div>
+      <div class="stat"><div class="num" id="scoreStat">0</div><div class="lbl">Guessed</div></div>
+    </div>
+
+    <div class="card-stage">
+      <div class="word-card swing-in" id="wordCard">
+        <div class="card-category" id="cardCat">🏆 SPORTS</div>
+        <div class="word-text" id="wordText">WORD</div>
+      </div>
+    </div>
+
+    <div class="controls-row">
+      <button class="ctrl-btn pass" id="passBtn">⏩ PASS / SKIP</button>
+      <button class="ctrl-btn yes" id="yesBtn">✓ GOT IT!</button>
+    </div>
+    <p class="hint">Playing CC: <b id="activePlayerLbl" style="color:var(--stadium-green);">—</b> | Keyboard: <kbd>→</kbd> / <kbd>Enter</kbd> = Got it, <kbd>←</kbd> / <kbd>P</kbd> = Pass</p>
+  </div>
+
+  <!-- ============ CONFIRM / ROUND END SCREEN ============ -->
+  <div class="screen" id="confirmScreen">
+    <div class="confirm-wrap">
+      <div class="confirm-icon" id="confirmIcon">🏁</div>
+      <h2 class="confirm-msg" id="confirmMsg">TIME'S UP!</h2>
+      <div class="confirm-sub" id="confirmSub">Round finished! Check your round summary below:</div>
+
+      <div class="round-breakdown" id="roundBreakdown">
+        <div class="breakdown-title">Round Summary:</div>
+        <div class="chip-container" id="chipContainer"></div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px; width:100%; max-width:360px; align-items:center; margin-top:6px;">
+        <button class="btn secondary block" id="confirmBtn" style="width:100%;">SAVE &amp; RETURN TO HOME</button>
+        <button class="btn ghost block" id="undoBtn" style="width:100%; font-size:20px;">↩ UNDO LAST ACTION</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  // Master Sports Word Bank (~600 terms extracted across all sports & quiz datasets)
+  const SPORTS_DATA = __SPORTS_DATA_PLACEHOLDER__;
+
+  const TURN_SECONDS = 90;
+
+  // ---------- Persistent Storage ----------
+  const STORAGE_KEY = 'heads_up_sports_leaderboard_v2';
+  const POOL_KEY = 'heads_up_sports_word_pool_v2';
+
+  function shuffle(arr){
+    const a = arr.slice();
+    for(let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function loadLeaderboard(){
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if(stored){
+        const parsed = JSON.parse(stored);
+        if(Array.isArray(parsed)) return parsed;
+      }
+    } catch(e) { console.warn('Unable to read leaderboard:', e); }
+    return [];
+  }
+  function saveLeaderboard(){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(leaderboard)); }
+    catch(e) { console.warn('Unable to save leaderboard:', e); }
+  }
+
+  // Word pool persists so words do NOT repeat until the entire pool is depleted.
+  function loadPool(){
+    try {
+      const stored = localStorage.getItem(POOL_KEY);
+      if(stored){
+        const parsed = JSON.parse(stored);
+        if(Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch(e) { console.warn('Unable to read word pool:', e); }
+    return shuffle(SPORTS_DATA);
+  }
+  function savePool(){
+    try { localStorage.setItem(POOL_KEY, JSON.stringify(wordPool)); }
+    catch(e) { console.warn('Unable to save word pool:', e); }
+  }
+
+  // ---------- State ----------
+  let wordPool = loadPool();
+  let leaderboard = loadLeaderboard();
+  let activeTab = 'top';
+  let latestEntryId = null;
+
+  let currentCcName = '';
+  let roundScore = 0;
+  let roundCorrect = [];
+  let roundPassed = [];
+  let currentWordObj = null;
+  let timeLeft = TURN_SECONDS;
+  let timerId = null;
+  let isRoundActive = false;
+  let lastAction = null; // for undo support: { type: 'yes'|'pass', wordObj: ... }
+
+  // ---------- Elements ----------
+  const ccScreen = document.getElementById('ccScreen');
+  const gameScreen = document.getElementById('gameScreen');
+  const confirmScreen = document.getElementById('confirmScreen');
+
+  const ccNumberInput = document.getElementById('ccNumber');
+  const startBtn = document.getElementById('startBtn');
+  const poolRemainingCount = document.getElementById('poolRemainingCount');
+  const leaderboardEl = document.getElementById('leaderboard');
+  const lbTabTop = document.getElementById('lbTabTop');
+  const lbTabRecent = document.getElementById('lbTabRecent');
+  const clearLbBtn = document.getElementById('clearLbBtn');
+
+  const ccStat = document.getElementById('ccStat');
+  const timeLeftEl = document.getElementById('timeLeft');
+  const timerStat = document.getElementById('timerStat');
+  const scoreStat = document.getElementById('scoreStat');
+  const wordCard = document.getElementById('wordCard');
+  const cardCat = document.getElementById('cardCat');
+  const wordText = document.getElementById('wordText');
+  const yesBtn = document.getElementById('yesBtn');
+  const passBtn = document.getElementById('passBtn');
+  const activePlayerLbl = document.getElementById('activePlayerLbl');
+
+  const confirmIcon = document.getElementById('confirmIcon');
+  const confirmMsg = document.getElementById('confirmMsg');
+  const confirmSub = document.getElementById('confirmSub');
+  const confirmBtn = document.getElementById('confirmBtn');
+  const undoBtn = document.getElementById('undoBtn');
+  const chipContainer = document.getElementById('chipContainer');
+
+  function updatePoolCountDisplay(){
+    if(poolRemainingCount) poolRemainingCount.textContent = String(wordPool.length);
+  }
+  updatePoolCountDisplay();
+
+  function showScreen(el){
+    [ccScreen, gameScreen, confirmScreen].forEach(s => s.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  function escapeHtml(str){
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  // ---------- Leaderboard rendering ----------
+  function renderLeaderboard(){
+    if(!leaderboard || leaderboard.length === 0){
+      leaderboardEl.innerHTML = '<span class="lb-empty">No rounds played yet — enter a CC number to start!</span>';
+      return;
+    }
+    let sorted = leaderboard.slice();
+    if(activeTab === 'top'){
+      sorted.sort((a,b) => b.score - a.score || (b.id || 0) - (a.id || 0));
+    } else {
+      sorted.sort((a,b) => (b.id || 0) - (a.id || 0));
+    }
+    const rankBadges = ['🥇', '🥈', '🥉'];
+    leaderboardEl.innerHTML = '<div class="lb-list">' + sorted.map((entry, idx) => {
+      const rankNum = idx + 1;
+      let winnerClass = '';
+      if(activeTab === 'top' && rankNum <= 3){ winnerClass = `winner-${rankNum}`; }
+      const rankDisplay = (activeTab === 'top' && rankNum <= 3) ? rankBadges[rankNum - 1] : `#${rankNum}`;
+      const isLatest = entry.id && entry.id === latestEntryId;
+      const formattedDate = entry.date || '';
+      return `
+        <div class="lb-row ${winnerClass} ${isLatest ? 'latest' : ''}">
+          <div class="lb-left">
+            <div class="lb-rank">${rankDisplay}</div>
+            <div class="lb-info">
+              <div class="lb-name">${escapeHtml(entry.name || '—')}</div>
+              <div class="lb-meta">
+                <span class="lb-dur-tag">${entry.duration || TURN_SECONDS}s round</span>
+                ${formattedDate ? `<span>${escapeHtml(formattedDate)}</span>` : ''}
+              </div>
+            </div>
+          </div>
+          <div class="lb-right">
+            <span class="lb-score-val">${entry.score}</span>
+            <span class="lb-score-lbl">pts</span>
+          </div>
+        </div>
+      `;
+    }).join('') + '</div>';
+  }
+
+  if(lbTabTop && lbTabRecent){
+    lbTabTop.addEventListener('click', () => {
+      activeTab = 'top';
+      lbTabTop.classList.add('active');
+      lbTabRecent.classList.remove('active');
+      renderLeaderboard();
+    });
+    lbTabRecent.addEventListener('click', () => {
+      activeTab = 'recent';
+      lbTabRecent.classList.add('active');
+      lbTabTop.classList.remove('active');
+      renderLeaderboard();
+    });
+  }
+
+  if(clearLbBtn){
+    clearLbBtn.addEventListener('click', () => {
+      if(leaderboard.length === 0) return;
+      if(confirm('Clear all stored CC scores? (This will NOT reset your word pool progress.)')){
+        leaderboard = [];
+        latestEntryId = null;
+        saveLeaderboard();
+        renderLeaderboard();
+      }
+    });
+  }
+
+  renderLeaderboard();
+
+  // ---------- CC entry ----------
+  startBtn.addEventListener('click', startRound);
+  ccNumberInput.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter') startRound();
+  });
+
+  function drawNextWord(){
+    if(wordPool.length === 0){
+      // Refill & reshuffle when pool empties!
+      wordPool = shuffle(SPORTS_DATA);
+    }
+    const wordObj = wordPool.shift();
+    savePool();
+    updatePoolCountDisplay();
+    return wordObj;
+  }
+
+  function startRound(){
+    const cc = ccNumberInput.value.trim();
+    if(!cc){
+      ccNumberInput.focus();
+      return;
+    }
+    currentCcName = cc;
+    roundScore = 0;
+    roundCorrect = [];
+    roundPassed = [];
+    lastAction = null;
+    isRoundActive = true;
+    timeLeft = TURN_SECONDS;
+
+    ccStat.textContent = currentCcName;
+    scoreStat.textContent = '0';
+    activePlayerLbl.textContent = currentCcName;
+    timeLeftEl.textContent = String(timeLeft);
+    timerStat.classList.remove('low');
+
+    showScreen(gameScreen);
+
+    // Present first word
+    presentNextWord('swing-in');
+
+    clearInterval(timerId);
+    timerId = setInterval(tick, 1000);
+  }
+
+  function presentNextWord(animationClass){
+    currentWordObj = drawNextWord();
+    if(!currentWordObj) return;
+
+    cardCat.textContent = currentWordObj.cat || '🏆 SPORTS';
+    wordText.textContent = (currentWordObj.word || '').toUpperCase();
+
+    wordCard.classList.remove('fly-yes', 'fly-pass', 'swing-in');
+    void wordCard.offsetWidth; // trigger reflow
+    if(animationClass) wordCard.classList.add(animationClass);
+  }
+
+  function tick(){
+    if(!isRoundActive) return;
+    timeLeft--;
+    timeLeftEl.textContent = String(Math.max(timeLeft, 0));
+    if(timeLeft <= 15) timerStat.classList.add('low');
+    if(timeLeft <= 0){
+      endRound();
+    }
+  }
+
+  function handleGotIt(){
+    if(!isRoundActive || !currentWordObj) return;
+    roundScore += 1;
+    scoreStat.textContent = String(roundScore);
+    roundCorrect.push(currentWordObj);
+    lastAction = { type: 'yes', wordObj: currentWordObj };
+
+    wordCard.classList.remove('swing-in', 'fly-pass');
+    wordCard.classList.add('fly-yes');
+    setTimeout(() => {
+      if(isRoundActive) presentNextWord('swing-in');
+    }, 180);
+  }
+
+  function handlePass(){
+    if(!isRoundActive || !currentWordObj) return;
+    roundPassed.push(currentWordObj);
+    lastAction = { type: 'pass', wordObj: currentWordObj };
+
+    wordCard.classList.remove('swing-in', 'fly-yes');
+    wordCard.classList.add('fly-pass');
+    setTimeout(() => {
+      if(isRoundActive) presentNextWord('swing-in');
+    }, 180);
+  }
+
+  yesBtn.addEventListener('click', handleGotIt);
+  passBtn.addEventListener('click', handlePass);
+
+  document.addEventListener('keydown', (e) => {
+    if(!gameScreen.classList.contains('active') || !isRoundActive) return;
+    if(e.key === 'ArrowRight' || e.key === 'Enter' || e.key === ' '){
+      e.preventDefault();
+      handleGotIt();
+    } else if(e.key === 'ArrowLeft' || e.key === 'p' || e.key === 'P' || e.key === 's' || e.key === 'S'){
+      e.preventDefault();
+      handlePass();
+    }
+  });
+
+  // ---------- End of 90s Round ----------
+  function endRound(){
+    isRoundActive = false;
+    clearInterval(timerId);
+
+    confirmIcon.textContent = '🏁';
+    confirmMsg.textContent = `${currentCcName} — TIME'S UP!`;
+    confirmSub.textContent = `Scored ${roundScore} points in ${TURN_SECONDS} seconds! (${roundCorrect.length} guessed, ${roundPassed.length} passed)`;
+
+    // Build breakdown chips
+    let chipsHtml = '';
+    roundCorrect.forEach(item => {
+      chipsHtml += `<span class="chip correct">✓ ${escapeHtml(item.word)}</span>`;
+    });
+    roundPassed.forEach(item => {
+      chipsHtml += `<span class="chip passed">⏩ ${escapeHtml(item.word)}</span>`;
+    });
+
+    if(!chipsHtml){
+      chipsHtml = '<span style="color:#708499; font-size:13px;">No words attempted in this turn.</span>';
+    }
+
+    chipContainer.innerHTML = chipsHtml;
+
+    // Undo last action setup
+    undoBtn.onclick = () => {
+      if(!lastAction) return;
+      if(lastAction.type === 'yes'){
+        roundScore = Math.max(0, roundScore - 1);
+        scoreStat.textContent = String(roundScore);
+        roundCorrect.pop();
+      } else if(lastAction.type === 'pass'){
+        roundPassed.pop();
+      }
+      lastAction = null;
+      endRound(); // re-render breakdown
+    };
+
+    confirmBtn.onclick = () => {
+      const now = new Date();
+      const formattedDate = now.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) + ', ' +
+                            now.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+      const newEntry = {
+        id: Date.now(),
+        name: currentCcName,
+        score: roundScore,
+        duration: TURN_SECONDS,
+        date: formattedDate
+      };
+      latestEntryId = newEntry.id;
+      leaderboard.push(newEntry);
+      saveLeaderboard();
+      renderLeaderboard();
+
+      currentCcName = '';
+      ccNumberInput.value = '';
+      showScreen(ccScreen);
+      ccNumberInput.focus();
+    };
+
+    showScreen(confirmScreen);
+  }
+
+})();
+</script>
+</body>
+</html>
+'''
+
+final_html = html_content.replace('__SPORTS_DATA_PLACEHOLDER__', js_sports_data)
+
+with open('Heads_Up_Sports.html', 'w', encoding='utf-8') as f:
+    f.write(final_html)
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(final_html)
+
+print("Successfully wrote updated Heads_Up_Sports.html and index.html!")
