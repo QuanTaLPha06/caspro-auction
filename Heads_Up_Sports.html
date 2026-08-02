@@ -15,7 +15,7 @@
     --stadium-green-dark: #00a852;
     --sports-gold: #ffc83b;
     --sports-gold-dark: #cc9b1e;
-    --electric-blue: #00b0ff;
+    --electric-blue: #00e676;
     --card-bg: #f8fafc;
     --ink: #060b10;
     --pass-gray: #475569;
@@ -28,7 +28,7 @@
     min-height:100vh;
     background:
       radial-gradient(circle at 50% 0%, rgba(0,230,118,0.18), transparent 50%),
-      radial-gradient(circle at 85% 90%, rgba(0,176,255,0.15), transparent 45%),
+      radial-gradient(circle at 85% 90%, rgba(0,230,118,0.05), transparent 45%),
       var(--bg-dark);
     font-family: 'Space Grotesk', sans-serif;
     color: var(--text-light);
@@ -351,12 +351,13 @@
 
 <div class="app">
 
-  <nav class="top-nav-bar">
-    <a href="/" class="top-nav-link">🏠 ALL GAMES HUB</a>
-    <a href="/cascade" class="top-nav-link">CASCADE FEUD</a>
-    <a href="/heads-up" class="top-nav-link active">HEADS UP!</a>
-    <a href="/quiz" class="top-nav-link">SPORTS QUIZ</a>
-  </nav>
+  <!-- Top Navigation Bar -->
+  <div class="top-nav-bar">
+    <a href="index.html" class="top-nav-link">🏠 HOME</a>
+    <a href="Heads_Up_Sports.html" class="top-nav-link active">📱 HEADS UP</a>
+    <a href="Sports_Connection_Quiz.html" class="top-nav-link">🎯 QUIZ</a>
+    <button class="top-nav-link" onclick="toggleFullscreen()"><span id="fsIcon">⛶</span> <span id="fsText">FULLSCREEN</span></button>
+  </div>
 
   <div class="logo-wrap">
     <span class="eyebrow">MATCH DAY 🏆 — 90s SPEED ROUND</span>
@@ -373,7 +374,7 @@
     <div class="panel">
       <div class="pool-status-bar">
         <span>Question Pool Status:</span>
-        <span><b id="poolRemainingCount">594</b> words remaining (no repeats!)</span>
+        <span><b id="poolRemainingCount">128</b> words remaining (no repeats!)</span>
       </div>
       <button class="btn block" id="startBtn">START 90s ROUND ⏱️</button>
       <p class="hint" style="margin-top:10px;">Each CC gets <b>90 seconds</b>. Guess as many words as you can!<br>Tap <b>✓ GOT IT!</b> for points or <b>⏩ PASS</b> to skip.</p>
@@ -442,19 +443,23 @@
   // Master Sports Word Bank (~600 terms extracted across all sports & quiz datasets)
   const SPORTS_DATA = [
   {
-    "word": "Red Card",
+    "word": "Goal",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Yellow Card",
+    "word": "Penalty",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Nutmeg",
+    "word": "FreeKick",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Offside",
+    "word": "CornerKick",
+    "cat": "⚽ FOOTBALL"
+  },
+  {
+    "word": "ThrowIn",
     "cat": "⚽ FOOTBALL"
   },
   {
@@ -462,615 +467,491 @@
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Panenka Penalty",
+    "word": "BicycleKick",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Corner Kick",
+    "word": "ScorpionKick",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Step Overs",
+    "word": "Panenka",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Crossbar Challenge",
+    "word": "Nutmeg",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Free Kick Wall",
+    "word": "RainbowFlick",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Bicycle Kick",
+    "word": "Stepover",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Penalty Kick",
+    "word": "SlideTackle",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Diving / Flop",
+    "word": "Save",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Goalkeeper Save",
+    "word": "Dive",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Throw-In",
+    "word": "Offside",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Sliding Tackle",
+    "word": "RedCard",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Hand of God",
+    "word": "YellowCard",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "VAR Check",
+    "word": "Cross",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Ballon d'Or",
+    "word": "Volley",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "World Cup Trophy",
+    "word": "ChipShot",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Lionel Messi",
+    "word": "OwnGoal",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Cristiano Ronaldo (SIUUU)",
+    "word": "HatTrick",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Neymar (Rolling on Floor)",
+    "word": "Crossbar",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Kylian Mbappé",
+    "word": "Whistle",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Erling Haaland (Yoga Pose)",
+    "word": "Captain",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Pelé",
+    "word": "Goalkeeper",
     "cat": "⚽ FOOTBALL"
   },
   {
-    "word": "Diego Maradona",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Ronaldinho (Joga Bonito)",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Zinedine Zidane (Headbutt)",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Golden Boot",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Own Goal",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Hat-Trick",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Captain's Armband",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Whistle / Referee",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Substitute Board",
-    "cat": "⚽ FOOTBALL"
-  },
-  {
-    "word": "Forehand Drive",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Two-Handed Backhand",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Smash / Overhead",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Underarm Serve",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Ace Serve",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Tweener (Between the Legs)",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Slice Shot",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Topspin Lob",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Drop Shot",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Tennis Racquet",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Bouncing Tennis Ball",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Jumping Over the Net",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Deuce / Advantage",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Match Point",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Loud Grunting",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Smashed Racquet",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Hawk-Eye Challenge",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Roger Federer",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Rafael Nadal (Fist Pump)",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Novak Djokovic (Roar)",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Serena Williams",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Carlos Alcaraz",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Wimbledon White Outfit",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Roland Garros Red Clay",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Ball Kid Catch",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Chair Umpire",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Wiping Sweat with Towel",
-    "cat": "🎾 TENNIS"
-  },
-  {
-    "word": "Reverse Sweep",
+    "word": "Six",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Switch Hit",
+    "word": "Four",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Helicopter Shot",
+    "word": "Yorker",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Toe-Crushing Yorker",
+    "word": "Bouncer",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Head-High Bouncer",
+    "word": "Googly",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Sixer (Arms Up)",
+    "word": "Doosra",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Four (Wave Arm)",
+    "word": "CarromBall",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Out / Finger Raised",
+    "word": "ReverseSweep",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "LBW Appeal (HOWZAT?!)",
+    "word": "SwitchHit",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "High Catch",
+    "word": "HelicopterShot",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Run Out Dive",
+    "word": "CoverDrive",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Wicketkeeper Stumping",
+    "word": "PullShot",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Fast Bowling Run-Up",
+    "word": "HookShot",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Spin Bowling Wrist Twist",
+    "word": "SweepShot",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Duck / Zero Score",
+    "word": "Catch",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Century 100 Helmet Lift",
+    "word": "RunOut",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Virat Kohli",
+    "word": "Stumping",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "MS Dhoni",
+    "word": "Bowled",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Sachin Tendulkar",
+    "word": "Appeal",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Rohit Sharma Pull Shot",
+    "word": "Duck",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Jasprit Bumrah Bowling Action",
+    "word": "Century",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Lasith Malinga Sling Action",
+    "word": "FreeHit",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "AB de Villiers 360",
+    "word": "SuperOver",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Chris Gayle Sixer",
+    "word": "WicketKeeper",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Shane Warne Leg Spin",
+    "word": "SlipCatch",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Third Umpire TV Box",
+    "word": "Fielding",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Free Hit No-Ball",
+    "word": "BatFlip",
     "cat": "🏏 CRICKET"
   },
   {
-    "word": "Super Over",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Bowled Clean",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Mankad Run Out",
-    "cat": "🏏 CRICKET"
-  },
-  {
-    "word": "Turning F1 Steering Wheel",
+    "word": "PitStop",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Rapid Pit Stop Tire Change",
+    "word": "CheckeredFlag",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Waving Checkered Flag",
+    "word": "SafetyCar",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Yellow Flag Slowdown",
+    "word": "GridStart",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Champagne Spraying",
+    "word": "PolePosition",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Podium Top Step",
+    "word": "FastestLap",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "DRS Wing Open",
+    "word": "Podium",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Donut Burnouts",
+    "word": "Champagne",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Pulling Down Helmet Visor",
+    "word": "Donut",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Safety Car Leading",
+    "word": "SpinOut",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Lewis Hamilton",
+    "word": "Overtake",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Max Verstappen",
+    "word": "Helmet",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Michael Schumacher Podium Jump",
+    "word": "SteeringWheel",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Ayrton Senna",
+    "word": "Visor",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Fernando Alonso",
+    "word": "TyreChange",
     "cat": "🏎️ FORMULA 1"
   },
   {
-    "word": "Charles Leclerc",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Ferrari Prancing Horse",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Spinning Out / Crash",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Team Radio Complaints",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Grid Start Lights Go Out",
-    "cat": "🏎️ FORMULA 1"
-  },
-  {
-    "word": "Slam Dunk",
+    "word": "SlamDunk",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "3-Point Shot (3 Fingers)",
+    "word": "ThreePointer",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Crossover Dribble",
+    "word": "FreeThrow",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Stepback Jumper",
+    "word": "Layup",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Alley-Oop Catch & Dunk",
+    "word": "AlleyOop",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Free Throw Ritual",
+    "word": "Crossover",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Finger-Wag Blocked Shot",
+    "word": "Stepback",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "High Rebound Grab",
+    "word": "Fadeaway",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Traveling Violation",
+    "word": "HookShot",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Technical Foul T-Sign",
+    "word": "FingerRoll",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Airball Miss",
+    "word": "Block",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Buzzer Beater Shot",
+    "word": "Steal",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "LeBron James (Chalk Toss)",
+    "word": "Rebound",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Stephen Curry (Night Night)",
+    "word": "Dribble",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Michael Jordan (Tongue Out Dunk)",
+    "word": "FastBreak",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Kobe Bryant (Fadeaway)",
+    "word": "BuzzerBeater",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Shaquille O'Neal Rim Shake",
+    "word": "Airball",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Giannis Flex",
+    "word": "JumpBall",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "James Harden (Stir the Pot)",
+    "word": "Traveling",
     "cat": "🏀 BASKETBALL"
   },
   {
-    "word": "Low Ankle Dribbling",
-    "cat": "🏀 BASKETBALL"
+    "word": "Serve",
+    "cat": "🎾 TENNIS"
   },
   {
-    "word": "Fast Break Sprint",
-    "cat": "🏀 BASKETBALL"
+    "word": "Ace",
+    "cat": "🎾 TENNIS"
   },
   {
-    "word": "Hook Shot",
-    "cat": "🏀 BASKETBALL"
+    "word": "Forehand",
+    "cat": "🎾 TENNIS"
   },
   {
-    "word": "Usain Bolt (Lightning Pose)",
+    "word": "Backhand",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Volley",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Smash",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Lob",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Slice",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "DropShot",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Tweener",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Deuce",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "MatchPoint",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Rally",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Baseline",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "NetPlay",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "BallBoy",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "ChairUmpire",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Racquet",
+    "cat": "🎾 TENNIS"
+  },
+  {
+    "word": "Sprint",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Michael Phelps (Butterfly Stroke)",
+    "word": "Relay",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Simone Biles (Backflip Land)",
+    "word": "Marathon",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Mando Duplantis (Pole Vault)",
+    "word": "HighJump",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Bob Beamon (Giant Long Jump)",
+    "word": "LongJump",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Carl Lewis (Sprint & Jump)",
+    "word": "PoleVault",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Jesse Owens",
+    "word": "TripleJump",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Katie Ledecky (Freestyle Stroke)",
+    "word": "ShotPut",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Yulimar Rojas (Triple Jump)",
+    "word": "Discus",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Eliud Kipchoge (Marathon 1:59)",
+    "word": "Javelin",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Nadia Comăneci (Perfect 10)",
+    "word": "Archery",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "100m Sprint Block Start",
+    "word": "Gymnastics",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Pole Vault Over Bar",
+    "word": "Swimming",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "High Jump Fosbury Flop",
+    "word": "Diving",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Shot Put Neck Throw",
+    "word": "Weightlifting",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Discus Spin Throw",
+    "word": "Torch",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Javelin Spear Throw",
+    "word": "GoldMedal",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Relay Baton Pass",
+    "word": "SilverMedal",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Heavy Weightlifting Overhead",
+    "word": "BronzeMedal",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Archery Bow & Arrow Pull",
+    "word": "Podium",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Marathon Tape Finish",
+    "word": "PhotoFinish",
     "cat": "🥇 OLYMPICS"
   },
   {
-    "word": "Biting the Gold Medal",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Olympic Flame Torch Relay",
-    "cat": "🥇 OLYMPICS"
-  },
-  {
-    "word": "Podium Gold Medal Cry",
+    "word": "FalseStart",
     "cat": "🥇 OLYMPICS"
   }
 ];
@@ -1079,7 +960,7 @@
 
   // ---------- Persistent Storage ----------
   const STORAGE_KEY = 'heads_up_sports_leaderboard_v2';
-  const POOL_KEY = 'heads_up_sports_word_pool_v2';
+  const POOL_KEY = 'heads_up_sports_word_pool_v3';
 
   function shuffle(arr){
     const a = arr.slice();
@@ -1427,5 +1308,41 @@
 
 })();
 </script>
+
+<script>
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen().then(() => {
+      const icon = document.getElementById('fsIcon');
+      const text = document.getElementById('fsText');
+      if (icon) icon.textContent = '🗗';
+      if (text) text.textContent = 'EXIT FULLSCREEN';
+    }).catch(err => {
+      console.error("Fullscreen error:", err);
+    });
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen().then(() => {
+        const icon = document.getElementById('fsIcon');
+        const text = document.getElementById('fsText');
+        if (icon) icon.textContent = '⛶';
+        if (text) text.textContent = 'FULLSCREEN';
+      });
+    }
+  }
+}
+document.addEventListener('fullscreenchange', () => {
+  const icon = document.getElementById('fsIcon');
+  const text = document.getElementById('fsText');
+  if (!document.fullscreenElement) {
+    if (icon) icon.textContent = '⛶';
+    if (text) text.textContent = 'FULLSCREEN';
+  } else {
+    if (icon) icon.textContent = '🗗';
+    if (text) text.textContent = 'EXIT FULLSCREEN';
+  }
+});
+</script>
+
 </body>
 </html>

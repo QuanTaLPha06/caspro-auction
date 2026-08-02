@@ -5,103 +5,12 @@
     "difficulty": "Easy",
     "question": "Which Greek superstar led the Milwaukee Bucks to the NBA championship in 2021?",
     "options": [
-      "Luka Dončić",
+      "Luka Don\u010di\u0107",
       "Giannis Antetokounmpo",
-      "Nikola Jokić",
+      "Nikola Joki\u0107",
       "Joel Embiid"
     ],
     "correct": 1
-  },
-  {
-    "id": "Q002",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which country won the 2023 ICC Men's Cricket World Cup hosted in India?",
-    "options": [
-      "New Zealand",
-      "India",
-      "South Africa",
-      "Australia"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q003",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Who is the only male tennis player to win all four Grand Slams at least twice (Career Double Grand Slam)?",
-    "options": [
-      "Roger Federer",
-      "Novak Djokovic",
-      "Rod Laver",
-      "Rafael Nadal"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q004",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Who scored the winning extra-time goal for Spain against Netherlands in the 2010 World Cup final?",
-    "options": [
-      "Fernando Torres",
-      "David Villa",
-      "Andrés Iniesta",
-      "Xavi"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q005",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Who is the only batter in cricket history to score 100 international centuries?",
-    "options": [
-      "Virat Kohli",
-      "Jacques Kallis",
-      "Sachin Tendulkar",
-      "Ricky Ponting"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q006",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which Australian bowler holds the record for the most overall wickets in ODI World Cup history (71 wickets)?",
-    "options": [
-      "Wasim Akram",
-      "Mitchell Starc",
-      "Glenn McGrath",
-      "Lasith Malinga"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q007",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which Grand Slam tournament takes place annually in January at Melbourne Park?",
-    "options": [
-      "US Open",
-      "Australian Open",
-      "French Open",
-      "Wimbledon"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q008",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Who holds the record for the most Wimbledon women's singles titles in history (9 titles)?",
-    "options": [
-      "Chris Evert",
-      "Steffi Graf",
-      "Martina Navratilova",
-      "Serena Williams"
-    ],
-    "correct": 2
   },
   {
     "id": "Q009",
@@ -115,32 +24,6 @@
       "Wilt Chamberlain"
     ],
     "correct": 3
-  },
-  {
-    "id": "Q010",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Who famously hit six 6s in an over off Stuart Broad during the 2007 T20 World Cup?",
-    "options": [
-      "MS Dhoni",
-      "Virender Sehwag",
-      "Yuvraj Singh",
-      "Chris Gayle"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q011",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which German club won 11 consecutive Bundesliga titles between 2013 and 2023?",
-    "options": [
-      "RB Leipzig",
-      "Bayern Munich",
-      "Bayer Leverkusen",
-      "Borussia Dortmund"
-    ],
-    "correct": 1
   },
   {
     "id": "Q012",
@@ -169,19 +52,6 @@
     "correct": 2
   },
   {
-    "id": "Q014",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which male player holds the all-time record for the most Grand Slam singles titles (24 titles)?",
-    "options": [
-      "Roger Federer",
-      "Novak Djokovic",
-      "Pete Sampras",
-      "Rafael Nadal"
-    ],
-    "correct": 1
-  },
-  {
     "id": "Q015",
     "sport": "Basketball",
     "difficulty": "Easy",
@@ -193,123 +63,6 @@
       "Boston Celtics"
     ],
     "correct": 1
-  },
-  {
-    "id": "Q016",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which Grand Slam tournament is played annually on red clay courts at Roland Garros in Paris?",
-    "options": [
-      "Australian Open",
-      "US Open",
-      "Wimbledon",
-      "French Open"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q017",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Who is the all-time leading goalscorer in UEFA Champions League history?",
-    "options": [
-      "Lionel Messi",
-      "Robert Lewandowski",
-      "Karim Benzema",
-      "Cristiano Ronaldo"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q018",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Who captained India to its iconic first-ever ODI World Cup victory in 1983 at Lord's?",
-    "options": [
-      "Ravi Shastri",
-      "Sunil Gavaskar",
-      "Kapil Dev",
-      "Mohinder Amarnath"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q019",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Who became the first British man in 77 years to win the Wimbledon singles title when he won in 2013?",
-    "options": [
-      "Andy Murray",
-      "Greg Rusedski",
-      "Tim Henman",
-      "Cameron Norrie"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q020",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which English club completed a historic treble (Premier League, FA Cup, Champions League) in the 2022-23 season?",
-    "options": [
-      "Liverpool",
-      "Manchester City",
-      "Manchester United",
-      "Arsenal"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q021",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which fast bowler held the record for most Test wickets (604) before James Anderson surpassed him?",
-    "options": [
-      "Wasim Akram",
-      "Courtney Walsh",
-      "Glenn McGrath",
-      "Stuart Broad"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q022",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which country won the UEFA Euro 2020 tournament (held in 2021) by defeating England in the final?",
-    "options": [
-      "Spain",
-      "Portugal",
-      "France",
-      "Italy"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q023",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which American male legend held the record of 14 Grand Slam singles titles before Roger Federer broke it?",
-    "options": [
-      "John McEnroe",
-      "Andre Agassi",
-      "Pete Sampras",
-      "Jimmy Connors"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q024",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which batter holds the record for the highest individual score in Test match cricket (400*)?",
-    "options": [
-      "Brian Lara",
-      "Sir Donald Bradman",
-      "Virender Sehwag",
-      "Matthew Hayden"
-    ],
-    "correct": 0
   },
   {
     "id": "Q025",
@@ -325,32 +78,6 @@
     "correct": 3
   },
   {
-    "id": "Q026",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Who is the all-time leading run-scorer in Men's T20 World Cup history?",
-    "options": [
-      "Virat Kohli",
-      "Jos Buttler",
-      "Rohit Sharma",
-      "Chris Gayle"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q027",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which country won the 2022 FIFA World Cup hosted in Qatar?",
-    "options": [
-      "Argentina",
-      "France",
-      "Croatia",
-      "Brazil"
-    ],
-    "correct": 0
-  },
-  {
     "id": "Q028",
     "sport": "Basketball",
     "difficulty": "Easy",
@@ -364,58 +91,6 @@
     "correct": 3
   },
   {
-    "id": "Q029",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which country won the 2024 ICC Men's T20 World Cup in Barbados by defeating South Africa in the final?",
-    "options": [
-      "India",
-      "Pakistan",
-      "Australia",
-      "England"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q030",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Who won her first Grand Slam title at the 2018 US Open by defeating Serena Williams in the final?",
-    "options": [
-      "Iga Świątek",
-      "Emma Raducanu",
-      "Naomi Osaka",
-      "Coco Gauff"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q031",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which IPL franchise shares the record for most IPL titles (5) alongside Mumbai Indians?",
-    "options": [
-      "Royal Challengers Bengaluru",
-      "Chennai Super Kings",
-      "Rajasthan Royals",
-      "Kolkata Knight Riders"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q032",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Who was the captain of the Indian cricket team when they won the 2011 ODI World Cup?",
-    "options": [
-      "Sachin Tendulkar",
-      "MS Dhoni",
-      "Rahul Dravid",
-      "Virender Sehwag"
-    ],
-    "correct": 1
-  },
-  {
     "id": "Q033",
     "sport": "Basketball",
     "difficulty": "Easy",
@@ -427,45 +102,6 @@
       "New York Knicks"
     ],
     "correct": 0
-  },
-  {
-    "id": "Q034",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which West Indies legend hit a famous 175* off 66 balls in an IPL match in 2013?",
-    "options": [
-      "Chris Gayle",
-      "AB de Villiers",
-      "Andre Russell",
-      "Kieron Pollard"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q035",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which Swiss legend retired in 2022 after winning 20 Grand Slam singles titles, including 8 Wimbledon titles?",
-    "options": [
-      "Stan Wawrinka",
-      "Roger Federer",
-      "Novak Djokovic",
-      "Andy Murray"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q036",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which French club dominated Ligue 1 by winning the title in 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022, 2023, and 2024?",
-    "options": [
-      "Marseille",
-      "Monaco",
-      "Lyon",
-      "Paris Saint-Germain"
-    ],
-    "correct": 3
   },
   {
     "id": "Q037",
@@ -494,292 +130,6 @@
     "correct": 1
   },
   {
-    "id": "Q039",
-    "sport": "Basketball",
-    "difficulty": "Easy",
-    "question": "Which franchise shares the all-time NBA record of 17 championships alongside the Boston Celtics?",
-    "options": [
-      "Golden State Warriors",
-      "San Antonio Spurs",
-      "Chicago Bulls",
-      "Los Angeles Lakers"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q040",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which Spanish prodigy won his first Grand Slam at the 2022 US Open and reached World No. 1 at age 19?",
-    "options": [
-      "Daniil Medvedev",
-      "Jannik Sinner",
-      "Carlos Alcaraz",
-      "Holger Rune"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q041",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which legendary manager famously led Manchester United from 1986 to 2013, winning 13 Premier League titles?",
-    "options": [
-      "Sir Alex Ferguson",
-      "Louis van Gaal",
-      "Arsène Wenger",
-      "Matt Busby"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q042",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Who earned the nickname 'King of Clay' after winning a staggering 14 French Open singles titles?",
-    "options": [
-      "Björn Borg",
-      "Rafael Nadal",
-      "Novak Djokovic",
-      "Roger Federer"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q043",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which Polish superstar won four French Open titles between 2020 and 2024?",
-    "options": [
-      "Iga Świątek",
-      "Aryna Sabalenka",
-      "Ons Jabeur",
-      "Elena Rybakina"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q044",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which nation has won the most FIFA Men's World Cup titles in history (5 titles)?",
-    "options": [
-      "Argentina",
-      "Germany",
-      "Brazil",
-      "Italy"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q045",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which English venue is universally known as the 'Home of Cricket'?",
-    "options": [
-      "Headingley",
-      "Lord's",
-      "Edgbaston",
-      "The Oval"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q046",
-    "sport": "Basketball",
-    "difficulty": "Easy",
-    "question": "Which NBA team won three consecutive titles ('Three-peat') from 2000 to 2002 led by Shaq and Kobe?",
-    "options": [
-      "Miami Heat",
-      "San Antonio Spurs",
-      "Chicago Bulls",
-      "Los Angeles Lakers"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q047",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which European club plays its home matches at the iconic Santiago Bernabéu stadium?",
-    "options": [
-      "FC Barcelona",
-      "Real Madrid",
-      "Valencia",
-      "Atletico Madrid"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q048",
-    "sport": "Basketball",
-    "difficulty": "Easy",
-    "question": "Which player holds the all-time NBA record for the most career 3-point field goals made?",
-    "options": [
-      "Ray Allen",
-      "James Harden",
-      "Stephen Curry",
-      "Reggie Miller"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q049",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which Grand Slam tournament is played on grass courts at the All England Club in London?",
-    "options": [
-      "Wimbledon",
-      "US Open",
-      "Australian Open",
-      "French Open"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q050",
-    "sport": "Basketball",
-    "difficulty": "Easy",
-    "question": "Who won the NBA MVP award for two consecutive seasons in 2021 and 2022 with the Denver Nuggets?",
-    "options": [
-      "Nikola Jokić",
-      "James Harden",
-      "Joel Embiid",
-      "Giannis Antetokounmpo"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q051",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Who won the 2023 Men's Ballon d'Or award after leading Argentina to World Cup glory?",
-    "options": [
-      "Erling Haaland",
-      "Kevin De Bruyne",
-      "Lionel Messi",
-      "Kylian Mbappé"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q052",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Who won the 2021 US Open women's singles title as an 18-year-old qualifier without dropping a set?",
-    "options": [
-      "Bianca Andreescu",
-      "Coco Gauff",
-      "Leylah Fernandez",
-      "Emma Raducanu"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q053",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which club won the English Premier League without losing a single game in the 2003-04 season ('The Invincibles')?",
-    "options": [
-      "Arsenal",
-      "Manchester United",
-      "Liverpool",
-      "Chelsea"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q054",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which South American national team is famous for playing in iconic yellow shirts with green trim?",
-    "options": [
-      "Uruguay",
-      "Ecuador",
-      "Colombia",
-      "Brazil"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q055",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which country won the inaugural ICC Men's T20 World Cup held in South Africa in 2007?",
-    "options": [
-      "Australia",
-      "Pakistan",
-      "Sri Lanka",
-      "India"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q056",
-    "sport": "Cricket",
-    "difficulty": "Easy",
-    "question": "Which country has won the most ICC Men's ODI World Cup titles (6 titles)?",
-    "options": [
-      "West Indies",
-      "India",
-      "England",
-      "Australia"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q057",
-    "sport": "Tennis",
-    "difficulty": "Easy",
-    "question": "Which female tennis legend won 23 Grand Slam singles titles during the Open Era?",
-    "options": [
-      "Serena Williams",
-      "Steffi Graf",
-      "Venus Williams",
-      "Martina Navratilova"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q058",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which club has won the most UEFA Champions League titles in history (15 titles)?",
-    "options": [
-      "Liverpool",
-      "Bayern Munich",
-      "Real Madrid",
-      "AC Milan"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q059",
-    "sport": "Football",
-    "difficulty": "Easy",
-    "question": "Which nation hosted the 2014 FIFA World Cup?",
-    "options": [
-      "Qatar",
-      "South Africa",
-      "Brazil",
-      "Russia"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q060",
-    "sport": "Basketball",
-    "difficulty": "Easy",
-    "question": "Who won NBA Finals MVP in 2006 after leading the Miami Heat back from a 0-2 deficit against Dallas?",
-    "options": [
-      "Gary Payton",
-      "Alonzo Mourning",
-      "Shaquille O'Neal",
-      "Dwyane Wade"
-    ],
-    "correct": 3
-  },
-  {
     "id": "Q061",
     "sport": "Basketball",
     "difficulty": "Medium",
@@ -806,71 +156,6 @@
     "correct": 2
   },
   {
-    "id": "Q063",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Who scored the winning goal for Germany against Argentina in the 113th minute of the 2014 World Cup final?",
-    "options": [
-      "Mesut Özil",
-      "Bastian Schweinsteiger",
-      "Thomas Müller",
-      "Mario Götze"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q064",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "What year did the 'Open Era' of tennis officially begin, allowing professionals to compete in Grand Slams?",
-    "options": [
-      "1970",
-      "1967",
-      "1965",
-      "1968"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q065",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Who won the 2014 US Open Men's Singles title by defeating Kei Nishikori in an unseeded final matchup?",
-    "options": [
-      "Milos Raonic",
-      "Tomáš Berdych",
-      "Marin Čilić",
-      "Grigor Dimitrov"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q066",
-    "sport": "Cricket",
-    "difficulty": "Medium",
-    "question": "Against which rival country did Sachin Tendulkar make his international Test debut in 1989 at age 16?",
-    "options": [
-      "England",
-      "Australia",
-      "Pakistan",
-      "West Indies"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q067",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Which player holds the Open Era record for most consecutive weeks ranked World No. 1 (237 weeks)?",
-    "options": [
-      "Pete Sampras",
-      "Roger Federer",
-      "Jimmy Connors",
-      "Novak Djokovic"
-    ],
-    "correct": 1
-  },
-  {
     "id": "Q068",
     "sport": "Basketball",
     "difficulty": "Medium",
@@ -882,19 +167,6 @@
       "Vancouver Grizzlies"
     ],
     "correct": 0
-  },
-  {
-    "id": "Q069",
-    "sport": "Cricket",
-    "difficulty": "Medium",
-    "question": "Who holds the record for the fastest century in Men's ODI history, scored off just 31 balls in 2015?",
-    "options": [
-      "Corey Anderson",
-      "AB de Villiers",
-      "Shahid Afridi",
-      "Jos Buttler"
-    ],
-    "correct": 1
   },
   {
     "id": "Q070",
@@ -923,56 +195,355 @@
     "correct": 3
   },
   {
-    "id": "Q072",
-    "sport": "Football",
+    "id": "Q080",
+    "sport": "Basketball",
     "difficulty": "Medium",
-    "question": "Which country hosted the 1998 FIFA World Cup, winning the tournament on home soil?",
+    "question": "Who was the first non-American player to be selected #1 overall in the NBA Draft (1984)?",
     "options": [
-      "Germany",
-      "France",
-      "Italy",
-      "Brazil"
+      "Tim Duncan",
+      "Patrick Ewing",
+      "Yao Ming",
+      "Hakeem Olajuwon"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q082",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Who holds the single-game NBA record for most assists in a single game (30 assists in 1990)?",
+    "options": [
+      "John Stockton",
+      "Scott Skiles",
+      "Magic Johnson",
+      "Steve Nash"
     ],
     "correct": 1
   },
   {
-    "id": "Q073",
-    "sport": "Football",
+    "id": "Q085",
+    "sport": "Basketball",
     "difficulty": "Medium",
-    "question": "Who won the Ballon d'Or in 2007, the last player to win it before the era of Messi-Ronaldo dominance?",
+    "question": "In what NBA season was the three-point line officially introduced to the league?",
     "options": [
-      "Ronaldinho",
-      "Kaká",
-      "Cristiano Ronaldo",
-      "Lionel Messi"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q074",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which African country became the first in history to reach a FIFA World Cup semi-final at Qatar 2022?",
-    "options": [
-      "Morocco",
-      "Cameroon",
-      "Ghana",
-      "Senegal"
+      "1979-80",
+      "1978-79",
+      "1984-85",
+      "1976-77"
     ],
     "correct": 0
   },
   {
-    "id": "Q075",
-    "sport": "Tennis",
+    "id": "Q090",
+    "sport": "Basketball",
     "difficulty": "Medium",
-    "question": "Who became the first unseeded woman in the Open Era to win the Wimbledon singles title (2023)?",
+    "question": "Who won back-to-back NBA MVP awards in 2005 and 2006 with the Phoenix Suns?",
     "options": [
-      "Ons Jabeur",
-      "Elena Rybakina",
-      "Markéta Vondroušová",
-      "Barbora Krejčíková"
+      "Shaquille O'Neal",
+      "Jason Kidd",
+      "Steve Nash",
+      "Kobe Bryant"
     ],
     "correct": 2
+  },
+  {
+    "id": "Q093",
+    "sport": "Basketball",
+    "difficulty": "Medium",
+    "question": "Which NBA player won Defensive Player of the Year three times with the Magic and once with Atlanta?",
+    "options": [
+      "Dikembe Mutombo",
+      "Ben Wallace",
+      "Rudy Gobert",
+      "Dwight Howard"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q121",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who recorded a 20-point, 20-rebound, and 20-assist triple-double in a single NBA game in April 2019?",
+    "options": [
+      "Russell Westbrook",
+      "Wilt Chamberlain",
+      "Nikola Joki\u0107",
+      "Luka Don\u010di\u0107"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q128",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which player scored 25 points in a single NBA Finals quarter while playing on a severely sprained ankle in 1988?",
+    "options": [
+      "Joe Dumars",
+      "Magic Johnson",
+      "Isiah Thomas",
+      "Kareem Abdul-Jabbar"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q141",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Which player won Finals MVP in 1979 with the Seattle SuperSonics after averaging 28.6 points per game?",
+    "options": [
+      "Fred Brown",
+      "Jack Sikma",
+      "Dennis Johnson",
+      "Gus Williams"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q143",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who scored 71 points in the final game of the 1993-94 season to steal the NBA scoring title from Shaquille O'Neal?",
+    "options": [
+      "Patrick Ewing",
+      "David Robinson",
+      "Karl Malone",
+      "Hakeem Olajuwon"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q148",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who is the only player in NBA history to win Finals MVP while playing for the losing team (1969 Finals)?",
+    "options": [
+      "Jerry West",
+      "John Havlicek",
+      "Elgin Baylor",
+      "Wilt Chamberlain"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q149",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who won 8 consecutive NBA championships with the Boston Celtics from 1959 to 1966 as a player?",
+    "options": [
+      "K.C. Jones",
+      "John Havlicek",
+      "Bill Russell",
+      "Sam Jones"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q154",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who was the first European-born player to win the NBA Most Valuable Player (MVP) award (2006-07)?",
+    "options": [
+      "Tony Parker",
+      "Pau Gasol",
+      "Dirk Nowitzki",
+      "Giannis Antetokounmpo"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q156",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who was the first player drafted #1 overall in the NBA Draft directly out of high school (2001)?",
+    "options": [
+      "Kwame Brown",
+      "LeBron James",
+      "Kevin Garnett",
+      "Dwight Howard"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q159",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who was awarded the very first NBA Most Valuable Player (MVP) award for the 1955-56 season?",
+    "options": [
+      "Bill Russell",
+      "Wilt Chamberlain",
+      "Bob Pettit",
+      "Bob Cousy"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q162",
+    "sport": "Basketball",
+    "difficulty": "Hard",
+    "question": "Who holds the NBA record for most consecutive games scoring 10+ points (over 1,200 games)?",
+    "options": [
+      "Michael Jordan",
+      "Kareem Abdul-Jabbar",
+      "Karl Malone",
+      "LeBron James"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q002",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which country won the 2023 ICC Men's Cricket World Cup hosted in India?",
+    "options": [
+      "New Zealand",
+      "India",
+      "South Africa",
+      "Australia"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q005",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Who is the only batter in cricket history to score 100 international centuries?",
+    "options": [
+      "Virat Kohli",
+      "Jacques Kallis",
+      "Sachin Tendulkar",
+      "Ricky Ponting"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q006",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which Australian bowler holds the record for the most overall wickets in ODI World Cup history (71 wickets)?",
+    "options": [
+      "Wasim Akram",
+      "Mitchell Starc",
+      "Glenn McGrath",
+      "Lasith Malinga"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q010",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Who famously hit six 6s in an over off Stuart Broad during the 2007 T20 World Cup?",
+    "options": [
+      "MS Dhoni",
+      "Virender Sehwag",
+      "Yuvraj Singh",
+      "Chris Gayle"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q018",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Who captained India to its iconic first-ever ODI World Cup victory in 1983 at Lord's?",
+    "options": [
+      "Ravi Shastri",
+      "Sunil Gavaskar",
+      "Kapil Dev",
+      "Mohinder Amarnath"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q021",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which fast bowler held the record for most Test wickets (604) before James Anderson surpassed him?",
+    "options": [
+      "Wasim Akram",
+      "Courtney Walsh",
+      "Glenn McGrath",
+      "Stuart Broad"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q024",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which batter holds the record for the highest individual score in Test match cricket (400*)?",
+    "options": [
+      "Brian Lara",
+      "Sir Donald Bradman",
+      "Virender Sehwag",
+      "Matthew Hayden"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q026",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Who is the all-time leading run-scorer in Men's T20 World Cup history?",
+    "options": [
+      "Virat Kohli",
+      "Jos Buttler",
+      "Rohit Sharma",
+      "Chris Gayle"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q029",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which country won the 2024 ICC Men's T20 World Cup in Barbados by defeating South Africa in the final?",
+    "options": [
+      "India",
+      "Pakistan",
+      "Australia",
+      "England"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q031",
+    "sport": "Cricket",
+    "difficulty": "Easy",
+    "question": "Which IPL franchise shares the record for most IPL titles (5) alongside Mumbai Indians?",
+    "options": [
+      "Royal Challengers Bengaluru",
+      "Chennai Super Kings",
+      "Rajasthan Royals",
+      "Kolkata Knight Riders"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q066",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Against which rival country did Sachin Tendulkar make his international Test debut in 1989 at age 16?",
+    "options": [
+      "England",
+      "Australia",
+      "Pakistan",
+      "West Indies"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q069",
+    "sport": "Cricket",
+    "difficulty": "Medium",
+    "question": "Who holds the record for the fastest century in Men's ODI history, scored off just 31 balls in 2015?",
+    "options": [
+      "Corey Anderson",
+      "AB de Villiers",
+      "Shahid Afridi",
+      "Jos Buttler"
+    ],
+    "correct": 1
   },
   {
     "id": "Q076",
@@ -1027,45 +598,6 @@
     "correct": 0
   },
   {
-    "id": "Q080",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Who was the first non-American player to be selected #1 overall in the NBA Draft (1984)?",
-    "options": [
-      "Tim Duncan",
-      "Patrick Ewing",
-      "Yao Ming",
-      "Hakeem Olajuwon"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q081",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which European nation won the inaugural UEFA European Championship (Euro) held in 1960?",
-    "options": [
-      "Spain",
-      "Soviet Union",
-      "France",
-      "Yugoslavia"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q082",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Who holds the single-game NBA record for most assists in a single game (30 assists in 1990)?",
-    "options": [
-      "John Stockton",
-      "Scott Skiles",
-      "Magic Johnson",
-      "Steve Nash"
-    ],
-    "correct": 1
-  },
-  {
     "id": "Q083",
     "sport": "Cricket",
     "difficulty": "Medium",
@@ -1077,45 +609,6 @@
       "Steve Waugh"
     ],
     "correct": 1
-  },
-  {
-    "id": "Q084",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Who scored both the infamous 'Hand of God' and the iconic 'Goal of the Century' against England in 1986?",
-    "options": [
-      "Pelé",
-      "Mario Kempes",
-      "Diego Maradona",
-      "Gabriel Batistuta"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q085",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "In what NBA season was the three-point line officially introduced to the league?",
-    "options": [
-      "1979-80",
-      "1978-79",
-      "1984-85",
-      "1976-77"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q086",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Which legend won 8 Grand Slam titles and achieved a Career Grand Slam wearing iconic neon outfits in the 1990s?",
-    "options": [
-      "Pete Sampras",
-      "Michael Chang",
-      "Andre Agassi",
-      "Jim Courier"
-    ],
-    "correct": 2
   },
   {
     "id": "Q087",
@@ -1131,58 +624,6 @@
     "correct": 0
   },
   {
-    "id": "Q088",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which English club did Thierry Henry leave in 2007 when he transferred to FC Barcelona?",
-    "options": [
-      "Chelsea",
-      "Liverpool",
-      "Manchester United",
-      "Arsenal"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q089",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Who was the last male tennis player from Australia to win a Grand Slam singles title (2001 US Open & 2002 Wimbledon)?",
-    "options": [
-      "Mark Philippoussis",
-      "Patrick Rafter",
-      "Lleyton Hewitt",
-      "Nick Kyrgios"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q090",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Who won back-to-back NBA MVP awards in 2005 and 2006 with the Phoenix Suns?",
-    "options": [
-      "Shaquille O'Neal",
-      "Jason Kidd",
-      "Steve Nash",
-      "Kobe Bryant"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q091",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Which female tennis player won 16 Grand Slam titles across singles and doubles after returning from a 1993 stabbing incident?",
-    "options": [
-      "Arantxa Sánchez Vicario",
-      "Jennifer Capriati",
-      "Martina Hingis",
-      "Monica Seles"
-    ],
-    "correct": 3
-  },
-  {
     "id": "Q092",
     "sport": "Cricket",
     "difficulty": "Medium",
@@ -1194,58 +635,6 @@
       "Gautam Gambhir"
     ],
     "correct": 2
-  },
-  {
-    "id": "Q093",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Which NBA player won Defensive Player of the Year three times with the Magic and once with Atlanta?",
-    "options": [
-      "Dikembe Mutombo",
-      "Ben Wallace",
-      "Rudy Gobert",
-      "Dwight Howard"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q094",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Who became the youngest male Grand Slam singles champion in history when he won the 1989 French Open at age 17?",
-    "options": [
-      "Boris Becker",
-      "Mats Wilander",
-      "Lleyton Hewitt",
-      "Michael Chang"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q095",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Who scored 60 points in his final career NBA game before retiring in April 2016?",
-    "options": [
-      "Paul Pierce",
-      "Dirk Nowitzki",
-      "Kobe Bryant",
-      "Dwyane Wade"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q096",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which nation won the first Women's FIFA World Cup tournament held in China in 1991?",
-    "options": [
-      "Norway",
-      "Germany",
-      "China",
-      "United States"
-    ],
-    "correct": 3
   },
   {
     "id": "Q097",
@@ -1261,331 +650,6 @@
     "correct": 3
   },
   {
-    "id": "Q098",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Which Swiss player won three Grand Slam singles titles (2014 Aus Open, 2015 French Open, 2016 US Open)?",
-    "options": [
-      "Stan Wawrinka",
-      "Heinz Günthardt",
-      "Roger Federer",
-      "Marc Rosset"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q099",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which Italian club did Andrea Pirlo join on a free transfer in 2011 after leaving AC Milan?",
-    "options": [
-      "Roma",
-      "Inter Milan",
-      "Juventus",
-      "Fiorentina"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q100",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Which player defeated Roger Federer in the 2009 US Open final, snapping Federer's streak of 5 consecutive US Open titles?",
-    "options": [
-      "Stan Wawrinka",
-      "Andy Murray",
-      "Novak Djokovic",
-      "Juan Martín del Potro"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q101",
-    "sport": "Cricket",
-    "difficulty": "Medium",
-    "question": "Which venue in Melbourne hosted the first-ever official Test match played in March 1877?",
-    "options": [
-      "The Oval",
-      "Sydney Cricket Ground",
-      "Lord's",
-      "Melbourne Cricket Ground (MCG)"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q102",
-    "sport": "Cricket",
-    "difficulty": "Medium",
-    "question": "Who was the first male cricketer to score a double century (200*) in Men's ODI history (2010)?",
-    "options": [
-      "Virender Sehwag",
-      "Rohit Sharma",
-      "Sachin Tendulkar",
-      "Chris Gayle"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q103",
-    "sport": "Cricket",
-    "difficulty": "Medium",
-    "question": "Which spinner holds the record for most wickets in ODI cricket history (534 wickets)?",
-    "options": [
-      "Wasim Akram",
-      "Muttiah Muralitharan",
-      "Waqar Younis",
-      "Anil Kumble"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q104",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which Portuguese manager won UEFA Champions League titles with both FC Porto (2004) and Inter Milan (2010)?",
-    "options": [
-      "Carlo Ancelotti",
-      "Rafa Benítez",
-      "José Mourinho",
-      "Pep Guardiola"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q105",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Which prestigious ATP tournament is commonly referred to by players and fans as the 'Fifth Grand Slam'?",
-    "options": [
-      "Cincinnati Masters",
-      "Miami Open",
-      "Indian Wells Masters",
-      "Monte-Carlo Masters"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q106",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which Spanish club holds the record for winning the most UEFA Europa League (formerly UEFA Cup) titles (7 titles)?",
-    "options": [
-      "Atletico Madrid",
-      "Villarreal",
-      "Valencia",
-      "Sevilla"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q107",
-    "sport": "Cricket",
-    "difficulty": "Medium",
-    "question": "Against which team did Anil Kumble take all 10 wickets in a single Test innings in 1999 at Delhi?",
-    "options": [
-      "Pakistan",
-      "England",
-      "Sri Lanka",
-      "Australia"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q108",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Which player won the 2006 Ballon d'Or after captaining Italy to FIFA World Cup victory?",
-    "options": [
-      "Zinedine Zidane",
-      "Fabio Cannavaro",
-      "Gianluigi Buffon",
-      "Andrea Pirlo"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q109",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Which player won regular season MVP, Finals MVP, and Defensive Player of the Year all in the same season (1994)?",
-    "options": [
-      "David Robinson",
-      "Hakeem Olajuwon",
-      "Shaquille O'Neal",
-      "Michael Jordan"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q110",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Who was the first defender in football history to win the prestigious Ballon d'Or award (1972 & 1976)?",
-    "options": [
-      "Paolo Maldini",
-      "Fabio Cannavaro",
-      "Franz Beckenbauer",
-      "Franco Baresi"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q111",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "In what year did the English First Division rebrand to officially form the Premier League?",
-    "options": [
-      "1992",
-      "1990",
-      "1991",
-      "1994"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q112",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Who is the only tennis player in history to achieve a single-calendar-year 'Golden Slam' (1988)?",
-    "options": [
-      "Serena Williams",
-      "Steffi Graf",
-      "Martina Navratilova",
-      "Monica Seles"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q113",
-    "sport": "Football",
-    "difficulty": "Medium",
-    "question": "Who was the manager of Arsenal during their famous 49-game unbeaten Premier League streak?",
-    "options": [
-      "Claudio Ranieri",
-      "Arsène Wenger",
-      "Sir Alex Ferguson",
-      "José Mourinho"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q114",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Who broke Oscar Robertson's long-standing record for the most career triple-doubles in NBA history?",
-    "options": [
-      "Russell Westbrook",
-      "Magic Johnson",
-      "Nikola Jokić",
-      "LeBron James"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q115",
-    "sport": "Cricket",
-    "difficulty": "Medium",
-    "question": "Who scored the fastest century in T20 International cricket history off just 27 balls in 2024?",
-    "options": [
-      "Jan Nicol Loftie-Eaton",
-      "David Miller",
-      "Sahil Chauhan",
-      "Kushal Malla"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q116",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Who won three Grand Slam singles titles in 2016 (Australian Open & US Open) and reached World No. 1?",
-    "options": [
-      "Simona Halep",
-      "Victoria Azarenka",
-      "Angelique Kerber",
-      "Garbine Muguruza"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q117",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Who won the 2020 US Open men's singles title after coming back from two sets down against Alexander Zverev?",
-    "options": [
-      "Dominic Thiem",
-      "Pablo Carreño Busta",
-      "Stefanos Tsitsipas",
-      "Daniil Medvedev"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q118",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Which player won Finals MVP in 2014 with the San Antonio Spurs after guarding LeBron James?",
-    "options": [
-      "Tim Duncan",
-      "Tony Parker",
-      "Kawhi Leonard",
-      "Manu Ginóbili"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q119",
-    "sport": "Basketball",
-    "difficulty": "Medium",
-    "question": "Which NBA coach holds the record for most total coaching wins in regular season NBA history?",
-    "options": [
-      "Don Nelson",
-      "Lenny Wilkens",
-      "Gregg Popovich",
-      "Phil Jackson"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q120",
-    "sport": "Tennis",
-    "difficulty": "Medium",
-    "question": "Who broke Pete Sampras's record of 14 Grand Slam singles titles by winning his 15th at Wimbledon 2009?",
-    "options": [
-      "Roger Federer",
-      "Novak Djokovic",
-      "Rafael Nadal",
-      "Andy Roddick"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q121",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who recorded a 20-point, 20-rebound, and 20-assist triple-double in a single NBA game in April 2019?",
-    "options": [
-      "Russell Westbrook",
-      "Wilt Chamberlain",
-      "Nikola Jokić",
-      "Luka Dončić"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q122",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Who won the 1997 Australian Open men's singles title without dropping a single set throughout the tournament?",
-    "options": [
-      "Jim Courier",
-      "Boris Becker",
-      "Petr Korda",
-      "Pete Sampras"
-    ],
-    "correct": 3
-  },
-  {
     "id": "Q123",
     "sport": "Cricket",
     "difficulty": "Hard",
@@ -1595,32 +659,6 @@
       "99.94",
       "100.00",
       "99.50"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q124",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Who holds the record for most total singles titles won in ATP Tour history (109 titles)?",
-    "options": [
-      "Rafael Nadal",
-      "Ivan Lendl",
-      "Jimmy Connors",
-      "Roger Federer"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q125",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Which player scored the dramatic injury-time winning goal for Manchester United in the 1999 Champions League final?",
-    "options": [
-      "Teddy Sheringham",
-      "Ole Gunnar Solskjær",
-      "David Beckham",
-      "Dwight Yorke"
     ],
     "correct": 1
   },
@@ -1651,58 +689,6 @@
     "correct": 1
   },
   {
-    "id": "Q128",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Which player scored 25 points in a single NBA Finals quarter while playing on a severely sprained ankle in 1988?",
-    "options": [
-      "Joe Dumars",
-      "Magic Johnson",
-      "Isiah Thomas",
-      "Kareem Abdul-Jabbar"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q129",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Which goalkeeper saved three penalties in the shootout for Liverpool in the 1984 European Cup final?",
-    "options": [
-      "Bruce Grobbelaar",
-      "Peter Shilton",
-      "Ray Clemence",
-      "Jerzy Dudek"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q130",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Who won the 1996 Wimbledon men's singles title as an unseeded player, famous for wearing a long white floppy hat?",
-    "options": [
-      "MaliVai Washington",
-      "Richard Krajicek",
-      "Goran Ivanišević",
-      "Boris Becker"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q131",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Which goalkeeper holds the all-time record for most clean sheets in Premier League history (202 clean sheets)?",
-    "options": [
-      "Edwin van der Sar",
-      "Petr Čech",
-      "David James",
-      "Mark Schwarzer"
-    ],
-    "correct": 1
-  },
-  {
     "id": "Q132",
     "sport": "Cricket",
     "difficulty": "Hard",
@@ -1716,32 +702,6 @@
     "correct": 0
   },
   {
-    "id": "Q133",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Who is the only player in football history to win the UEFA Champions League with three different clubs?",
-    "options": [
-      "Clarence Seedorf",
-      "Cristiano Ronaldo",
-      "Samuel Eto'o",
-      "Toni Kroos"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q134",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Who holds the record for most goals scored in a single European Cup / Champions League season (17 goals)?",
-    "options": [
-      "Lionel Messi",
-      "Karim Benzema",
-      "Robert Lewandowski",
-      "Cristiano Ronaldo"
-    ],
-    "correct": 3
-  },
-  {
     "id": "Q135",
     "sport": "Cricket",
     "difficulty": "Hard",
@@ -1753,6 +713,370 @@
       "Inzamam-ul-Haq"
     ],
     "correct": 2
+  },
+  {
+    "id": "Q142",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first Indian cricketer to score centuries in all three international formats (Test, ODI, T20I)?",
+    "options": [
+      "Suresh Raina",
+      "Rohit Sharma",
+      "KL Rahul",
+      "Virat Kohli"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q144",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which bowler holds the record for best bowling figures in a Men's ODI innings (8 wickets for 19 runs)?",
+    "options": [
+      "Glenn McGrath",
+      "Shahid Afridi",
+      "Muttiah Muralitharan",
+      "Chaminda Vaas"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q147",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Which non-wicketkeeper holds the record for most catches in Test match cricket history (210 catches)?",
+    "options": [
+      "Rahul Dravid",
+      "Jacques Kallis",
+      "Ricky Ponting",
+      "Mahela Jayawardene"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q151",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first bowler in cricket history to reach 500 wickets in Test match cricket (2001)?",
+    "options": [
+      "Muttiah Muralitharan",
+      "Kapil Dev",
+      "Courtney Walsh",
+      "Shane Warne"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q155",
+    "sport": "Cricket",
+    "difficulty": "Hard",
+    "question": "Who was the first batter in Test history to score a triple century (325 runs) in 1930 against West Indies?",
+    "options": [
+      "Wally Hammond",
+      "Hanif Mohammad",
+      "Don Bradman",
+      "Andy Sandham"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q003",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Who is the only male tennis player to win all four Grand Slams at least twice (Career Double Grand Slam)?",
+    "options": [
+      "Roger Federer",
+      "Novak Djokovic",
+      "Rod Laver",
+      "Rafael Nadal"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q007",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which Grand Slam tournament takes place annually in January at Melbourne Park?",
+    "options": [
+      "US Open",
+      "Australian Open",
+      "French Open",
+      "Wimbledon"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q008",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Who holds the record for the most Wimbledon women's singles titles in history (9 titles)?",
+    "options": [
+      "Chris Evert",
+      "Steffi Graf",
+      "Martina Navratilova",
+      "Serena Williams"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q014",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which male player holds the all-time record for the most Grand Slam singles titles (24 titles)?",
+    "options": [
+      "Roger Federer",
+      "Novak Djokovic",
+      "Pete Sampras",
+      "Rafael Nadal"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q016",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which Grand Slam tournament is played annually on red clay courts at Roland Garros in Paris?",
+    "options": [
+      "Australian Open",
+      "US Open",
+      "Wimbledon",
+      "French Open"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q019",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Who became the first British man in 77 years to win the Wimbledon singles title when he won in 2013?",
+    "options": [
+      "Andy Murray",
+      "Greg Rusedski",
+      "Tim Henman",
+      "Cameron Norrie"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q023",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which American male legend held the record of 14 Grand Slam singles titles before Roger Federer broke it?",
+    "options": [
+      "John McEnroe",
+      "Andre Agassi",
+      "Pete Sampras",
+      "Jimmy Connors"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q030",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Who won her first Grand Slam title at the 2018 US Open by defeating Serena Williams in the final?",
+    "options": [
+      "Iga \u015awi\u0105tek",
+      "Emma Raducanu",
+      "Naomi Osaka",
+      "Coco Gauff"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q035",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which Swiss legend retired in 2022 after winning 20 Grand Slam singles titles, including 8 Wimbledon titles?",
+    "options": [
+      "Stan Wawrinka",
+      "Roger Federer",
+      "Novak Djokovic",
+      "Andy Murray"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q040",
+    "sport": "Tennis",
+    "difficulty": "Easy",
+    "question": "Which Spanish prodigy won his first Grand Slam at the 2022 US Open and reached World No. 1 at age 19?",
+    "options": [
+      "Daniil Medvedev",
+      "Jannik Sinner",
+      "Carlos Alcaraz",
+      "Holger Rune"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q064",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "What year did the 'Open Era' of tennis officially begin, allowing professionals to compete in Grand Slams?",
+    "options": [
+      "1970",
+      "1967",
+      "1965",
+      "1968"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q065",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Who won the 2014 US Open Men's Singles title by defeating Kei Nishikori in an unseeded final matchup?",
+    "options": [
+      "Milos Raonic",
+      "Tom\u00e1\u0161 Berdych",
+      "Marin \u010cili\u0107",
+      "Grigor Dimitrov"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q067",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Which player holds the Open Era record for most consecutive weeks ranked World No. 1 (237 weeks)?",
+    "options": [
+      "Pete Sampras",
+      "Roger Federer",
+      "Jimmy Connors",
+      "Novak Djokovic"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q075",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Who became the first unseeded woman in the Open Era to win the Wimbledon singles title (2023)?",
+    "options": [
+      "Ons Jabeur",
+      "Elena Rybakina",
+      "Mark\u00e9ta Vondrou\u0161ov\u00e1",
+      "Barbora Krej\u010d\u00edkov\u00e1"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q086",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Which legend won 8 Grand Slam titles and achieved a Career Grand Slam wearing iconic neon outfits in the 1990s?",
+    "options": [
+      "Pete Sampras",
+      "Michael Chang",
+      "Andre Agassi",
+      "Jim Courier"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q089",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Who was the last male tennis player from Australia to win a Grand Slam singles title (2001 US Open & 2002 Wimbledon)?",
+    "options": [
+      "Mark Philippoussis",
+      "Patrick Rafter",
+      "Lleyton Hewitt",
+      "Nick Kyrgios"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q091",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Which female tennis player won 16 Grand Slam titles across singles and doubles after returning from a 1993 stabbing incident?",
+    "options": [
+      "Arantxa S\u00e1nchez Vicario",
+      "Jennifer Capriati",
+      "Martina Hingis",
+      "Monica Seles"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q094",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Who became the youngest male Grand Slam singles champion in history when he won the 1989 French Open at age 17?",
+    "options": [
+      "Boris Becker",
+      "Mats Wilander",
+      "Lleyton Hewitt",
+      "Michael Chang"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q098",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Which Swiss player won three Grand Slam singles titles (2014 Aus Open, 2015 French Open, 2016 US Open)?",
+    "options": [
+      "Stan Wawrinka",
+      "Heinz G\u00fcnthardt",
+      "Roger Federer",
+      "Marc Rosset"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q100",
+    "sport": "Tennis",
+    "difficulty": "Medium",
+    "question": "Which player defeated Roger Federer in the 2009 US Open final, snapping Federer's streak of 5 consecutive US Open titles?",
+    "options": [
+      "Stan Wawrinka",
+      "Andy Murray",
+      "Novak Djokovic",
+      "Juan Mart\u00edn del Potro"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q122",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Who won the 1997 Australian Open men's singles title without dropping a single set throughout the tournament?",
+    "options": [
+      "Jim Courier",
+      "Boris Becker",
+      "Petr Korda",
+      "Pete Sampras"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q124",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Who holds the record for most total singles titles won in ATP Tour history (109 titles)?",
+    "options": [
+      "Rafael Nadal",
+      "Ivan Lendl",
+      "Jimmy Connors",
+      "Roger Federer"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q130",
+    "sport": "Tennis",
+    "difficulty": "Hard",
+    "question": "Who won the 1996 Wimbledon men's singles title as an unseeded player, famous for wearing a long white floppy hat?",
+    "options": [
+      "MaliVai Washington",
+      "Richard Krajicek",
+      "Goran Ivani\u0161evi\u0107",
+      "Boris Becker"
+    ],
+    "correct": 1
   },
   {
     "id": "Q136",
@@ -1773,7 +1097,7 @@
     "difficulty": "Hard",
     "question": "Before Rafael Nadal won 14, who held the Open Era record for most French Open men's singles titles (6 titles)?",
     "options": [
-      "Björn Borg",
+      "Bj\u00f6rn Borg",
       "Ivan Lendl",
       "Mats Wilander",
       "Gustavo Kuerten"
@@ -1807,71 +1131,6 @@
     "correct": 0
   },
   {
-    "id": "Q140",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Which club won the European Cup twice in 1979 and 1980 under legendary manager Brian Clough?",
-    "options": [
-      "Nottingham Forest",
-      "Celtic",
-      "Leeds United",
-      "Aston Villa"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q141",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Which player won Finals MVP in 1979 with the Seattle SuperSonics after averaging 28.6 points per game?",
-    "options": [
-      "Fred Brown",
-      "Jack Sikma",
-      "Dennis Johnson",
-      "Gus Williams"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q142",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Who was the first Indian cricketer to score centuries in all three international formats (Test, ODI, T20I)?",
-    "options": [
-      "Suresh Raina",
-      "Rohit Sharma",
-      "KL Rahul",
-      "Virat Kohli"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q143",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who scored 71 points in the final game of the 1993-94 season to steal the NBA scoring title from Shaquille O'Neal?",
-    "options": [
-      "Patrick Ewing",
-      "David Robinson",
-      "Karl Malone",
-      "Hakeem Olajuwon"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q144",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Which bowler holds the record for best bowling figures in a Men's ODI innings (8 wickets for 19 runs)?",
-    "options": [
-      "Glenn McGrath",
-      "Shahid Afridi",
-      "Muttiah Muralitharan",
-      "Chaminda Vaas"
-    ],
-    "correct": 3
-  },
-  {
     "id": "Q145",
     "sport": "Tennis",
     "difficulty": "Hard",
@@ -1898,184 +1157,379 @@
     "correct": 3
   },
   {
-    "id": "Q147",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Which non-wicketkeeper holds the record for most catches in Test match cricket history (210 catches)?",
-    "options": [
-      "Rahul Dravid",
-      "Jacques Kallis",
-      "Ricky Ponting",
-      "Mahela Jayawardene"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q148",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who is the only player in NBA history to win Finals MVP while playing for the losing team (1969 Finals)?",
-    "options": [
-      "Jerry West",
-      "John Havlicek",
-      "Elgin Baylor",
-      "Wilt Chamberlain"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q149",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who won 8 consecutive NBA championships with the Boston Celtics from 1959 to 1966 as a player?",
-    "options": [
-      "K.C. Jones",
-      "John Havlicek",
-      "Bill Russell",
-      "Sam Jones"
-    ],
-    "correct": 2
-  },
-  {
     "id": "Q150",
     "sport": "Tennis",
     "difficulty": "Hard",
     "question": "Who defeated Roger Federer in the 2009 US Open final to interrupt his streak of 5 consecutive US Open titles?",
     "options": [
       "Rafael Nadal",
-      "Juan Martín del Potro",
+      "Juan Mart\u00edn del Potro",
       "Andy Murray",
       "Novak Djokovic"
     ],
     "correct": 1
   },
   {
-    "id": "Q151",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Who was the first bowler in cricket history to reach 500 wickets in Test match cricket (2001)?",
+    "id": "Q004",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Who scored the winning extra-time goal for Spain against Netherlands in the 2010 World Cup final?",
     "options": [
-      "Muttiah Muralitharan",
-      "Kapil Dev",
-      "Courtney Walsh",
-      "Shane Warne"
+      "Fernando Torres",
+      "David Villa",
+      "Andr\u00e9s Iniesta",
+      "Xavi"
     ],
     "correct": 2
+  },
+  {
+    "id": "Q011",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which German club won 11 consecutive Bundesliga titles between 2013 and 2023?",
+    "options": [
+      "RB Leipzig",
+      "Bayern Munich",
+      "Bayer Leverkusen",
+      "Borussia Dortmund"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q017",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Who is the all-time leading goalscorer in UEFA Champions League history?",
+    "options": [
+      "Lionel Messi",
+      "Robert Lewandowski",
+      "Karim Benzema",
+      "Cristiano Ronaldo"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q020",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which English club completed a historic treble (Premier League, FA Cup, Champions League) in the 2022-23 season?",
+    "options": [
+      "Liverpool",
+      "Manchester City",
+      "Manchester United",
+      "Arsenal"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q022",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which country won the UEFA Euro 2020 tournament (held in 2021) by defeating England in the final?",
+    "options": [
+      "Spain",
+      "Portugal",
+      "France",
+      "Italy"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q027",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which country won the 2022 FIFA World Cup hosted in Qatar?",
+    "options": [
+      "Argentina",
+      "France",
+      "Croatia",
+      "Brazil"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q036",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which French club dominated Ligue 1 by winning the title in 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022, 2023, and 2024?",
+    "options": [
+      "Marseille",
+      "Monaco",
+      "Lyon",
+      "Paris Saint-Germain"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q041",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which legendary manager famously led Manchester United from 1986 to 2013, winning 13 Premier League titles?",
+    "options": [
+      "Sir Alex Ferguson",
+      "Louis van Gaal",
+      "Ars\u00e8ne Wenger",
+      "Matt Busby"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q044",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which nation has won the most FIFA Men's World Cup titles in history (5 titles)?",
+    "options": [
+      "Argentina",
+      "Germany",
+      "Brazil",
+      "Italy"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q047",
+    "sport": "Football",
+    "difficulty": "Easy",
+    "question": "Which European club plays its home matches at the iconic Santiago Bernab\u00e9u stadium?",
+    "options": [
+      "FC Barcelona",
+      "Real Madrid",
+      "Valencia",
+      "Atletico Madrid"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q063",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Who scored the winning goal for Germany against Argentina in the 113th minute of the 2014 World Cup final?",
+    "options": [
+      "Mesut \u00d6zil",
+      "Bastian Schweinsteiger",
+      "Thomas M\u00fcller",
+      "Mario G\u00f6tze"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q072",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which country hosted the 1998 FIFA World Cup, winning the tournament on home soil?",
+    "options": [
+      "Germany",
+      "France",
+      "Italy",
+      "Brazil"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q073",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Who won the Ballon d'Or in 2007, the last player to win it before the era of Messi-Ronaldo dominance?",
+    "options": [
+      "Ronaldinho",
+      "Kak\u00e1",
+      "Cristiano Ronaldo",
+      "Lionel Messi"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q074",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which African country became the first in history to reach a FIFA World Cup semi-final at Qatar 2022?",
+    "options": [
+      "Morocco",
+      "Cameroon",
+      "Ghana",
+      "Senegal"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q081",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which European nation won the inaugural UEFA European Championship (Euro) held in 1960?",
+    "options": [
+      "Spain",
+      "Soviet Union",
+      "France",
+      "Yugoslavia"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q084",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Who scored both the infamous 'Hand of God' and the iconic 'Goal of the Century' against England in 1986?",
+    "options": [
+      "Pel\u00e9",
+      "Mario Kempes",
+      "Diego Maradona",
+      "Gabriel Batistuta"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q088",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which English club did Thierry Henry leave in 2007 when he transferred to FC Barcelona?",
+    "options": [
+      "Chelsea",
+      "Liverpool",
+      "Manchester United",
+      "Arsenal"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q096",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which nation won the first Women's FIFA World Cup tournament held in China in 1991?",
+    "options": [
+      "Norway",
+      "Germany",
+      "China",
+      "United States"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q099",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which Italian club did Andrea Pirlo join on a free transfer in 2011 after leaving AC Milan?",
+    "options": [
+      "Roma",
+      "Inter Milan",
+      "Juventus",
+      "Fiorentina"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q104",
+    "sport": "Football",
+    "difficulty": "Medium",
+    "question": "Which Portuguese manager won UEFA Champions League titles with both FC Porto (2004) and Inter Milan (2010)?",
+    "options": [
+      "Carlo Ancelotti",
+      "Rafa Ben\u00edtez",
+      "Jos\u00e9 Mourinho",
+      "Pep Guardiola"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "Q125",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which player scored the dramatic injury-time winning goal for Manchester United in the 1999 Champions League final?",
+    "options": [
+      "Teddy Sheringham",
+      "Ole Gunnar Solskj\u00e6r",
+      "David Beckham",
+      "Dwight Yorke"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q129",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which goalkeeper saved three penalties in the shootout for Liverpool in the 1984 European Cup final?",
+    "options": [
+      "Bruce Grobbelaar",
+      "Peter Shilton",
+      "Ray Clemence",
+      "Jerzy Dudek"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q131",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which goalkeeper holds the all-time record for most clean sheets in Premier League history (202 clean sheets)?",
+    "options": [
+      "Edwin van der Sar",
+      "Petr \u010cech",
+      "David James",
+      "Mark Schwarzer"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "Q133",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Who is the only player in football history to win the UEFA Champions League with three different clubs?",
+    "options": [
+      "Clarence Seedorf",
+      "Cristiano Ronaldo",
+      "Samuel Eto'o",
+      "Toni Kroos"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "Q134",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Who holds the record for most goals scored in a single European Cup / Champions League season (17 goals)?",
+    "options": [
+      "Lionel Messi",
+      "Karim Benzema",
+      "Robert Lewandowski",
+      "Cristiano Ronaldo"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "Q140",
+    "sport": "Football",
+    "difficulty": "Hard",
+    "question": "Which club won the European Cup twice in 1979 and 1980 under legendary manager Brian Clough?",
+    "options": [
+      "Nottingham Forest",
+      "Celtic",
+      "Leeds United",
+      "Aston Villa"
+    ],
+    "correct": 0
   },
   {
     "id": "Q152",
     "sport": "Football",
     "difficulty": "Hard",
-    "question": "Prior to Kylian Mbappé in 2022, who was the last player to score a hat-trick in a FIFA World Cup final (1966)?",
+    "question": "Prior to Kylian Mbapp\u00e9 in 2022, who was the last player to score a hat-trick in a FIFA World Cup final (1966)?",
     "options": [
       "Geoff Hurst",
       "Zinedine Zidane",
-      "Pelé",
+      "Pel\u00e9",
       "Mario Kempes"
     ],
     "correct": 0
   },
   {
-    "id": "Q153",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Which female player hit a 143 mph (230 km/h) serve at the 2014 Stanford Classic, the fastest recorded serve in WTA history?",
-    "options": [
-      "Serena Williams",
-      "Coco Gauff",
-      "Sabine Lisicki",
-      "Venus Williams"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q154",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who was the first European-born player to win the NBA Most Valuable Player (MVP) award (2006-07)?",
-    "options": [
-      "Tony Parker",
-      "Pau Gasol",
-      "Dirk Nowitzki",
-      "Giannis Antetokounmpo"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q155",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Who was the first batter in Test history to score a triple century (325 runs) in 1930 against West Indies?",
-    "options": [
-      "Wally Hammond",
-      "Hanif Mohammad",
-      "Don Bradman",
-      "Andy Sandham"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q156",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who was the first player drafted #1 overall in the NBA Draft directly out of high school (2001)?",
-    "options": [
-      "Kwame Brown",
-      "LeBron James",
-      "Kevin Garnett",
-      "Dwight Howard"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q157",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Who was the first player in history to reach 10,000 runs in Test match cricket (1987)?",
-    "options": [
-      "Vivian Richards",
-      "Sunil Gavaskar",
-      "Sachin Tendulkar",
-      "Allan Border"
-    ],
-    "correct": 1
-  },
-  {
     "id": "Q158",
     "sport": "Football",
     "difficulty": "Hard",
-    "question": "Who was the inaugural winner of the FIFA Puskás Award in 2009 for his 40-yard strike against FC Porto?",
+    "question": "Who was the inaugural winner of the FIFA Pusk\u00e1s Award in 2009 for his 40-yard strike against FC Porto?",
     "options": [
-      "Zlatan Ibrahimović",
+      "Zlatan Ibrahimovi\u0107",
       "Neymar",
       "Cristiano Ronaldo",
       "Wayne Rooney"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q159",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who was awarded the very first NBA Most Valuable Player (MVP) award for the 1955-56 season?",
-    "options": [
-      "Bill Russell",
-      "Wilt Chamberlain",
-      "Bob Pettit",
-      "Bob Cousy"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q160",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Which Croatian player won the 2001 Wimbledon men's singles title after entering the tournament as a wildcard ranked 125th?",
-    "options": [
-      "Marat Safin",
-      "Patrick Rafter",
-      "Goran Ivanišević",
-      "Tim Henman"
     ],
     "correct": 2
   },
@@ -2085,25 +1539,12 @@
     "difficulty": "Hard",
     "question": "Which player won the FIFA World Cup Golden Ball award at both the 2014 and 2022 World Cups?",
     "options": [
-      "Luka Modrić",
+      "Luka Modri\u0107",
       "Antoine Griezmann",
       "Lionel Messi",
-      "James Rodríguez"
+      "James Rodr\u00edguez"
     ],
     "correct": 2
-  },
-  {
-    "id": "Q162",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who holds the NBA record for most consecutive games scoring 10+ points (over 1,200 games)?",
-    "options": [
-      "Michael Jordan",
-      "Kareem Abdul-Jabbar",
-      "Karl Malone",
-      "LeBron James"
-    ],
-    "correct": 3
   },
   {
     "id": "Q163",
@@ -2113,230 +1554,789 @@
     "options": [
       "Frank Rijkaard",
       "Guus Hiddink",
-      "Rafa Benítez",
-      "José Mourinho"
+      "Rafa Ben\u00edtez",
+      "Jos\u00e9 Mourinho"
     ],
     "correct": 3
   },
   {
-    "id": "Q164",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Which nation won UEFA Euro 1992 after being invited just days before the tournament to replace Yugoslavia?",
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "What does 'F1' stand for?",
     "options": [
-      "Czech Republic",
-      "Denmark",
+      "Formula 1",
+      "Fast 1",
+      "Force 1",
+      "First 1"
+    ],
+    "correct": 0,
+    "id": "F1_000"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "Which color flag indicates that a session has been stopped?",
+    "options": [
+      "Yellow",
+      "Red",
+      "Black",
+      "Green"
+    ],
+    "correct": 1,
+    "id": "F1_001"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "What is the term for a quick stop during a race to change tires?",
+    "options": [
+      "Pit Stop",
+      "Break",
+      "Timeout",
+      "Rest Stop"
+    ],
+    "correct": 0,
+    "id": "F1_002"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "Which team is famously associated with the color red?",
+    "options": [
+      "Mercedes",
+      "Red Bull",
+      "Ferrari",
+      "McLaren"
+    ],
+    "correct": 2,
+    "id": "F1_003"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "What is the pole position?",
+    "options": [
+      "First place on the starting grid",
+      "Last place",
+      "Pit lane start",
+      "The winning position"
+    ],
+    "correct": 0,
+    "id": "F1_004"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "Which driver has the nickname 'The Honey Badger'?",
+    "options": [
+      "Lewis Hamilton",
+      "Daniel Ricciardo",
+      "Max Verstappen",
+      "Lando Norris"
+    ],
+    "correct": 1,
+    "id": "F1_005"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "How many world championships has Lewis Hamilton won (as of 2023)?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2,
+    "id": "F1_006"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "What does DRS stand for?",
+    "options": [
+      "Drag Reduction System",
+      "Direct Racing Speed",
+      "Driver Race Strategy",
+      "Downforce Reduction System"
+    ],
+    "correct": 0,
+    "id": "F1_007"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "Which tire is the softest compound?",
+    "options": [
+      "Hard",
+      "Medium",
+      "Soft",
+      "Intermediate"
+    ],
+    "correct": 2,
+    "id": "F1_008"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Easy",
+    "question": "What flag is waved to the winner at the end of the race?",
+    "options": [
+      "Red Flag",
+      "Chequered Flag",
+      "White Flag",
+      "Yellow Flag"
+    ],
+    "correct": 1,
+    "id": "F1_009"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "Who holds the record for the most Grand Prix wins?",
+    "options": [
+      "Michael Schumacher",
+      "Ayrton Senna",
+      "Lewis Hamilton",
+      "Alain Prost"
+    ],
+    "correct": 2,
+    "id": "F1_010"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "In what year did Formula 1 introduce the hybrid V6 turbo engines?",
+    "options": [
+      "2010",
+      "2012",
+      "2014",
+      "2016"
+    ],
+    "correct": 2,
+    "id": "F1_011"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "Which circuit is famous for its 'Eau Rouge' and 'Raidillon' corners?",
+    "options": [
+      "Monza",
+      "Silverstone",
+      "Spa-Francorchamps",
+      "Suzuka"
+    ],
+    "correct": 2,
+    "id": "F1_012"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "Who was the first ever Formula 1 World Champion in 1950?",
+    "options": [
+      "Juan Manuel Fangio",
+      "Nino Farina",
+      "Alberto Ascari",
+      "Stirling Moss"
+    ],
+    "correct": 1,
+    "id": "F1_013"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "What is the 'halo' in Formula 1?",
+    "options": [
+      "A tire compound",
+      "A safety device above the cockpit",
+      "An aerodynamic wing",
+      "A team strategy"
+    ],
+    "correct": 1,
+    "id": "F1_014"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "Which constructor has won the most World Championships?",
+    "options": [
+      "McLaren",
+      "Williams",
+      "Mercedes",
+      "Ferrari"
+    ],
+    "correct": 3,
+    "id": "F1_015"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "What penalty is given for exceeding the pit lane speed limit?",
+    "options": [
+      "Drive-through penalty",
+      "Stop-and-go penalty",
+      "Time penalty",
+      "All of the above depending on severity"
+    ],
+    "correct": 3,
+    "id": "F1_016"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "Which driver won the 2021 Formula 1 World Championship?",
+    "options": [
+      "Lewis Hamilton",
+      "Max Verstappen",
+      "Charles Leclerc",
+      "Sebastian Vettel"
+    ],
+    "correct": 1,
+    "id": "F1_017"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "What does a blue flag indicate to a driver?",
+    "options": [
+      "Safety car deployed",
+      "Let a faster car lap you",
+      "Return to the pits",
+      "Debris on track"
+    ],
+    "correct": 1,
+    "id": "F1_018"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Medium",
+    "question": "Which engine supplier powered Red Bull to their 2010-2013 championships?",
+    "options": [
+      "Mercedes",
+      "Ferrari",
+      "Renault",
+      "Honda"
+    ],
+    "correct": 2,
+    "id": "F1_019"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "Who holds the record for the youngest ever Formula 1 race winner?",
+    "options": [
+      "Sebastian Vettel",
+      "Max Verstappen",
+      "Charles Leclerc",
+      "Fernando Alonso"
+    ],
+    "correct": 1,
+    "id": "F1_020"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "Which driver famously won a race despite being in last place at the end of the first lap? (Canada 2011)",
+    "options": [
+      "Michael Schumacher",
+      "Jenson Button",
+      "Lewis Hamilton",
+      "Kimi R\u00e4ikk\u00f6nen"
+    ],
+    "correct": 1,
+    "id": "F1_021"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "What was the name of the innovative fan car introduced by Brabham in 1978?",
+    "options": [
+      "BT46B",
+      "FW14B",
+      "MP4/4",
+      "F2004"
+    ],
+    "correct": 0,
+    "id": "F1_022"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "Who is the only driver to win a World Championship posthumously?",
+    "options": [
+      "Ayrton Senna",
+      "Jim Clark",
+      "Gilles Villeneuve",
+      "Jochen Rindt"
+    ],
+    "correct": 3,
+    "id": "F1_023"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "Which circuit hosted the first ever night race in Formula 1?",
+    "options": [
+      "Bahrain",
+      "Abu Dhabi",
+      "Singapore",
+      "Las Vegas"
+    ],
+    "correct": 2,
+    "id": "F1_024"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "What is the maximum number of cars a single constructor can field in a race?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 1,
+    "id": "F1_025"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "Who was the first driver to achieve 100 pole positions in Formula 1?",
+    "options": [
+      "Michael Schumacher",
+      "Ayrton Senna",
+      "Lewis Hamilton",
+      "Sebastian Vettel"
+    ],
+    "correct": 2,
+    "id": "F1_026"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "Which team holds the record for the most consecutive constructor's championships?",
+    "options": [
+      "Ferrari",
+      "Red Bull",
+      "Mercedes",
+      "McLaren"
+    ],
+    "correct": 2,
+    "id": "F1_027"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "What is the minimum weight of an F1 car (excluding fuel) as of recent regulations?",
+    "options": [
+      "600 kg",
+      "798 kg",
+      "900 kg",
+      "1000 kg"
+    ],
+    "correct": 1,
+    "id": "F1_028"
+  },
+  {
+    "sport": "Formula 1",
+    "difficulty": "Hard",
+    "question": "Which driver won the 2009 World Championship with Brawn GP?",
+    "options": [
+      "Rubens Barrichello",
+      "Jenson Button",
+      "Sebastian Vettel",
+      "Mark Webber"
+    ],
+    "correct": 1,
+    "id": "F1_029"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "How often are the Summer Olympic Games held?",
+    "options": [
+      "Every 2 years",
+      "Every 4 years",
+      "Every 5 years",
+      "Every year"
+    ],
+    "correct": 1,
+    "id": "OLY_000"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "What do the five rings on the Olympic flag represent?",
+    "options": [
+      "Five sports",
+      "Five oceans",
+      "Five continents",
+      "Five founders"
+    ],
+    "correct": 2,
+    "id": "OLY_001"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "Which metal is the highest value Olympic medal made of?",
+    "options": [
+      "Gold",
+      "Silver",
+      "Bronze",
+      "Platinum"
+    ],
+    "correct": 0,
+    "id": "OLY_002"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "In which city were the first modern Olympic Games held in 1896?",
+    "options": [
+      "Rome",
+      "Paris",
+      "Athens",
+      "London"
+    ],
+    "correct": 2,
+    "id": "OLY_003"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "What is the name of the flame that burns during the Olympic Games?",
+    "options": [
+      "Eternal Flame",
+      "Olympic Fire",
+      "Olympic Flame",
+      "Torch of Victory"
+    ],
+    "correct": 2,
+    "id": "OLY_004"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "Which sport involves jumping into a pool from a springboard or platform?",
+    "options": [
+      "Swimming",
+      "Diving",
+      "Water Polo",
+      "Surfing"
+    ],
+    "correct": 1,
+    "id": "OLY_005"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "What animal is often featured in equestrian events?",
+    "options": [
+      "Dog",
+      "Camel",
+      "Horse",
+      "Bull"
+    ],
+    "correct": 2,
+    "id": "OLY_006"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "Who is the fastest man in the world, holding the 100m sprint record?",
+    "options": [
+      "Carl Lewis",
+      "Usain Bolt",
+      "Tyson Gay",
+      "Justin Gatlin"
+    ],
+    "correct": 1,
+    "id": "OLY_007"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "Which country always enters the stadium first during the opening ceremony parade?",
+    "options": [
+      "The Host Country",
+      "USA",
+      "Greece",
+      "China"
+    ],
+    "correct": 2,
+    "id": "OLY_008"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "In gymnastics, what piece of equipment is unique to women's competition?",
+    "options": [
+      "Rings",
+      "Pommel Horse",
+      "Balance Beam",
+      "Parallel Bars"
+    ],
+    "correct": 2,
+    "id": "OLY_009"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "Which athlete has won the most Olympic medals of all time?",
+    "options": [
+      "Usain Bolt",
+      "Michael Phelps",
+      "Larisa Latynina",
+      "Mark Spitz"
+    ],
+    "correct": 1,
+    "id": "OLY_010"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "What are the three colors of the Olympic medals?",
+    "options": [
+      "Gold, Silver, Bronze",
+      "Red, White, Blue",
+      "Gold, Diamond, Platinum",
+      "Gold, Silver, Copper"
+    ],
+    "correct": 0,
+    "id": "OLY_011"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "Which city hosted the 2012 Summer Olympics?",
+    "options": [
+      "Beijing",
+      "London",
+      "Rio de Janeiro",
+      "Tokyo"
+    ],
+    "correct": 1,
+    "id": "OLY_012"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "In which Olympic sport would you use a foil, \u00e9p\u00e9e, or sabre?",
+    "options": [
+      "Archery",
+      "Fencing",
+      "Javelin",
+      "Shooting"
+    ],
+    "correct": 1,
+    "id": "OLY_013"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "How long is a standard Olympic marathon race?",
+    "options": [
+      "20 miles",
+      "26.2 miles",
+      "30 miles",
+      "15 miles"
+    ],
+    "correct": 1,
+    "id": "OLY_014"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "Which new sports were added to the 2020 Tokyo Olympics?",
+    "options": [
+      "Skateboarding and Surfing",
+      "Cricket and Polo",
+      "Squash and Bowling",
+      "Chess and Esports"
+    ],
+    "correct": 0,
+    "id": "OLY_015"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "Who was the first gymnast to score a perfect 10 at the Olympics?",
+    "options": [
+      "Nadia Com\u0103neci",
+      "Simone Biles",
+      "Mary Lou Retton",
+      "Olga Korbut"
+    ],
+    "correct": 0,
+    "id": "OLY_016"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "The biathlon in the Winter Olympics combines cross-country skiing with which other sport?",
+    "options": [
+      "Ice Skating",
+      "Snowboarding",
+      "Rifle Shooting",
+      "Archery"
+    ],
+    "correct": 2,
+    "id": "OLY_017"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "Which country boycotted the 1980 Summer Olympics in Moscow?",
+    "options": [
+      "Great Britain",
+      "France",
+      "United States",
+      "China"
+    ],
+    "correct": 2,
+    "id": "OLY_018"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "What is the motto of the Olympic Games?",
+    "options": [
+      "Faster, Higher, Stronger",
+      "Win at all costs",
+      "Peace through sport",
+      "United by emotion"
+    ],
+    "correct": 0,
+    "id": "OLY_019"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "Who is the only person to have won gold medals at both the Summer and Winter Olympic Games in different sports?",
+    "options": [
+      "Eddie Eagan",
+      "Shaun White",
+      "Clara Hughes",
+      "Michael Phelps"
+    ],
+    "correct": 0,
+    "id": "OLY_020"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "In what year were the first Winter Olympic Games held?",
+    "options": [
+      "1900",
+      "1924",
+      "1936",
+      "1952"
+    ],
+    "correct": 1,
+    "id": "OLY_021"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "queqtion": "Which city has hosted the Summer Olympics three times?",
+    "options": [
+      "London",
+      "Paris",
+      "Los Angeles",
+      "Athens"
+    ],
+    "correct": 0,
+    "id": "OLY_022"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "Who won the men's decathlon at the 1976 Montreal Olympics?",
+    "options": [
+      "Daley Thompson",
+      "Bruce Jenner",
+      "Bob Mathias",
+      "Ashton Eaton"
+    ],
+    "correct": 1,
+    "id": "OLY_023"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "Which country has won the most gold medals in Olympic history?",
+    "options": [
+      "Soviet Union",
+      "Great Britain",
+      "China",
+      "United States"
+    ],
+    "correct": 3,
+    "id": "OLY_024"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "The 'Miracle on Ice' refers to a hockey game between the USA and which country?",
+    "options": [
+      "Canada",
       "Sweden",
-      "Greece"
+      "Soviet Union",
+      "Czechoslovakia"
     ],
-    "correct": 1
+    "correct": 2,
+    "id": "OLY_025"
   },
   {
-    "id": "Q165",
-    "sport": "Football",
+    "sport": "Olympics",
     "difficulty": "Hard",
-    "question": "Which player holds the record for most appearances in La Liga history (622 appearances, tied with Andoni Zubizarreta)?",
+    "question": "Who was the first woman to light the Olympic cauldron?",
     "options": [
-      "Sergio Ramos",
-      "Joaquín",
-      "Lionel Messi",
-      "Raúl"
+      "Cathy Freeman",
+      "Enriqueta Basilio",
+      "Midori Ito",
+      "Steffi Graf"
     ],
-    "correct": 1
+    "correct": 1,
+    "id": "OLY_026"
   },
   {
-    "id": "Q166",
-    "sport": "Football",
+    "sport": "Olympics",
     "difficulty": "Hard",
-    "question": "Which Liberian icon became the first and only African player to win the Ballon d'Or in 1995?",
+    "question": "Which event is NOT part of the men's modern pentathlon?",
     "options": [
-      "Samuel Eto'o",
-      "Didier Drogba",
-      "George Weah",
-      "Roger Milla"
+      "Fencing",
+      "Swimming",
+      "Show Jumping",
+      "Cycling"
     ],
-    "correct": 2
+    "correct": 3,
+    "id": "OLY_027"
   },
   {
-    "id": "Q167",
-    "sport": "Basketball",
+    "sport": "Olympics",
     "difficulty": "Hard",
-    "question": "Which NBA player recorded the only quadruple-double in NBA history that included steals instead of blocks (1986)?",
+    "question": "How many times have the Olympic Games been cancelled due to war?",
     "options": [
-      "Alvin Robertson",
-      "David Robinson",
-      "Hakeem Olajuwon",
-      "Nate Thurmond"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
-    "correct": 0
+    "correct": 2,
+    "id": "OLY_028"
   },
   {
-    "id": "Q168",
-    "sport": "Basketball",
+    "sport": "Olympics",
     "difficulty": "Hard",
-    "question": "Before the 24-second shot clock was introduced in 1954, what was the lowest-scoring game in NBA history?",
+    "question": "What was the first year women were allowed to compete in the Olympics?",
     "options": [
-      "24-23",
-      "19-18",
-      "31-30",
-      "38-37"
+      "1896",
+      "1900",
+      "1912",
+      "1924"
     ],
-    "correct": 1
-  },
-  {
-    "id": "Q169",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Who scored the winning goal for Portugal against France in extra time of the UEFA Euro 2016 final?",
-    "options": [
-      "Cristiano Ronaldo",
-      "Nani",
-      "Ricardo Quaresma",
-      "Éder"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q170",
-    "sport": "Football",
-    "difficulty": "Hard",
-    "question": "Who scored the acrobatic volley goal for Real Madrid against Bayer Leverkusen in the 2002 Champions League final?",
-    "options": [
-      "Roberto Carlos",
-      "Zinedine Zidane",
-      "Luís Figo",
-      "Raúl"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q171",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Who was the first spin bowler in cricket history to reach 600 Test wickets?",
-    "options": [
-      "Muttiah Muralitharan",
-      "Shane Warne",
-      "Nathan Lyon",
-      "Anil Kumble"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q172",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Which bowler took 10 wickets in a Test innings against India in December 2021 at Mumbai?",
-    "options": [
-      "Mitchell Santner",
-      "Jim Laker",
-      "Anil Kumble",
-      "Ajaz Patel"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q173",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Who won the 2004 French Open men's singles title after saving match points in an all-Argentine final against Guillermo Coria?",
-    "options": [
-      "Guillermo Cañas",
-      "Juan Ignacio Chela",
-      "David Nalbandian",
-      "Gastón Gaudio"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q174",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Who holds the record for most stumpings in international cricket across all formats (195 stumpings)?",
-    "options": [
-      "Kumar Sangakkara",
-      "MS Dhoni",
-      "Moin Khan",
-      "Romesh Kaluwitharana"
-    ],
-    "correct": 1
-  },
-  {
-    "id": "Q175",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who holds the NBA record for most blocked shots in a single regular season (456 blocks in 1985-86)?",
-    "options": [
-      "Manute Bol",
-      "Dikembe Mutombo",
-      "Hakeem Olajuwon",
-      "Mark Eaton"
-    ],
-    "correct": 3
-  },
-  {
-    "id": "Q176",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Who became the first player born in the 2000s to win a Grand Slam singles title when he won the 2024 Australian Open?",
-    "options": [
-      "Holger Rune",
-      "Ben Shelton",
-      "Jannik Sinner",
-      "Carlos Alcaraz"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q177",
-    "sport": "Cricket",
-    "difficulty": "Hard",
-    "question": "Who scored the fastest double century in Test match history off just 153 balls against England in 2002?",
-    "options": [
-      "Nathan Astle",
-      "Brendon McCullum",
-      "Adam Gilchrist",
-      "Virender Sehwag"
-    ],
-    "correct": 0
-  },
-  {
-    "id": "Q178",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who holds the NBA record for most points scored in a single quarter (37 points against Sacramento in 2015)?",
-    "options": [
-      "Devin Booker",
-      "Stephen Curry",
-      "Klay Thompson",
-      "Kobe Bryant"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q179",
-    "sport": "Basketball",
-    "difficulty": "Hard",
-    "question": "Who won the first official NBA Slam Dunk Contest held during All-Star Weekend in 1984?",
-    "options": [
-      "Dominique Wilkins",
-      "Julius Erving",
-      "Larry Nance",
-      "Michael Jordan"
-    ],
-    "correct": 2
-  },
-  {
-    "id": "Q180",
-    "sport": "Tennis",
-    "difficulty": "Hard",
-    "question": "Which 16-year-old player won the 1990 French Open to become the youngest Grand Slam singles champion in women's history?",
-    "options": [
-      "Tracy Austin",
-      "Monica Seles",
-      "Martina Hingis",
-      "Arantxa Sánchez Vicario"
-    ],
-    "correct": 1
+    "correct": 1,
+    "id": "OLY_029"
   }
 ]
