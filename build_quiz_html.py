@@ -428,7 +428,7 @@ html_template = f'''<!DOCTYPE html>
       height: 54px;
       padding: 0 1.8rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       border-top: 1px solid var(--border-color);
       background: rgba(7, 10, 20, 0.9);
@@ -630,11 +630,6 @@ html_template = f'''<!DOCTYPE html>
 
     <!-- MINIMAL FOOTER -->
     <footer class="ppt-footer">
-      <div class="footer-hints">
-        <span class="kbd-tag">Space</span> / <span class="kbd-tag">→</span> Next Slide &nbsp;•&nbsp; 
-        <span class="kbd-tag">←</span> Prev Slide &nbsp;•&nbsp; 
-        <span class="kbd-tag">F</span> Fullscreen Mode
-      </div>
 
       <div class="footer-actions">
         <button class="tool-btn" onclick="prevSlide()">
