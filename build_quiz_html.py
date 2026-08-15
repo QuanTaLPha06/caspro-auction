@@ -31,10 +31,12 @@ html_template = f'''<!DOCTYPE html>
       --accent-medium: #ffb300;
       --accent-hard: #ff2d55;
       
-      --sport-cricket: #ffb300;
-      --sport-football: #00b0ff;
-      --sport-tennis: #76ff03;
+      --sport-cricket: #ffc107;
+      --sport-football: #00e5ff;
+      --sport-tennis: #a6ff00;
       --sport-basketball: #ff6d00;
+      --sport-f1: #ff3333;
+      --sport-olympics: #ffd700;
       
       --text-main: #ffffff;
       --text-muted: #8e9baf;
@@ -106,6 +108,7 @@ html_template = f'''<!DOCTYPE html>
       font-weight: 800;
       font-size: 0.85rem;
       letter-spacing: 1px;
+      transition: color 0.3s ease;
     }}
 
     .brand-title {{
@@ -183,6 +186,7 @@ html_template = f'''<!DOCTYPE html>
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      transition: border-color 0.4s ease, box-shadow 0.4s ease;
     }}
 
     .app-container.is-fullscreen .slide-card-deck {{
@@ -218,6 +222,7 @@ html_template = f'''<!DOCTYPE html>
       letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--text-muted);
+      transition: color 0.3s ease;
     }}
 
     .intro-sport-display {{
@@ -229,6 +234,7 @@ html_template = f'''<!DOCTYPE html>
       align-items: center;
       gap: 1.2rem;
       text-transform: uppercase;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
     }}
 
     .intro-diff-badge {{
@@ -287,6 +293,7 @@ html_template = f'''<!DOCTYPE html>
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      transition: all 0.3s ease;
     }}
 
     /* CIRCULAR TIMER */
@@ -330,7 +337,7 @@ html_template = f'''<!DOCTYPE html>
     }}
 
     .timer-widget.alert .timer-progress {{
-      stroke: var(--accent-hard);
+      stroke: var(--accent-hard) !important;
     }}
 
     .q-main-text {{
@@ -339,7 +346,7 @@ html_template = f'''<!DOCTYPE html>
       font-weight: 700;
       line-height: 1.35;
       color: #ffffff;
-      margin: 0.8rem 0;
+      margin: 0;
     }}
 
     .mcq-grid {{
@@ -364,7 +371,8 @@ html_template = f'''<!DOCTYPE html>
 
     .mcq-card:hover {{
       background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.3);
+      border-color: var(--sport-accent, rgba(255, 255, 255, 0.3));
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), 0 0 15px var(--sport-accent, transparent);
     }}
 
     .mcq-badge {{
@@ -380,6 +388,7 @@ html_template = f'''<!DOCTYPE html>
       font-size: 0.95rem;
       color: var(--text-muted);
       flex-shrink: 0;
+      transition: all 0.3s ease;
     }}
 
     .mcq-label {{
@@ -435,7 +444,7 @@ html_template = f'''<!DOCTYPE html>
       left: 0;
       height: 3px;
       background: #00b0ff;
-      transition: width 0.3s ease;
+      transition: width 0.3s ease, background 0.4s ease, box-shadow 0.4s ease;
     }}
 
     .footer-hints {{
@@ -583,7 +592,7 @@ html_template = f'''<!DOCTYPE html>
         <a href="index.html" class="tool-btn" style="text-decoration:none; background:rgba(255,255,255,0.08); color:#cbd5e1;">
           <i class="fa-solid fa-house"></i> Hub
         </a>
-        <div class="brand-logo">PPT DECK</div>
+        <div class="brand-logo" id="brandLogo">PPT DECK</div>
         <div class="brand-title">Sports Connection Quiz</div>
       </div>
 
@@ -604,7 +613,7 @@ html_template = f'''<!DOCTYPE html>
         <button class="tool-btn" onclick="toggleFullscreen()">
           <i class="fa-solid fa-expand" id="fsIcon"></i> Fullscreen
         </button>
-        <button class="tool-btn" onclick="shuffleDeck()" style="background:rgba(0, 176, 255, 0.15); border-color:#00b0ff; color:#fff;">
+        <button class="tool-btn" id="shuffleBtn" onclick="shuffleDeck()" style="background:rgba(0, 176, 255, 0.15); border-color:#00b0ff; color:#fff;">
           <i class="fa-solid fa-shuffle"></i> Shuffle
         </button>
       </div>
@@ -634,7 +643,7 @@ html_template = f'''<!DOCTYPE html>
         <button class="tool-btn" id="revealBtn" onclick="revealAnswerCurrent()" style="display:none; background:rgba(255,45,85,0.15); border-color:var(--accent-hard); color:#fff;">
           <i class="fa-solid fa-key"></i> Reveal Answer
         </button>
-        <button class="tool-btn" onclick="nextSlide()" style="background:#00b0ff; color:#000; font-weight:700; border-color:#00b0ff;">
+        <button class="tool-btn" id="nextBtn" onclick="nextSlide()" style="background:#00b0ff; color:#000; font-weight:700; border-color:#00b0ff; transition: all 0.3s ease;">
           Next Slide <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
@@ -741,13 +750,12 @@ html_template = f'''<!DOCTYPE html>
       showToast(soundEnabled ? 'Sound Enabled' : 'Sound Muted');
     }}
 
-    /* FULLSCREEN TOGGLE IMPLEMENTATION (CROSS BROWSER + CSS FALLBACK) */
+    /* FULLSCREEN TOGGLE IMPLEMENTATION */
     function toggleFullscreen() {{
       const appContainer = document.getElementById('appContainer');
       const isFs = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || appContainer.classList.contains('is-fullscreen');
 
       if (!isFs) {{
-        // Enter Fullscreen
         appContainer.classList.add('is-fullscreen');
         const elem = document.documentElement;
         if (elem.requestFullscreen) {{
@@ -761,7 +769,6 @@ html_template = f'''<!DOCTYPE html>
         }}
         showToast('Entered Presentation Fullscreen Mode');
       }} else {{
-        // Exit Fullscreen
         appContainer.classList.remove('is-fullscreen');
         if (document.exitFullscreen) {{
           document.exitFullscreen().catch(() => {{}});
@@ -776,7 +783,6 @@ html_template = f'''<!DOCTYPE html>
       }}
     }}
 
-    // Sync fullscreen button state if user exits via ESC key
     document.addEventListener('fullscreenchange', () => {{
       const appContainer = document.getElementById('appContainer');
       if (!document.fullscreenElement) {{
@@ -784,15 +790,40 @@ html_template = f'''<!DOCTYPE html>
       }}
     }});
 
+    function getSportColor(sport) {{
+      if (!sport) return '#00e5ff';
+      const s = sport.toLowerCase();
+      if (s.includes('tennis')) return 'var(--sport-tennis)';
+      if (s.includes('football')) return 'var(--sport-football)';
+      if (s.includes('cricket')) return 'var(--sport-cricket)';
+      if (s.includes('basketball')) return 'var(--sport-basketball)';
+      if (s.includes('f1') || s.includes('formula') || s.includes('motorsport')) return 'var(--sport-f1)';
+      if (s.includes('olympic') || s.includes('athletics')) return 'var(--sport-olympics)';
+      return '#00e5ff';
+    }}
+
+    function getSportHex(sport) {{
+      if (!sport) return '#00e5ff';
+      const s = sport.toLowerCase();
+      if (s.includes('tennis')) return '#a6ff00';
+      if (s.includes('football')) return '#00e5ff';
+      if (s.includes('cricket')) return '#ffc107';
+      if (s.includes('basketball')) return '#ff6d00';
+      if (s.includes('f1') || s.includes('formula') || s.includes('motorsport')) return '#ff3333';
+      if (s.includes('olympic') || s.includes('athletics')) return '#ffd700';
+      return '#00e5ff';
+    }}
+
     function getSportIcon(sport) {{
+      const col = getSportColor(sport);
       switch(sport) {{
-        case 'Cricket': return '<i class="fa-solid fa-baseball-bat-ball" style="color:var(--sport-cricket)"></i>';
-        case 'Football': return '<i class="fa-solid fa-futbol" style="color:var(--sport-football)"></i>';
-        case 'Tennis': return '<i class="fa-solid fa-table-tennis-paddle-ball" style="color:var(--sport-tennis)"></i>';
-        case 'Basketball': return '<i class="fa-solid fa-basketball" style="color:var(--sport-basketball)"></i>';
-        case 'Formula 1': return '<i class="fa-solid fa-flag-checkered" style="color:#ff2a2a"></i>';
-        case 'Olympics': return '<i class="fa-solid fa-award" style="color:#ffd700"></i>';
-        default: return '<i class="fa-solid fa-trophy"></i>';
+        case 'Cricket': return `<i class="fa-solid fa-baseball-bat-ball" style="color:${{col}}"></i>`;
+        case 'Football': return `<i class="fa-solid fa-futbol" style="color:${{col}}"></i>`;
+        case 'Tennis': return `<i class="fa-solid fa-table-tennis-paddle-ball" style="color:${{col}}"></i>`;
+        case 'Basketball': return `<i class="fa-solid fa-basketball" style="color:${{col}}"></i>`;
+        case 'Formula 1': return `<i class="fa-solid fa-flag-checkered" style="color:${{col}}"></i>`;
+        case 'Olympics': return `<i class="fa-solid fa-award" style="color:${{col}}"></i>`;
+        default: return `<i class="fa-solid fa-trophy" style="color:${{col}}"></i>`;
       }}
     }}
 
@@ -837,13 +868,43 @@ html_template = f'''<!DOCTYPE html>
       const currentSlideNum = questionIndex * 2 + (isQuestionSlide ? 2 : 1);
       const totalSlides = deck.length * 2;
       
+      const sportCol = getSportColor(q.sport);
+      const sportHex = getSportHex(q.sport);
+      const isDarkText = ['#a6ff00', '#00e5ff', '#ffc107', '#ffd700'].includes(sportHex);
+
       document.getElementById('slideInfo').innerText = `Slide ${{currentSlideNum}} of ${{totalSlides}} (${{isQuestionSlide ? 'Question' : 'Intro'}})`;
-      document.getElementById('progressLine').style.width = `${{(currentSlideNum / totalSlides) * 100}}%`;
+      
+      const progressLine = document.getElementById('progressLine');
+      if (progressLine) {{
+        progressLine.style.width = `${{(currentSlideNum / totalSlides) * 100}}%`;
+        progressLine.style.background = sportHex;
+        progressLine.style.boxShadow = `0 0 12px ${{sportHex}}`;
+      }}
+
       document.getElementById('scoreVal').innerText = score;
       document.getElementById('streakVal').innerText = streak;
 
-      // Dynamic Sport Background (tennis_bg.jpg for Tennis, etc.)
+      // Sync header elements to sport color
+      const brandLogo = document.getElementById('brandLogo');
+      if (brandLogo) {{
+        brandLogo.style.color = sportHex;
+        brandLogo.style.borderColor = sportHex + '40';
+      }}
+
+      // Sync Next button accent to sport color
+      const nextBtn = document.getElementById('nextBtn');
+      if (nextBtn) {{
+        nextBtn.style.background = sportHex;
+        nextBtn.style.borderColor = sportHex;
+        nextBtn.style.color = isDarkText ? '#000' : '#fff';
+        nextBtn.style.boxShadow = `0 4px 14px ${{sportHex}}40`;
+      }}
+
+      // Dynamic Sport Background with dynamic glow border matching sport color
       const bgImg = getSportBg(q.sport);
+      cardDeck.style.borderColor = sportHex + '44';
+      cardDeck.style.boxShadow = `0 20px 50px rgba(0, 0, 0, 0.5), 0 0 35px ${{sportHex}}20`;
+
       if (bgImg) {{
         cardDeck.style.backgroundImage = `linear-gradient(135deg, rgba(7, 10, 20, 0.85), rgba(13, 19, 34, 0.88)), url("${{bgImg}}")`;
         cardDeck.style.backgroundSize = 'cover';
@@ -853,12 +914,14 @@ html_template = f'''<!DOCTYPE html>
       }}
 
       if (!isQuestionSlide) {{
-        // SLIDE 1 OF PAIR: MINIMAL INTRO SLIDE
+        // SLIDE 1 OF PAIR: MINIMAL INTRO SLIDE (Text & Accents Synced to Sport Color)
         area.innerHTML = `
           <div class="intro-slide">
-            <div class="slide-label-top">QUESTION ${{questionIndex + 1}} OF ${{deck.length}} • INTRO</div>
+            <div class="slide-label-top" style="color: ${{sportHex}}; letter-spacing: 3px;">
+              <i class="fa-solid fa-circle-dot" style="font-size: 0.7rem; margin-right: 0.4rem;"></i> QUESTION ${{questionIndex + 1}} OF ${{deck.length}} • INTRO
+            </div>
             
-            <div class="intro-sport-display" style="color: ${{getDiffColor(q.difficulty)}};">
+            <div class="intro-sport-display" style="color: ${{sportCol}}; text-shadow: 0 0 30px ${{sportHex}}45;">
               ${{getSportIcon(q.sport)}} ${{q.sport}}
             </div>
             
@@ -866,14 +929,14 @@ html_template = f'''<!DOCTYPE html>
               ⚡ ${{q.difficulty}}
             </div>
 
-            <button class="reveal-prompt-btn" onclick="nextSlide()">
+            <button class="reveal-prompt-btn" onclick="nextSlide()" style="background: linear-gradient(135deg, ${{sportHex}}, ${{sportHex}}cc); color: ${{isDarkText ? '#000' : '#fff'}}; box-shadow: 0 8px 24px ${{sportHex}}40;">
               REVEAL QUESTION SLIDE <i class="fa-solid fa-play" style="font-size:0.9rem; margin-left:0.4rem;"></i>
             </button>
           </div>
         `;
         document.getElementById('revealBtn').style.display = 'none';
       }} else {{
-        // SLIDE 2 OF PAIR: MINIMAL QUESTION SLIDE (MCQ + 30S TIMER)
+        // SLIDE 2 OF PAIR: QUESTION SLIDE (MCQ + 30S TIMER - Synced Colors)
         selectedOption = null;
         answerRevealed = false;
 
@@ -884,7 +947,7 @@ html_template = f'''<!DOCTYPE html>
                 <span class="q-pill" style="background:${{getDiffColor(q.difficulty)}}18; color:${{getDiffColor(q.difficulty)}}; border:1px solid ${{getDiffColor(q.difficulty)}};">
                   ${{q.difficulty}}
                 </span>
-                <span class="q-pill" style="background:rgba(255,255,255,0.06); color:#cbd5e1;">
+                <span class="q-pill" style="background:${{sportHex}}18; color:${{sportCol}}; border:1px solid ${{sportHex}}40; box-shadow: 0 0 12px ${{sportHex}}20;">
                   ${{getSportIcon(q.sport)}} ${{q.sport}}
                 </span>
               </div>
@@ -892,18 +955,21 @@ html_template = f'''<!DOCTYPE html>
               <div class="timer-widget" id="timerWidget">
                 <svg class="timer-svg">
                   <circle class="timer-bg" cx="24" cy="24" r="22"></circle>
-                  <circle class="timer-progress" id="timerProgress" cx="24" cy="24" r="22"></circle>
+                  <circle class="timer-progress" id="timerProgress" cx="24" cy="24" r="22" style="stroke: ${{sportHex}};"></circle>
                 </svg>
                 <div class="timer-text" id="timerText">30</div>
               </div>
             </div>
 
-            <div class="q-main-text">${{q.question}}</div>
+            <div class="q-main-text">
+              <span style="color: ${{sportCol}}; font-weight: 800; font-family: var(--font-heading); margin-right: 0.4rem;">Q${{questionIndex + 1}}.</span>
+              ${{q.question}}
+            </div>
 
             <div class="mcq-grid">
               ${{q.options.map((opt, idx) => `
-                <div class="mcq-card" id="opt-${{idx}}" onclick="selectOption(${{idx}})">
-                  <div class="mcq-badge">${{String.fromCharCode(65 + idx)}}</div>
+                <div class="mcq-card" id="opt-${{idx}}" onclick="selectOption(${{idx}})" style="--sport-accent: ${{sportHex}};">
+                  <div class="mcq-badge" style="color: ${{sportHex}}; border: 1px solid ${{sportHex}}35;">${{String.fromCharCode(65 + idx)}}</div>
                   <div class="mcq-label">${{opt}}</div>
                 </div>
               `).join('')}}
