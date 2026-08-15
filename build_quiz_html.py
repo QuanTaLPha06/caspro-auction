@@ -349,8 +349,10 @@ html_template = f'''<!DOCTYPE html>
     }}
 
     .mcq-card {{
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 10px;
       padding: 0.85rem 1.1rem;
       display: flex;
@@ -361,8 +363,8 @@ html_template = f'''<!DOCTYPE html>
     }}
 
     .mcq-card:hover {{
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.3);
     }}
 
     .mcq-badge {{
@@ -788,8 +790,22 @@ html_template = f'''<!DOCTYPE html>
         case 'Football': return '<i class="fa-solid fa-futbol" style="color:var(--sport-football)"></i>';
         case 'Tennis': return '<i class="fa-solid fa-table-tennis-paddle-ball" style="color:var(--sport-tennis)"></i>';
         case 'Basketball': return '<i class="fa-solid fa-basketball" style="color:var(--sport-basketball)"></i>';
+        case 'Formula 1': return '<i class="fa-solid fa-flag-checkered" style="color:#ff2a2a"></i>';
+        case 'Olympics': return '<i class="fa-solid fa-award" style="color:#ffd700"></i>';
         default: return '<i class="fa-solid fa-trophy"></i>';
       }}
+    }}
+
+    function getSportBg(sport) {{
+      if (!sport) return '';
+      const s = sport.toLowerCase();
+      if (s.includes('tennis')) return 'tennis_bg.jpg';
+      if (s.includes('football')) return 'Football_bg.jpg';
+      if (s.includes('cricket')) return 'Cricket_bg.jpg';
+      if (s.includes('basketball')) return 'basketball_bg.jpg';
+      if (s.includes('f1') || s.includes('formula') || s.includes('motorsport')) return 'f1_bg.jpg';
+      if (s.includes('olympic') || s.includes('athletics')) return 'olympics_bg.jpg';
+      return '';
     }}
 
     function getDiffColor(diff) {{
@@ -815,6 +831,7 @@ html_template = f'''<!DOCTYPE html>
     function renderSlide() {{
       stopTimer();
       const area = document.getElementById('slideContentArea');
+      const cardDeck = document.getElementById('slideCardDeck');
       const q = deck[questionIndex];
 
       const currentSlideNum = questionIndex * 2 + (isQuestionSlide ? 2 : 1);
@@ -824,6 +841,16 @@ html_template = f'''<!DOCTYPE html>
       document.getElementById('progressLine').style.width = `${{(currentSlideNum / totalSlides) * 100}}%`;
       document.getElementById('scoreVal').innerText = score;
       document.getElementById('streakVal').innerText = streak;
+
+      // Dynamic Sport Background (tennis_bg.jpg for Tennis, etc.)
+      const bgImg = getSportBg(q.sport);
+      if (bgImg) {{
+        cardDeck.style.backgroundImage = `linear-gradient(135deg, rgba(7, 10, 20, 0.85), rgba(13, 19, 34, 0.88)), url("${{bgImg}}")`;
+        cardDeck.style.backgroundSize = 'cover';
+        cardDeck.style.backgroundPosition = 'center';
+      }} else {{
+        cardDeck.style.backgroundImage = '';
+      }}
 
       if (!isQuestionSlide) {{
         // SLIDE 1 OF PAIR: MINIMAL INTRO SLIDE
