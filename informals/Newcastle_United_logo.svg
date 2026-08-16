@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <path d="M250,20 L420,80 L420,320 C420,410 250,480 250,480 C250,480 80,410 80,320 L80,80 Z" fill="#111" stroke="#F4B234" stroke-width="10"/>
+  <!-- Black & White Stripes -->
+  <rect x="130" y="90" width="40" height="260" fill="#FFF"/>
+  <rect x="230" y="90" width="40" height="280" fill="#FFF"/>
+  <rect x="330" y="90" width="40" height="260" fill="#FFF"/>
+  <circle cx="250" cy="240" r="75" fill="#F4B234" stroke="#111" stroke-width="6"/>
+  <text x="250" y="250" font-family="'Outfit', sans-serif" font-weight="900" font-size="34" fill="#111" text-anchor="middle">NUFC</text>
+  <text x="250" y="420" font-family="'Rajdhani', sans-serif" font-weight="800" font-size="24" fill="#F4B234" text-anchor="middle" letter-spacing="2">NEWCASTLE UNITED</text>
+</svg>

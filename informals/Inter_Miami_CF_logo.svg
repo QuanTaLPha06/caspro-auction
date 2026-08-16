@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="220" fill="#231F20" stroke="#F7B5CD" stroke-width="14"/>
+  <circle cx="250" cy="250" r="160" fill="#231F20"/>
+  <!-- Herons Silhouette -->
+  <path d="M250,150 L270,270 L250,330 L230,270 Z" fill="#F7B5CD"/>
+  <text x="250" y="80" font-family="'Outfit', sans-serif" font-weight="900" font-size="34" fill="#F7B5CD" text-anchor="middle">INTER MIAMI</text>
+  <text x="250" y="445" font-family="'Outfit', sans-serif" font-weight="800" font-size="28" fill="#F7B5CD" text-anchor="middle">MMXX</text>
+</svg>

@@ -1,0 +1,10 @@
+.vercel
+__pycache__/
+*.pyc
+parsed_excel_rows.json
+parsed_players.json
+audit_players.py
+parse_data.py
+read_excel_xml.py
+remove_borders.py
+build_player_database.py

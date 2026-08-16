@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="210" fill="#E32219" stroke="#000" stroke-width="12"/>
+  <circle cx="250" cy="250" r="160" fill="#FFF"/>
+  <!-- Bayer Cross -->
+  <rect x="230" y="110" width="40" height="280" fill="#E32219"/>
+  <rect x="110" y="230" width="280" height="40" fill="#E32219"/>
+  <text x="250" y="180" font-family="'Outfit', sans-serif" font-weight="900" font-size="36" fill="#FFF" text-anchor="middle">B</text>
+  <text x="250" y="260" font-family="'Outfit', sans-serif" font-weight="900" font-size="36" fill="#FFF" text-anchor="middle">A</text>
+  <text x="250" y="340" font-family="'Outfit', sans-serif" font-weight="900" font-size="36" fill="#FFF" text-anchor="middle">Y</text>
+  <text x="170" y="260" font-family="'Outfit', sans-serif" font-weight="900" font-size="36" fill="#FFF" text-anchor="middle">E</text>
+  <text x="330" y="260" font-family="'Outfit', sans-serif" font-weight="900" font-size="36" fill="#FFF" text-anchor="middle">R</text>
+  <text x="250" y="445" font-family="'Rajdhani', sans-serif" font-weight="800" font-size="24" fill="#F4B234" text-anchor="middle">BAYER LEVERKUSEN</text>
+</svg>

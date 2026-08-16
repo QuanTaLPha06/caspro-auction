@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <ellipse cx="250" cy="250" rx="140" ry="210" fill="#FFF" stroke="#FBBA00" stroke-width="10"/>
+  <!-- Red & Black Stripes left, Cross right -->
+  <clipPath id="milan-clip">
+    <ellipse cx="250" cy="250" rx="130" ry="200"/>
+  </clipPath>
+  <g clip-path="url(#milan-clip)">
+    <rect x="120" y="80" width="30" height="340" fill="#FB090B"/>
+    <rect x="150" y="80" width="30" height="340" fill="#000"/>
+    <rect x="180" y="80" width="30" height="340" fill="#FB090B"/>
+    <rect x="210" y="80" width="30" height="340" fill="#000"/>
+    <rect x="240" y="80" width="140" height="340" fill="#FFF"/>
+    <!-- Red Cross -->
+    <rect x="290" y="80" width="35" height="340" fill="#FB090B"/>
+    <rect x="240" y="210" width="140" height="35" fill="#FB090B"/>
+  </g>
+  <text x="250" y="75" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">ACM</text>
+  <text x="250" y="445" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">1899</text>
+</svg>

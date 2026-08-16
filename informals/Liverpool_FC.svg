@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <path d="M250,20 L420,80 L420,320 C420,410 250,480 250,480 C250,480 80,410 80,320 L80,80 Z" fill="#C8102E" stroke="#00B2A9" stroke-width="12"/>
+  <path d="M250,40 L400,95 L400,310 C400,390 250,455 250,455 C250,455 100,390 100,310 L100,95 Z" fill="#D00027"/>
+  <circle cx="250" cy="230" r="110" fill="#00B2A9"/>
+  <circle cx="250" cy="230" r="95" fill="#F6EB61"/>
+  <!-- Liverbird Silhouette -->
+  <path d="M250,150 C230,165 215,185 215,210 C215,235 230,250 230,280 L270,280 C270,250 285,235 285,210 C285,185 270,165 250,150 Z" fill="#C8102E"/>
+  <path d="M250,160 C260,175 270,190 270,210 C270,240 250,260 250,280 C240,280 230,270 230,250 C230,220 245,190 250,160 Z" fill="#00B2A9"/>
+  <text x="250" y="360" font-family="'Outfit', sans-serif" font-weight="900" font-size="40" fill="#FFF" text-anchor="middle" letter-spacing="4">L.F.C.</text>
+  <text x="250" y="400" font-family="'Rajdhani', sans-serif" font-weight="800" font-size="22" fill="#F6EB61" text-anchor="middle" letter-spacing="2">YOU'LL NEVER WALK ALONE</text>
+</svg>

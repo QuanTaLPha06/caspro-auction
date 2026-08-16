@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="230" fill="#6CABDD" stroke="#1C2C5B" stroke-width="12"/>
+  <circle cx="250" cy="250" r="185" fill="#FFF"/>
+  <circle cx="250" cy="250" r="140" fill="#6CABDD"/>
+  <!-- Ship and Red Rose -->
+  <path d="M190,170 Q250,130 310,170 L290,210 Q250,190 210,210 Z" fill="#F4B234"/>
+  <path d="M180,240 L320,240 L280,310 C250,340 250,340 220,310 Z" fill="#1C2C5B"/>
+  <text x="250" y="85" font-family="'Outfit', sans-serif" font-weight="900" font-size="34" fill="#1C2C5B" text-anchor="middle" letter-spacing="3">MANCHESTER</text>
+  <text x="250" y="440" font-family="'Outfit', sans-serif" font-weight="900" font-size="34" fill="#1C2C5B" text-anchor="middle" letter-spacing="3">CITY</text>
+</svg>

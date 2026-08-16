@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <path d="M250,20 L420,80 L420,320 C420,410 250,480 250,480 C250,480 80,410 80,320 L80,80 Z" fill="#FFE500" stroke="#DA020E" stroke-width="12"/>
+  <path d="M250,40 L400,95 L400,310 C400,390 250,455 250,455 C250,455 100,390 100,310 L100,95 Z" fill="#DA020E"/>
+  <!-- Red Devil emblem -->
+  <circle cx="250" cy="240" r="85" fill="#FFE500"/>
+  <path d="M250,175 C230,190 220,210 220,240 C220,270 250,295 250,295 C250,295 280,270 280,240 C280,210 270,190 250,175 Z" fill="#DA020E"/>
+  <text x="250" y="85" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#DA020E" text-anchor="middle">MANCHESTER</text>
+  <text x="250" y="425" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#DA020E" text-anchor="middle">UNITED</text>
+</svg>

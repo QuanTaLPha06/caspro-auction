@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EA Sports FC — Ultimate Walkout & Card Reveal</title>
+    <meta name="description" content="EA Sports FC style player walkout card reveal experience with live auction stats."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Preload core tunnel backdrop -->
+    <link rel="preload" as="image" href="background.jpeg"/>
+</head>
+<body>
+
+<!-- ── TOP HEADER / CONTROL BAR ──────────────────────────────────────── -->
+<header class="app-header">
+    <div class="header-brand">
+        <span class="brand-badge">EA FC 25</span>
+        <h1 class="brand-title">ULTIMATE WALKOUT</h1>
+    </div>
+
+    <!-- Quick Search & Select Controls -->
+    <div class="header-controls">
+        <div class="search-box-wrapper">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="input-search" placeholder="Search player..." autocomplete="off"/>
+        </div>
+
+        <select id="select-category" class="custom-select">
+            <option value="ALL">All Categories (99)</option>
+            <option value="GK">Goalkeepers (GK)</option>
+            <option value="CB">Centre Backs (CB)</option>
+            <option value="RB">Right Backs (RB)</option>
+            <option value="LB">Left Backs (LB)</option>
+            <option value="CDM">Defensive Midfielders (CDM)</option>
+            <option value="CM">Central Midfielders (CM)</option>
+            <option value="CAM">Attacking Midfielders (CAM)</option>
+            <option value="LW">Left Wingers (LW/LM)</option>
+            <option value="RW">Right Wingers (RW/RM)</option>
+            <option value="ST">Strikers (ST)</option>
+        </select>
+
+        <select id="select-player" class="custom-select player-select">
+            <!-- Populated via JS -->
+        </select>
+
+        <div class="player-counter" id="player-counter">1 / 99</div>
+
+        <button class="btn-icon" id="btn-sound" title="Toggle Sound">
+            <svg id="icon-sound" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+            </svg>
+        </button>
+
+        <button class="btn-icon" id="btn-fullscreen" title="Toggle Fullscreen">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<!-- ── STAGE VIEWPORT ─────────────────────────────────────────────────── -->
+<div class="stage-viewport" id="stage-viewport">
+    <canvas id="particle-canvas"></canvas>
+    <div class="screen-flash" id="screen-flash"></div>
+
+    <!-- On-stage Floating Skip / Next Step overlay -->
+    <button class="stage-next-btn" id="btn-stage-next" title="Advance reveal step or next player">
+        <span id="stage-btn-text">NEXT STEP</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M5 4l10 8-10 8V4zm11 0h3v16h-3V4z"/>
+        </svg>
+    </button>
+
+    <div class="stage-3d" id="stage-3d">
+
+        <!-- Tunnel Backdrop -->
+        <div class="tunnel-bg">
+            <img id="img-tunnel" src="background.jpeg" alt="Stadium Tunnel"/>
+            <div class="tunnel-vignette"></div>
+            <div class="light-beams">
+                <div class="beam beam-1"></div>
+                <div class="beam beam-2"></div>
+            </div>
+        </div>
+
+        <!-- PHASE 1: Flag node (top-left) -->
+        <div class="reveal-node phase-flag" id="node-flag">
+            <div class="flag-container-natural">
+                <div class="flag-gold-border">
+                    <img id="flag-img-element" class="flag-img-real" src="Flag_of_Belgium.svg" alt="Flag"/>
+                </div>
+                <span class="flag-label" id="text-nation">BELGIUM</span>
+            </div>
+        </div>
+
+        <!-- PHASE 2: Stats node (top-right) -->
+        <div class="reveal-node phase-stats" id="node-stats">
+
+            <!-- Position badge -->
+            <div class="stat-badge" id="badge-position">
+                <span class="badge-title">POSITION</span>
+                <div class="badge-val pos-anim" id="text-pos">GK</div>
+            </div>
+
+            <!-- Base Price badge -->
+            <div class="stat-badge price-badge" id="badge-price">
+                <span class="badge-title">BASE PRICE</span>
+                <div class="badge-val price-val" id="text-price">₹5M</div>
+            </div>
+
+            <!-- Rating badge -->
+            <div class="stat-badge rating-badge" id="badge-rating">
+                <span class="badge-title">RATING</span>
+                <div class="badge-val" id="text-rating">—</div>
+            </div>
+
+        </div>
+
+        <!-- PHASE 3: Club / League badges (bottom-centre) -->
+        <div class="reveal-node phase-badges" id="node-badges">
+            <div class="badge-item">
+                <img id="img-club" src="assets/real_madrid.jpeg" alt="Club Badge"/>
+                <span class="item-name" id="text-club">REAL MADRID</span>
+            </div>
+            <div class="badge-item">
+                <img id="img-league" src="LaLiga_EA_Sports_2023_Vertical_Logo.svg" alt="League Logo"/>
+                <span class="item-name" id="text-league">LALIGA</span>
+            </div>
+        </div>
+
+        <!-- PHASE 4: Full card + Name Banner + Pedestal -->
+        <div class="reveal-node phase-card" id="node-card">
+            <div class="pure-card-stage">
+
+                <!-- Player Name Banner -->
+                <div class="player-name-banner" id="player-name-banner">
+                    <span class="name-text" id="card-player-name">THIBAUT COURTOIS</span>
+                    <span class="name-sub" id="card-player-category">GOALKEEPERS</span>
+                </div>
+
+                <!-- FUT Shield Card -->
+                <div class="card-3d-wrapper" id="card-3d-wrapper">
+                    <img id="img-card" src="no_bg/Thibaut Courtois.png" alt="Player Card" onerror="this.onerror=null; this.src='assets/courtois_card.jpeg';"/>
+                    <div class="card-gold-glare"></div>
+                </div>
+
+                <!-- Extended Pedestal Bar -->
+                <div class="card-extended-pedestal" id="card-extended-pedestal">
+
+                    <!-- Flag badge -->
+                    <div class="pedestal-badge-item">
+                        <img id="pedestal-flag-img" class="pedestal-img flag-img" src="Flag_of_Belgium.svg" alt="Flag"/>
+                        <span id="pedestal-nation-text">BELGIUM</span>
+                    </div>
+
+                    <div class="pedestal-divider"></div>
+
+                    <!-- Base Price -->
+                    <div class="pedestal-badge-item price-item">
+                        <span class="pedestal-val-highlight" id="pedestal-price-text">₹5M</span>
+                        <span>BASE PRICE</span>
+                    </div>
+
+                    <div class="pedestal-divider"></div>
+
+                    <!-- Club -->
+                    <div class="pedestal-badge-item">
+                        <img id="pedestal-club" class="pedestal-img club-img" src="assets/real_madrid.jpeg" alt="Club Crest"/>
+                        <span id="pedestal-club-text">REAL MADRID</span>
+                    </div>
+
+                    <div class="pedestal-divider"></div>
+
+                    <!-- League -->
+                    <div class="pedestal-badge-item">
+                        <img id="pedestal-league" class="pedestal-img league-img" src="LaLiga_EA_Sports_2023_Vertical_Logo.svg" alt="League Logo"/>
+                        <span id="pedestal-league-text">LALIGA</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /stage-3d -->
+</div><!-- /stage-viewport -->
+
+<!-- ── FOOTER CONTROLS ────────────────────────────────────────────────── -->
+<footer class="app-footer-clean">
+    <button class="btn btn-nav" id="btn-prev">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        PREVIOUS
+    </button>
+
+    <button class="btn btn-primary" id="btn-play">
+        <svg id="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+        </svg>
+        <span id="play-btn-text">START WALKOUT</span>
+    </button>
+
+    <button class="btn btn-nav" id="btn-next">
+        NEXT
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+</footer>
+
+<script src="players_data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
