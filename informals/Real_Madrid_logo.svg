@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Gold Crown -->
+  <path d="M180,60 L200,100 L250,70 L300,100 L320,60 L360,110 L140,110 Z" fill="#F4B234" stroke="#111" stroke-width="6"/>
+  <!-- Circular Shield -->
+  <circle cx="250" cy="280" r="170" fill="#FFF" stroke="#F4B234" stroke-width="14"/>
+  <circle cx="250" cy="280" r="145" fill="#FFF" stroke="#1C2C5B" stroke-width="8"/>
+  <!-- Purple Sash -->
+  <polygon points="120,200 170,150 380,360 330,410" fill="#7C2529"/>
+  <!-- MCF Initials -->
+  <text x="250" y="315" font-family="'Outfit', sans-serif" font-weight="900" font-size="95" fill="#F4B234" text-anchor="middle" stroke="#1C2C5B" stroke-width="4">MCF</text>
+</svg>

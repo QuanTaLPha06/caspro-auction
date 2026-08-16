@@ -10,7 +10,7 @@ const PLAYERS_DATABASE = [
         "pos": "GK",
         "rating": 89,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Thibaut Courtois.png"
@@ -205,7 +205,7 @@ const PLAYERS_DATABASE = [
         "pos": "CB",
         "rating": 86,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Rudiger.png"
@@ -220,7 +220,7 @@ const PLAYERS_DATABASE = [
         "pos": "CB",
         "rating": 85,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "BUNDESLIGA",
         "leagueImg": "Bundesliga_logo_(2017).svg",
         "cardImg": "no_bg/Dayot Upamecano.png"
@@ -310,7 +310,7 @@ const PLAYERS_DATABASE = [
         "pos": "CB",
         "rating": 84,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Eder Militao.png"
@@ -445,7 +445,7 @@ const PLAYERS_DATABASE = [
         "pos": "LB",
         "rating": 84,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "BUNDESLIGA",
         "leagueImg": "Bundesliga_logo_(2017).svg",
         "cardImg": "no_bg/Alphonso Davies.png"
@@ -520,7 +520,7 @@ const PLAYERS_DATABASE = [
         "pos": "CDM",
         "rating": 89,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "BUNDESLIGA",
         "leagueImg": "Bundesliga_logo_(2017).svg",
         "cardImg": "no_bg/Joshua Kimmich.png"
@@ -625,7 +625,7 @@ const PLAYERS_DATABASE = [
         "pos": "CM",
         "rating": 89,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Frederico Valverde.png"
@@ -820,7 +820,7 @@ const PLAYERS_DATABASE = [
         "pos": "CAM",
         "rating": 90,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Jude Bellingham.png"
@@ -850,7 +850,7 @@ const PLAYERS_DATABASE = [
         "pos": "CAM",
         "rating": 88,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "BUNDESLIGA",
         "leagueImg": "Bundesliga_logo_(2017).svg",
         "cardImg": "no_bg/Jamal Musiala.png"
@@ -910,7 +910,7 @@ const PLAYERS_DATABASE = [
         "pos": "LW",
         "rating": 89,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Vinicius Jr.png"
@@ -1045,7 +1045,7 @@ const PLAYERS_DATABASE = [
         "pos": "LW",
         "rating": 85,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "SAUDI PRO LEAGUE",
         "leagueImg": "Roshn_Saudi_League_Logo.svg",
         "cardImg": "no_bg/Kingsley Coman.png"
@@ -1180,7 +1180,7 @@ const PLAYERS_DATABASE = [
         "pos": "RW",
         "rating": 86,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "BUNDESLIGA",
         "leagueImg": "Bundesliga_logo_(2017).svg",
         "cardImg": "no_bg/Michael Olise.png"
@@ -1225,7 +1225,7 @@ const PLAYERS_DATABASE = [
         "pos": "RW",
         "rating": 85,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Rodrygo Goes.png"
@@ -1285,7 +1285,7 @@ const PLAYERS_DATABASE = [
         "pos": "RW",
         "rating": 82,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Brahim Diaz.png"
@@ -1315,7 +1315,7 @@ const PLAYERS_DATABASE = [
         "pos": "RW",
         "rating": 84,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "BUNDESLIGA",
         "leagueImg": "Bundesliga_logo_(2017).svg",
         "cardImg": "no_bg/Leroy Sane.png"
@@ -1345,7 +1345,7 @@ const PLAYERS_DATABASE = [
         "pos": "ST",
         "rating": 91,
         "club": "REAL MADRID",
-        "clubImg": "assets/real_madrid.jpeg",
+        "clubImg": "Real_Madrid_logo.svg",
         "league": "LALIGA",
         "leagueImg": "LaLiga_EA_Sports_2023_Vertical_Logo.svg",
         "cardImg": "no_bg/Kylian Mbappe.png"
@@ -1375,7 +1375,7 @@ const PLAYERS_DATABASE = [
         "pos": "ST",
         "rating": 90,
         "club": "BAYERN MUNICH",
-        "clubImg": "FC_Bayern_Munchen_logo_(2024).svg",
+        "clubImg": "FC_Bayern_Munchen_logo.svg",
         "league": "BUNDESLIGA",
         "leagueImg": "Bundesliga_logo_(2017).svg",
         "cardImg": "no_bg/Harry Kane.png"

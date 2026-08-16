@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="230" fill="#DC052D" stroke="#0066B2" stroke-width="12"/>
+  <circle cx="250" cy="250" r="175" fill="#FFF"/>
+  <circle cx="250" cy="250" r="125" fill="#0066B2"/>
+  <!-- Bavarian Diamonds Pattern -->
+  <clipPath id="bayern-clip">
+    <circle cx="250" cy="250" r="120"/>
+  </clipPath>
+  <g clip-path="url(#bayern-clip)">
+    <rect x="100" y="100" width="300" height="300" fill="#0066B2"/>
+    <polygon points="170,120 220,120 170,220 120,220" fill="#FFF"/>
+    <polygon points="270,120 320,120 270,220 220,220" fill="#FFF"/>
+    <polygon points="220,220 270,220 220,320 170,320" fill="#FFF"/>
+    <polygon points="320,220 370,220 320,320 270,320" fill="#FFF"/>
+  </g>
+  <text x="250" y="80" font-family="'Outfit', sans-serif" font-weight="900" font-size="30" fill="#FFF" text-anchor="middle">FC BAYERN</text>
+  <text x="250" y="445" font-family="'Outfit', sans-serif" font-weight="900" font-size="30" fill="#FFF" text-anchor="middle">MÜNCHEN</text>
+</svg>
