@@ -389,12 +389,12 @@ export default function AdminPanel() {
         <div>
           {/* Brand Header */}
           <div className="p-4 border-b border-white/10 flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-red-600 to-rose-600 flex items-center justify-center text-white font-black text-lg shadow-[0_0_15px_rgba(239,68,68,0.5)]">
-              🔥
+            <div className="w-9 h-9 rounded-xl bg-purple-600/20 border border-purple-500/50 flex items-center justify-center p-1 shadow-[0_0_15px_rgba(168,85,247,0.4)]">
+              <img src="/logo.png" alt="Logo" className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]" />
             </div>
             <div>
               <div className="text-sm font-black text-white tracking-widest leading-none font-mono uppercase">
-                DEADLY <span className="nb-gradient-red">ARENA</span>
+                3, 2, 1... <span className="nb-gradient-purple">SOLD</span>
               </div>
               <div className="text-[10px] text-slate-400 font-extrabold tracking-widest uppercase mt-1 font-mono">
                 COMMAND MATRIX

@@ -3,20 +3,15 @@
 IPL Auction Player Photo Downloader
 ------------------------------------
 Pulls each player's main portrait photo from Wikipedia (sourced from
-Wikimedia Commons), which is legally reusable because Commons images
-are released under free licenses (CC-BY-SA, CC-BY, or Public Domain).
+Wikimedia Commons), reading directly from players.json.
 
 For every player it saves:
-  images/<lot>_<slug>.jpg          - the photo
+  images/<id:03d>_<slug>.jpg       - the photo
   credits.json                     - license + attribution info per player
   missing.csv                      - players with no usable Wikipedia image
 
-IMPORTANT: Even CC-licensed images require attribution. Do not strip
-credits.json out of your build — display the "attribution" string next
-to each photo (or on a credits page) as most CC licenses require.
-
 Usage:
-    pip install requests --break-system-packages
+    pip install requests
     python3 download_images.py
 """
 
@@ -26,7 +21,6 @@ import re
 import time
 import csv
 import requests
-from players import PLAYERS
 
 OUT_DIR = "images"
 API = "https://en.wikipedia.org/w/api.php"
@@ -85,8 +79,6 @@ def get_page_image_info(title: str):
         return None
 
     # Fetch license metadata directly from the file page for accurate credit
-    file_title = None
-    # Derive the File: title from the original URL's filename
     fname = original.split("/")[-1]
     file_title = f"File:{requests.utils.unquote(fname)}"
 
@@ -134,11 +126,24 @@ def download_image(url: str, dest_path: str) -> bool:
 
 
 def main():
+    if not os.path.exists("players.json"):
+        print("Error: players.json not found!")
+        return
+
+    with open("players.json", "r", encoding="utf-8") as f:
+        players_data = json.load(f)
+
     credits = {}
     missing = []
 
-    for lot, name, pool in PLAYERS:
+    print(f"Loaded {len(players_data)} players from players.json. Starting download...\n")
+
+    for p in players_data:
+        lot = p.get("id")
+        name = p.get("name")
+        pool = p.get("pool", p.get("pool_name", ""))
         slug = slugify(name)
+
         print(f"[{lot:03d}] {name} (Pool {pool}) ...")
 
         try:
@@ -154,7 +159,11 @@ def main():
                 missing.append((lot, name, pool, "no image on page"))
                 continue
 
-            ext = info["image_url"].split(".")[-1].split("?")[0][:4]
+            # Parse extension properly from URL path
+            raw_path = info["image_url"].split("?")[0]
+            ext = os.path.splitext(raw_path)[1].lstrip(".").lower() or "jpg"
+            if len(ext) > 4:
+                ext = "jpg"
             fname = f"{lot:03d}_{slug}.{ext}"
             dest = os.path.join(OUT_DIR, fname)
 
@@ -181,7 +190,7 @@ def main():
             print(f"    network error: {e}")
             missing.append((lot, name, pool, f"error: {e}"))
 
-        time.sleep(0.3)  # be polite to the API
+        time.sleep(0.3)  # be polite to Wikipedia API
 
     with open("credits.json", "w", encoding="utf-8") as f:
         json.dump(credits, f, indent=2, ensure_ascii=False)
@@ -192,8 +201,8 @@ def main():
         writer.writerows(missing)
 
     print(f"\nDone. {len(credits)} images saved, {len(missing)} missing.")
-    print("See credits.json for attribution (required for CC-licensed images)")
-    print("See missing.csv for players you'll need to source manually.")
+    print("See credits.json for attribution.")
+    print("See missing.csv for players without Wikipedia images.")
 
 
 if __name__ == "__main__":

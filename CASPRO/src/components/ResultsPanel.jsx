@@ -59,12 +59,15 @@ export default function ResultsPanel() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-violet-600/10 rounded-full blur-[200px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto relative z-10">
-        <div className="text-center mb-10">
-          <p className="text-red-500 font-mono font-extrabold uppercase tracking-widest text-xs mb-2 shadow-[0_0_10px_rgba(239,68,68,0.5)]">
+        <div className="text-center mb-10 flex flex-col items-center">
+          <div className="w-24 h-24 mb-4 flex items-center justify-center p-2 rounded-2xl bg-white/5 border border-purple-500/30 backdrop-blur-xl shadow-[0_0_30px_rgba(168,85,247,0.3)]">
+            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain filter drop-shadow-[0_0_10px_rgba(168,85,247,0.5)]" />
+          </div>
+          <p className="text-purple-400 font-mono font-extrabold uppercase tracking-widest text-xs mb-2 shadow-[0_0_10px_rgba(168,85,247,0.5)]">
             AUCTION TERMINATED // FINAL AUDIT
           </p>
           <h1 className="text-5xl font-black mb-3 font-mono tracking-tight text-white">
-            DEADLY <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-red-600">STANDINGS</span>
+            3, 2, 1... <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400">SOLD</span>
           </h1>
           <p className="text-slate-400 font-mono text-xs">
             COMPUTED MATRIX (100 PTS MAX) · EFFICIENCY (50) + BALANCE (30) + EXPERIENCE (20)

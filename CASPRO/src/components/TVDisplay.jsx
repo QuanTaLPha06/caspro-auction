@@ -144,12 +144,12 @@ export default function TVDisplay() {
       {/* Top navbar strip - Cyber Metallic */}
       <div className="flex items-center justify-between px-8 py-3.5 border-b border-red-500/30 backdrop-blur-2xl bg-slate-950/90 shrink-0 z-20 shadow-[0_4px_30px_rgba(0,0,0,0.8)]">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/50 flex items-center justify-center text-red-400 text-lg font-black shadow-[0_0_15px_rgba(239,68,68,0.4)]">
-            🔥
+          <div className="w-10 h-10 rounded-xl bg-purple-600/20 border border-purple-500/50 flex items-center justify-center p-1 shadow-[0_0_15px_rgba(168,85,247,0.4)]">
+            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]" />
           </div>
           <div>
-            <div className="text-xl font-black tracking-widest text-white uppercase font-mono drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]">
-              DEADLY IPL <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-red-600">AUCTION 2026</span>
+            <div className="text-xl font-black tracking-widest text-white uppercase font-mono drop-shadow-[0_0_10px_rgba(168,85,247,0.5)]">
+              3, 2, 1... <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400">SOLD</span>
             </div>
             <div className="text-[10px] text-red-400/80 font-mono tracking-widest uppercase font-bold">
               LIVE BROADCAST FEED // HIGH STAKES ARENA

@@ -41,13 +41,13 @@ export default function LandingGateway({ onEnter }) {
           </div>
 
           <div className="inline-flex items-center gap-2 mb-3 px-4 py-1.5 rounded-full bg-purple-950/80 border border-purple-500/40 text-purple-300 text-xs font-black tracking-widest uppercase shadow-[0_0_20px_rgba(168,85,247,0.3)]">
-            <span>✨</span> JNAA CASCADE
+            <span>✨</span> CASCADE
           </div>
           <h1 className="text-3xl lg:text-4xl font-black tracking-tight mb-2 uppercase font-mono">
             MOCK IPL <span className="nb-gradient-purple">AUCTION</span>
           </h1>
-          <p className="text-slate-400 text-xs font-bold tracking-wider uppercase">
-            JAMNABAI NARSEE ALUMNI ASSOCIATION
+          <p className="text-purple-400/90 text-sm font-black tracking-widest uppercase font-mono drop-shadow-[0_0_10px_rgba(168,85,247,0.5)]">
+            3, 2, 1... SOLD
           </p>
         </div>
 
