@@ -152,22 +152,28 @@ export async function dbJumpToLot(index) {
  * Full reset: clear all sales, restore purses, reset auction_state.
  */
 export async function dbReset() {
-  await Promise.all([
-    supabase.from('player_sales').delete().gt('created_at', '1970-01-01'),
-    supabase.from('bid_log').delete().gt('created_at', '1970-01-01'),
-    // Restore purses
+  const [res1, res2] = await Promise.all([
+    supabase.from('player_sales').delete().neq('player_id', '___none___'),
+    supabase.from('bid_log').delete().neq('type', '___none___'),
     ...TEAMS.map(t =>
       supabase.from('team_purses').update({ purse_lakhs: t.purseLakhs }).eq('team_id', t.id)
     ),
   ]);
+
+  if (res1.error) console.error('[dbReset] player_sales delete error:', res1.error);
+  if (res2.error) console.error('[dbReset] bid_log delete error:', res2.error);
+
   // Reset control row last
-  await supabase.from('auction_state').update({
-    current_index:       0,
-    current_bid_lakhs:   null,
-    current_bid_team_id: null,
-    status:              'idle',
-    updated_at:          new Date().toISOString(),
-  }).eq('id', 1);
+  assertOk(
+    await supabase.from('auction_state').update({
+      current_index:       0,
+      current_bid_lakhs:   null,
+      current_bid_team_id: null,
+      status:              'idle',
+      updated_at:          new Date().toISOString(),
+    }).eq('id', 1),
+    'dbReset auction_state'
+  );
 }
 
 // ── Player slide images ───────────────────────────────────────────────────────

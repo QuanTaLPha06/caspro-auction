@@ -332,6 +332,10 @@ export default function AdminPanel() {
   async function handleReset() {
     if (!confirm('Reset the entire auction? This will clear all sales and restore team purses.')) return;
     await wrap(reset);
+    setOverrideTeamId('');
+    setOverridePrice('');
+    setJumpIndex('');
+    setSearchQuery('');
   }
 
   // Calculate global statistics for NeuroBank Top Bar

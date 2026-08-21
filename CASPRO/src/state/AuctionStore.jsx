@@ -177,6 +177,18 @@ export function AuctionProvider({ children }) {
       }, payload => dispatch({ type: 'REALTIME_SALE', payload }))
 
       .on('postgres_changes', {
+        event: 'DELETE', schema: 'public', table: 'player_sales',
+      }, () => {
+        // When sales are cleared (reset), re-hydrate full state
+        hydrate().then(({ auctionState, purseMap, salesMap, unsoldPlayerIds }) => {
+          dispatch({
+            type: 'HYDRATE',
+            state: buildStateFromSnapshot(auctionState, purseMap, salesMap, unsoldPlayerIds),
+          });
+        });
+      })
+
+      .on('postgres_changes', {
         event: 'INSERT', schema: 'public', table: 'bid_log',
       }, payload => dispatch({ type: 'REALTIME_BID_LOG', payload }))
 
