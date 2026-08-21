@@ -58,9 +58,21 @@ CREATE TABLE IF NOT EXISTS bid_log (
 -- =============================================================================
 -- Enable Realtime (run in SQL editor — must be superuser)
 -- =============================================================================
+-- NOTE: these must be run by a privileged role (the Supabase SQL Editor works).
+-- If they are skipped, the app still syncs via its polling fallback, but the
+-- instant (<100ms) push updates will not work.
+-- Re-runnable: drop first, then re-add, so this file is safe to run twice.
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS auction_state;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS team_purses;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS player_sales;
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS bid_log;
+
 ALTER PUBLICATION supabase_realtime ADD TABLE auction_state;
 ALTER PUBLICATION supabase_realtime ADD TABLE team_purses;
 ALTER PUBLICATION supabase_realtime ADD TABLE player_sales;
+-- bid_log was missing: AuctionStore subscribes to its INSERTs to requeue
+-- unsold players, so without it the TV's lot order drifts from the Admin's.
+ALTER PUBLICATION supabase_realtime ADD TABLE bid_log;
 
 -- =============================================================================
 -- Storage bucket for player slides (public reads & uploads)

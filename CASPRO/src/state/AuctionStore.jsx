@@ -23,6 +23,20 @@ import {
 const ALL_PLAYERS   = players;
 const AUCTION_ORDER = players.map(p => p.id);
 
+// How often to re-check the DB when Realtime is unavailable or drops out.
+const POLL_INTERVAL_MS = 1500;
+
+// Stable fingerprint of a DB snapshot, used to skip no-op re-renders while polling.
+function snapshotSignature(snap) {
+  const stable = obj => Object.keys(obj).sort().map(k => `${k}:${JSON.stringify(obj[k])}`).join('|');
+  return [
+    JSON.stringify(snap.auctionState),
+    stable(snap.purseMap),
+    stable(snap.salesMap),
+    snap.unsoldPlayerIds.join(','),
+  ].join('#');
+}
+
 // ── Build fresh local state from DB snapshot ──────────────────────────────────
 
 function buildStateFromSnapshot(auctionStateRow, purseMap, salesMap, unsoldPlayerIds = []) {
@@ -147,17 +161,34 @@ export function AuctionProvider({ children }) {
   const stateRef = useRef(state);
   stateRef.current = state;
 
+  // Number of DB writes currently in flight. The poller pauses while > 0 so it
+  // can never roll the UI back to a snapshot taken mid-write.
+  const pendingWrites = useRef(0);
+  const lastSignature = useRef(null);
+
+  const runWrite = useCallback(async (fn) => {
+    pendingWrites.current += 1;
+    try {
+      return await fn();
+    } finally {
+      pendingWrites.current -= 1;
+    }
+  }, []);
+
+  const applySnapshot = useCallback((snap) => {
+    lastSignature.current = snapshotSignature(snap);
+    dispatch({
+      type: 'HYDRATE',
+      state: buildStateFromSnapshot(snap.auctionState, snap.purseMap, snap.salesMap, snap.unsoldPlayerIds),
+    });
+  }, []);
+
   // ── 1. Hydrate from Supabase on mount ──────────────────────────────────────
   useEffect(() => {
     hydrate()
-      .then(({ auctionState, purseMap, salesMap, unsoldPlayerIds }) => {
-        dispatch({
-          type: 'HYDRATE',
-          state: buildStateFromSnapshot(auctionState, purseMap, salesMap, unsoldPlayerIds),
-        });
-      })
+      .then(applySnapshot)
       .catch(err => dispatch({ type: 'SET_ERROR', error: err.message }));
-  }, []);
+  }, [applySnapshot]);
 
   // ── 2. Supabase Realtime subscriptions ─────────────────────────────────────
   useEffect(() => {
@@ -180,28 +211,55 @@ export function AuctionProvider({ children }) {
         event: 'DELETE', schema: 'public', table: 'player_sales',
       }, () => {
         // When sales are cleared (reset), re-hydrate full state
-        hydrate().then(({ auctionState, purseMap, salesMap, unsoldPlayerIds }) => {
-          dispatch({
-            type: 'HYDRATE',
-            state: buildStateFromSnapshot(auctionState, purseMap, salesMap, unsoldPlayerIds),
-          });
-        });
+        hydrate().then(applySnapshot).catch(() => {});
       })
 
       .on('postgres_changes', {
         event: 'INSERT', schema: 'public', table: 'bid_log',
       }, payload => dispatch({ type: 'REALTIME_BID_LOG', payload }))
 
-      .subscribe();
+      .subscribe(status => {
+        if (status !== 'SUBSCRIBED') {
+          console.warn(
+            `[auction] Realtime channel status: ${status}. ` +
+            'Falling back to polling. Run supabase/enable-realtime.sql ' +
+            'in the Supabase SQL Editor to enable instant sync.'
+          );
+        }
+      });
 
     return () => supabase.removeChannel(channel);
-  }, []);
+  }, [applySnapshot]);
+
+  // ── 2b. Polling fallback ───────────────────────────────────────────────────
+  // Realtime only fires if the tables are in the supabase_realtime publication.
+  // Polling keeps Admin and TV in sync regardless, and also covers dropped
+  // websockets on unreliable venue wifi.
+  useEffect(() => {
+    let cancelled = false;
+
+    const tick = async () => {
+      if (cancelled || pendingWrites.current > 0) return;
+      try {
+        const snap = await hydrate();
+        if (cancelled) return;
+        // Only re-render when the DB actually changed.
+        if (snapshotSignature(snap) === lastSignature.current) return;
+        applySnapshot(snap);
+      } catch {
+        // Transient network failure — the next tick retries.
+      }
+    };
+
+    const id = setInterval(tick, POLL_INTERVAL_MS);
+    return () => { cancelled = true; clearInterval(id); };
+  }, [applySnapshot]);
 
   // ── 3. Action helpers (write to DB → Realtime propagates to all clients) ───
 
   const startLot = useCallback(async () => {
-    await dbStartLot();
-  }, []);
+    await runWrite(() => dbStartLot());
+  }, [runWrite]);
 
   const placeBid = useCallback(async (teamId, bidLakhs) => {
     const { currentIndex, auctionOrder } = stateRef.current;
@@ -210,8 +268,8 @@ export function AuctionProvider({ children }) {
       type: 'REALTIME_AUCTION_STATE',
       payload: { new: { current_index: currentIndex, current_bid_lakhs: bidLakhs, current_bid_team_id: teamId, status: 'live' } }
     });
-    await dbPlaceBid(pid, teamId, bidLakhs);
-  }, []);
+    await runWrite(() => dbPlaceBid(pid, teamId, bidLakhs));
+  }, [runWrite]);
 
   const markSold = useCallback(async (customTeamId = null, customPriceLakhs = null) => {
     const s = stateRef.current;
@@ -246,8 +304,8 @@ export function AuctionProvider({ children }) {
       payload: { new: { current_index: s.currentIndex, current_bid_lakhs: targetPrice, current_bid_team_id: team.id, status: 'sold' } }
     });
 
-    await dbMarkSold(player.id, team.id, targetPrice, newPurse);
-  }, []);
+    await runWrite(() => dbMarkSold(player.id, team.id, targetPrice, newPurse));
+  }, [runWrite]);
 
   const markUnsold = useCallback(async () => {
     const player = currentPlayerFrom(stateRef.current);
@@ -257,8 +315,8 @@ export function AuctionProvider({ children }) {
       payload: { new: { current_index: stateRef.current.currentIndex, current_bid_lakhs: null, current_bid_team_id: null, status: 'unsold' } }
     });
     dispatch({ type: 'LOCAL_REQUEUE_UNSOLD', playerId: player.id });
-    await dbMarkUnsold(player.id);
-  }, []);
+    await runWrite(() => dbMarkUnsold(player.id));
+  }, [runWrite]);
 
   const nextLot = useCallback(async () => {
     const { currentIndex, auctionOrder } = stateRef.current;
@@ -268,34 +326,27 @@ export function AuctionProvider({ children }) {
       type: 'REALTIME_AUCTION_STATE',
       payload: { new: { current_index: nextIndex, current_bid_lakhs: null, current_bid_team_id: null, status: finished ? 'finished' : 'idle' } }
     });
-    await dbNextLot(nextIndex, finished);
-  }, []);
+    await runWrite(() => dbNextLot(nextIndex, finished));
+  }, [runWrite]);
 
   const jumpToLot = useCallback(async (index) => {
     dispatch({
       type: 'REALTIME_AUCTION_STATE',
       payload: { new: { current_index: index, current_bid_lakhs: null, current_bid_team_id: null, status: 'idle' } }
     });
-    await dbJumpToLot(index);
-  }, []);
+    await runWrite(() => dbJumpToLot(index));
+  }, [runWrite]);
 
   const reset = useCallback(async () => {
-    await dbReset();
-    const hydrated = await hydrate();
-    dispatch({
-      type: 'HYDRATE',
-      state: buildStateFromSnapshot(
-        hydrated.auctionState,
-        hydrated.purseMap,
-        hydrated.salesMap,
-        hydrated.unsoldPlayerIds
-      ),
+    await runWrite(async () => {
+      await dbReset();
+      applySnapshot(await hydrate());
     });
-  }, []);
+  }, [runWrite, applySnapshot]);
 
   const endAuction = useCallback(async () => {
-    await dbEndAuction();
-  }, []);
+    await runWrite(() => dbEndAuction());
+  }, [runWrite]);
 
   const value = {
     state,
