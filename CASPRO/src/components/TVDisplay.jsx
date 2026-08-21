@@ -60,27 +60,24 @@ function StatusBanner({ status, leadingTeam, nextBid }) {
   return <div className="text-2xl text-slate-500 font-medium">Up next…</div>;
 }
 
-// Player slide image — falls back to /player_images/{id}.png/jpg, local /slides/{id}.jpg, then to initials avatar
+// Player slide image — uses player.image from JSON, fallback to /player_images/{id}.jpg/png, then initials avatar
 function PlayerSlide({ player }) {
   const [src, setSrc]         = useState(null);
-  const [attempt, setAttempt] = useState('manifest'); // 'manifest' | 'supabase' | 'local' | 'avatar'
+  const [attempt, setAttempt] = useState('manifest'); // 'manifest' | 'jpg' | 'png' | 'avatar'
 
   useEffect(() => {
     setAttempt('manifest');
-    setSrc(`/player_images/${player.id}.png`);
-  }, [player.id]);
+    setSrc(player.image || `/player_images/${player.id}.jpg`);
+  }, [player.id, player.image]);
 
   const handleError = () => {
     if (attempt === 'manifest') {
-      setAttempt('manifest_jpg');
+      setAttempt('jpg');
       setSrc(`/player_images/${player.id}.jpg`);
-    } else if (attempt === 'manifest_jpg') {
-      setAttempt('supabase');
-      setSrc(getSlideUrl(player.id));
-    } else if (attempt === 'supabase') {
-      setAttempt('local');
-      setSrc(`/slides/${player.id}.jpg`);
-    } else if (attempt === 'local') {
+    } else if (attempt === 'jpg') {
+      setAttempt('png');
+      setSrc(`/player_images/${player.id}.png`);
+    } else if (attempt === 'png') {
       setAttempt('avatar');
     }
   };
@@ -97,13 +94,13 @@ function PlayerSlide({ player }) {
   }
 
   return (
-    <div className="relative rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl group">
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10 opacity-60" />
+    <div className="relative rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl group max-h-[60vh] flex items-center justify-center bg-slate-950/50">
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10 opacity-60 pointer-events-none" />
       <img
         src={src}
         alt={player.name}
         onError={handleError}
-        className="aspect-[3/4] w-full object-cover object-top rounded-3xl transition-transform duration-700 group-hover:scale-105"
+        className="max-h-[60vh] w-auto object-contain rounded-3xl transition-transform duration-700 group-hover:scale-105"
       />
     </div>
   );
