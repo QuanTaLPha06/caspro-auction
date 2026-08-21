@@ -298,27 +298,30 @@ export default function AdminPanel() {
   }
 
   async function handleDirectSold(force = false) {
-    if (!overrideTeamId) { alert('Please select a team.'); return; }
-    if (!isOverridePriceValid) { alert('Please enter a valid price in Lakhs.'); return; }
+    const targetTeamId = overrideTeamId || currentBidTeamId;
+    const targetPrice  = isOverridePriceValid ? parsedOverridePrice : (currentBidLakhs ?? currentPlayer?.base_price_lakhs);
 
-    const team = teams.find(t => t.id === overrideTeamId);
+    if (!targetTeamId) { alert('Please select a team.'); return; }
+    if (!targetPrice || isNaN(targetPrice) || targetPrice <= 0) { alert('Please enter a valid price in Lakhs.'); return; }
+
+    const team = teams.find(t => t.id === targetTeamId);
     if (!team) { alert('Invalid team selected.'); return; }
 
-    const math = computeSquadMath(team, parsedOverridePrice, currentPlayer);
+    const math = computeSquadMath(team, targetPrice, currentPlayer);
 
     if (!force && math.hasWarning) {
       setWarningModal({
         team,
-        bidLakhs: parsedOverridePrice,
+        bidLakhs: targetPrice,
         player: currentPlayer,
         math,
         action: 'direct_sold',
-        onForce: () => wrap(() => markSold(overrideTeamId, parsedOverridePrice)),
+        onForce: () => wrap(() => markSold(targetTeamId, targetPrice)),
       });
       return;
     }
 
-    await wrap(() => markSold(overrideTeamId, parsedOverridePrice));
+    await wrap(() => markSold(targetTeamId, targetPrice));
   }
 
   async function handleJump(targetIndex) {
@@ -556,6 +559,12 @@ export default function AdminPanel() {
                     {status === 'idle' && (
                       <Btn tone="emerald" onClick={() => wrap(startLot)} disabled={busy} className="!py-2 !px-4 !text-xs">
                         ▶ Start Bidding Phase
+                      </Btn>
+                    )}
+
+                    {status === 'live' && currentBidTeamId && (
+                      <Btn tone="amber" onClick={() => handleDirectSold(false)} disabled={busy} className="!py-2 !px-4 !text-xs">
+                        🔨 Mark SOLD ({currentBidTeamId} @ {fmt(currentBidLakhs)})
                       </Btn>
                     )}
 
