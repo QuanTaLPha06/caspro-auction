@@ -1954,12 +1954,12 @@
     "difficulty": "Easy",
     "question": "Which swimmer holds the record for most total Olympic medals of all time, with 28?",
     "options": [
-      "Michael Phelps",
-      "Usain Bolt",
       "Larisa Latynina",
-      "Simone Biles"
+      "Usain Bolt",
+      "Simone Biles",
+      "Michael Phelps"
     ],
-    "correct": 0,
+    "correct": 3,
     "id": "OLY_000"
   },
   {
@@ -1967,25 +1967,25 @@
     "difficulty": "Easy",
     "question": "Who holds the record for most Olympic gold medals by any athlete, with 23?",
     "options": [
-      "Carl Lewis",
-      "Michael Phelps",
       "Paavo Nurmi",
-      "Mark Spitz"
+      "Mark Spitz",
+      "Michael Phelps",
+      "Carl Lewis"
     ],
-    "correct": 1,
+    "correct": 2,
     "id": "OLY_001"
   },
   {
     "sport": "Olympics",
     "difficulty": "Easy",
-    "question": "Which sprinter set the current world record in the men's 100m at 9.58 seconds?",
+    "question": "Which sprinter holds the current world record in the men's 100m at 9.58 seconds?",
     "options": [
-      "Usain Bolt",
       "Tyson Gay",
+      "Usain Bolt",
       "Justin Gatlin",
       "Yohan Blake"
     ],
-    "correct": 0,
+    "correct": 1,
     "id": "OLY_002"
   },
   {
@@ -1994,9 +1994,9 @@
     "question": "Who is the most decorated female Olympian in U.S. history?",
     "options": [
       "Katie Ledecky",
+      "Simone Manuel",
       "Missy Franklin",
-      "Dara Torres",
-      "Simone Manuel"
+      "Dara Torres"
     ],
     "correct": 0,
     "id": "OLY_003"
@@ -2006,77 +2006,77 @@
     "difficulty": "Easy",
     "question": "Which Soviet gymnast held the record for most Olympic medals by a female athlete for decades, with 18 total?",
     "options": [
-      "Larisa Latynina",
-      "Nadia Comaneci",
       "Simone Biles",
-      "Vera Caslavska"
+      "Vera Caslavska",
+      "Nadia Comaneci",
+      "Larisa Latynina"
     ],
-    "correct": 0,
+    "correct": 3,
     "id": "OLY_004"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Easy",
-    "question": "Which country holds the record for most medals ever won at a single Winter Olympics, set in 2026?",
-    "options": [
-      "Norway",
-      "United States",
-      "Germany",
-      "Canada"
-    ],
-    "correct": 0,
-    "id": "OLY_005"
   },
   {
     "sport": "Olympics",
     "difficulty": "Easy",
     "question": "Which cross-country skier became the most decorated athlete in Winter Olympics history at the 2026 Games?",
     "options": [
-      "Johannes Høsflot Klæbo",
+      "Bjørn Dæhlie",
       "Marit Bjørgen",
-      "Ole Einar Bjørndalen",
-      "Bjørn Dæhlie"
+      "Johannes Høsflot Klæbo",
+      "Ole Einar Bjørndalen"
     ],
-    "correct": 0,
-    "id": "OLY_006"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Easy",
-    "question": "Which country holds the record for most total Olympic medals (Summer Games) of any nation?",
-    "options": [
-      "United States",
-      "Soviet Union",
-      "Germany",
-      "China"
-    ],
-    "correct": 0,
-    "id": "OLY_007"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Easy",
-    "question": "Who holds the men's marathon world record?",
-    "options": [
-      "Eliud Kipchoge",
-      "Kelvin Kiptum",
-      "Kenenisa Bekele",
-      "Mo Farah"
-    ],
-    "correct": 1,
-    "id": "OLY_008"
+    "correct": 2,
+    "id": "OLY_005"
   },
   {
     "sport": "Olympics",
     "difficulty": "Easy",
     "question": "Which gymnast is famous for scoring the first-ever perfect 10 in Olympic history?",
     "options": [
-      "Nadia Comaneci",
+      "Mary Lou Retton",
       "Simone Biles",
-      "Olga Korbut",
-      "Mary Lou Retton"
+      "Nadia Comaneci",
+      "Olga Korbut"
+    ],
+    "correct": 2,
+    "id": "OLY_006"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "Who holds the men's marathon world record?",
+    "options": [
+      "Mo Farah",
+      "Kenenisa Bekele",
+      "Kelvin Kiptum",
+      "Eliud Kipchoge"
+    ],
+    "correct": 2,
+    "id": "OLY_007"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "Which gymnast became the most decorated U.S. gymnast in Olympic history at Paris 2024?",
+    "options": [
+      "Simone Biles",
+      "Gabby Douglas",
+      "Shannon Miller",
+      "Suni Lee"
     ],
     "correct": 0,
+    "id": "OLY_008"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Easy",
+    "question": "Which pole vaulter holds the current Olympic and world record in his event?",
+    "options": [
+      "Sam Kendricks",
+      "Sergey Bubka",
+      "Renaud Lavillenie",
+      "Armand Duplantis"
+    ],
+    "correct": 3,
     "id": "OLY_009"
   },
   {
@@ -2084,12 +2084,12 @@
     "difficulty": "Medium",
     "question": "Who holds the record for most gold medals won by an individual at the Winter Olympics?",
     "options": [
-      "Johannes Høsflot Klæbo",
+      "Bjørn Dæhlie",
       "Marit Bjørgen",
-      "Ole Einar Bjørndalen",
-      "Bjørn Dæhlie"
+      "Johannes Høsflot Klæbo",
+      "Ole Einar Bjørndalen"
     ],
-    "correct": 0,
+    "correct": 2,
     "id": "OLY_010"
   },
   {
@@ -2098,9 +2098,9 @@
     "question": "Who holds the record for most Olympic medals won by a female Winter Olympian?",
     "options": [
       "Marit Bjørgen",
-      "Stefania Belmondo",
       "Claudia Pechstein",
-      "Arianna Fontana"
+      "Arianna Fontana",
+      "Stefania Belmondo"
     ],
     "correct": 0,
     "id": "OLY_011"
@@ -2111,9 +2111,9 @@
     "question": "Which wrestler went unbeaten for 13 years and won three consecutive Olympic golds, earning the nickname \"the Experiment\"?",
     "options": [
       "Alexander Karelin",
-      "Mijaín López",
       "Buvaisar Saitiev",
-      "Kaori Icho"
+      "Kaori Icho",
+      "Mijaín López"
     ],
     "correct": 0,
     "id": "OLY_012"
@@ -2123,12 +2123,12 @@
     "difficulty": "Medium",
     "question": "Which Cuban wrestler holds the record for most consecutive Olympic golds in the same individual event, with five?",
     "options": [
-      "Mijaín López",
       "Yowlys Bonne",
       "Reineris Salas",
-      "Filiberto Ascuy"
+      "Filiberto Ascuy",
+      "Mijaín López"
     ],
-    "correct": 0,
+    "correct": 3,
     "id": "OLY_013"
   },
   {
@@ -2136,77 +2136,77 @@
     "difficulty": "Medium",
     "question": "Which biathlete holds the record for most Olympic gold medals in his sport?",
     "options": [
-      "Ole Einar Bjørndalen",
-      "Martin Fourcade",
+      "Emil Hegle Svendsen",
       "Johannes Thingnes Bø",
-      "Emil Hegle Svendsen"
+      "Martin Fourcade",
+      "Ole Einar Bjørndalen"
     ],
-    "correct": 0,
+    "correct": 3,
     "id": "OLY_014"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Medium",
-    "question": "Which country has led the all-time Winter Olympics medal table for three consecutive Games in a row entering 2026?",
-    "options": [
-      "Norway",
-      "Germany",
-      "United States",
-      "Russia"
-    ],
-    "correct": 0,
-    "id": "OLY_015"
   },
   {
     "sport": "Olympics",
     "difficulty": "Medium",
     "question": "Who holds the women's marathon world record?",
     "options": [
-      "Ruth Chepngetich",
-      "Brigid Kosgei",
       "Paula Radcliffe",
-      "Tigst Assefa"
+      "Tigst Assefa",
+      "Brigid Kosgei",
+      "Ruth Chepngetich"
     ],
-    "correct": 0,
+    "correct": 3,
+    "id": "OLY_015"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "Which sprinter's world record in the men's 100m has stood unbroken since 2009?",
+    "options": [
+      "Yohan Blake",
+      "Asafa Powell",
+      "Usain Bolt",
+      "Tyson Gay"
+    ],
+    "correct": 2,
     "id": "OLY_016"
   },
   {
     "sport": "Olympics",
     "difficulty": "Medium",
-    "question": "Which sprinter's world record in the 100m has stood since 2009, unbroken for over 15 years?",
+    "question": "Which swimmer holds the record for most Olympic golds by a female swimmer, tying a gymnastics legend?",
     "options": [
-      "Usain Bolt",
-      "Tyson Gay",
-      "Asafa Powell",
-      "Yohan Blake"
-    ],
-    "correct": 0,
-    "id": "OLY_017"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Medium",
-    "question": "Which American swimmer holds the record for most Olympic golds by a female swimmer, tying a gymnastics legend?",
-    "options": [
-      "Katie Ledecky",
-      "Missy Franklin",
       "Dara Torres",
-      "Natalie Coughlin"
+      "Natalie Coughlin",
+      "Katie Ledecky",
+      "Missy Franklin"
     ],
-    "correct": 0,
-    "id": "OLY_018"
+    "correct": 2,
+    "id": "OLY_017"
   },
   {
     "sport": "Olympics",
     "difficulty": "Medium",
     "question": "Which discus thrower holds the record for winning the same individual Olympic event four times in a row?",
     "options": [
+      "Fortune Gordien",
       "Al Oerter",
       "Virgilijus Alekna",
-      "Jürgen Schult",
-      "Fortune Gordien"
+      "Jürgen Schult"
     ],
-    "correct": 0,
+    "correct": 1,
+    "id": "OLY_018"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Medium",
+    "question": "Which distance runner holds the record for most Olympic gold medals in track and field by a man, with 9?",
+    "options": [
+      "Carl Lewis",
+      "Usain Bolt",
+      "Paavo Nurmi",
+      "Emil Zátopek"
+    ],
+    "correct": 2,
     "id": "OLY_019"
   },
   {
@@ -2214,12 +2214,12 @@
     "difficulty": "Hard",
     "question": "Who holds the record for the youngest individual Olympic gold medalist in the modern era?",
     "options": [
-      "Marjorie Gestring",
-      "Nadia Comaneci",
+      "Kim Yun-mi",
       "Fu Mingxia",
-      "Kim Yun-mi"
+      "Marjorie Gestring",
+      "Nadia Comaneci"
     ],
-    "correct": 0,
+    "correct": 2,
     "id": "OLY_020"
   },
   {
@@ -2228,8 +2228,8 @@
     "question": "Which shooter holds the record for oldest individual Olympic gold medalist in history?",
     "options": [
       "Oscar Swahn",
-      "Ian Millar",
       "Hubert Raudaschl",
+      "Ian Millar",
       "Durward Knowles"
     ],
     "correct": 0,
@@ -2238,54 +2238,15 @@
   {
     "sport": "Olympics",
     "difficulty": "Hard",
-    "question": "How many total gold medals did Norway win at the 2026 Milan Cortina Winter Olympics, setting a new single-Games record?",
+    "question": "Which cross-country skier broke the previous three-way tie for most Winter Olympics gold medals in 2026?",
     "options": [
-      "18",
-      "16",
-      "14",
-      "20"
+      "Ole Einar Bjørndalen",
+      "Marit Bjørgen",
+      "Johannes Høsflot Klæbo",
+      "Bjørn Dæhlie"
     ],
-    "correct": 0,
+    "correct": 2,
     "id": "OLY_022"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Hard",
-    "question": "Which biathlete/cross-country skier trio previously shared the Winter Olympics gold medal record before it was broken in 2026?",
-    "options": [
-      "Marit Bjørgen, Ole Einar Bjørndalen, and Bjørn Dæhlie",
-      "Kjetil André Aamodt, Björn Ferry, and Vegard Ulvang",
-      "Stein Eriksen, Hjalmar Andersen, and Johan Grøttumsbråten",
-      "Thomas Alsgaard, Vegard Ulvang, and Gunde Svan"
-    ],
-    "correct": 0,
-    "id": "OLY_023"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Hard",
-    "question": "Which country has amassed the most all-time Winter Olympics medals, surpassing 400 total?",
-    "options": [
-      "Norway",
-      "United States",
-      "Germany",
-      "Austria"
-    ],
-    "correct": 0,
-    "id": "OLY_024"
-  },
-  {
-    "sport": "Olympics",
-    "difficulty": "Hard",
-    "question": "Which sport's discus record is held by Al Oerter, who won it at four consecutive Olympics from 1956-1968?",
-    "options": [
-      "Discus throw",
-      "Javelin throw",
-      "Hammer throw",
-      "Shot put"
-    ],
-    "correct": 0,
-    "id": "OLY_025"
   },
   {
     "sport": "Olympics",
@@ -2293,50 +2254,89 @@
     "question": "Which archer holds the record for most Olympic gold medals in archery?",
     "options": [
       "Kim Soo-nyung",
-      "Ki Bo-bae",
       "Jang Hye-jin",
+      "Ki Bo-bae",
       "An San"
     ],
     "correct": 0,
-    "id": "OLY_026"
+    "id": "OLY_023"
   },
   {
     "sport": "Olympics",
     "difficulty": "Hard",
     "question": "Which fencer holds the record for most Olympic gold medals in fencing?",
     "options": [
-      "Valentina Vezzali",
-      "Aladár Gerevich",
+      "Nedo Nadi",
       "Edoardo Mangiarotti",
-      "Nedo Nadi"
+      "Aladár Gerevich",
+      "Valentina Vezzali"
     ],
-    "correct": 0,
+    "correct": 3,
+    "id": "OLY_024"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "Which Hungarian fencer holds the record for longest span between first and last Olympic gold medals, at 28 years?",
+    "options": [
+      "Pál Kovács",
+      "Rudolf Kárpáti",
+      "Endre Kabos",
+      "Aladár Gerevich"
+    ],
+    "correct": 3,
+    "id": "OLY_025"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "Which canoeist holds the record for most gold medals won in Olympic canoeing events?",
+    "options": [
+      "Birgit Fischer",
+      "Lisa Carrington",
+      "Katie Vincent",
+      "Jessica Fox"
+    ],
+    "correct": 1,
+    "id": "OLY_026"
+  },
+  {
+    "sport": "Olympics",
+    "difficulty": "Hard",
+    "question": "Which dressage rider holds the record for most wins in a single Olympic Games?",
+    "options": [
+      "Charlotte Dujardin",
+      "Anky van Grunsven",
+      "Reiner Klimke",
+      "Isabell Werth"
+    ],
+    "correct": 3,
     "id": "OLY_027"
   },
   {
     "sport": "Olympics",
     "difficulty": "Hard",
-    "question": "Which Hungarian fencer holds the record for the longest span between first and last Olympic gold medals, at 28 years?",
+    "question": "Which table tennis player holds the record for most Olympic gold medals in the sport?",
     "options": [
-      "Aladár Gerevich",
-      "Rudolf Kárpáti",
-      "Pál Kovács",
-      "Endre Kabos"
+      "Fan Zhendong",
+      "Zhang Jike",
+      "Wang Liqin",
+      "Ma Long"
     ],
-    "correct": 0,
+    "correct": 3,
     "id": "OLY_028"
   },
   {
     "sport": "Olympics",
     "difficulty": "Hard",
-    "question": "Which country became the first tropical, Latin American, and South American nation to win a Winter Olympics medal, doing so in 2026?",
+    "question": "Which triathlete became the first athlete to win four total Olympic medals in the sport?",
     "options": [
-      "Brazil",
-      "Mexico",
-      "Colombia",
-      "Argentina"
+      "Hayden Wilde",
+      "Alex Yee",
+      "Kristian Blummenfelt",
+      "Léo Bergère"
     ],
-    "correct": 0,
+    "correct": 1,
     "id": "OLY_029"
   }
 ]
