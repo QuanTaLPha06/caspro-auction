@@ -8,6 +8,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuction }                     from '../state/AuctionStore';
 import { SQUAD_RULES, nextBidLakhs }      from '../lib/constants';
 import { canTeamBid, computeMaxLegalBid } from '../lib/auctionEngine';
+import { exportRostersJSON, exportRostersCSV } from '../lib/exportUtils';
 
 function fmt(l) {
   if (l == null || isNaN(l)) return '—';
@@ -449,6 +450,24 @@ export default function AdminPanel() {
             <div className="flex items-center gap-1.5 mt-0.5">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
               <span className="font-bold text-slate-200 text-[11px]">Realtime Active</span>
+            </div>
+          </div>
+
+          <div className="space-y-1.5 pt-1">
+            <div className="text-[9px] font-bold uppercase tracking-wider text-slate-400 font-mono px-1">Export Sales &amp; Rosters</div>
+            <div className="grid grid-cols-2 gap-1.5">
+              <button
+                onClick={() => exportRostersJSON(teams)}
+                className="py-1.5 px-2 rounded-lg bg-indigo-950/80 hover:bg-indigo-900 border border-indigo-500/40 text-indigo-200 font-mono font-bold text-[10px] transition text-center shadow"
+              >
+                📥 JSON
+              </button>
+              <button
+                onClick={() => exportRostersCSV(teams)}
+                className="py-1.5 px-2 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/40 text-emerald-200 font-mono font-bold text-[10px] transition text-center shadow"
+              >
+                📊 CSV
+              </button>
             </div>
           </div>
 

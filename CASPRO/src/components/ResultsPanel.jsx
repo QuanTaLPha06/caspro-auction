@@ -1,7 +1,7 @@
-// src/components/ResultsPanel.jsx
 import React, { useState } from 'react';
 import { useAuction } from '../state/AuctionStore';
 import { rankTeams }  from '../lib/scoringEngine';
+import { exportRostersJSON, exportRostersCSV } from '../lib/exportUtils';
 
 function fmt(l) {
   if (l == null) return '—';
@@ -69,9 +69,23 @@ export default function ResultsPanel() {
           <h1 className="text-5xl font-black mb-3 font-mono tracking-tight text-white">
             3, 2, 1... <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400">SOLD</span>
           </h1>
-          <p className="text-slate-400 font-mono text-xs">
+          <p className="text-slate-400 font-mono text-xs mb-4">
             COMPUTED MATRIX (100 PTS MAX) · EFFICIENCY (50) + BALANCE (30) + EXPERIENCE (20)
           </p>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => exportRostersJSON(state.teams)}
+              className="px-4 py-2 rounded-xl bg-indigo-600/30 hover:bg-indigo-600/50 border border-indigo-500/50 text-indigo-300 font-mono font-bold text-xs transition flex items-center gap-2 shadow-lg"
+            >
+              <span>📥 Export Final Roster (JSON)</span>
+            </button>
+            <button
+              onClick={() => exportRostersCSV(state.teams)}
+              className="px-4 py-2 rounded-xl bg-emerald-600/30 hover:bg-emerald-600/50 border border-emerald-500/50 text-emerald-300 font-mono font-bold text-xs transition flex items-center gap-2 shadow-lg"
+            >
+              <span>📊 Export Final Roster (CSV)</span>
+            </button>
+          </div>
         </div>
 
         {winner && (

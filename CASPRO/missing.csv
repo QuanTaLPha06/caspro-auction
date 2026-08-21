@@ -1,0 +1,318 @@
+lot,name,pool,reason
+6,Ruturaj Gaikwad,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=File%3ARuturaj_Gaikwad.jpeg%3Futm_source%3Den.wikipedia.org%26utm_campaign%3Dapi%26utm_content%3Doriginal&prop=imageinfo&iiprop=extmetadata%7Curl&format=json
+7,Travis Head,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Travis+Head+cricketer&format=json&srlimit=3
+9,Sai Sudharsan,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sai+Sudharsan+cricketer&format=json&srlimit=3
+10,Rinku Singh,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rinku+Singh+cricketer&format=json&srlimit=3
+11,Rajat Patidar,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rajat+Patidar+cricketer&format=json&srlimit=3
+12,Tilak Varma,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tilak+Varma+cricketer&format=json&srlimit=3
+13,David Miller,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=David+Miller+cricketer&format=json&srlimit=3
+14,Tristan Stubbs,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tristan+Stubbs+cricketer&format=json&srlimit=3
+15,Rishabh Pant,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rishabh+Pant+cricketer&format=json&srlimit=3
+16,Heinrich Klaasen,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Heinrich+Klaasen+cricketer&format=json&srlimit=3
+17,Nicholas Pooran,A,no image on page
+20,KL Rahul,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=File%3AKL_Rahul_at_Femina_Miss_India_2018_Grand_Finale_%28cropped%29.jpg%3Futm_source%3Den.wikipedia.org%26utm_campaign%3Dapi%26utm_content%3Doriginal&prop=imageinfo&iiprop=extmetadata%7Curl&format=json
+21,Quinton de Kock,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Quinton+de+Kock+cricketer&format=json&srlimit=3
+22,Ishan Kishan,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ishan+Kishan+cricketer&format=json&srlimit=3
+23,Phil Salt,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Phil+Salt+cricketer&format=json&srlimit=3
+24,MS Dhoni,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=MS+Dhoni+cricketer&format=json&srlimit=3
+25,Rahmanullah Gurbaz,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rahmanullah+Gurbaz+cricketer&format=json&srlimit=3
+26,Jitesh Sharma,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jitesh+Sharma+cricketer&format=json&srlimit=3
+27,Josh Inglis,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Josh+Inglis+cricketer&format=json&srlimit=3
+28,Dhruv Jurel,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Dhruv+Jurel+cricketer&format=json&srlimit=3
+29,Hardik Pandya,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Hardik+Pandya+cricketer&format=json&srlimit=3
+30,Ravindra Jadeja,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ravindra+Jadeja+cricketer&format=json&srlimit=3
+35,Liam Livingstone,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Liam+Livingstone&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+36,Mitchell Marsh,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mitchell+Marsh+cricketer&format=json&srlimit=3
+37,Nitish Kumar Reddy,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nitish+Kumar+Reddy+cricketer&format=json&srlimit=3
+38,Marcus Stoinis,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Marcus+Stoinis+cricketer&format=json&srlimit=3
+39,Sam Curran,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sam+Curran+cricketer&format=json&srlimit=3
+40,Abhishek Sharma,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Abhishek+Sharma+cricketer&format=json&srlimit=3
+44,Pat Cummins,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Pat+Cummins&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+45,Mitchell Starc,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mitchell+Starc+cricketer&format=json&srlimit=3
+49,Mohammed Siraj,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Mohammed+Siraj&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+50,Matheesha Pathirana,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Matheesha+Pathirana+cricketer&format=json&srlimit=3
+51,Harshit Rana,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harshit+Rana+cricketer&format=json&srlimit=3
+52,Mayank Yadav,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mayank+Yadav+cricketer&format=json&srlimit=3
+53,Prasidh Krishna,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Prasidh+Krishna+cricketer&format=json&srlimit=3
+54,Josh Hazlewood,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Josh+Hazlewood+cricketer&format=json&srlimit=3
+55,Jofra Archer,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jofra+Archer+cricketer&format=json&srlimit=3
+56,Sandeep Sharma,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sandeep+Sharma+cricketer&format=json&srlimit=3
+57,Rashid Khan,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rashid+Khan+cricketer&format=json&srlimit=3
+58,Yuzvendra Chahal,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Yuzvendra+Chahal+cricketer&format=json&srlimit=3
+59,Kuldeep Yadav,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Kuldeep+Yadav+cricketer&format=json&srlimit=3
+60,Ravi Bishnoi,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ravi+Bishnoi+cricketer&format=json&srlimit=3
+61,Varun Chakaravarthy,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Varun+Chakaravarthy+cricketer&format=json&srlimit=3
+62,Wanindu Hasaranga,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Wanindu+Hasaranga+cricketer&format=json&srlimit=3
+63,Maheesh Theekshana,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Maheesh+Theekshana+cricketer&format=json&srlimit=3
+64,Ravichandran Ashwin,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ravichandran+Ashwin+cricketer&format=json&srlimit=3
+65,Adam Zampa,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Adam+Zampa+cricketer&format=json&srlimit=3
+66,Noor Ahmad,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Noor+Ahmad+cricketer&format=json&srlimit=3
+67,R Sai Kishore,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=R+Sai+Kishore+cricketer&format=json&srlimit=3
+68,Adil Rashid,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Adil+Rashid+cricketer&format=json&srlimit=3
+69,Tabraiz Shamsi,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tabraiz+Shamsi+cricketer&format=json&srlimit=3
+70,Rahul Chahar,A,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rahul+Chahar+cricketer&format=json&srlimit=3
+71,Harry Brook,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harry+Brook+cricketer&format=json&srlimit=3
+72,Manish Pandey,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Manish+Pandey+cricketer&format=json&srlimit=3
+73,Ayush Badoni,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ayush+Badoni+cricketer&format=json&srlimit=3
+74,Nehal Wadhera,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nehal+Wadhera+cricketer&format=json&srlimit=3
+75,Jake Fraser-McGurk,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jake+Fraser-McGurk+cricketer&format=json&srlimit=3
+76,Rovman Powell,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rovman+Powell+cricketer&format=json&srlimit=3
+77,Shimron Hetmyer,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shimron+Hetmyer+cricketer&format=json&srlimit=3
+78,Aiden Markram,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Aiden+Markram+cricketer&format=json&srlimit=3
+79,Tim David,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tim+David+cricketer&format=json&srlimit=3
+80,Glenn Phillips,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Glenn+Phillips+cricketer&format=json&srlimit=3
+81,Devdutt Padikkal,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Devdutt+Padikkal+cricketer&format=json&srlimit=3
+82,Prithvi Shaw,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Prithvi+Shaw+cricketer&format=json&srlimit=3
+83,Rahul Tripathi,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rahul+Tripathi+cricketer&format=json&srlimit=3
+84,Kane Williamson,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Kane+Williamson+cricketer&format=json&srlimit=3
+85,Prabhsimran Singh,B,no image on page
+88,Kusal Mendis,B,no image on page
+89,Matthew Wade,B,download failed
+90,KS Bharat,B,no image on page
+91,Anuj Rawat,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Anuj+Rawat+cricketer&format=json&srlimit=3
+92,Litton Das,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Litton+Das+cricketer&format=json&srlimit=3
+93,Upendra Yadav,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Upendra+Yadav+cricketer&format=json&srlimit=3
+94,Donovan Ferreira,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Donovan+Ferreira+cricketer&format=json&srlimit=3
+95,Tom Banton,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tom+Banton+cricketer&format=json&srlimit=3
+96,B.R. Sharath,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=B.R.+Sharath+cricketer&format=json&srlimit=3
+97,Vishnu Vinod,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Vishnu+Vinod+cricketer&format=json&srlimit=3
+98,Abishek Porel,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Abishek+Porel+cricketer&format=json&srlimit=3
+99,Jonny Bairstow,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jonny+Bairstow+cricketer&format=json&srlimit=3
+100,Marco Jansen,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Marco+Jansen+cricketer&format=json&srlimit=3
+101,Romario Shepherd,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Romario+Shepherd+cricketer&format=json&srlimit=3
+102,Deepak Hooda,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Deepak+Hooda+cricketer&format=json&srlimit=3
+103,Krunal Pandya,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Krunal+Pandya+cricketer&format=json&srlimit=3
+104,Shardul Thakur,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shardul+Thakur+cricketer&format=json&srlimit=3
+105,Vijay Shankar,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Vijay+Shankar+cricketer&format=json&srlimit=3
+106,Shivam Dube,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shivam+Dube+cricketer&format=json&srlimit=3
+107,Riyan Parag,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Riyan+Parag+cricketer&format=json&srlimit=3
+109,Azmatullah Omarzai,B,no image on page
+111,Sherfane Rutherford,B,no image on page
+112,Daryl Mitchell,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Daryl+Mitchell+cricketer&format=json&srlimit=3
+113,Harshal Patel,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harshal+Patel+cricketer&format=json&srlimit=3
+114,Avesh Khan,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Avesh+Khan+cricketer&format=json&srlimit=3
+115,Khaleel Ahmed,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Khaleel+Ahmed+cricketer&format=json&srlimit=3
+116,Tushar Deshpande,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tushar+Deshpande+cricketer&format=json&srlimit=3
+117,Mukesh Kumar,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mukesh+Kumar+cricketer&format=json&srlimit=3
+118,Deepak Chahar,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Deepak+Chahar+cricketer&format=json&srlimit=3
+119,Lockie Ferguson,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Lockie+Ferguson+cricketer&format=json&srlimit=3
+120,Alzarri Joseph,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Alzarri+Joseph+cricketer&format=json&srlimit=3
+121,Spencer Johnson,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Spencer+Johnson+cricketer&format=json&srlimit=3
+122,Nandre Burger,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nandre+Burger+cricketer&format=json&srlimit=3
+123,Naveen-ul-Haq,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Naveen-ul-Haq+cricketer&format=json&srlimit=3
+124,Yash Dayal,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Yash+Dayal+cricketer&format=json&srlimit=3
+125,Fazalhaq Farooqi,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Fazalhaq+Farooqi+cricketer&format=json&srlimit=3
+126,T Natarajan,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=T+Natarajan+cricketer&format=json&srlimit=3
+127,R Sai Kishore,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=R+Sai+Kishore+cricketer&format=json&srlimit=3
+129,Mayank Markande,B,no image on page
+130,Amit Mishra,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Amit+Mishra+cricketer&format=json&srlimit=3
+131,Karn Sharma,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Karn+Sharma+cricketer&format=json&srlimit=3
+132,Suyash Sharma,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Suyash+Sharma+cricketer&format=json&srlimit=3
+133,Mitchell Santner,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mitchell+Santner+cricketer&format=json&srlimit=3
+134,Mujeeb Ur Rahman,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mujeeb+Ur+Rahman+cricketer&format=json&srlimit=3
+135,Keshav Maharaj,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Keshav+Maharaj+cricketer&format=json&srlimit=3
+136,Gudakesh Motie,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Gudakesh+Motie+cricketer&format=json&srlimit=3
+137,Allah Ghazanfar,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Allah+Ghazanfar+cricketer&format=json&srlimit=3
+138,Waqar Salamkheil,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Waqar+Salamkheil+cricketer&format=json&srlimit=3
+139,Qais Ahmad,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Qais+Ahmad+cricketer&format=json&srlimit=3
+140,Viyaskanth Vijayakanth,B,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Viyaskanth+Vijayakanth+cricketer&format=json&srlimit=3
+141,Ajinkya Rahane,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ajinkya+Rahane+cricketer&format=json&srlimit=3
+142,Mayank Agarwal,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mayank+Agarwal+cricketer&format=json&srlimit=3
+143,Nitish Rana,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nitish+Rana+cricketer&format=json&srlimit=3
+144,Shahrukh Khan,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shahrukh+Khan+cricketer&format=json&srlimit=3
+145,Angkrish Raghuvanshi,C,no image on page
+146,Sameer Rizvi,C,download failed
+147,Abhinav Manohar,C,no image on page
+150,Finn Allen,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Finn+Allen&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+151,Steve Smith,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Steve+Smith+cricketer&format=json&srlimit=3
+152,Bhanuka Rajapaksa,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Bhanuka+Rajapaksa+cricketer&format=json&srlimit=3
+153,Sarfaraz Khan,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sarfaraz+Khan+cricketer&format=json&srlimit=3
+154,Joe Root,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Joe+Root+cricketer&format=json&srlimit=3
+155,Narayan Jagadeesan,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Narayan+Jagadeesan+cricketer&format=json&srlimit=3
+156,Luvnith Sisodia,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Luvnith+Sisodia+cricketer&format=json&srlimit=3
+157,Harvik Desai,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harvik+Desai+cricketer&format=json&srlimit=3
+158,Tom Kohler- Cadmore,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tom+Kohler-+Cadmore+cricketer&format=json&srlimit=3
+159,Sam Billings,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sam+Billings+cricketer&format=json&srlimit=3
+160,Tim Seifert,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tim+Seifert+cricketer&format=json&srlimit=3
+161,Andre Fletcher,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Andre+Fletcher+cricketer&format=json&srlimit=3
+162,Johnson Charles,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Johnson+Charles+cricketer&format=json&srlimit=3
+163,Ben McDermott,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ben+McDermott+cricketer&format=json&srlimit=3
+164,Lorcan Tucker,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Lorcan+Tucker+cricketer&format=json&srlimit=3
+165,Alex Carey,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Alex+Carey+cricketer&format=json&srlimit=3
+166,Scott Edwards,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Scott+Edwards+cricketer&format=json&srlimit=3
+167,Mohammad Haris,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mohammad+Haris+cricketer&format=json&srlimit=3
+168,Sheldon Jackson,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sheldon+Jackson+cricketer&format=json&srlimit=3
+169,Naman Dhir,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Naman+Dhir+cricketer&format=json&srlimit=3
+170,Shahbaz Ahmed,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shahbaz+Ahmed+cricketer&format=json&srlimit=3
+171,Krishnappa Gowtham,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Krishnappa+Gowtham+cricketer&format=json&srlimit=3
+172,Anshul Kamboj,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Anshul+Kamboj+cricketer&format=json&srlimit=3
+173,Mahipal Lomror,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mahipal+Lomror+cricketer&format=json&srlimit=3
+174,Sanvir Singh,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sanvir+Singh+cricketer&format=json&srlimit=3
+175,Daniel Sams,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Daniel+Sams+cricketer&format=json&srlimit=3
+176,Sikandar Raza,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sikandar+Raza+cricketer&format=json&srlimit=3
+177,Wian Mulder,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Wian+Mulder+cricketer&format=json&srlimit=3
+178,Fabian Allen,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Fabian+Allen+cricketer&format=json&srlimit=3
+179,Karim Janat,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Karim+Janat+cricketer&format=json&srlimit=3
+180,Mohammad Nabi,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mohammad+Nabi+cricketer&format=json&srlimit=3
+181,Dasun Shanaka,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Dasun+Shanaka+cricketer&format=json&srlimit=3
+182,Jimmy Neesham,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jimmy+Neesham+cricketer&format=json&srlimit=3
+183,Umran Malik,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Umran+Malik+cricketer&format=json&srlimit=3
+184,Chetan Sakariya,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Chetan+Sakariya+cricketer&format=json&srlimit=3
+185,Kamlesh Nagarkoti,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Kamlesh+Nagarkoti+cricketer&format=json&srlimit=3
+186,Yash Thakur,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Yash+Thakur+cricketer&format=json&srlimit=3
+187,Rasikh Dar,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rasikh+Dar+cricketer&format=json&srlimit=3
+188,Mohit Sharma,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mohit+Sharma+cricketer&format=json&srlimit=3
+189,Jhye Richardson,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jhye+Richardson+cricketer&format=json&srlimit=3
+190,Dilshan Madushanka,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Dilshan+Madushanka+cricketer&format=json&srlimit=3
+191,Lance Morris,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Lance+Morris+cricketer&format=json&srlimit=3
+193,Richard Ngarava,C,no image on page
+195,Ishant Sharma,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=File%3AIshant_Sharma_4.jpg%3Futm_source%3Den.wikipedia.org%26utm_campaign%3Dapi%26utm_content%3Doriginal&prop=imageinfo&iiprop=extmetadata%7Curl&format=json
+196,Jaydev Unadkat,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jaydev+Unadkat+cricketer&format=json&srlimit=3
+197,Manav Suthar,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Manav+Suthar+cricketer&format=json&srlimit=3
+198,Kumar Kartikeya,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Kumar+Kartikeya+cricketer&format=json&srlimit=3
+199,Hrithik Shokeen,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Hrithik+Shokeen+cricketer&format=json&srlimit=3
+200,Mayank Dagar,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mayank+Dagar+cricketer&format=json&srlimit=3
+201,Jagadeesha Suchith,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jagadeesha+Suchith+cricketer&format=json&srlimit=3
+202,Ish Sodhi,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ish+Sodhi+cricketer&format=json&srlimit=3
+203,Dunith Wellalage,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Dunith+Wellalage+cricketer&format=json&srlimit=3
+204,Ayan Afzal Khan,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ayan+Afzal+Khan+cricketer&format=json&srlimit=3
+205,Jeffrey Vandersay,C,no image on page
+206,Pravin Dubey,C,no image on page
+207,Zahir Khan,C,no image on page
+209,Prabath Jayasuriya,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Prabath+Jayasuriya&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+210,Lakshan Sandakan,C,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Lakshan+Sandakan+cricketer&format=json&srlimit=3
+211,Shashank Singh,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shashank+Singh+cricketer&format=json&srlimit=3
+212,Ashutosh Sharma,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ashutosh+Sharma+cricketer&format=json&srlimit=3
+213,Yash Dhull,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Yash+Dhull+cricketer&format=json&srlimit=3
+214,Priyam Garg,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Priyam+Garg+cricketer&format=json&srlimit=3
+215,Anmolpreet Singh,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Anmolpreet+Singh+cricketer&format=json&srlimit=3
+216,Subhranshu Senapati,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Subhranshu+Senapati+cricketer&format=json&srlimit=3
+217,Musheer Khan,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Musheer+Khan+cricketer&format=json&srlimit=3
+218,Ripal Patel,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ripal+Patel+cricketer&format=json&srlimit=3
+219,C. Hari Nishaanth,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=C.+Hari+Nishaanth+cricketer&format=json&srlimit=3
+220,Swastik Chikara,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Swastik+Chikara+cricketer&format=json&srlimit=3
+221,Aaron Jones,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Aaron+Jones+cricketer&format=json&srlimit=3
+222,Steven Taylor,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Steven+Taylor+cricketer&format=json&srlimit=3
+223,George Munsey,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=George+Munsey+cricketer&format=json&srlimit=3
+224,Monank Patel,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Monank+Patel+cricketer&format=json&srlimit=3
+225,Kumar Kushagra,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Kumar+Kushagra+cricketer&format=json&srlimit=3
+226,Robin Minz,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Robin+Minz+cricketer&format=json&srlimit=3
+227,Avanish Rao Aravelly,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Avanish+Rao+Aravelly+cricketer&format=json&srlimit=3
+228,Urvil Patel,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Urvil+Patel+cricketer&format=json&srlimit=3
+229,Sumit Kumar,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sumit+Kumar+cricketer&format=json&srlimit=3
+230,Ricky Bhui,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ricky+Bhui+cricketer&format=json&srlimit=3
+231,Aryan Juyal,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Aryan+Juyal+cricketer&format=json&srlimit=3
+233,Andries Gous,D,no image on page
+234,Michael Jones,D,download failed
+235,Vriitya Aravind,D,no image on page
+236,Nicholas Welch,D,no image on page
+237,Clive Madande,D,download failed
+238,Lhuan-dre Pretorius,D,no image on page
+239,Tanush Kotian,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Tanush+Kotian&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+240,Anukul Roy,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Anukul+Roy+cricketer&format=json&srlimit=3
+241,Vivrant Sharma,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Vivrant+Sharma+cricketer&format=json&srlimit=3
+242,Prerak Mankad,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Prerak+Mankad+cricketer&format=json&srlimit=3
+243,Ramandeep Singh,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ramandeep+Singh+cricketer&format=json&srlimit=3
+244,Rajangad Bawa,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rajangad+Bawa+cricketer&format=json&srlimit=3
+245,Nishant Sindhu,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nishant+Sindhu+cricketer&format=json&srlimit=3
+246,Harsh Tyagi,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harsh+Tyagi+cricketer&format=json&srlimit=3
+247,Aman Khan,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Aman+Khan+cricketer&format=json&srlimit=3
+248,Gerhard Erasmus,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Gerhard+Erasmus+cricketer&format=json&srlimit=3
+249,Logan van Beek,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Logan+van+Beek+cricketer&format=json&srlimit=3
+250,Brandon McMullen,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Brandon+McMullen+cricketer&format=json&srlimit=3
+251,Harmeet Singh,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harmeet+Singh+cricketer&format=json&srlimit=3
+252,Bas de Leede,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Bas+de+Leede+cricketer&format=json&srlimit=3
+253,Vidwath Kaverappa,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Vidwath+Kaverappa+cricketer&format=json&srlimit=3
+254,Vyshak Vijaykumar,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Vyshak+Vijaykumar+cricketer&format=json&srlimit=3
+255,Akash Madhwal,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Akash+Madhwal+cricketer&format=json&srlimit=3
+256,Kuldeep Sen,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Kuldeep+Sen+cricketer&format=json&srlimit=3
+257,Kartik Tyagi,D,no image on page
+258,K.M. Asif,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=K.M.+Asif+cricketer&format=json&srlimit=3
+259,Yudhvir Singh Charak,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Yudhvir+Singh+Charak+cricketer&format=json&srlimit=3
+260,Eshan Malinga,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Eshan+Malinga+cricketer&format=json&srlimit=3
+261,Saurabh Netravalkar,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Saurabh+Netravalkar+cricketer&format=json&srlimit=3
+262,Ali Khan,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ali+Khan+cricketer&format=json&srlimit=3
+263,Bilal Khan,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Bilal+Khan+cricketer&format=json&srlimit=3
+264,Bradley Currie,D,no image on page
+265,Sakib Hussain,D,no image on page
+266,Gurjapneet Singh,D,no image on page
+268,Prashant Solanki,D,no image on page
+269,Raghav Goyal,D,no image on page
+270,Saurabh Kumar,D,no image on page
+271,Prince Choudhary,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Prince+Choudhary+cricketer&format=json&srlimit=3
+272,Vignesh Puthur,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Vignesh+Puthur+cricketer&format=json&srlimit=3
+273,Jhathavedh Subramanyan,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jhathavedh+Subramanyan+cricketer&format=json&srlimit=3
+274,Himanshu Sharma,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Himanshu+Sharma+cricketer&format=json&srlimit=3
+275,Bernard Scholtz,D,no image on page
+277,Nosthush Kenjige,D,no image on page
+278,Assad Vala,D,download failed
+279,Brian Masaba,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Brian+Masaba+cricketer&format=json&srlimit=3
+280,Alpesh Ramjani,D,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Alpesh+Ramjani+cricketer&format=json&srlimit=3
+281,Priyansh Arya,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Priyansh+Arya+cricketer&format=json&srlimit=3
+282,Agni Chopra,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Agni+Chopra+cricketer&format=json&srlimit=3
+283,Rohan Kunnummal,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rohan+Kunnummal+cricketer&format=json&srlimit=3
+284,Sachin Baby,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sachin+Baby+cricketer&format=json&srlimit=3
+285,Atharva Taide,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Atharva+Taide+cricketer&format=json&srlimit=3
+286,Ankit Kumar,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ankit+Kumar+cricketer&format=json&srlimit=3
+287,Himmat Singh,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Himmat+Singh+cricketer&format=json&srlimit=3
+288,Pukhraj Mann,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Pukhraj+Mann+cricketer&format=json&srlimit=3
+289,Shubham Khajuria,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shubham+Khajuria+cricketer&format=json&srlimit=3
+290,Salman Nizar,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Salman+Nizar+cricketer&format=json&srlimit=3
+291,Sahil Parakh,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sahil+Parakh+cricketer&format=json&srlimit=3
+292,B. Aparajith,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=B.+Aparajith+cricketer&format=json&srlimit=3
+293,Jacob Bethell,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jacob+Bethell+cricketer&format=json&srlimit=3
+294,Teddy Bishop,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Teddy+Bishop+cricketer&format=json&srlimit=3
+295,Akshay Wadkar,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Akshay+Wadkar+cricketer&format=json&srlimit=3
+296,Eknath Kerkar,E,no image on page
+297,Vivek Singh,E,no image on page
+298,K.S. Rathore,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Poonia&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+299,Mohammed Azharuddeen,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Mohammed+Azharuddeen+cricketer&format=json&srlimit=3
+300,Pradosh Ranjan Paul,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Pradosh+Ranjan+Paul+cricketer&format=json&srlimit=3
+301,Het Patel,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Het+Patel+cricketer&format=json&srlimit=3
+302,Yashovardhan Parantap,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Yashovardhan+Parantap+cricketer&format=json&srlimit=3
+303,Jewel Andrew,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Jewel+Andrew+cricketer&format=json&srlimit=3
+304,Tadiwanashe Marumani,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tadiwanashe+Marumani+cricketer&format=json&srlimit=3
+305,Lahiru Udara,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Lahiru+Udara+cricketer&format=json&srlimit=3
+306,Bipin Saurabh,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Bipin+Saurabh+cricketer&format=json&srlimit=3
+307,Tom Blundell,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Tom+Blundell+cricketer&format=json&srlimit=3
+308,Sadeera Samarawickrama,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sadeera+Samarawickrama+cricketer&format=json&srlimit=3
+309,Arshin Kulkarni,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Arshin+Kulkarni+cricketer&format=json&srlimit=3
+310,Rajvardhan Hangargekar,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Rajvardhan+Hangargekar+cricketer&format=json&srlimit=3
+311,Manoj Bhandage,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Manoj+Bhandage+cricketer&format=json&srlimit=3
+312,Atit Sheth,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Atit+Sheth+cricketer&format=json&srlimit=3
+313,Shams Mulani,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shams+Mulani+cricketer&format=json&srlimit=3
+314,Pulkit Narang,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Pulkit+Narang+cricketer&format=json&srlimit=3
+315,Chirag Jani,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Chirag+Jani+cricketer&format=json&srlimit=3
+316,Ninad Rathva,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ninad+Rathva+cricketer&format=json&srlimit=3
+317,Sanjay Yadav,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Sanjay+Yadav+cricketer&format=json&srlimit=3
+318,Macneil Noronha,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Macneil+Noronha+cricketer&format=json&srlimit=3
+319,Auqib Dar,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Auqib+Dar+cricketer&format=json&srlimit=3
+320,Matthew Boast,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Matthew+Boast+cricketer&format=json&srlimit=3
+321,Nathan Smith,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nathan+Smith+cricketer&format=json&srlimit=3
+322,Nipun Dhananjaya,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nipun+Dhananjaya+cricketer&format=json&srlimit=3
+323,Kwena Maphaka,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Kwena+Maphaka+cricketer&format=json&srlimit=3
+324,Akash Deep,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Akash+Deep+cricketer&format=json&srlimit=3
+325,Ishan Porel,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ishan+Porel+cricketer&format=json&srlimit=3
+326,Vasuki Koushik,E,no image on page
+328,Mohit Avasthi,E,no image on page
+329,Mukhtar Hussain,E,no image on page
+330,Prince Yadav,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Prince+Yadav&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+331,M. Mohammed,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=M.+Mohammed+cricketer&format=json&srlimit=3
+332,Gurnoor Brar,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Gurnoor+Brar+cricketer&format=json&srlimit=3
+333,William O'Rourke,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=William+O%27Rourke+cricketer&format=json&srlimit=3
+334,Xavier Bartlett,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Xavier+Bartlett+cricketer&format=json&srlimit=3
+335,Blessing Muzarabani,E,no image on page
+337,Zeeshan Ansari,E,no image on page
+338,Shiva Singh,E,no image on page
+339,Saumy Pandey,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Sachin+Dhas&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+340,Shubham Sharma,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Shubham+Sharma+cricketer&format=json&srlimit=3
+341,Dharmendrasinh Jadeja,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Dharmendrasinh+Jadeja+cricketer&format=json&srlimit=3
+342,Harsh Dubey,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harsh+Dubey+cricketer&format=json&srlimit=3
+343,Lalith Mohan,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Lalith+Mohan+cricketer&format=json&srlimit=3
+344,Tejas Baroka,E,no image on page
+345,Prashant Chopra,E,no image on page
+346,Izharulhaq Naveed,E,download failed
+347,Traveen Mathew,E,no image on page
+348,Faisal Khan,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&titles=Imran+Khan&prop=pageimages%7Cimageinfo&piprop=original&iiprop=extmetadata%7Curl&format=json
+349,Peter Hatzoglou,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Peter+Hatzoglou+cricketer&format=json&srlimit=3
+350,Khary Pierre,E,error: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Khary+Pierre+cricketer&format=json&srlimit=3
