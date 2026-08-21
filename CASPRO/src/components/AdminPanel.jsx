@@ -215,7 +215,7 @@ function SquadMathModal({ data, onClose }) {
   );
 }
 
-function Btn({ children, onClick, tone = 'slate', disabled = false, className = '' }) {
+function Btn({ children, onClick, tone = 'slate', disabled = false, loading = false, className = '' }) {
   const tones = {
     slate:   'bg-slate-800/80 text-slate-100 hover:bg-slate-700/80 border border-white/10 shadow-md',
     emerald: 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500 shadow-lg shadow-emerald-950/40 border border-emerald-400/30',
@@ -227,17 +227,27 @@ function Btn({ children, onClick, tone = 'slate', disabled = false, className = 
   return (
     <button
       onClick={onClick}
-      disabled={disabled}
-      className={`px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-200 active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2 ${tones[tone]} ${className}`}
+      disabled={disabled || loading}
+      className={`px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-200 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 ${tones[tone]} ${className}`}
     >
-      {children}
+      {loading ? (
+        <>
+          <svg className="animate-spin h-4 w-4 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          <span>Processing...</span>
+        </>
+      ) : (
+        children
+      )}
     </button>
   );
 }
 
 export default function AdminPanel() {
-  const { state, currentPlayer, startLot, placeBid, markSold, markUnsold, nextLot, jumpToLot, reset } = useAuction();
-  const { teams, currentBidLakhs, currentBidTeamId, status, currentIndex, auctionOrder } = state;
+  const { state, currentPlayer, startLot, placeBid, markSold, markUnsold, endAuction, nextLot, jumpToLot, reset } = useAuction();
+  const { teams, currentBidLakhs, currentBidTeamId, status, currentIndex, auctionOrder, salesMap } = state;
 
   const [activeTab, setActiveTab]           = useState('auction'); // 'auction' | 'teams' | 'lots'
   const [jumpIndex, setJumpIndex]           = useState('');
@@ -246,12 +256,13 @@ export default function AdminPanel() {
   const [busy, setBusy]                     = useState(false);
   const [warningModal, setWarningModal]     = useState(null);
   const [searchQuery, setSearchQuery]       = useState('');
+  const [banner, setBanner]                 = useState(null); // { type: 'error' | 'success', message: string }
 
-  // Sync manual sale selection whenever lot or live bid updates
+  // Sync manual sale selection whenever current lot or live bid values update
   useEffect(() => {
     if (currentBidTeamId) {
       setOverrideTeamId(currentBidTeamId);
-    } else if (!overrideTeamId && teams.length > 0) {
+    } else if (teams.length > 0 && !overrideTeamId) {
       setOverrideTeamId(teams[0].id);
     }
 
@@ -260,14 +271,31 @@ export default function AdminPanel() {
     } else if (currentPlayer?.base_price_lakhs != null) {
       setOverridePrice(String(currentPlayer.base_price_lakhs));
     }
-  }, [currentIndex, currentBidTeamId, currentBidLakhs, currentPlayer]);
+  }, [currentIndex, currentBidTeamId, currentBidLakhs, currentPlayer?.id]);
 
-  async function wrap(fn) {
+  // Helper function to trigger non-blocking UI notifications
+  function notify(message, type = 'success') {
+    setBanner({ message, type });
+    if (type === 'success') {
+      setTimeout(() => {
+        setBanner(prev => (prev?.message === message ? null : prev));
+      }, 5000);
+    }
+  }
+
+  async function wrap(fn, successMsg = null) {
     if (busy) return;
     setBusy(true);
-    try { await fn(); }
-    catch (e) { alert(`Error: ${e.message}`); }
-    finally   { setBusy(false); }
+    try { 
+      await fn(); 
+      if (successMsg) notify(successMsg, 'success');
+    }
+    catch (e) { 
+      notify(`Error: ${e.message || 'Operation failed'}`, 'error');
+    }
+    finally { 
+      setBusy(false); 
+    }
   }
 
   const nextBid = currentBidLakhs != null
@@ -291,22 +319,22 @@ export default function AdminPanel() {
         player: currentPlayer,
         math,
         action: 'bid',
-        onForce: () => wrap(() => placeBid(teamId, amt)),
+        onForce: () => wrap(() => placeBid(teamId, amt), `Bid of ${fmt(amt)} placed for ${teamId}`),
       });
       return;
     }
-    await wrap(() => placeBid(teamId, amt));
+    await wrap(() => placeBid(teamId, amt), `Bid of ${fmt(amt)} placed for ${teamId}`);
   }
 
   async function handleDirectSold(force = false) {
     const targetTeamId = overrideTeamId || currentBidTeamId;
     const targetPrice  = isOverridePriceValid ? parsedOverridePrice : (currentBidLakhs ?? currentPlayer?.base_price_lakhs);
 
-    if (!targetTeamId) { alert('Please select a team.'); return; }
-    if (!targetPrice || isNaN(targetPrice) || targetPrice <= 0) { alert('Please enter a valid price in Lakhs.'); return; }
+    if (!targetTeamId) { notify('Please select a winning team.', 'error'); return; }
+    if (!targetPrice || isNaN(targetPrice) || targetPrice <= 0) { notify('Please enter a valid price in Lakhs.', 'error'); return; }
 
     const team = teams.find(t => t.id === targetTeamId);
-    if (!team) { alert('Invalid team selected.'); return; }
+    if (!team) { notify('Invalid team selected.', 'error'); return; }
 
     const math = computeSquadMath(team, targetPrice, currentPlayer);
 
@@ -317,25 +345,29 @@ export default function AdminPanel() {
         player: currentPlayer,
         math,
         action: 'direct_sold',
-        onForce: () => wrap(() => markSold(targetTeamId, targetPrice)),
+        onForce: () => wrap(async () => {
+          await markSold(targetTeamId, targetPrice);
+        }, `FORCE SOLD: ${currentPlayer.name} to ${targetTeamId} for ${fmt(targetPrice)}`),
       });
       return;
     }
 
-    await wrap(() => markSold(targetTeamId, targetPrice));
+    await wrap(async () => {
+      await markSold(targetTeamId, targetPrice);
+    }, `SOLD: ${currentPlayer.name} to ${team.name} (${targetTeamId}) for ${fmt(targetPrice)}`);
   }
 
   async function handleJump(targetIndex) {
     const idx = targetIndex !== undefined ? targetIndex : parseInt(jumpIndex, 10) - 1;
     if (!isNaN(idx) && idx >= 0 && idx < auctionOrder.length) {
-      await wrap(() => jumpToLot(idx));
+      await wrap(() => jumpToLot(idx), `Jumped to Lot ${idx + 1}`);
       setJumpIndex('');
     }
   }
 
   async function handleReset() {
     if (!confirm('Reset the entire auction? This will clear all sales and restore team purses.')) return;
-    await wrap(reset);
+    await wrap(reset, 'Auction reset successfully');
     setOverrideTeamId('');
     setOverridePrice('');
     setJumpIndex('');
@@ -363,12 +395,21 @@ export default function AdminPanel() {
             </h1>
             <p className="text-slate-400 text-sm">All player lots have been processed successfully.</p>
           </div>
-          <button
-            onClick={handleReset}
-            className="w-full py-4 rounded-2xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-bold text-base transition shadow-xl shadow-rose-950 border border-rose-400/30"
-          >
-            🔄 Reset &amp; Restart Auction
-          </button>
+          <div className="space-y-3 pt-2">
+            <button
+              onClick={() => exportRostersJSON(teams)}
+              className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-sm transition shadow-lg border border-indigo-400/30 flex items-center justify-center gap-2"
+            >
+              <span>📥</span>
+              <span>Export Rosters JSON (rank_teams.py)</span>
+            </button>
+            <button
+              onClick={handleReset}
+              className="w-full py-3 rounded-2xl bg-slate-800/80 hover:bg-slate-700/80 text-rose-300 font-semibold text-xs transition border border-rose-500/30"
+            >
+              🔄 Reset &amp; Restart Auction
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -445,15 +486,7 @@ export default function AdminPanel() {
 
         {/* Sidebar Footer Stats & System Reset */}
         <div className="p-3 border-t border-slate-800/80 space-y-2">
-          <div className="bg-slate-900/60 border border-white/10 rounded-xl p-2.5 text-xs">
-            <div className="text-slate-400 font-semibold text-[9px] uppercase tracking-wider">Database Sync</div>
-            <div className="flex items-center gap-1.5 mt-0.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="font-bold text-slate-200 text-[11px]">Realtime Active</span>
-            </div>
-          </div>
-
-          <div className="space-y-1.5 pt-1">
+          <div className="bg-slate-900/60 border border-white/10 rounded-xl p-2.5 text-xs space-y-1.5">
             <div className="text-[9px] font-bold uppercase tracking-wider text-slate-400 font-mono px-1">Export Sales &amp; Rosters</div>
             <div className="grid grid-cols-2 gap-1.5">
               <button
@@ -517,6 +550,7 @@ export default function AdminPanel() {
             </div>
 
             <span className={`ml-1 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider border backdrop-blur-md ${
+              status === 'finished' ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40' :
               status === 'live' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 animate-pulse' :
               status === 'sold' ? 'bg-amber-500/20 text-amber-300 border-amber-500/40' :
               status === 'unsold' ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' :
@@ -524,8 +558,39 @@ export default function AdminPanel() {
             }`}>
               {status}
             </span>
+
+            <button
+              onClick={() => {
+                if (window.confirm('End auction now? This will set status to finished across all screens (Admin, TV, Leaderboards) and export rosters.json for Python evaluation.')) {
+                  wrap(async () => {
+                    await endAuction();
+                    exportRostersJSON(teams);
+                  });
+                }
+              }}
+              disabled={busy || status === 'finished'}
+              className="py-1 px-3 rounded-lg bg-gradient-to-r from-purple-900 to-indigo-900 hover:from-purple-800 hover:to-indigo-800 border border-purple-500/50 text-purple-200 font-bold text-xs shadow transition active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
+            >
+              <span>🏁</span>
+              <span>End Auction</span>
+            </button>
           </div>
         </header>
+
+        {/* SYSTEM NOTIFICATION BANNER */}
+        {banner && (
+          <div className={`px-4 py-2.5 text-xs font-bold flex items-center justify-between transition-all duration-300 shrink-0 z-20 ${
+            banner.type === 'error'
+              ? 'bg-rose-950/90 text-rose-200 border-b border-rose-500/40 shadow-lg shadow-rose-950/50'
+              : 'bg-emerald-950/90 text-emerald-200 border-b border-emerald-500/40 shadow-lg shadow-emerald-950/50'
+          }`}>
+            <div className="flex items-center gap-2">
+              <span className="text-sm">{banner.type === 'error' ? '🚨' : '✅'}</span>
+              <span>{banner.message}</span>
+            </div>
+            <button onClick={() => setBanner(null)} className="text-slate-400 hover:text-white px-2 py-0.5 rounded hover:bg-white/10 transition">✕</button>
+          </div>
+        )}
 
         {/* Content Body */}
         <div className="flex-1 p-3 md:p-4 overflow-y-auto lg:overflow-hidden min-h-0">
@@ -575,29 +640,42 @@ export default function AdminPanel() {
 
                   {/* Lot Phase Action Controls */}
                   <div className="pt-2 border-t border-white/10 flex flex-wrap gap-2 items-center">
-                    {status === 'idle' && (
-                      <Btn tone="emerald" onClick={() => wrap(startLot)} disabled={busy} className="!py-2 !px-4 !text-xs">
-                        ▶ Start Bidding Phase
-                      </Btn>
-                    )}
-
-                    {status === 'live' && currentBidTeamId && (
-                      <Btn tone="amber" onClick={() => handleDirectSold(false)} disabled={busy} className="!py-2 !px-4 !text-xs">
+                    {currentBidTeamId && (
+                      <Btn tone="amber" onClick={() => handleDirectSold(false)} disabled={busy} loading={busy} className="!py-2 !px-4 !text-xs">
                         🔨 Mark SOLD ({currentBidTeamId} @ {fmt(currentBidLakhs)})
                       </Btn>
                     )}
 
-                    {(status === 'live' || status === 'idle') && (
-                      <Btn tone="red" onClick={() => wrap(markUnsold)} disabled={busy} className="!py-2 !px-4 !text-xs">
+                    {status !== 'finished' && (
+                      <Btn tone="red" onClick={() => wrap(async () => { await markUnsold(); await nextLot(); }, `Marked ${currentPlayer.name} UNSOLD`)} disabled={busy} loading={busy} className="!py-2 !px-4 !text-xs">
                         ✖ Mark UNSOLD
                       </Btn>
                     )}
 
-                    {(status === 'sold' || status === 'unsold' || status === 'idle') && (
-                      <Btn tone="indigo" onClick={() => wrap(nextLot)} disabled={busy} className="!py-2 !px-4 !text-xs">
-                        {status === 'idle' ? 'Skip / Next Lot →' : 'Next Lot →'}
+                    {currentIndex > 0 && (
+                      <Btn tone="slate" onClick={() => handleJump(currentIndex - 1)} disabled={busy} loading={busy} className="!py-2 !px-3 !text-xs">
+                        ← Prev Lot
                       </Btn>
                     )}
+                    <Btn tone="indigo" onClick={() => wrap(nextLot, `Advanced to Lot ${currentIndex + 2}`)} disabled={busy} loading={busy} className="!py-2 !px-4 !text-xs">
+                      Skip / Next Lot →
+                    </Btn>
+                    <Btn
+                      tone="ghost"
+                      onClick={() => {
+                        if (window.confirm('End auction now? This will set status to finished across all screens (Admin, TV, Leaderboards) and export rosters.json.')) {
+                          wrap(async () => {
+                            await endAuction();
+                            exportRostersJSON(teams);
+                          }, 'Auction ended successfully');
+                        }
+                      }}
+                      disabled={busy || status === 'finished'}
+                      loading={busy}
+                      className="!py-2 !px-3 !text-xs border-purple-500/50 text-purple-300 hover:bg-purple-950/50"
+                    >
+                      🏁 End &amp; Export Rosters
+                    </Btn>
                   </div>
                 </div>
 
@@ -618,13 +696,13 @@ export default function AdminPanel() {
                       return (
                         <button
                           key={t.id}
-                          disabled={leading || busy || status !== 'live'}
+                          disabled={leading || busy || status === 'finished'}
                           onClick={() => handleBid(t.id)}
                           title={math.hasWarning ? math.primaryReason : leading ? 'Currently leading bid' : `Place bid for ${fmt(nextBid)}`}
                           className={`rounded-xl border p-2 text-left transition-all flex flex-col justify-between ${
                             leading
                               ? 'border-amber-400 bg-amber-950/50 ring-1 ring-amber-400/50 shadow-md'
-                              : status === 'live' && !math.hasWarning
+                              : !math.hasWarning && status !== 'finished'
                                 ? 'border-white/10 bg-slate-950/80 hover:border-white/20 hover:bg-slate-900 cursor-pointer'
                                 : 'border-rose-500/40 bg-rose-950/30 opacity-70'
                           }`}

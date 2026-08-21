@@ -32,13 +32,10 @@ function Badge({ children, tone = 'slate' }) {
 }
 
 function StatusBanner({ status, leadingTeam, nextBid }) {
-  if (status === 'sold' && leadingTeam) {
+  if (status === 'sold') {
     return (
-      <div
-        className="text-4xl font-extrabold animate-pulse drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]"
-        style={{ color: leadingTeam.color }}
-      >
-        SOLD to {leadingTeam.name} 🎉
+      <div className="text-4xl lg:text-5xl font-black font-mono tracking-tight animate-bounce drop-shadow-[0_0_30px_rgba(34,197,94,0.6)] text-emerald-400 border border-emerald-500/40 bg-emerald-950/60 px-6 py-3 rounded-2xl inline-block">
+        ✨ SOLD {leadingTeam ? `to ${leadingTeam.name}` : ''} 🎉
       </div>
     );
   }

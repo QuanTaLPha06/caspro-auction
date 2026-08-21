@@ -113,12 +113,6 @@ export default function LandingGateway({ onEnter }) {
               </button>
             </div>
 
-            {error && (
-              <div className="p-3.5 rounded-xl bg-red-950/80 border border-red-500/50 text-red-300 text-xs font-bold">
-                {error}
-              </div>
-            )}
-
             <div>
               <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">
                 {mode === 'display' ? 'TV DISPLAY PIN' : 'COMMAND PASSWORD'}
@@ -127,7 +121,7 @@ export default function LandingGateway({ onEnter }) {
                 type="password"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
-                placeholder={mode === 'display' ? 'Enter PIN (Default: 0000)' : 'Enter Password (Default: admin123)'}
+                placeholder={mode === 'display' ? `Enter PIN (Default: ${AUTH.DISPLAY_PIN})` : `Enter Password (Default: ${AUTH.ADMIN_PASSWORD})`}
                 className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-purple-500/30 text-white placeholder-slate-500 text-sm font-mono focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 transition-all"
                 autoFocus
               />

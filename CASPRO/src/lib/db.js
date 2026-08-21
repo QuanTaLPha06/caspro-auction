@@ -79,8 +79,9 @@ export async function dbStartLot() {
 }
 
 export async function dbPlaceBid(playerId, teamId, bidLakhs) {
-  await Promise.all([
+  const [r1, r2] = await Promise.all([
     supabase.from('auction_state').update({
+      status:              'live',
       current_bid_lakhs:   bidLakhs,
       current_bid_team_id: teamId,
       updated_at:          new Date().toISOString(),
@@ -89,44 +90,60 @@ export async function dbPlaceBid(playerId, teamId, bidLakhs) {
       type: 'BID', player_id: playerId, team_id: teamId, price_lakhs: bidLakhs,
     }),
   ]);
+  assertOk(r1, 'dbPlaceBid auction_state');
+  assertOk(r2, 'dbPlaceBid bid_log');
 }
 
 export async function dbMarkSold(playerId, teamId, soldPriceLakhs, newPurseLakhs) {
-  await Promise.all([
-    // 1. Record the sale
+  const [r1, r2, r3, r4] = await Promise.all([
     supabase.from('player_sales').upsert({
       player_id: playerId, team_id: teamId, sold_price_lakhs: soldPriceLakhs,
     }),
-    // 2. Deduct purse
     supabase.from('team_purses').update({ purse_lakhs: newPurseLakhs }).eq('team_id', teamId),
-    // 3. Update auction_state with winning team, final price and status
     supabase.from('auction_state').update({
       status:              'sold',
       current_bid_lakhs:   soldPriceLakhs,
       current_bid_team_id: teamId,
       updated_at:          new Date().toISOString(),
     }).eq('id', 1),
-    // 4. Bid log
     supabase.from('bid_log').insert({
       type: 'SOLD', player_id: playerId, team_id: teamId, price_lakhs: soldPriceLakhs,
     }),
   ]);
+  assertOk(r1, 'dbMarkSold player_sales');
+  assertOk(r2, 'dbMarkSold team_purses');
+  assertOk(r3, 'dbMarkSold auction_state');
+  assertOk(r4, 'dbMarkSold bid_log');
 }
 
 export async function dbMarkUnsold(playerId) {
-  await Promise.all([
+  const [r1, r2] = await Promise.all([
     supabase.from('auction_state').update({
       status: 'unsold', updated_at: new Date().toISOString(),
     }).eq('id', 1),
     supabase.from('bid_log').insert({ type: 'UNSOLD', player_id: playerId }),
   ]);
+  assertOk(r1, 'dbMarkUnsold auction_state');
+  assertOk(r2, 'dbMarkUnsold bid_log');
+}
+
+export async function dbEndAuction() {
+  assertOk(
+    await supabase.from('auction_state').update({
+      status:              'finished',
+      current_bid_lakhs:   null,
+      current_bid_team_id: null,
+      updated_at:          new Date().toISOString(),
+    }).eq('id', 1),
+    'dbEndAuction'
+  );
 }
 
 export async function dbNextLot(nextIndex, finished) {
   assertOk(
     await supabase.from('auction_state').update({
       current_index:       nextIndex,
-      status:              finished ? 'finished' : 'idle',
+      status:              finished ? 'finished' : 'live',
       current_bid_lakhs:   null,
       current_bid_team_id: null,
       updated_at:          new Date().toISOString(),
@@ -139,7 +156,7 @@ export async function dbJumpToLot(index) {
   assertOk(
     await supabase.from('auction_state').update({
       current_index:       index,
-      status:              'idle',
+      status:              'live',
       current_bid_lakhs:   null,
       current_bid_team_id: null,
       updated_at:          new Date().toISOString(),
@@ -152,16 +169,18 @@ export async function dbJumpToLot(index) {
  * Full reset: clear all sales, restore purses, reset auction_state.
  */
 export async function dbReset() {
-  const [res1, res2] = await Promise.all([
-    supabase.from('player_sales').delete().neq('player_id', '___none___'),
-    supabase.from('bid_log').delete().neq('type', '___none___'),
-    ...TEAMS.map(t =>
-      supabase.from('team_purses').update({ purse_lakhs: t.purseLakhs }).eq('team_id', t.id)
-    ),
-  ]);
+  const res1 = await supabase.from('player_sales').delete().neq('player_id', '___none___');
+  assertOk(res1, 'dbReset player_sales');
 
-  if (res1.error) console.error('[dbReset] player_sales delete error:', res1.error);
-  if (res2.error) console.error('[dbReset] bid_log delete error:', res2.error);
+  const res2 = await supabase.from('bid_log').delete().neq('type', '___none___');
+  assertOk(res2, 'dbReset bid_log');
+
+  const purseResults = await Promise.all(
+    TEAMS.map(t =>
+      supabase.from('team_purses').update({ purse_lakhs: t.purseLakhs }).eq('team_id', t.id)
+    )
+  );
+  purseResults.forEach((r, idx) => assertOk(r, `dbReset team_purse ${TEAMS[idx].id}`));
 
   // Reset control row last
   assertOk(

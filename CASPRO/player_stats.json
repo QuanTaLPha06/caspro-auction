@@ -1,0 +1,3230 @@
+{
+  "1": {
+    "lot": 1,
+    "name": "Virat Kohli",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 657,
+    "baseline_score": 70
+  },
+  "2": {
+    "lot": 2,
+    "name": "Rohit Sharma",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "3": {
+    "lot": 3,
+    "name": "Suryakumar Yadav",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 717,
+    "baseline_score": 70
+  },
+  "4": {
+    "lot": 4,
+    "name": "Shubman Gill",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 650,
+    "baseline_score": 70
+  },
+  "5": {
+    "lot": 5,
+    "name": "Yashasvi Jaiswal",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 559,
+    "baseline_score": 70
+  },
+  "6": {
+    "lot": 6,
+    "name": "Ruturaj Gaikwad",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "7": {
+    "lot": 7,
+    "name": "Travis Head",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "price_cr": 14.0,
+    "baseline_score": 70
+  },
+  "8": {
+    "lot": 8,
+    "name": "Shreyas Iyer",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 604,
+    "price_cr": 26.75,
+    "baseline_score": 70
+  },
+  "9": {
+    "lot": 9,
+    "name": "Sai Sudharsan",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 722,
+    "baseline_score": 70
+  },
+  "10": {
+    "lot": 10,
+    "name": "Rinku Singh",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "strike_rate": 161.0,
+    "price_cr": 13.0,
+    "baseline_score": 70
+  },
+  "11": {
+    "lot": 11,
+    "name": "Rajat Patidar",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 501,
+    "sixes": 42,
+    "baseline_score": 70
+  },
+  "12": {
+    "lot": 12,
+    "name": "Tilak Varma",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 8.0,
+    "baseline_score": 70
+  },
+  "13": {
+    "lot": 13,
+    "name": "David Miller",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "14": {
+    "lot": 14,
+    "name": "Tristan Stubbs",
+    "pool": "A",
+    "role": "BAT",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "price_cr": 10.0,
+    "baseline_score": 70
+  },
+  "15": {
+    "lot": 15,
+    "name": "Rishabh Pant",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 27.0,
+    "baseline_score": 70
+  },
+  "16": {
+    "lot": 16,
+    "name": "Heinrich Klaasen",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Overseas (SA)",
+    "stats_source": "note",
+    "runs": 624,
+    "price_cr": 23.0,
+    "baseline_score": 70
+  },
+  "17": {
+    "lot": 17,
+    "name": "Nicholas Pooran",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "price_cr": 21.0,
+    "baseline_score": 70
+  },
+  "18": {
+    "lot": 18,
+    "name": "Sanju Samson",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "19": {
+    "lot": 19,
+    "name": "Jos Buttler",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "price_cr": 15.75,
+    "baseline_score": 70
+  },
+  "20": {
+    "lot": 20,
+    "name": "KL Rahul",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 14.0,
+    "baseline_score": 70
+  },
+  "21": {
+    "lot": 21,
+    "name": "Quinton de Kock",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "22": {
+    "lot": 22,
+    "name": "Ishan Kishan",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 517,
+    "baseline_score": 70
+  },
+  "23": {
+    "lot": 23,
+    "name": "Phil Salt",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "price_cr": 11.5,
+    "baseline_score": 70
+  },
+  "24": {
+    "lot": 24,
+    "name": "MS Dhoni",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 4.0,
+    "baseline_score": 70
+  },
+  "25": {
+    "lot": 25,
+    "name": "Rahmanullah Gurbaz",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "26": {
+    "lot": 26,
+    "name": "Jitesh Sharma",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 11.0,
+    "baseline_score": 70
+  },
+  "27": {
+    "lot": 27,
+    "name": "Josh Inglis",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "28": {
+    "lot": 28,
+    "name": "Dhruv Jurel",
+    "pool": "A",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 14.0,
+    "baseline_score": 70
+  },
+  "29": {
+    "lot": 29,
+    "name": "Hardik Pandya",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 16.35,
+    "baseline_score": 70
+  },
+  "30": {
+    "lot": 30,
+    "name": "Ravindra Jadeja",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "31": {
+    "lot": 31,
+    "name": "Cameron Green",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "33": {
+    "lot": 33,
+    "name": "Axar Patel",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 16.5,
+    "baseline_score": 70
+  },
+  "34": {
+    "lot": 34,
+    "name": "Glenn Maxwell",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "price_cr": 4.2,
+    "baseline_score": 70
+  },
+  "35": {
+    "lot": 35,
+    "name": "Liam Livingstone",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "price_cr": 8.75,
+    "baseline_score": 70
+  },
+  "36": {
+    "lot": 36,
+    "name": "Mitchell Marsh",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "note",
+    "runs": 627,
+    "baseline_score": 70
+  },
+  "37": {
+    "lot": 37,
+    "name": "Nitish Kumar Reddy",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 6.0,
+    "baseline_score": 70
+  },
+  "38": {
+    "lot": 38,
+    "name": "Marcus Stoinis",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "price_cr": 11.0,
+    "baseline_score": 70
+  },
+  "39": {
+    "lot": 39,
+    "name": "Sam Curran",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "40": {
+    "lot": 40,
+    "name": "Abhishek Sharma",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 563,
+    "price_cr": 14.0,
+    "baseline_score": 70
+  },
+  "41": {
+    "lot": 41,
+    "name": "Venkatesh Iyer",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 23.75,
+    "baseline_score": 70
+  },
+  "42": {
+    "lot": 42,
+    "name": "Washington Sundar",
+    "pool": "A",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 3.2,
+    "baseline_score": 70
+  },
+  "43": {
+    "lot": 43,
+    "name": "Jasprit Bumrah",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "wickets": 18,
+    "economy": 6.67,
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "44": {
+    "lot": 44,
+    "name": "Pat Cummins",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "45": {
+    "lot": 45,
+    "name": "Mitchell Starc",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "price_cr": 11.75,
+    "baseline_score": 70
+  },
+  "46": {
+    "lot": 46,
+    "name": "Arshdeep Singh",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "wickets": 21,
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "47": {
+    "lot": 47,
+    "name": "Trent Boult",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "note",
+    "wickets": 22,
+    "price_cr": 12.5,
+    "baseline_score": 70
+  },
+  "48": {
+    "lot": 48,
+    "name": "Mohammed Shami",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 10.0,
+    "baseline_score": 70
+  },
+  "49": {
+    "lot": 49,
+    "name": "Mohammed Siraj",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "wickets": 19,
+    "price_cr": 12.25,
+    "baseline_score": 70
+  },
+  "50": {
+    "lot": 50,
+    "name": "Matheesha Pathirana",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "price_cr": 13.0,
+    "baseline_score": 70
+  },
+  "51": {
+    "lot": 51,
+    "name": "Harshit Rana",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 4.0,
+    "baseline_score": 70
+  },
+  "52": {
+    "lot": 52,
+    "name": "Mayank Yadav",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 11.0,
+    "baseline_score": 70
+  },
+  "53": {
+    "lot": 53,
+    "name": "Prasidh Krishna",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "wickets": 25,
+    "baseline_score": 70
+  },
+  "54": {
+    "lot": 54,
+    "name": "Josh Hazlewood",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "note",
+    "wickets": 22,
+    "price_cr": 12.5,
+    "baseline_score": 70
+  },
+  "55": {
+    "lot": 55,
+    "name": "Jofra Archer",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "note",
+    "wickets": 25,
+    "price_cr": 12.5,
+    "baseline_score": 70
+  },
+  "56": {
+    "lot": 56,
+    "name": "Sandeep Sharma",
+    "pool": "A",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 4.0,
+    "baseline_score": 70
+  },
+  "57": {
+    "lot": 57,
+    "name": "Rashid Khan",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "note",
+    "wickets": 21,
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "58": {
+    "lot": 58,
+    "name": "Yuzvendra Chahal",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "wickets": 16,
+    "price_cr": 18.0,
+    "baseline_score": 70
+  },
+  "59": {
+    "lot": 59,
+    "name": "Kuldeep Yadav",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 13.25,
+    "baseline_score": 70
+  },
+  "60": {
+    "lot": 60,
+    "name": "Ravi Bishnoi",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 11.0,
+    "baseline_score": 70
+  },
+  "61": {
+    "lot": 61,
+    "name": "Varun Chakaravarthy",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "wickets": 17,
+    "price_cr": 12.0,
+    "baseline_score": 70
+  },
+  "62": {
+    "lot": 62,
+    "name": "Wanindu Hasaranga",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "price_cr": 5.25,
+    "baseline_score": 70
+  },
+  "63": {
+    "lot": 63,
+    "name": "Maheesh Theekshana",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "price_cr": 4.4,
+    "baseline_score": 70
+  },
+  "64": {
+    "lot": 64,
+    "name": "Ravichandran Ashwin",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 9.75,
+    "baseline_score": 70
+  },
+  "65": {
+    "lot": 65,
+    "name": "Adam Zampa",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "price_cr": 2.4,
+    "baseline_score": 70
+  },
+  "66": {
+    "lot": 66,
+    "name": "Noor Ahmad",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "note",
+    "wickets": 24,
+    "price_cr": 10.0,
+    "baseline_score": 70
+  },
+  "67": {
+    "lot": 67,
+    "name": "R Sai Kishore",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "wickets": 19,
+    "price_cr": 2.0,
+    "baseline_score": 70
+  },
+  "68": {
+    "lot": 68,
+    "name": "Adil Rashid",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "69": {
+    "lot": 69,
+    "name": "Tabraiz Shamsi",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 70
+  },
+  "70": {
+    "lot": 70,
+    "name": "Rahul Chahar",
+    "pool": "A",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 3.2,
+    "baseline_score": 70
+  },
+  "71": {
+    "lot": 71,
+    "name": "Harry Brook",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "72": {
+    "lot": 72,
+    "name": "Manish Pandey",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "73": {
+    "lot": 73,
+    "name": "Ayush Badoni",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "74": {
+    "lot": 74,
+    "name": "Nehal Wadhera",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "75": {
+    "lot": 75,
+    "name": "Jake Fraser-McGurk",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "76": {
+    "lot": 76,
+    "name": "Rovman Powell",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "77": {
+    "lot": 77,
+    "name": "Shimron Hetmyer",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "78": {
+    "lot": 78,
+    "name": "Aiden Markram",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "79": {
+    "lot": 79,
+    "name": "Tim David",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "80": {
+    "lot": 80,
+    "name": "Glenn Phillips",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "81": {
+    "lot": 81,
+    "name": "Devdutt Padikkal",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "82": {
+    "lot": 82,
+    "name": "Prithvi Shaw",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "83": {
+    "lot": 83,
+    "name": "Rahul Tripathi",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "84": {
+    "lot": 84,
+    "name": "Kane Williamson",
+    "pool": "B",
+    "role": "BAT",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "85": {
+    "lot": 85,
+    "name": "Prabhsimran Singh",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "note",
+    "runs": 510,
+    "baseline_score": 55
+  },
+  "86": {
+    "lot": 86,
+    "name": "Ryan Rickelton",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "87": {
+    "lot": 87,
+    "name": "Shai Hope",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "88": {
+    "lot": 88,
+    "name": "Kusal Mendis",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "89": {
+    "lot": 89,
+    "name": "Matthew Wade",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "90": {
+    "lot": 90,
+    "name": "KS Bharat",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "91": {
+    "lot": 91,
+    "name": "Anuj Rawat",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "92": {
+    "lot": 92,
+    "name": "Litton Das",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (Ban)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "93": {
+    "lot": 93,
+    "name": "Upendra Yadav",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "94": {
+    "lot": 94,
+    "name": "Donovan Ferreira",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "95": {
+    "lot": 95,
+    "name": "Tom Banton",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "96": {
+    "lot": 96,
+    "name": "B.R. Sharath",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "97": {
+    "lot": 97,
+    "name": "Vishnu Vinod",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "98": {
+    "lot": 98,
+    "name": "Abishek Porel",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "99": {
+    "lot": 99,
+    "name": "Jonny Bairstow",
+    "pool": "B",
+    "role": "WK",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "100": {
+    "lot": 100,
+    "name": "Marco Jansen",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "101": {
+    "lot": 101,
+    "name": "Romario Shepherd",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "102": {
+    "lot": 102,
+    "name": "Deepak Hooda",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "103": {
+    "lot": 103,
+    "name": "Krunal Pandya",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "104": {
+    "lot": 104,
+    "name": "Shardul Thakur",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "105": {
+    "lot": 105,
+    "name": "Vijay Shankar",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "106": {
+    "lot": 106,
+    "name": "Shivam Dube",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "107": {
+    "lot": 107,
+    "name": "Riyan Parag",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "108": {
+    "lot": 108,
+    "name": "Jason Holder",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Overseas (WI)",
+    "stats_source": "note",
+    "wickets": 17,
+    "baseline_score": 55
+  },
+  "109": {
+    "lot": 109,
+    "name": "Azmatullah Omarzai",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "110": {
+    "lot": 110,
+    "name": "Moeen Ali",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "111": {
+    "lot": 111,
+    "name": "Sherfane Rutherford",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "112": {
+    "lot": 112,
+    "name": "Daryl Mitchell",
+    "pool": "B",
+    "role": "AR",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "113": {
+    "lot": 113,
+    "name": "Harshal Patel",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "114": {
+    "lot": 114,
+    "name": "Avesh Khan",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "115": {
+    "lot": 115,
+    "name": "Khaleel Ahmed",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "116": {
+    "lot": 116,
+    "name": "Tushar Deshpande",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "117": {
+    "lot": 117,
+    "name": "Mukesh Kumar",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "118": {
+    "lot": 118,
+    "name": "Deepak Chahar",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "119": {
+    "lot": 119,
+    "name": "Lockie Ferguson",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "120": {
+    "lot": 120,
+    "name": "Alzarri Joseph",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "121": {
+    "lot": 121,
+    "name": "Spencer Johnson",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "122": {
+    "lot": 122,
+    "name": "Nandre Burger",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "123": {
+    "lot": 123,
+    "name": "Naveen-ul-Haq",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "124": {
+    "lot": 124,
+    "name": "Yash Dayal",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "125": {
+    "lot": 125,
+    "name": "Fazalhaq Farooqi",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "126": {
+    "lot": 126,
+    "name": "T Natarajan",
+    "pool": "B",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "127": {
+    "lot": 127,
+    "name": "R Sai Kishore",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "128": {
+    "lot": 128,
+    "name": "Piyush Chawla",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "129": {
+    "lot": 129,
+    "name": "Mayank Markande",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "130": {
+    "lot": 130,
+    "name": "Amit Mishra",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "131": {
+    "lot": 131,
+    "name": "Karn Sharma",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "132": {
+    "lot": 132,
+    "name": "Suyash Sharma",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "133": {
+    "lot": 133,
+    "name": "Mitchell Santner",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "134": {
+    "lot": 134,
+    "name": "Mujeeb Ur Rahman",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "135": {
+    "lot": 135,
+    "name": "Keshav Maharaj",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "136": {
+    "lot": 136,
+    "name": "Gudakesh Motie",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "137": {
+    "lot": 137,
+    "name": "Allah Ghazanfar",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "note",
+    "wickets": 15,
+    "baseline_score": 55
+  },
+  "138": {
+    "lot": 138,
+    "name": "Waqar Salamkheil",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "139": {
+    "lot": 139,
+    "name": "Qais Ahmad",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "140": {
+    "lot": 140,
+    "name": "Viyaskanth Vijayakanth",
+    "pool": "B",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 55
+  },
+  "141": {
+    "lot": 141,
+    "name": "Ajinkya Rahane",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "142": {
+    "lot": 142,
+    "name": "Mayank Agarwal",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "143": {
+    "lot": 143,
+    "name": "Nitish Rana",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "144": {
+    "lot": 144,
+    "name": "Shahrukh Khan",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "145": {
+    "lot": 145,
+    "name": "Angkrish Raghuvanshi",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "146": {
+    "lot": 146,
+    "name": "Sameer Rizvi",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "147": {
+    "lot": 147,
+    "name": "Abhinav Manohar",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "148": {
+    "lot": 148,
+    "name": "Karun Nair",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "149": {
+    "lot": 149,
+    "name": "Jason Roy",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "150": {
+    "lot": 150,
+    "name": "Finn Allen",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "151": {
+    "lot": 151,
+    "name": "Steve Smith",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "152": {
+    "lot": 152,
+    "name": "Bhanuka Rajapaksa",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "153": {
+    "lot": 153,
+    "name": "Sarfaraz Khan",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "154": {
+    "lot": 154,
+    "name": "Joe Root",
+    "pool": "C",
+    "role": "BAT",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "155": {
+    "lot": 155,
+    "name": "Narayan Jagadeesan",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "156": {
+    "lot": 156,
+    "name": "Luvnith Sisodia",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "157": {
+    "lot": 157,
+    "name": "Harvik Desai",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "158": {
+    "lot": 158,
+    "name": "Tom Kohler-Cadmore",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "159": {
+    "lot": 159,
+    "name": "Sam Billings",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "160": {
+    "lot": 160,
+    "name": "Tim Seifert",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "161": {
+    "lot": 161,
+    "name": "Andre Fletcher",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "162": {
+    "lot": 162,
+    "name": "Johnson Charles",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "163": {
+    "lot": 163,
+    "name": "Ben McDermott",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "164": {
+    "lot": 164,
+    "name": "Lorcan Tucker",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (Ire)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "165": {
+    "lot": 165,
+    "name": "Alex Carey",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "166": {
+    "lot": 166,
+    "name": "Scott Edwards",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (Ned)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "167": {
+    "lot": 167,
+    "name": "Mohammad Haris",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Overseas (Pak)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "168": {
+    "lot": 168,
+    "name": "Sheldon Jackson",
+    "pool": "C",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "169": {
+    "lot": 169,
+    "name": "Naman Dhir",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "170": {
+    "lot": 170,
+    "name": "Shahbaz Ahmed",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "171": {
+    "lot": 171,
+    "name": "Krishnappa Gowtham",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "172": {
+    "lot": 172,
+    "name": "Anshul Kamboj",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "173": {
+    "lot": 173,
+    "name": "Mahipal Lomror",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "174": {
+    "lot": 174,
+    "name": "Sanvir Singh",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "175": {
+    "lot": 175,
+    "name": "Daniel Sams",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "176": {
+    "lot": 176,
+    "name": "Sikandar Raza",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (Zim)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "177": {
+    "lot": 177,
+    "name": "Wian Mulder",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "178": {
+    "lot": 178,
+    "name": "Fabian Allen",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "179": {
+    "lot": 179,
+    "name": "Karim Janat",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "180": {
+    "lot": 180,
+    "name": "Mohammad Nabi",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "181": {
+    "lot": 181,
+    "name": "Dasun Shanaka",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "182": {
+    "lot": 182,
+    "name": "Jimmy Neesham",
+    "pool": "C",
+    "role": "AR",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "183": {
+    "lot": 183,
+    "name": "Umran Malik",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "184": {
+    "lot": 184,
+    "name": "Chetan Sakariya",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "185": {
+    "lot": 185,
+    "name": "Kamlesh Nagarkoti",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "186": {
+    "lot": 186,
+    "name": "Yash Thakur",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "187": {
+    "lot": 187,
+    "name": "Rasikh Dar",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "188": {
+    "lot": 188,
+    "name": "Mohit Sharma",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "189": {
+    "lot": 189,
+    "name": "Jhye Richardson",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "190": {
+    "lot": 190,
+    "name": "Dilshan Madushanka",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "191": {
+    "lot": 191,
+    "name": "Lance Morris",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "192": {
+    "lot": 192,
+    "name": "Reece Topley",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "193": {
+    "lot": 193,
+    "name": "Richard Ngarava",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Overseas (Zim)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "194": {
+    "lot": 194,
+    "name": "Umesh Yadav",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "195": {
+    "lot": 195,
+    "name": "Ishant Sharma",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "196": {
+    "lot": 196,
+    "name": "Jaydev Unadkat",
+    "pool": "C",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "197": {
+    "lot": 197,
+    "name": "Manav Suthar",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "198": {
+    "lot": 198,
+    "name": "Kumar Kartikeya",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "199": {
+    "lot": 199,
+    "name": "Hrithik Shokeen",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "200": {
+    "lot": 200,
+    "name": "Mayank Dagar",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "201": {
+    "lot": 201,
+    "name": "Jagadeesha Suchith",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "202": {
+    "lot": 202,
+    "name": "Ish Sodhi",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "203": {
+    "lot": 203,
+    "name": "Dunith Wellalage",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "204": {
+    "lot": 204,
+    "name": "Ayan Afzal Khan",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (UAE)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "205": {
+    "lot": 205,
+    "name": "Jeffrey Vandersay",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "206": {
+    "lot": 206,
+    "name": "Pravin Dubey",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "207": {
+    "lot": 207,
+    "name": "Zahir Khan",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "208": {
+    "lot": 208,
+    "name": "Sandeep Lamichhane",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (Nep)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "209": {
+    "lot": 209,
+    "name": "Prabath Jayasuriya",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "210": {
+    "lot": 210,
+    "name": "Lakshan Sandakan",
+    "pool": "C",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 42
+  },
+  "211": {
+    "lot": 211,
+    "name": "Shashank Singh",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "212": {
+    "lot": 212,
+    "name": "Ashutosh Sharma",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 3.8,
+    "baseline_score": 30
+  },
+  "213": {
+    "lot": 213,
+    "name": "Yash Dhull",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "214": {
+    "lot": 214,
+    "name": "Priyam Garg",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "215": {
+    "lot": 215,
+    "name": "Anmolpreet Singh",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "216": {
+    "lot": 216,
+    "name": "Subhranshu Senapati",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "217": {
+    "lot": 217,
+    "name": "Musheer Khan",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "218": {
+    "lot": 218,
+    "name": "Ripal Patel",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "219": {
+    "lot": 219,
+    "name": "C. Hari Nishaanth",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "220": {
+    "lot": 220,
+    "name": "Swastik Chikara",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "221": {
+    "lot": 221,
+    "name": "Aaron Jones",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "222": {
+    "lot": 222,
+    "name": "Steven Taylor",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "223": {
+    "lot": 223,
+    "name": "George Munsey",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Overseas (Sco)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "224": {
+    "lot": 224,
+    "name": "Monank Patel",
+    "pool": "D",
+    "role": "BAT",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "225": {
+    "lot": 225,
+    "name": "Kumar Kushagra",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "226": {
+    "lot": 226,
+    "name": "Robin Minz",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "227": {
+    "lot": 227,
+    "name": "Avanish Rao Aravelly",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "228": {
+    "lot": 228,
+    "name": "Urvil Patel",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "229": {
+    "lot": 229,
+    "name": "Sumit Kumar",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "230": {
+    "lot": 230,
+    "name": "Ricky Bhui",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "231": {
+    "lot": 231,
+    "name": "Aryan Juyal",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "232": {
+    "lot": 232,
+    "name": "Fazal Niyaz",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "233": {
+    "lot": 233,
+    "name": "Andries Gous",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "234": {
+    "lot": 234,
+    "name": "Michael Jones",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Overseas (Sco)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "235": {
+    "lot": 235,
+    "name": "Vriitya Aravind",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Overseas (UAE)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "236": {
+    "lot": 236,
+    "name": "Nicholas Welch",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Overseas (Zim)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "237": {
+    "lot": 237,
+    "name": "Clive Madande",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Overseas (Zim)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "238": {
+    "lot": 238,
+    "name": "Lhuan-dre Pretorius",
+    "pool": "D",
+    "role": "WK",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "239": {
+    "lot": 239,
+    "name": "Tanush Kotian",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "240": {
+    "lot": 240,
+    "name": "Anukul Roy",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "241": {
+    "lot": 241,
+    "name": "Vivrant Sharma",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "242": {
+    "lot": 242,
+    "name": "Prerak Mankad",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "243": {
+    "lot": 243,
+    "name": "Ramandeep Singh",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "244": {
+    "lot": 244,
+    "name": "Rajangad Bawa",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "245": {
+    "lot": 245,
+    "name": "Nishant Sindhu",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "246": {
+    "lot": 246,
+    "name": "Harsh Tyagi",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "247": {
+    "lot": 247,
+    "name": "Aman Khan",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "248": {
+    "lot": 248,
+    "name": "Gerhard Erasmus",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Overseas (Nam)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "249": {
+    "lot": 249,
+    "name": "Logan van Beek",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Overseas (Ned)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "250": {
+    "lot": 250,
+    "name": "Brandon McMullen",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Overseas (Sco)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "251": {
+    "lot": 251,
+    "name": "Harmeet Singh",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "252": {
+    "lot": 252,
+    "name": "Bas de Leede",
+    "pool": "D",
+    "role": "AR",
+    "nationality": "Overseas (Ned)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "253": {
+    "lot": 253,
+    "name": "Vidwath Kaverappa",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "254": {
+    "lot": 254,
+    "name": "Vyshak Vijaykumar",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 1.8,
+    "baseline_score": 30
+  },
+  "255": {
+    "lot": 255,
+    "name": "Akash Madhwal",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 1.2,
+    "baseline_score": 30
+  },
+  "256": {
+    "lot": 256,
+    "name": "Kuldeep Sen",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "257": {
+    "lot": 257,
+    "name": "Kartik Tyagi",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "258": {
+    "lot": 258,
+    "name": "K.M. Asif",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "259": {
+    "lot": 259,
+    "name": "Yudhvir Singh Charak",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "260": {
+    "lot": 260,
+    "name": "Eshan Malinga",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "261": {
+    "lot": 261,
+    "name": "Saurabh Netravalkar",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "262": {
+    "lot": 262,
+    "name": "Ali Khan",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "263": {
+    "lot": 263,
+    "name": "Bilal Khan",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Overseas (Omn)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "264": {
+    "lot": 264,
+    "name": "Bradley Currie",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Overseas (Sco)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "265": {
+    "lot": 265,
+    "name": "Sakib Hussain",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "266": {
+    "lot": 266,
+    "name": "Gurjapneet Singh",
+    "pool": "D",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "267": {
+    "lot": 267,
+    "name": "M. Siddharth",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "268": {
+    "lot": 268,
+    "name": "Prashant Solanki",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "269": {
+    "lot": 269,
+    "name": "Raghav Goyal",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "270": {
+    "lot": 270,
+    "name": "Saurabh Kumar",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "271": {
+    "lot": 271,
+    "name": "Prince Choudhary",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "272": {
+    "lot": 272,
+    "name": "Vignesh Puthur",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "273": {
+    "lot": 273,
+    "name": "Jhathavedh Subramanyan",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "274": {
+    "lot": 274,
+    "name": "Himanshu Sharma",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "275": {
+    "lot": 275,
+    "name": "Bernard Scholtz",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Overseas (Nam)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "276": {
+    "lot": 276,
+    "name": "Mark Watt",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Overseas (Sco)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "277": {
+    "lot": 277,
+    "name": "Nosthush Kenjige",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Overseas (USA)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "278": {
+    "lot": 278,
+    "name": "Assad Vala",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Overseas (PNG)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "279": {
+    "lot": 279,
+    "name": "Brian Masaba",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Overseas (Uga)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "280": {
+    "lot": 280,
+    "name": "Alpesh Ramjani",
+    "pool": "D",
+    "role": "SPIN",
+    "nationality": "Overseas (Uga)",
+    "stats_source": "baseline",
+    "baseline_score": 30
+  },
+  "281": {
+    "lot": 281,
+    "name": "Priyansh Arya",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 3.8,
+    "baseline_score": 20
+  },
+  "282": {
+    "lot": 282,
+    "name": "Agni Chopra",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "283": {
+    "lot": 283,
+    "name": "Rohan Kunnummal",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "284": {
+    "lot": 284,
+    "name": "Sachin Baby",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "285": {
+    "lot": 285,
+    "name": "Atharva Taide",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "286": {
+    "lot": 286,
+    "name": "Ankit Kumar",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "287": {
+    "lot": 287,
+    "name": "Himmat Singh",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "288": {
+    "lot": 288,
+    "name": "Pukhraj Mann",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "289": {
+    "lot": 289,
+    "name": "Shubham Khajuria",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "290": {
+    "lot": 290,
+    "name": "Salman Nizar",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "291": {
+    "lot": 291,
+    "name": "Sahil Parakh",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "292": {
+    "lot": 292,
+    "name": "B. Aparajith",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "293": {
+    "lot": 293,
+    "name": "Jacob Bethell",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Overseas (Eng)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "294": {
+    "lot": 294,
+    "name": "Teddy Bishop",
+    "pool": "E",
+    "role": "BAT",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "295": {
+    "lot": 295,
+    "name": "Akshay Wadkar",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "296": {
+    "lot": 296,
+    "name": "Eknath Kerkar",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "297": {
+    "lot": 297,
+    "name": "Vivek Singh",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "298": {
+    "lot": 298,
+    "name": "K.S. Rathore",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "299": {
+    "lot": 299,
+    "name": "Mohammed Azharuddeen",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "300": {
+    "lot": 300,
+    "name": "Pradosh Ranjan Paul",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "301": {
+    "lot": 301,
+    "name": "Het Patel",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "302": {
+    "lot": 302,
+    "name": "Yashovardhan Parantap",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "303": {
+    "lot": 303,
+    "name": "Jewel Andrew",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "304": {
+    "lot": 304,
+    "name": "Tadiwanashe Marumani",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Overseas (Zim)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "305": {
+    "lot": 305,
+    "name": "Lahiru Udara",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "306": {
+    "lot": 306,
+    "name": "Bipin Saurabh",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "307": {
+    "lot": 307,
+    "name": "Tom Blundell",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "308": {
+    "lot": 308,
+    "name": "Sadeera Samarawickrama",
+    "pool": "E",
+    "role": "WK",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "309": {
+    "lot": 309,
+    "name": "Arshin Kulkarni",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "310": {
+    "lot": 310,
+    "name": "Rajvardhan Hangargekar",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "311": {
+    "lot": 311,
+    "name": "Manoj Bhandage",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "312": {
+    "lot": 312,
+    "name": "Atit Sheth",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "313": {
+    "lot": 313,
+    "name": "Shams Mulani",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "314": {
+    "lot": 314,
+    "name": "Pulkit Narang",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "315": {
+    "lot": 315,
+    "name": "Chirag Jani",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "316": {
+    "lot": 316,
+    "name": "Ninad Rathva",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "317": {
+    "lot": 317,
+    "name": "Sanjay Yadav",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "318": {
+    "lot": 318,
+    "name": "Macneil Noronha",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "319": {
+    "lot": 319,
+    "name": "Auqib Dar",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 8.4,
+    "baseline_score": 20
+  },
+  "320": {
+    "lot": 320,
+    "name": "Matthew Boast",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "321": {
+    "lot": 321,
+    "name": "Nathan Smith",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "322": {
+    "lot": 322,
+    "name": "Nipun Dhananjaya",
+    "pool": "E",
+    "role": "AR",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "323": {
+    "lot": 323,
+    "name": "Kwena Maphaka",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Overseas (SA)",
+    "stats_source": "baseline",
+    "price_cr": 1.5,
+    "baseline_score": 20
+  },
+  "324": {
+    "lot": 324,
+    "name": "Akash Deep",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "325": {
+    "lot": 325,
+    "name": "Ishan Porel",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "326": {
+    "lot": 326,
+    "name": "Vasuki Koushik",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "327": {
+    "lot": 327,
+    "name": "Rajan Kumar",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "328": {
+    "lot": 328,
+    "name": "Mohit Avasthi",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "329": {
+    "lot": 329,
+    "name": "Mukhtar Hussain",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "330": {
+    "lot": 330,
+    "name": "Prince Yadav",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "331": {
+    "lot": 331,
+    "name": "M. Mohammed",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "332": {
+    "lot": 332,
+    "name": "Gurnoor Brar",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "price_cr": 1.3,
+    "baseline_score": 20
+  },
+  "333": {
+    "lot": 333,
+    "name": "William O'Rourke",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Overseas (NZ)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "334": {
+    "lot": 334,
+    "name": "Xavier Bartlett",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "335": {
+    "lot": 335,
+    "name": "Blessing Muzarabani",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Overseas (Zim)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "336": {
+    "lot": 336,
+    "name": "Andrew Tye",
+    "pool": "E",
+    "role": "PACE",
+    "nationality": "Overseas (Aus)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "337": {
+    "lot": 337,
+    "name": "Zeeshan Ansari",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "338": {
+    "lot": 338,
+    "name": "Shiva Singh",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "339": {
+    "lot": 339,
+    "name": "Saumy Pandey",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "340": {
+    "lot": 340,
+    "name": "Shubham Sharma",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "341": {
+    "lot": 341,
+    "name": "Dharmendrasinh Jadeja",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "342": {
+    "lot": 342,
+    "name": "Harsh Dubey",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "343": {
+    "lot": 343,
+    "name": "Lalith Mohan",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "344": {
+    "lot": 344,
+    "name": "Tejas Baroka",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "345": {
+    "lot": 345,
+    "name": "Prashant Chopra",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "346": {
+    "lot": 346,
+    "name": "Izharulhaq Naveed",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "347": {
+    "lot": 347,
+    "name": "Traveen Mathew",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Overseas (SL)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "348": {
+    "lot": 348,
+    "name": "Faisal Khan",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Overseas (Afg)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "349": {
+    "lot": 349,
+    "name": "Peter Hatzoglou",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Indian",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  },
+  "350": {
+    "lot": 350,
+    "name": "Khary Pierre",
+    "pool": "E",
+    "role": "SPIN",
+    "nationality": "Overseas (WI)",
+    "stats_source": "baseline",
+    "baseline_score": 20
+  }
+}

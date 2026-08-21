@@ -15,7 +15,7 @@ import { supabase }       from '../lib/supabase';
 import {
   hydrate,
   dbStartLot, dbPlaceBid, dbMarkSold,
-  dbMarkUnsold, dbNextLot, dbJumpToLot, dbReset,
+  dbMarkUnsold, dbEndAuction, dbNextLot, dbJumpToLot, dbReset,
 } from '../lib/db';
 
 // ── Static data ───────────────────────────────────────────────────────────────
@@ -262,6 +262,10 @@ export function AuctionProvider({ children }) {
     });
   }, []);
 
+  const endAuction = useCallback(async () => {
+    await dbEndAuction();
+  }, []);
+
   const value = {
     state,
     currentPlayer: currentPlayerFrom(state),
@@ -269,6 +273,7 @@ export function AuctionProvider({ children }) {
     placeBid,
     markSold,
     markUnsold,
+    endAuction,
     nextLot,
     jumpToLot,
     reset,
