@@ -51,6 +51,11 @@ export default function LandingGateway({ onEnter }) {
           </p>
         </div>
 
+        {/* Build stamp — compare between Admin and TV to catch a stale deploy */}
+        <div className="text-center mb-4 text-[10px] font-mono text-slate-600 tracking-wider">
+          BUILD {typeof __BUILD_STAMP__ === 'string' ? __BUILD_STAMP__ : 'dev'}
+        </div>
+
         {/* Gateway selection */}
         {!mode && (
           <div className="grid grid-cols-1 gap-5">
