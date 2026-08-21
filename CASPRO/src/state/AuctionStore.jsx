@@ -238,6 +238,16 @@ export function AuctionProvider({ children }) {
 
   const reset = useCallback(async () => {
     await dbReset();
+    const hydrated = await hydrate();
+    dispatch({
+      type: 'HYDRATE',
+      state: buildStateFromSnapshot(
+        hydrated.auctionState,
+        hydrated.purseMap,
+        hydrated.salesMap,
+        hydrated.unsoldPlayerIds
+      ),
+    });
   }, []);
 
   const value = {

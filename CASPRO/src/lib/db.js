@@ -153,8 +153,8 @@ export async function dbJumpToLot(index) {
  */
 export async function dbReset() {
   await Promise.all([
-    supabase.from('player_sales').delete().neq('player_id', '__none__'),
-    supabase.from('bid_log').delete().neq('id', '00000000-0000-0000-0000-000000000000'),
+    supabase.from('player_sales').delete().gt('created_at', '1970-01-01'),
+    supabase.from('bid_log').delete().gt('created_at', '1970-01-01'),
     // Restore purses
     ...TEAMS.map(t =>
       supabase.from('team_purses').update({ purse_lakhs: t.purseLakhs }).eq('team_id', t.id)
