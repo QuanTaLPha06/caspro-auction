@@ -8,6 +8,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuction }     from '../state/AuctionStore';
 import { nextBidLakhs }   from '../lib/constants';
 import { getSlideUrl }    from '../lib/db';
+import ResultsPanel   from './ResultsPanel';
 
 function formatLakhs(l) {
   if (l == null) return '—';
@@ -115,16 +116,7 @@ export default function TVDisplay() {
   const isUnsoldRound = currentIndex >= players.length;
 
   if (status === 'finished' || !currentPlayer) {
-    return (
-      <div className="h-screen w-screen text-white flex items-center justify-center relative overflow-hidden bg-[#070a12]">
-        <div className="absolute inset-0 bg-cyan-500/5 blur-3xl pointer-events-none" />
-        <div className="text-center nb-card p-10 max-w-lg">
-          <div className="text-6xl mb-4">🏏</div>
-          <div className="text-4xl font-black mb-2">Auction Complete</div>
-          <div className="text-slate-400 text-base">All lots have been called.</div>
-        </div>
-      </div>
-    );
+    return <ResultsPanel />;
   }
 
   return (

@@ -262,7 +262,7 @@ export default function AdminPanel() {
   useEffect(() => {
     if (currentBidTeamId) {
       setOverrideTeamId(currentBidTeamId);
-    } else if (teams.length > 0 && !overrideTeamId) {
+    } else if (teams.length > 0) {
       setOverrideTeamId(teams[0].id);
     }
 
@@ -347,6 +347,7 @@ export default function AdminPanel() {
         action: 'direct_sold',
         onForce: () => wrap(async () => {
           await markSold(targetTeamId, targetPrice);
+          await nextLot();
         }, `FORCE SOLD: ${currentPlayer.name} to ${targetTeamId} for ${fmt(targetPrice)}`),
       });
       return;
@@ -354,6 +355,7 @@ export default function AdminPanel() {
 
     await wrap(async () => {
       await markSold(targetTeamId, targetPrice);
+      await nextLot();
     }, `SOLD: ${currentPlayer.name} to ${team.name} (${targetTeamId}) for ${fmt(targetPrice)}`);
   }
 
@@ -741,7 +743,7 @@ export default function AdminPanel() {
                     {selectedTeamMath && (
                       <button
                         type="button"
-                        onClick={() => setWarningModal({ team: selectedTeam, bidLakhs: parsedOverridePrice, player: currentPlayer, math: selectedTeamMath, action: 'direct_sold', onForce: () => wrap(() => markSold(overrideTeamId, parsedOverridePrice)) })}
+                        onClick={() => setWarningModal({ team: selectedTeam, bidLakhs: parsedOverridePrice, player: currentPlayer, math: selectedTeamMath, action: 'direct_sold', onForce: () => wrap(async () => { await markSold(overrideTeamId, parsedOverridePrice); await nextLot(); }) })}
                         className={`px-2.5 py-1 rounded-lg text-[10px] font-bold border transition ${
                           selectedTeamMath.hasWarning
                             ? 'bg-rose-500/20 text-rose-300 border-rose-500/40 animate-pulse'
@@ -762,7 +764,7 @@ export default function AdminPanel() {
                       </div>
                       <button
                         type="button"
-                        onClick={() => setWarningModal({ team: selectedTeam, bidLakhs: parsedOverridePrice, player: currentPlayer, math: selectedTeamMath, action: 'direct_sold', onForce: () => wrap(() => markSold(overrideTeamId, parsedOverridePrice)) })}
+                        onClick={() => setWarningModal({ team: selectedTeam, bidLakhs: parsedOverridePrice, player: currentPlayer, math: selectedTeamMath, action: 'direct_sold', onForce: () => wrap(async () => { await markSold(overrideTeamId, parsedOverridePrice); await nextLot(); }) })}
                         className="px-2 py-0.5 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded shrink-0 text-[9px]"
                       >
                         Inspect 🧮

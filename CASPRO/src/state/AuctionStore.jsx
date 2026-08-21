@@ -206,6 +206,10 @@ export function AuctionProvider({ children }) {
   const placeBid = useCallback(async (teamId, bidLakhs) => {
     const { currentIndex, auctionOrder } = stateRef.current;
     const pid = auctionOrder[currentIndex];
+    dispatch({
+      type: 'REALTIME_AUCTION_STATE',
+      payload: { new: { current_index: currentIndex, current_bid_lakhs: bidLakhs, current_bid_team_id: teamId, status: 'live' } }
+    });
     await dbPlaceBid(pid, teamId, bidLakhs);
   }, []);
 
@@ -227,24 +231,51 @@ export function AuctionProvider({ children }) {
     }
 
     const newPurse = team.purseLakhs - targetPrice;
+    
+    // Optimistic local updates
+    dispatch({
+      type: 'REALTIME_SALE',
+      payload: { new: { player_id: player.id, team_id: team.id, sold_price_lakhs: targetPrice } }
+    });
+    dispatch({
+      type: 'REALTIME_PURSE',
+      payload: { new: { team_id: team.id, purse_lakhs: newPurse } }
+    });
+    dispatch({
+      type: 'REALTIME_AUCTION_STATE',
+      payload: { new: { current_index: s.currentIndex, current_bid_lakhs: targetPrice, current_bid_team_id: team.id, status: 'sold' } }
+    });
+
     await dbMarkSold(player.id, team.id, targetPrice, newPurse);
   }, []);
 
   const markUnsold = useCallback(async () => {
     const player = currentPlayerFrom(stateRef.current);
     if (!player) return;
-    await dbMarkUnsold(player.id);
+    dispatch({
+      type: 'REALTIME_AUCTION_STATE',
+      payload: { new: { current_index: stateRef.current.currentIndex, current_bid_lakhs: null, current_bid_team_id: null, status: 'unsold' } }
+    });
     dispatch({ type: 'LOCAL_REQUEUE_UNSOLD', playerId: player.id });
+    await dbMarkUnsold(player.id);
   }, []);
 
   const nextLot = useCallback(async () => {
     const { currentIndex, auctionOrder } = stateRef.current;
     const nextIndex = currentIndex + 1;
     const finished  = nextIndex >= auctionOrder.length;
+    dispatch({
+      type: 'REALTIME_AUCTION_STATE',
+      payload: { new: { current_index: nextIndex, current_bid_lakhs: null, current_bid_team_id: null, status: finished ? 'finished' : 'idle' } }
+    });
     await dbNextLot(nextIndex, finished);
   }, []);
 
   const jumpToLot = useCallback(async (index) => {
+    dispatch({
+      type: 'REALTIME_AUCTION_STATE',
+      payload: { new: { current_index: index, current_bid_lakhs: null, current_bid_team_id: null, status: 'idle' } }
+    });
     await dbJumpToLot(index);
   }, []);
 
