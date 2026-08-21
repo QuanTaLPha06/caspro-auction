@@ -576,6 +576,15 @@ export default function AdminPanel() {
               <span>🏁</span>
               <span>End Auction</span>
             </button>
+
+            <button
+              onClick={handleReset}
+              disabled={busy}
+              className="py-1 px-3 rounded-lg bg-gradient-to-r from-rose-900 to-red-900 hover:from-rose-800 hover:to-red-800 border border-rose-500/50 text-rose-200 font-bold text-xs shadow transition active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
+            >
+              <span>🔄</span>
+              <span>Restart Auction</span>
+            </button>
           </div>
         </header>
 

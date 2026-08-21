@@ -121,7 +121,7 @@ export default function LandingGateway({ onEnter }) {
                 type="password"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
-                placeholder={mode === 'display' ? `Enter PIN (Default: ${AUTH.DISPLAY_PIN})` : `Enter Password (Default: ${AUTH.ADMIN_PASSWORD})`}
+                placeholder={mode === 'display' ? 'Enter PIN' : 'Enter Password'}
                 className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-purple-500/30 text-white placeholder-slate-500 text-sm font-mono focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 transition-all"
                 autoFocus
               />
