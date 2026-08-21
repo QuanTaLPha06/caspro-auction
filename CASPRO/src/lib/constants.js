@@ -2,18 +2,26 @@
 // constants.js  →  src/lib/constants.js
 // ---------------------------------------------------------------------------
 
+// `id` is an internal, permanent key. It is stored on every sale and purse row,
+// so it must never change. `name` and `short` are display-only defaults — the
+// admin overrides them at runtime (Teams tab) and the values live in the DB so
+// Admin and TV always show the same thing.
 export const TEAMS = [
-  { id: 'MI',   name: 'Mumbai Indians',             color: '#004BA0', purseLakhs: 12000 },
-  { id: 'CSK',  name: 'Chennai Super Kings',         color: '#FFCC00', purseLakhs: 12000 },
-  { id: 'RCB',  name: 'Royal Challengers Bengaluru', color: '#EC1C24', purseLakhs: 12000 },
-  { id: 'KKR',  name: 'Kolkata Knight Riders',       color: '#3A225D', purseLakhs: 12000 },
-  { id: 'DC',   name: 'Delhi Capitals',              color: '#17479E', purseLakhs: 12000 },
-  { id: 'PBKS', name: 'Punjab Kings',                color: '#DD1F2D', purseLakhs: 12000 },
-  { id: 'RR',   name: 'Rajasthan Royals',            color: '#254AA5', purseLakhs: 12000 },
-  { id: 'SRH',  name: 'Sunrisers Hyderabad',         color: '#F26522', purseLakhs: 12000 },
-  { id: 'LSG',  name: 'Lucknow Super Giants',        color: '#00B2A9', purseLakhs: 12000 },
-  { id: 'GT',   name: 'Gujarat Titans',              color: '#1B2133', purseLakhs: 12000 },
+  { id: 'MI',   name: 'Team 1',  short: 'T1',  color: '#004BA0', purseLakhs: 12000 },
+  { id: 'CSK',  name: 'Team 2',  short: 'T2',  color: '#FFCC00', purseLakhs: 12000 },
+  { id: 'RCB',  name: 'Team 3',  short: 'T3',  color: '#EC1C24', purseLakhs: 12000 },
+  { id: 'KKR',  name: 'Team 4',  short: 'T4',  color: '#3A225D', purseLakhs: 12000 },
+  { id: 'DC',   name: 'Team 5',  short: 'T5',  color: '#17479E', purseLakhs: 12000 },
+  { id: 'PBKS', name: 'Team 6',  short: 'T6',  color: '#DD1F2D', purseLakhs: 12000 },
+  { id: 'RR',   name: 'Team 7',  short: 'T7',  color: '#254AA5', purseLakhs: 12000 },
+  { id: 'SRH',  name: 'Team 8',  short: 'T8',  color: '#F26522', purseLakhs: 12000 },
+  { id: 'LSG',  name: 'Team 9',  short: 'T9',  color: '#00B2A9', purseLakhs: 12000 },
+  { id: 'GT',   name: 'Team 10', short: 'T10', color: '#1B2133', purseLakhs: 12000 },
 ];
+
+// Max lengths enforced by the team-name editor.
+export const TEAM_NAME_MAX  = 28;
+export const TEAM_SHORT_MAX = 4;
 
 export const SQUAD_RULES = {
   MIN_SQUAD_SIZE:     15,

@@ -42,6 +42,14 @@ export async function hydrate() {
   // Normalize purses: [{ team_id, purse_lakhs }] → Map
   const purseMap = Object.fromEntries(purses.map(r => [r.team_id, r.purse_lakhs]));
 
+  // Display names. Columns are absent until supabase/add-team-names.sql is run,
+  // in which case this map is empty and the defaults in constants.js are used.
+  const teamMetaMap = Object.fromEntries(
+    purses
+      .filter(r => r.team_name != null || r.team_short != null)
+      .map(r => [r.team_id, { name: r.team_name ?? null, short: r.team_short ?? null }])
+  );
+
   // Normalize sales: [{ player_id, team_id, sold_price_lakhs }] → Map keyed by player_id
   const salesMap = Object.fromEntries(
     sales.map(r => [r.player_id, { teamId: r.team_id, soldPriceLakhs: Number(r.sold_price_lakhs) }])
@@ -52,6 +60,7 @@ export async function hydrate() {
     .filter(pid => pid && !salesMap[pid]);
 
   return {
+    teamMetaMap,
     auctionState: {
       currentIndex:     auctionState.current_index,
       currentBidLakhs:  auctionState.current_bid_lakhs != null ? Number(auctionState.current_bid_lakhs) : null,
@@ -193,6 +202,29 @@ export async function dbReset() {
     }).eq('id', 1),
     'dbReset auction_state'
   );
+}
+
+/**
+ * Persist a team's display name + short badge. Team IDs are never changed.
+ * Throws a helpful error if the migration has not been run yet.
+ */
+export async function dbSetTeamName(teamId, name, short) {
+  const res = await supabase
+    .from('team_purses')
+    .update({ team_name: name, team_short: short })
+    .eq('team_id', teamId)
+    .select();
+
+  if (res.error) {
+    if (/team_name|team_short|schema cache/i.test(res.error.message)) {
+      throw new Error(
+        'Team name columns are missing. Run supabase/add-team-names.sql in the ' +
+        'Supabase SQL Editor, then try again.'
+      );
+    }
+    throw res.error;
+  }
+  return res.data;
 }
 
 // ── Player slide images ───────────────────────────────────────────────────────

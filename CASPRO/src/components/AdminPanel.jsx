@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useAuction }                     from '../state/AuctionStore';
-import { SQUAD_RULES, nextBidLakhs }      from '../lib/constants';
+import { SQUAD_RULES, nextBidLakhs, TEAM_NAME_MAX, TEAM_SHORT_MAX } from '../lib/constants';
 import { canTeamBid, computeMaxLegalBid } from '../lib/auctionEngine';
 import { exportRostersJSON, exportRostersCSV } from '../lib/exportUtils';
 
@@ -111,7 +111,7 @@ function SquadMathModal({ data, onClose }) {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-950/90 p-4 rounded-2xl border border-white/10">
           <div className="flex items-center gap-3">
             <span className="text-lg font-black px-3 py-1 rounded-xl bg-slate-900 border border-white/15 font-mono" style={{ color: team.color }}>
-              {team.id}
+              {team.short}
             </span>
             <div>
               <div className="text-sm font-bold text-white">{team.name}</div>
@@ -245,8 +245,105 @@ function Btn({ children, onClick, tone = 'slate', disabled = false, loading = fa
   );
 }
 
+function TeamNameEditor({ teams, onSave }) {
+  const [drafts, setDrafts]   = useState({});
+  const [savingId, setSaving] = useState(null);
+  const [feedback, setFeedback] = useState(null);
+
+  const draftFor = team => drafts[team.id] ?? { name: team.name, short: team.short };
+  const isDirty  = team => {
+    const d = draftFor(team);
+    return d.name !== team.name || d.short !== team.short;
+  };
+
+  // Derive from `prev`, never the closed-over `drafts`, so fast successive
+  // keystrokes cannot clobber each other.
+  const update = (teamId, patch) =>
+    setDrafts(prev => {
+      const team = teams.find(t => t.id === teamId);
+      const base = prev[teamId] ?? { name: team.name, short: team.short };
+      return { ...prev, [teamId]: { ...base, ...patch } };
+    });
+
+  async function save(team) {
+    const d = draftFor(team);
+    setSaving(team.id);
+    setFeedback(null);
+    try {
+      await onSave(team.id, d.name, d.short);
+      setDrafts(prev => { const next = { ...prev }; delete next[team.id]; return next; });
+      setFeedback({ type: 'ok', message: `Renamed to ${d.name.trim()}` });
+    } catch (err) {
+      setFeedback({ type: 'error', message: err.message });
+    } finally {
+      setSaving(null);
+    }
+  }
+
+  return (
+    <div className="nb-card p-5 border border-white/10 space-y-4">
+      <div>
+        <h3 className="text-lg font-black text-white tracking-tight">Team Names</h3>
+        <p className="text-xs text-slate-400 mt-0.5">
+          Rename any team. Changes appear on the TV display within a second. Names survive an auction restart.
+        </p>
+      </div>
+
+      {feedback && (
+        <div className={`px-3 py-2 rounded-lg text-xs font-bold border ${
+          feedback.type === 'error'
+            ? 'bg-rose-950/70 text-rose-200 border-rose-500/40'
+            : 'bg-emerald-950/70 text-emerald-200 border-emerald-500/40'
+        }`}>
+          {feedback.message}
+        </div>
+      )}
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        {teams.map(team => {
+          const d = draftFor(team);
+          const dirty = isDirty(team);
+          return (
+            <div key={team.id} className="flex items-center gap-2 bg-slate-900/60 border border-white/10 rounded-xl p-2.5">
+              <div
+                className="w-10 h-10 shrink-0 rounded-xl flex items-center justify-center font-black text-sm border border-white/20 font-mono"
+                style={{ background: `${team.color}22`, color: team.color }}
+              >
+                {d.short || '—'}
+              </div>
+              <input
+                value={d.short}
+                onChange={e => update(team.id, { short: e.target.value })}
+                maxLength={TEAM_SHORT_MAX}
+                aria-label={`Short code for ${team.name}`}
+                className="w-16 shrink-0 px-2 py-1.5 rounded-lg bg-slate-950/80 border border-white/10 text-white text-xs font-mono font-bold text-center focus:outline-none focus:border-cyan-500"
+              />
+              <input
+                value={d.name}
+                onChange={e => update(team.id, { name: e.target.value })}
+                maxLength={TEAM_NAME_MAX}
+                aria-label={`Name for ${team.name}`}
+                className="flex-1 min-w-0 px-2.5 py-1.5 rounded-lg bg-slate-950/80 border border-white/10 text-white text-xs font-semibold focus:outline-none focus:border-cyan-500"
+              />
+              <Btn
+                tone={dirty ? 'emerald' : 'slate'}
+                onClick={() => save(team)}
+                disabled={!dirty || savingId === team.id}
+                loading={savingId === team.id}
+                className="!py-1.5 !px-3 !text-[11px] shrink-0"
+              >
+                Save
+              </Btn>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 export default function AdminPanel() {
-  const { state, currentPlayer, startLot, placeBid, markSold, markUnsold, endAuction, nextLot, jumpToLot, reset } = useAuction();
+  const { state, currentPlayer, startLot, placeBid, markSold, markUnsold, endAuction, nextLot, jumpToLot, reset, setTeamName } = useAuction();
   const { teams, currentBidLakhs, currentBidTeamId, status, currentIndex, auctionOrder, salesMap } = state;
 
   const [activeTab, setActiveTab]           = useState('auction'); // 'auction' | 'teams' | 'lots'
@@ -719,7 +816,7 @@ export default function AdminPanel() {
                           }`}
                         >
                           <div className="flex items-center justify-between">
-                            <span className="font-black text-xs" style={{ color: t.color }}>{t.id}</span>
+                            <span className="font-black text-xs" style={{ color: t.color }}>{t.short}</span>
                             {leading ? (
                               <span className="text-[9px] bg-amber-400 text-slate-950 font-bold px-1 rounded">LEAD</span>
                             ) : math.hasWarning ? (
@@ -802,7 +899,7 @@ export default function AdminPanel() {
                             }`}
                           >
                             <div className="flex items-center justify-between">
-                              <span className="font-black text-xs" style={{ color: t.color }}>{t.id}</span>
+                              <span className="font-black text-xs" style={{ color: t.color }}>{t.short}</span>
                               {tMath?.hasWarning && <span className="text-rose-400 text-[10px]">⚠️</span>}
                             </div>
                             <div className="text-[10px] text-slate-300 font-mono mt-0.5 truncate">{fmt(t.purseLakhs)}</div>
@@ -911,9 +1008,11 @@ export default function AdminPanel() {
               <div className="flex justify-between items-center">
                 <div>
                   <h2 className="text-2xl font-black text-white tracking-tight">Team Financial Accounts &amp; Squad Roster</h2>
-                  <p className="text-xs text-slate-400 mt-0.5">Real-time purse balance, reserve headroom, and player slots across all 10 franchises.</p>
+                  <p className="text-xs text-slate-400 mt-0.5">Real-time purse balance, reserve headroom, and player slots across all 10 teams.</p>
                 </div>
               </div>
+
+              <TeamNameEditor teams={teams} onSave={setTeamName} />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {teams.map(team => {
@@ -938,7 +1037,7 @@ export default function AdminPanel() {
                             className="w-12 h-12 rounded-2xl flex items-center justify-center font-black text-xl border border-white/20 shadow-md font-mono"
                             style={{ background: `${team.color}22`, color: team.color }}
                           >
-                            {team.id}
+                            {team.short}
                           </div>
                           <div>
                             <h3 className="text-lg font-black text-white">{team.name}</h3>

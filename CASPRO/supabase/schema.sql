@@ -94,3 +94,10 @@ ALTER TABLE team_purses    DISABLE ROW LEVEL SECURITY;
 ALTER TABLE player_sales   DISABLE ROW LEVEL SECURITY;
 ALTER TABLE bid_log        DISABLE ROW LEVEL SECURITY;
 
+
+-- =============================================================================
+-- Editable team display names (added later)
+-- Team IDs are permanent keys; these two columns are what the UI renders.
+-- =============================================================================
+ALTER TABLE team_purses ADD COLUMN IF NOT EXISTS team_name  TEXT;
+ALTER TABLE team_purses ADD COLUMN IF NOT EXISTS team_short TEXT;

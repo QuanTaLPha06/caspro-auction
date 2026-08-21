@@ -246,7 +246,7 @@ export default function TVDisplay() {
                 boxShadow:   t.id === currentBidTeamId ? `0 0 20px ${t.color}55` : 'none',
               }}
             >
-              <div className="text-[11px] text-slate-400 font-mono font-bold tracking-wider uppercase">{t.id}</div>
+              <div className="text-[11px] text-slate-400 font-mono font-bold tracking-wider uppercase">{t.short}</div>
               <div className="font-black text-base font-mono" style={{ color: t.color }}>{formatLakhs(t.purseLakhs)}</div>
               <div className="text-[10px] text-slate-400 font-medium font-mono">{t.squad.length} / 25 players</div>
             </div>

@@ -9,13 +9,13 @@ import React, {
 } from 'react';
 
 import players            from '../../players.json';
-import { TEAMS }          from '../lib/constants';
+import { TEAMS, TEAM_NAME_MAX, TEAM_SHORT_MAX } from '../lib/constants';
 import { finalizeSale }   from '../lib/auctionEngine';
 import { supabase }       from '../lib/supabase';
 import {
   hydrate,
   dbStartLot, dbPlaceBid, dbMarkSold,
-  dbMarkUnsold, dbEndAuction, dbNextLot, dbJumpToLot, dbReset,
+  dbMarkUnsold, dbEndAuction, dbNextLot, dbJumpToLot, dbReset, dbSetTeamName,
 } from '../lib/db';
 
 // ── Static data ───────────────────────────────────────────────────────────────
@@ -33,20 +33,28 @@ function snapshotSignature(snap) {
     JSON.stringify(snap.auctionState),
     stable(snap.purseMap),
     stable(snap.salesMap),
+    stable(snap.teamMetaMap ?? {}),
     snap.unsoldPlayerIds.join(','),
   ].join('#');
 }
 
 // ── Build fresh local state from DB snapshot ──────────────────────────────────
 
-function buildStateFromSnapshot(auctionStateRow, purseMap, salesMap, unsoldPlayerIds = []) {
-  // Rebuild teams with DB purses + sold squads
+function buildStateFromSnapshot(auctionStateRow, purseMap, salesMap, unsoldPlayerIds = [], teamMetaMap = {}) {
+  // Rebuild teams with DB purses + sold squads + admin-set display names
   const teams = TEAMS.map(t => {
     const purseLakhs = purseMap[t.id] ?? t.purseLakhs;
     const squad = ALL_PLAYERS
       .filter(p => salesMap[p.id]?.teamId === t.id)
       .map(p => ({ ...p, sold_price_lakhs: salesMap[p.id].soldPriceLakhs }));
-    return { ...t, purseLakhs, squad };
+    const meta = teamMetaMap[t.id];
+    return {
+      ...t,
+      name:  meta?.name  || t.name,
+      short: meta?.short || t.short,
+      purseLakhs,
+      squad,
+    };
   });
 
   const auctionOrder = [...AUCTION_ORDER, ...unsoldPlayerIds];
@@ -144,6 +152,13 @@ function reducer(state, action) {
       };
     }
 
+    case 'SET_TEAM_NAME': {
+      const teams = state.teams.map(t =>
+        t.id === action.teamId ? { ...t, name: action.name, short: action.short } : t
+      );
+      return { ...state, teams };
+    }
+
     case 'SET_ERROR':
       return { ...state, loading: false, error: action.error };
 
@@ -165,12 +180,17 @@ export function AuctionProvider({ children }) {
   // can never roll the UI back to a snapshot taken mid-write.
   const pendingWrites = useRef(0);
   const lastSignature = useRef(null);
+  // Bumped on every write. A poll that started before a write must discard its
+  // result, otherwise a slow hydrate can land after the write and revert the UI.
+  const writeEpoch = useRef(0);
 
   const runWrite = useCallback(async (fn) => {
     pendingWrites.current += 1;
+    writeEpoch.current += 1;
     try {
       return await fn();
     } finally {
+      writeEpoch.current += 1;
       pendingWrites.current -= 1;
     }
   }, []);
@@ -179,7 +199,9 @@ export function AuctionProvider({ children }) {
     lastSignature.current = snapshotSignature(snap);
     dispatch({
       type: 'HYDRATE',
-      state: buildStateFromSnapshot(snap.auctionState, snap.purseMap, snap.salesMap, snap.unsoldPlayerIds),
+      state: buildStateFromSnapshot(
+        snap.auctionState, snap.purseMap, snap.salesMap, snap.unsoldPlayerIds, snap.teamMetaMap
+      ),
     });
   }, []);
 
@@ -240,9 +262,12 @@ export function AuctionProvider({ children }) {
 
     const tick = async () => {
       if (cancelled || pendingWrites.current > 0) return;
+      const epoch = writeEpoch.current;
       try {
         const snap = await hydrate();
-        if (cancelled) return;
+        // Discard if anything was written while this hydrate was in flight —
+        // the snapshot predates that write and would roll the UI backwards.
+        if (cancelled || writeEpoch.current !== epoch || pendingWrites.current > 0) return;
         // Only re-render when the DB actually changed.
         if (snapshotSignature(snap) === lastSignature.current) return;
         applySnapshot(snap);
@@ -324,7 +349,9 @@ export function AuctionProvider({ children }) {
     const finished  = nextIndex >= auctionOrder.length;
     dispatch({
       type: 'REALTIME_AUCTION_STATE',
-      payload: { new: { current_index: nextIndex, current_bid_lakhs: null, current_bid_team_id: null, status: finished ? 'finished' : 'idle' } }
+      // Must match dbNextLot's write ('live'), otherwise the display falls through
+      // to the "Up next…" placeholder and stays there.
+      payload: { new: { current_index: nextIndex, current_bid_lakhs: null, current_bid_team_id: null, status: finished ? 'finished' : 'live' } }
     });
     await runWrite(() => dbNextLot(nextIndex, finished));
   }, [runWrite]);
@@ -332,7 +359,8 @@ export function AuctionProvider({ children }) {
   const jumpToLot = useCallback(async (index) => {
     dispatch({
       type: 'REALTIME_AUCTION_STATE',
-      payload: { new: { current_index: index, current_bid_lakhs: null, current_bid_team_id: null, status: 'idle' } }
+      // Matches dbJumpToLot's write ('live') — see nextLot.
+      payload: { new: { current_index: index, current_bid_lakhs: null, current_bid_team_id: null, status: 'live' } }
     });
     await runWrite(() => dbJumpToLot(index));
   }, [runWrite]);
@@ -343,6 +371,17 @@ export function AuctionProvider({ children }) {
       applySnapshot(await hydrate());
     });
   }, [runWrite, applySnapshot]);
+
+  const setTeamName = useCallback(async (teamId, name, short) => {
+    const cleanName  = String(name  ?? '').trim().slice(0, TEAM_NAME_MAX);
+    const cleanShort = String(short ?? '').trim().slice(0, TEAM_SHORT_MAX);
+    if (!cleanName)  throw new Error('Team name cannot be empty.');
+    if (!cleanShort) throw new Error('Short code cannot be empty.');
+
+    // Optimistic local rename so the admin sees it instantly.
+    dispatch({ type: 'SET_TEAM_NAME', teamId, name: cleanName, short: cleanShort });
+    await runWrite(() => dbSetTeamName(teamId, cleanName, cleanShort));
+  }, [runWrite]);
 
   const endAuction = useCallback(async () => {
     await runWrite(() => dbEndAuction());
@@ -359,6 +398,7 @@ export function AuctionProvider({ children }) {
     nextLot,
     jumpToLot,
     reset,
+    setTeamName,
   };
 
   if (state.loading) {
